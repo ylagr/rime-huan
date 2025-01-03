@@ -16510,8 +16510,8 @@
 泆 du
 泇 dj
 泈 dd
-泉 bu
 泉 ub
+泉 bu
 泊 db
 泋 dh
 泌 db
@@ -28151,10 +28151,10 @@
 釄 ym
 釅 yg
 釅 yy
-釆 pd
 釆 pm
-采 mv
+釆 pd
 采 vm
+采 mv
 釈 bi
 釈 pi
 釉 py
