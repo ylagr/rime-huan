@@ -23,7 +23,7 @@ function Module.open_rime_file(rel_path, pathsep)
       '/usr/share/rime-data/'
    }
    for _, prefix in pairs(prefixes) do
-      path = prefix .. path
+      path = prefix .. rel_path
       file, err = io.open(path)
       if file then
          return file
