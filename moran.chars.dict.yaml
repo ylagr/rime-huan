@@ -12882,8 +12882,8 @@ use_preset_vocabulary: false
 泆	yi;du	0
 泇	jw;dj	1
 泈	vs;dd	0
-泉	qr;bu	121061
 泉	qr;ub	121061
+泉	qr;bu	121061
 泊	bo;db	41521
 泊	po;db	41521
 泋	hv;dh	0
@@ -27459,12 +27459,12 @@ use_preset_vocabulary: false
 釄	mi;ym	0
 釅	yj;yg	0
 釅	yj;yy	0
-釆	bm;pd	0
 釆	bm;pm	0
-釆	cl;pd	0
+釆	bm;pd	0
 釆	cl;pm	0
-采	cl;mv	264104
+釆	cl;pd	0
 采	cl;vm	264104
+采	cl;mv	264104
 釈	ui;bi	0
 釈	ui;pi	0
 釉	yb;py	1538
