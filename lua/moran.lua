@@ -12,7 +12,7 @@ function Module.load_zrmdb()
    local pathsep = (package.config or '/'):sub(1, 1)
    local filename = 'zrmdb.txt'
    local path = rime_api.get_user_data_dir() .. pathsep .. "lua" .. pathsep .. filename
-   local file, err = io.open(path) or io.open("/rime/lua/" .. filename)
+   local file, err = io.open(path)
    if not file then
       log.error("moran: failed to open aux file at path " .. path .. ", error: " .. err)
       return
