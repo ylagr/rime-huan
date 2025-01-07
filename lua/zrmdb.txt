@@ -14524,6 +14524,7 @@
 暋 om
 暋 ow
 暌 ot
+暌 og
 暍 oh
 暎 oy
 暏 ov
@@ -29641,6 +29642,7 @@
 雈 cv
 雈 sh
 雈 va
+雉 vu
 雉 uv
 雊 vj
 雋 vg
