@@ -29253,10 +29253,10 @@ use_preset_vocabulary: false
 隺	qt;nv	280
 隻	vi;vy	4994
 隻	vi;yv	4994
-隼	sp;uv	728
 隼	sp;vu	728
-隼	vp;uv	0
+隼	sp;uv	728
 隼	vp;vu	0
+隼	vp;uv	0
 隽	jp;nv	67
 隽	jp;vn	67
 隽	jr;nv	34
@@ -32107,6 +32107,7 @@ use_preset_vocabulary: false
 鹺	co;li	565
 鹻	jm;lj	227
 鹼	jm;lq	1303
+鹽	yj;lm	3011
 鹽	yj;ml	3011
 鹾	co;li	0
 鹿	lu;gb	1708
