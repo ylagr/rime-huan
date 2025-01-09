@@ -29621,8 +29621,8 @@
 隺 nv
 隻 vy
 隻 yv
-隼 uv
 隼 vu
+隼 uv
 隽 nv
 隽 vn
 难 yv
@@ -32021,6 +32021,7 @@
 鹺 li
 鹻 lj
 鹼 lq
+鹽 lm
 鹽 ml
 鹾 li
 鹿 gb

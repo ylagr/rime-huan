@@ -712,6 +712,7 @@ A4纸	asv
 安土重迁	atvq
 哀痛欲绝	atyj
 凹凸有致	atyv
+暗示	au
 碍手碍脚	auaj
 安守本分	aubf
 爱说不说	aubu
@@ -754,6 +755,7 @@ A4纸	asv
 爱学习	axx
 爱惜羽毛	axym
 哎呀	ay
+哎呦	ay
 哎呦呵	ayh
 爱因斯坦	ayst
 安营扎寨	ayvv
@@ -8688,6 +8690,7 @@ C语言	cyy
 大快朵颐	dkdy
 夺眶而出	dkei
 刀儿	dker
+笛卡尔	dker
 捣	dkf
 刀法	dkfa
 捯	dkfd
@@ -11735,6 +11738,7 @@ E盘	epj
 凡此种种	fcvv
 方寸已乱	fcyl
 父慈子孝	fczx
+对方	fd
 反对	fd
 放荡不羁	fdbj
 防弹背心	fdbx
@@ -12117,6 +12121,7 @@ E盘	epj
 封禁	fgjn
 风景	fgjy
 唪	fgk
+风口	fgkb
 封口	fgkb
 疯狂	fgkd
 风控	fgks
@@ -12929,6 +12934,7 @@ E盘	epj
 风流云散	flys
 风流韵事	flyu
 飞龙在天	flzt
+方面	fm
 繁忙	fm
 分门别类	fmbl
 锋芒毕露	fmbl
@@ -18345,7 +18351,9 @@ G盘	gpj
 横渡	hgdu
 横队	hgdv
 恒定	hgdy
+黑格尔	hge
 横额	hgee
+黑格尔	hger
 横幅	hgfu
 回光返照	hgfv
 回归分析	hgfx
@@ -21114,6 +21122,7 @@ H盘	hpj
 华族	hwzu
 毫无作用	hwzy
 好像	hx
+好想	hx
 好心不得好报	hxbb
 横行霸道	hxbd
 喝西北风	hxbf
@@ -28990,8 +28999,8 @@ I盘	ipj
 精度	jydu
 警队	jydv
 阱	jye
-净额	jyee
 惊愕	jyee
+净额	jyee
 旌	jyf
 劲风	jyfg
 惊风	jyfg
@@ -29986,6 +29995,7 @@ I盘	ipj
 抗病	khby
 客户端	khd
 宽宏大度	khdd
+康德	khde
 抗敌	khdi
 沆	khdk
 宽宏大量	khdl
@@ -30594,6 +30604,7 @@ I盘	ipj
 廓落	kolo
 阔	kom
 阔气	koqi
+扩圈	koqr
 扩权	koqr
 廓清	koqy
 阔人	korf
@@ -37777,6 +37788,7 @@ I盘	ipj
 美味可口	mwkk
 漫无目的	mwmd
 没完没了	mwml
+魔物娘	mwnd
 勉为其难	mwqn
 面无人色	mwrs
 渺无人烟	mwry
@@ -38961,6 +38973,7 @@ I盘	ipj
 南明	njmy
 南美	njmz
 婻	njn
+男娘	njnd
 难解难分	njnf
 喃喃	njnj
 难耐	njnl
@@ -44299,6 +44312,7 @@ I盘	ipj
 劝募	qrmu
 全名	qrmy
 婘	qrn
+犬娘	qrnd
 全能	qrng
 全年	qrnm
 圈内	qrnz
@@ -52062,6 +52076,7 @@ T恤衫	txuj
 停付	tyfu
 停飞	tyfz
 庭	tyg
+同一个	tyg
 听歌	tyge
 停更	tygg
 同业公会	tygh
@@ -61331,6 +61346,7 @@ U盘	upj
 万里长城	wlii
 歪缠	wlij
 外钞	wlik
+外传	wlir
 外出	wliu
 万里长征	wliv
 外交	wljc
@@ -61773,6 +61789,7 @@ U盘	upj
 勿谈国事	wtgu
 无头告示	wtgu
 五天工作制	wtgv
+无条件	wtj
 舞台监督	wtjd
 味同嚼蜡	wtjl
 无条件反射	wtju
@@ -64150,6 +64167,7 @@ U盘	upj
 先苦后甜	xkht
 信口胡说	xkhu
 笑口常开	xkik
+星空键道	xkjd
 先看看	xkk
 信口开河	xkkh
 辛苦了	xkl
@@ -64790,6 +64808,7 @@ U盘	upj
 薪资	xnzi
 新作	xnzo
 心醉	xnzv
+休谟	xomo
 寻	xp
 嫌贫爱富	xpaf
 笑贫不笑娼	xpbi
@@ -66805,6 +66824,7 @@ U盘	upj
 瞎子点灯白费蜡	xzdl
 小资产阶级	xzij
 下自成蹊	xziq
+现在就	xzj
 现在看	xzk
 现在看来	xzkl
 选择了	xzl
@@ -69559,6 +69579,7 @@ U盘	upj
 一路上	ylu
 伊丽莎白	ylub
 亚历山大	ylud
+亚里士多德	ylud
 一路顺风	yluf
 有理说不清	yluq
 衣来伸手	yluu
@@ -69698,7 +69719,7 @@ U盘	upj
 跃马扬鞭	ymyb
 越描越黑	ymyh
 有没有一种可能	ymyn
-元谋猿人	ymyr
+有没有人	ymyr
 英明一世	ymyu
 有名有实	ymyu
 有名有姓	ymyx
@@ -70726,14 +70747,14 @@ U盘	upj
 拥塞	ysse
 壅塞	ysse
 庸俗	yssu
-墉	yst
+壅	yst
 伊斯坦布尔	yste
 有所提高	ystg
 泳坛	ystj
 咏叹	ystj
 用途	ystu
 壅	ystv
-壅	ysty
+墉	ysty
 埇	ysty
 饔	ysu
 用手	ysub
@@ -77050,7 +77071,6 @@ U盘	upj
 何其多	hqdo
 好气儿	hqer
 很奇怪	hqgy
-和青海	hqhl
 很清楚	hqiu
 黑旗军	hqjp
 活全家	hqjw
