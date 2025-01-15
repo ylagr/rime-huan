@@ -16204,8 +16204,8 @@
 毋 vp
 毌 aa
 毌 vh
-母 ad
 母 vd
+母 ad
 毎 rm
 每 rm
 每 pm
@@ -86226,8 +86226,8 @@
 𬻬 ak
 𬻬 uk
 𬻰 xt
-𬻱 ky
-𬻱 yj
+𬻱 aj
+𬻱 ka
 𬻲 ar
 𬻲 jr
 𬻵 ab

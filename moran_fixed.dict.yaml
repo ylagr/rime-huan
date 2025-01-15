@@ -2492,8 +2492,8 @@ A4紙	asv
 不可告人	bkgr
 包公	bkgs
 包工	bkgs
+苞穀	bkgu
 包穀	bkgu
-苞谷	bkgu
 寶貴	bkgv
 爆	bkh
 煲	bkhb
@@ -3780,6 +3780,7 @@ A4紙	asv
 百思不解	bsbj
 不三不四	bsbs
 不死不休	bsbx
+不是的	bsd
 波塞冬	bsd
 貝賽爾	bse
 不是個	bsg
@@ -6477,14 +6478,15 @@ C++	cjj
 猜拳行令	cqxl
 藏巧於拙	cqyv
 擦槍走火	cqzh
-攢	cr
+竄	cr
 從容不迫	crbp
 篡黨	crdh
 竄到	crdk
 篡奪	crdo
 攛掇	crdo
 攢動	crds
-攛	crf
+攢	crf
+攛	crfc
 催人奮進	crfj
 竄犯	crfj
 燦若繁星	crfx
@@ -7789,10 +7791,10 @@ C++	cjj
 喋喋不休	ddbx
 躲躲藏藏	ddcc
 端到端	ddd
+單打獨鬥	dddd
 點點滴滴	dddd
 懂的都懂	dddd
 地地道道	dddd
-單打獨鬥	dddd
 鼎鼎大名	dddm
 大敵當前	dddq
 得道多助	dddv
@@ -11024,6 +11026,7 @@ C++	cjj
 瓞	dxg
 地下宮殿	dxgd
 地下工廠	dxgi
+膽小鬼	dxgv
 臷	dxgv
 大喜過望	dxgw
 電線杆子	dxgz
@@ -11403,8 +11406,12 @@ C++	cjj
 定罪	dyzv
 大有作爲	dyzw
 得	dz
+大字報	dzb
+大資本	dzb
+大資本	dzbf
 電子表格	dzbg
 丟卒保車	dzbj
+大字報	dzbk
 膽子不小	dzbx
 倒栽蔥	dzc
 多姿多彩	dzdc
@@ -11534,8 +11541,8 @@ C++	cjj
 厄	eei
 軶	eeia
 惡臭	eeib
-齶	eeie
 軛	eeie
+齶	eeie
 蚅	eeie
 鵝腸	eeih
 訛傳	eeir
@@ -13502,6 +13509,7 @@ C++	cjj
 風流韻事	flyu
 飛龍在天	flzt
 方面	fm
+發明	fm
 繁忙	fm
 分門別類	fmbl
 鋒芒畢露	fmbl
@@ -13672,7 +13680,7 @@ C++	cjj
 非同小可	ftxk
 非同一般	ftyb
 風調雨順	ftyu
-發帖子	ftz
+繁體字	ftz
 服	fu
 夫	fua
 巿	fuaa
@@ -18610,6 +18618,7 @@ C++	cjj
 黃銅	hdts
 黃土	hdtu
 磺	hdu
+還得是	hdu
 黃沙	hdua
 華東師大	hdud
 慌神	hduf
@@ -19799,6 +19808,7 @@ C++	cjj
 海闊憑魚躍	hkpy
 好巧	hkqc
 好強	hkqd
+豪强	hkqd
 好奇	hkqi
 壕塹	hkqm
 好球	hkqq
@@ -21207,8 +21217,10 @@ C++	cjj
 呼嚕	hulu
 湖綠	hulv
 糊	hum
-虎碼	huma
+互罵	huma
+胡馬	huma
 胡麻	huma
+虎碼	huma
 護苗	humc
 虎門	humf
 核	humh
@@ -26305,16 +26317,30 @@ C++	cjj
 將在	jdzl
 講座	jdzo
 犟嘴	jdzv
+就是	je
 進而	je
+就是啊	jea
+就是不好	jebh
+就是不行	jebx
+就是好	jeh
 剪惡除奸	jeij
 吉爾吉斯	jejs
 吉爾吉斯斯坦	jejt
 久而久之	jejv
 接二連三	jels
+就是你	jen
+就是那樣	jeny
+就是如此	jerc
 嫉惡如仇	jeri
+就是說	jeu
+就是說啊	jeua
+就是這樣	jevy
+就是我	jew
+就是行	jex
 敬而遠之	jeyv
 簡而言之	jeyv
 兼而有之	jeyv
+就是在	jez
 積分	jf
 金髮碧眼	jfby
 疾風暴雨	jfby
@@ -27092,8 +27118,7 @@ C++	cjj
 階級隊伍	jjdw
 踽踽獨行	jjdx
 見機而行	jjex
-解決方案	jjf
-解決方法	jjf
+間接	jjf
 解決方案	jjfa
 堅決反對	jjfd
 解決方法	jjff
@@ -27118,7 +27143,7 @@ C++	cjj
 進進出出	jjii
 加減乘除	jjii
 擊節稱賞	jjiu
-叫叫叫	jjj
+見解	jjj
 倔強倨傲	jjja
 經濟糾紛	jjjf
 擊節叫好	jjjh
@@ -27152,6 +27177,7 @@ C++	cjj
 節節攀升	jjpu
 加進去	jjq
 竭盡全力	jjql
+簡介	jjr
 僅僅如此	jjrc
 急急如律令	jjrl
 久居人下	jjrx
@@ -28620,7 +28646,7 @@ C++	cjj
 卷宗	jrzs
 吉人自有天相	jrzx
 矯揉造作	jrzz
-囧	js
+就算	js
 計算	js
 鼏	jsb
 鼏	jsbd
@@ -28654,9 +28680,10 @@ C++	cjj
 計算機網	jsjw
 計算機科學	jsjx
 窘境	jsjy
-冏	jsk
+囧	jsk
 尖酸刻薄	jskb
 窘況	jskd
+冏	jskk
 窘困	jskp
 就算了	jsl
 結駟連騎	jslj
@@ -30262,8 +30289,8 @@ C++	cjj
 精良	jyld
 靜樂	jyle
 勁	jylg
-經歷	jyli
 經理	jyli
+經歷	jyli
 麠	jylj
 敬老	jylk
 精煉	jylm
@@ -37243,6 +37270,7 @@ C++	cjj
 門上	mfuh
 門市	mfui
 門扇	mfuj
+魔法少女	mfun
 門閂	mfur
 門拴	mfur
 門診	mfvf
@@ -38217,7 +38245,6 @@ C++	cjj
 賣完	mlwj
 命裏無時莫強求	mlwq
 蒙羅維亞	mlwy
-免禮姓	mlx
 賣笑	mlxc
 邁向	mlxd
 賣相	mlxd
@@ -38950,8 +38977,7 @@ C++	cjj
 眉頭一皺	mtyv
 名特優新	mtyx
 木	mu
-母	mua
-目	muaa
+目	mua
 母愛	muai
 民事案件	muaj
 沒事吧	mub
@@ -39138,11 +39164,12 @@ C++	cjj
 木梳	muuu
 馬首是瞻	muuv
 美術事業	muuy
-艒	muv
+母	muv
 木樁	muvd
 木枕	muvf
 拇指	muvi
 拇戰	muvj
+艒	muvm
 母鐘	muvs
 母豬	muvu
 沒事找事	muvu
@@ -39769,6 +39796,7 @@ C++	cjj
 每條	mztc
 媒體	mzti
 煤炭	mztj
+每套	mztk
 每臺	mztl
 媚態	mztl
 每天	mztm
@@ -49215,6 +49243,7 @@ PC端	pcdr
 喪魂落魄	shlp
 喪亂	shlr
 桑	shm
+桑麻	shma
 嗓門	shmf
 喪母	shmu
 喪命	shmy
@@ -52153,6 +52182,8 @@ PC端	pcdr
 貪嘴	tjzv
 調節作用	tjzy
 套	tk
+太恐怖	tkb
+太空步	tkb
 逃奔	tkbf
 逃避	tkbi
 套版	tkbj
@@ -53618,6 +53649,7 @@ PC端	pcdr
 突入	turu
 唐詩宋詞	tusc
 塗色	tuse
+吐司	tusi
 土司	tusi
 頭上三尺有神明	tusm
 徒孫	tusp
@@ -58281,6 +58313,7 @@ PC端	pcdr
 耍錢	uwqm
 捨我其誰	uwqu
 耍人	uwrf
+事務所	uws
 尸位素餐	uwsc
 聖文森特和格林納丁斯	uwss
 刷頭	uwtb
@@ -63223,10 +63256,12 @@ PC端	pcdr
 妄說	whuo
 文化水平	whup
 王水	whuv
+維護者	whv
 王炸	whva
 網狀	whvd
 望着	whve
 王者	whve
+維護者	whve
 望診	whvf
 網址	whvi
 網站	whvj
@@ -65252,7 +65287,9 @@ WiFi	wifi
 小本生意	xbuy
 下不着地	xbvd
 相比之下	xbvx
+小霸王	xbw
 血本無歸	xbwg
+小霸王	xbwh
 下不爲例	xbwl
 學部委員	xbwy
 行不行	xbx
@@ -65619,8 +65656,8 @@ WiFi	wifi
 薌	xdc
 相冊	xdce
 香草	xdck
-湘菜	xdcl
 香菜	xdcl
+湘菜	xdcl
 鄉村	xdcp
 香醋	xdcu
 香脆	xdcv
@@ -66102,6 +66139,7 @@ WiFi	wifi
 繡花枕頭	xhvt
 胸懷壯志	xhvv
 顯花植物	xhvw
+小黑屋	xhw
 循環往復	xhwf
 尋花問柳	xhwl
 噓寒問暖	xhwn
@@ -68742,6 +68780,7 @@ WiFi	wifi
 下注	xwvu
 下墜	xwvv
 瞎抓	xwvw
+虛無主義	xwvy
 弦外之音	xwvy
 夏	xww
 夏娃	xwwa
@@ -70491,6 +70530,7 @@ WiFi	wifi
 一夫一妻制	yfyv
 陽奉陰違	yfyw
 鳶飛魚躍	yfyy
+一分子	yfz
 應付自如	yfzr
 一個	yg
 應該	yg
@@ -71406,7 +71446,6 @@ WiFi	wifi
 陰差陽錯	yiyc
 誃	yiyd
 顗	yiyd
-一夜	yiye
 肄業	yiye
 羛	yiyf
 翼	yiyg
@@ -73942,7 +73981,7 @@ WiFi	wifi
 羽化	yuhw
 遊手好閒	yuhx
 煜	yuhy
-御	yui
+輿	yui
 魚叉	yuia
 輿	yuib
 因勢乘便	yuib
@@ -75432,6 +75471,7 @@ WiFi	wifi
 自定義	zdy
 左等右等	zdyd
 再等一會	zdyh
+自定義短語	zdyy
 自導自演	zdzy
 則	ze
 責	zeb
@@ -78787,7 +78827,6 @@ WiFi	wifi
 店小二	dxer
 逗笑兒	dxer
 東西方	dxfh
-膽小鬼	dxgv
 低消耗	dxhk
 都喜歡	dxhr
 大型化	dxhw
@@ -79203,8 +79242,8 @@ WiFi	wifi
 反貪局	ftju
 伏特加	ftjw
 反推力	ftli
-繁體字	ftzi
 發帖子	ftzi
+繁體字	ftzi
 發生的	fude
 番石榴	fulq
 分水嶺	fuly
@@ -83100,6 +83139,8 @@ WiFi	wifi
 天津衛	tjwz
 套接字	tjzi
 土家族	tjzu
+太恐怖	tkbu
+太空步	tkbu
 坦克兵	tkby
 坦克車	tkie
 太快了	tkle

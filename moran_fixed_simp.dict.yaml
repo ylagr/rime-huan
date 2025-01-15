@@ -2406,8 +2406,8 @@ A4纸	asv
 不可告人	bkgr
 包公	bkgs
 包工	bkgs
-包谷	bkgu
 苞谷	bkgu
+包谷	bkgu
 宝贵	bkgv
 爆	bkh
 薄厚	bkhb
@@ -3660,6 +3660,7 @@ B盘	bpj
 百思不解	bsbj
 不三不四	bsbs
 不死不休	bsbx
+不是的	bsd
 波塞冬	bsd
 贝赛尔	bse
 变速杆	bsg
@@ -7495,10 +7496,10 @@ C语言	cyy
 喋喋不休	ddbx
 躲躲藏藏	ddcc
 端到端	ddd
+单打独斗	dddd
 点点滴滴	dddd
 懂的都懂	dddd
 地地道道	dddd
-单打独斗	dddd
 鼎鼎大名	dddm
 大敌当前	dddq
 得道多助	dddv
@@ -10936,8 +10937,12 @@ D盘	dpj
 定罪	dyzv
 大有作为	dyzw
 得	dz
+大字报	dzb
+大资本	dzb
+大资本	dzbf
 电子表格	dzbg
 丢卒保车	dzbj
+大字报	dzbk
 胆子不小	dzbx
 倒栽葱	dzc
 多姿多彩	dzdc
@@ -12935,6 +12940,7 @@ E盘	epj
 风流韵事	flyu
 飞龙在天	flzt
 方面	fm
+发明	fm
 繁忙	fm
 分门别类	fmbl
 锋芒毕露	fmbl
@@ -13104,7 +13110,7 @@ F盘	fpj
 非同小可	ftxk
 非同一般	ftyb
 风调雨顺	ftyu
-发帖子	ftz
+繁体字	ftz
 服	fu
 负	fu
 夫	fua
@@ -17888,6 +17894,7 @@ G盘	gpj
 黄铜	hdts
 黄土	hdtu
 磺	hdu
+还得是	hdu
 黄沙	hdua
 华东师大	hdud
 慌神	hduf
@@ -19046,6 +19053,7 @@ H股	hgu
 海阔凭鱼跃	hkpy
 好巧	hkqc
 好强	hkqd
+豪强	hkqd
 好奇	hkqi
 壕堑	hkqm
 好球	hkqq
@@ -20396,8 +20404,10 @@ H盘	hpj
 呼噜	hulu
 湖绿	hulv
 糊	hum
-虎码	huma
+互骂	huma
+胡马	huma
 胡麻	huma
+虎码	huma
 护苗	humc
 虎门	humf
 槲	humh
@@ -25323,16 +25333,30 @@ I盘	ipj
 将在	jdzl
 讲座	jdzo
 犟嘴	jdzv
+就是	je
 进而	je
+就是啊	jea
+就是不好	jebh
+就是不行	jebx
+就是好	jeh
 剪恶除奸	jeij
 吉尔吉斯	jejs
 吉尔吉斯斯坦	jejt
 久而久之	jejv
 接二连三	jels
+就是你	jen
+就是那样	jeny
+就是如此	jerc
 嫉恶如仇	jeri
+就是说	jeu
+就是说啊	jeua
+就是这样	jevy
+就是我	jew
+就是行	jex
 敬而远之	jeyv
 简而言之	jeyv
 兼而有之	jeyv
+就是在	jez
 积分	jf
 金发碧眼	jfby
 疾风暴雨	jfby
@@ -26065,6 +26089,7 @@ I盘	ipj
 阶级队伍	jjdw
 踽踽独行	jjdx
 见机而行	jjex
+间接	jjf
 解决方案	jjfa
 坚决反对	jjfd
 解决方法	jjff
@@ -26089,7 +26114,7 @@ I盘	ipj
 进进出出	jjii
 加减乘除	jjii
 击节称赏	jjiu
-叫叫叫	jjj
+见解	jjj
 倔强倨傲	jjja
 经济纠纷	jjjf
 击节叫好	jjjh
@@ -26123,6 +26148,7 @@ I盘	ipj
 节节攀升	jjpu
 加进去	jjq
 竭尽全力	jjql
+简介	jjr
 仅仅如此	jjrc
 急急如律令	jjrl
 久居人下	jjrx
@@ -27535,6 +27561,7 @@ I盘	ipj
 卷宗	jrzs
 吉人自有天相	jrzx
 矫揉造作	jrzz
+就算	js
 计算	js
 窘	jsb
 见死不救	jsbj
@@ -29089,8 +29116,8 @@ I盘	ipj
 精良	jyld
 静乐	jyle
 劲	jylg
-经历	jyli
 经理	jyli
+经历	jyli
 麖	jylj
 敬老	jylk
 精炼	jylm
@@ -35866,6 +35893,7 @@ I盘	ipj
 门上	mfuh
 门市	mfui
 门扇	mfuj
+魔法少女	mfun
 门闩	mfur
 门拴	mfur
 门诊	mfvf
@@ -36774,7 +36802,6 @@ I盘	ipj
 卖完	mlwj
 命里无时莫强求	mlwq
 蒙罗维亚	mlwy
-免礼姓	mlx
 卖笑	mlxc
 迈向	mlxd
 卖相	mlxd
@@ -38291,6 +38318,7 @@ I盘	ipj
 每条	mztc
 媒体	mzti
 煤炭	mztj
+每套	mztk
 每台	mztl
 媚态	mztl
 每天	mztm
@@ -47330,6 +47358,7 @@ I盘	ipj
 丧魂落魄	shlp
 丧乱	shlr
 桑	shm
+桑麻	shma
 嗓门	shmf
 丧母	shmu
 丧命	shmy
@@ -50165,6 +50194,8 @@ I盘	ipj
 贪嘴	tjzv
 调节作用	tjzy
 套	tk
+太恐怖	tkb
+太空步	tkb
 逃奔	tkbf
 逃避	tkbi
 套版	tkbj
@@ -51585,6 +51616,7 @@ I盘	ipj
 突入	turu
 唐诗宋词	tusc
 涂色	tuse
+吐司	tusi
 土司	tusi
 头上三尺有神明	tusm
 徒孙	tusp
@@ -56146,6 +56178,7 @@ U盘	upj
 耍钱	uwqm
 舍我其谁	uwqu
 耍人	uwrf
+事务所	uws
 尸位素餐	uwsc
 圣文森特和格林纳丁斯	uwss
 刷头	uwtb
@@ -60910,10 +60943,12 @@ U盘	upj
 妄说	whuo
 文化水平	whup
 王水	whuv
+维护者	whv
 王炸	whva
 网状	whvd
 望着	whve
 王者	whve
+维护者	whve
 望诊	whvf
 网址	whvi
 网站	whvj
@@ -62857,7 +62892,9 @@ U盘	upj
 小本生意	xbuy
 下不着地	xbvd
 相比之下	xbvx
+小霸王	xbw
 血本无归	xbwg
+小霸王	xbwh
 下不为例	xbwl
 学部委员	xbwy
 行不行	xbx
@@ -63194,8 +63231,8 @@ U盘	upj
 芗	xdc
 相册	xdce
 香草	xdck
-湘菜	xdcl
 香菜	xdcl
+湘菜	xdcl
 乡村	xdcp
 香醋	xdcu
 香脆	xdcv
@@ -63667,6 +63704,7 @@ U盘	upj
 绣花枕头	xhvt
 胸怀壮志	xhvv
 显花植物	xhvw
+小黑屋	xhw
 循环往复	xhwf
 寻花问柳	xhwl
 嘘寒问暖	xhwn
@@ -66167,6 +66205,7 @@ U盘	upj
 下注	xwvu
 下坠	xwvv
 瞎抓	xwvw
+虚无主义	xwvy
 弦外之音	xwvy
 夏	xww
 夏娃	xwwa
@@ -67870,6 +67909,7 @@ U盘	upj
 一夫一妻制	yfyv
 阳奉阴违	yfyw
 鸢飞鱼跃	yfyy
+一分子	yfz
 应付自如	yfzr
 一个	yg
 应该	yg
@@ -68743,7 +68783,6 @@ U盘	upj
 阴差阳错	yiyc
 羿	yiyc
 奕	yiyd
-一夜	yiye
 肄业	yiye
 译	yiyf
 翼	yiyg
@@ -72610,6 +72649,7 @@ U盘	upj
 自定义	zdy
 左等右等	zdyd
 再等一会	zdyh
+自定义短语	zdyy
 自导自演	zdzy
 则	ze
 责	zeb
@@ -76328,8 +76368,8 @@ U盘	upj
 反贪局	ftju
 伏特加	ftjw
 反推力	ftli
-繁体字	ftzi
 发帖子	ftzi
+繁体字	ftzi
 发生的	fude
 番石榴	fulq
 分水岭	fuly
@@ -80226,6 +80266,8 @@ U盘	upj
 天津卫	tjwz
 套接字	tjzi
 土家族	tjzu
+太恐怖	tkbu
+太空步	tkbu
 坦克兵	tkby
 坦克车	tkie
 太快了	tkle
