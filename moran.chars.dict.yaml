@@ -12482,8 +12482,8 @@ use_preset_vocabulary: false
 毋	wu;vp	870
 毌	gr;aa	2
 毌	gr;vh	2
-母	mu;ad	3443
 母	mu;vd	3443
+母	mu;ad	3443
 毎	mz;rm	575
 每	mz;rm	20025
 每	mz;pm	20025
@@ -67797,8 +67797,8 @@ use_preset_vocabulary: false
 𧙧	jm;yk	0	# auto
 𫕛	gw;vu	0	# auto
 𫕛	gw;uv	0	# auto
-𬻱	vf;ky	0	# auto
-𬻱	vf;yj	0	# auto
+𬻱	vf;aj	0	# auto
+𬻱	vf;ka	0	# auto
 𡐺	tk;tt	0	# auto
 𫕠	ba;yb	0	# auto
 𢴢	ff;fb	0	# auto
