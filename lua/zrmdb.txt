@@ -21568,8 +21568,8 @@
 粣 mc
 粤 pk
 粤 mk
-粥 gg
 粥 mg
+粥 gg
 粦 mf
 粦 mi
 粧 mv
