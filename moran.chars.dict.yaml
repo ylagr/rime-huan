@@ -2719,10 +2719,10 @@ use_preset_vocabulary: false
 叩	kb;ke	871
 只	vi;kb	33360
 叫	jc;kj	56532
-召	uk;dk	28
 召	uk;kd	28
-召	vk;dk	1354
+召	uk;dk	28
 召	vk;kd	1354
+召	vk;dk	1354
 叭	ba;kb	771
 叮	dy;kd	988
 可	ke;dk	69815
@@ -33483,6 +33483,7 @@ use_preset_vocabulary: false
 㤀	wh;xa	0
 㤗	tl;xf	0
 㤣	pg;xb	0
+㤻	lp;xl	0
 㤻	lr;xl	0
 㤼	xx;xj	0
 㤼	jx;xj	0
@@ -78181,8 +78182,10 @@ use_preset_vocabulary: false
 𢘬	xi;xy	0	# auto
 𢘰	qx;qx	0	# auto
 𢘰	qx;xq	0	# auto
-𢘴	lr;px	0	# auto
+𢘴	lp;xd	0	# auto
 𢘴	lr;xd	0	# auto
+𢘵	lp;lx	0	# auto
+𢘵	lp;xl	0	# auto
 𢘵	lr;lx	0	# auto
 𢘵	lr;xl	0	# auto
 𢘶	tv;xy	0	# auto
@@ -78284,6 +78287,8 @@ use_preset_vocabulary: false
 𢚽	mf;xm	0	# auto
 𢚽	mj;xm	0	# auto
 𢚾	hr;xh	0	# auto
+𢚿	lp;px	0	# auto
+𢚿	lp;xd	0	# auto
 𢚿	lr;px	0	# auto
 𢚿	lr;xd	0	# auto
 𢛀	mf;ix	0	# auto
@@ -88876,8 +88881,8 @@ use_preset_vocabulary: false
 𦝗	nk;of	0	# auto
 𦝘	jr;rj	0	# auto
 𦝜	xi;oq	0	# auto
-𦝠	lo;ou	0	# auto
-𦝠	lo;wf	0	# auto
+𦝠	lo;wx	0	# auto
+𦝠	lo;wu	0	# auto
 𦝡	an;oy	0	# auto
 𦝩	wz;ow	0	# auto
 𦝫	yk;oy	0	# auto
