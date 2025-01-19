@@ -396,8 +396,8 @@ A股	agu
 按错	anco
 安厝	anco
 暗地	andi
-暗淡	andj
 黯淡	andj
+暗淡	andj
 暗道	andk
 安顿	andp
 暗洞	ands
@@ -5442,8 +5442,8 @@ B盘	bpj
 次女	cinv
 磁盘	cipj
 词牌	cipl
-次品	cipn
 词频	cipn
+次品	cipn
 刺破	cipo
 词谱	cipu
 瓷瓶	cipy
@@ -7068,8 +7068,9 @@ C语言	cyy
 大雾	dawu
 大尉	dawz
 怛	dax
-大小	daxc
+大笑	daxc
 打消	daxc
+大小	daxc
 大象	daxd
 打响	daxd
 大喜	daxi
@@ -10558,6 +10559,7 @@ D盘	dpj
 对外友好协会	dwyh
 第五纵队	dwzd
 东西	dx
+大小	dx
 大兴安岭	dxal
 多行不义必自毙	dxbb
 大雄宝殿	dxbd
@@ -13599,6 +13601,7 @@ F盘	fpj
 方外之人	fwvr
 风味小吃	fwxi
 访问学者	fwxv
+服务员	fwy
 非我族类	fwzl
 风闻奏事	fwzu
 发现	fx
@@ -18512,6 +18515,7 @@ H股	hgu
 行规	hhgv
 花花公子	hhgz
 哈哈哈	hhh
+好好好	hhh
 画虎画皮难画骨	hhhg
 恍恍惚惚	hhhh
 含含糊糊	hhhh
@@ -25342,6 +25346,7 @@ I盘	ipj
 就是啊	jea
 就是不好	jebh
 就是不行	jebx
+就是个	jeg
 就是好	jeh
 剪恶除奸	jeij
 吉尔吉斯	jejs
@@ -25633,9 +25638,9 @@ I盘	ipj
 鸡蛋	jidj
 暨	jidj
 汲	jidj
-激	jidj
-漈	jidj
 殛	jidj
+忌惮	jidj
+漈	jidj
 寄到	jidk
 奇	jidk
 亟待	jidl
@@ -27172,6 +27177,7 @@ I盘	ipj
 旧案	jqan
 诘屈聱牙	jqay
 佶屈聱牙	jqay
+疚	jqb
 剪切板	jqb
 酒吧	jqba
 举棋不定	jqbd
@@ -27579,7 +27585,7 @@ I盘	ipj
 救死扶伤	jsfu
 聚四氟乙烯	jsfx
 聚讼纷纭	jsfy
-就是个	jsg
+就算个	jsg
 集思广益	jsgy
 炯	jsh
 扃	jshk
@@ -43501,6 +43507,7 @@ I盘	ipj
 妻离子散	qlzs
 氢离子浓度指数	qlzu
 前	qm
+欠	qm
 欠安	qman
 骞	qmb
 铅笔	qmbi
@@ -46286,6 +46293,7 @@ I盘	ipj
 肉烂在锅里	rlzl
 人力资源	rlzy
 人们	rm
+人民	rm
 人民币	rmb
 人们的	rmd
 人民代表大会制度	rmdd
@@ -53394,8 +53402,8 @@ T恤衫	txuj
 渗透	uftb
 身条	uftc
 身体	ufti
-神探	uftj
 神坛	uftj
+神探	uftj
 深套	uftk
 申讨	uftk
 神态	uftl
@@ -60481,6 +60489,8 @@ U盘	upj
 五大三粗	wdsc
 我的天	wdt
 我的天啊	wdta
+我的天哪	wdtn
+我的天呐	wdtn
 问鼎天下	wdtx
 我的天呀	wdty
 无胆鼠辈	wdub
@@ -62357,6 +62367,7 @@ U盘	upj
 完完整整	wwvv
 唯物主义	wwvy
 无妄之灾	wwvz
+呜呜呜	www
 望闻问切	wwwq
 未为晚也	wwwy
 歪歪斜斜	wwxx
@@ -68976,8 +68987,8 @@ U盘	upj
 眼红	yjhs
 掩护	yjhu
 宴会	yjhv
-眼花	yjhw
 演化	yjhw
+眼花	yjhw
 焰	yjhx
 衣锦还乡	yjhx
 欲拒还迎	yjhy
@@ -69774,6 +69785,7 @@ U盘	upj
 有名有姓	ymyx
 一模一样	ymyy
 有模有样	ymyy
+夜猫子	ymz
 因	yn
 尹	yna
 阴暗	ynan
@@ -70039,6 +70051,7 @@ U盘	upj
 一男一女	ynyn
 一年又一年	ynyn
 阴云	ynyp
+氤氲	ynyp
 姻缘	ynyr
 引用	ynys
 音乐	ynyt

@@ -418,8 +418,8 @@ A股	agu
 广	and
 洝	anda
 暗地	andi
-暗淡	andj
 黯淡	andj
+暗淡	andj
 暗道	andk
 安頓	andp
 暗洞	ands
@@ -3726,6 +3726,7 @@ A4紙	asv
 不請自來	bqzl
 不起作用	bqzy
 不如	br
+別人	br
 悖入悖出	brbi
 勃然變色	brbs
 不仁不義	brby
@@ -5628,8 +5629,8 @@ Bilibili	bvj
 次女	cinv
 磁盤	cipj
 詞牌	cipl
-次品	cipn
 詞頻	cipn
+次品	cipn
 刺破	cipo
 詞譜	cipu
 瓷瓶	cipy
@@ -7340,8 +7341,9 @@ C++	cjj
 大霧	dawu
 大尉	dawz
 怛	dax
-大小	daxc
+大笑	daxc
 打消	daxc
+大小	daxc
 大象	daxd
 打響	daxd
 大喜	daxi
@@ -10995,6 +10997,7 @@ C++	cjj
 對外友好協會	dwyh
 第五縱隊	dwzd
 東西	dx
+大小	dx
 大興安嶺	dxal
 多行不義必自斃	dxbb
 大雄寶殿	dxbd
@@ -14189,6 +14192,7 @@ C++	cjj
 方外之人	fwvr
 風味小喫	fwxi
 訪問學者	fwxv
+服務員	fwy
 非我族類	fwzl
 風聞奏事	fwzu
 發現	fx
@@ -19242,6 +19246,7 @@ C++	cjj
 行規	hhgv
 花花公子	hhgz
 哈哈哈	hhh
+好好好	hhh
 畫虎畫皮難畫骨	hhhg
 恍恍惚惚	hhhh
 含含糊糊	hhhh
@@ -26326,6 +26331,7 @@ C++	cjj
 就是啊	jea
 就是不好	jebh
 就是不行	jebx
+就是個	jeg
 就是好	jeh
 剪惡除奸	jeij
 吉爾吉斯	jejs
@@ -26622,6 +26628,7 @@ C++	cjj
 暨	jidj
 汲	jidj
 殛	jidj
+忌憚	jidj
 漃	jidj
 潗	jidj
 奇	jidk
@@ -28245,6 +28252,7 @@ C++	cjj
 舊案	jqan
 詰屈聱牙	jqay
 佶屈聱牙	jqay
+疚	jqb
 剪切板	jqb
 酒吧	jqba
 舉棋不定	jqbd
@@ -28665,7 +28673,7 @@ C++	cjj
 救死扶傷	jsfu
 聚四氟乙烯	jsfx
 聚訟紛紜	jsfy
-就是個	jsg
+就算個	jsg
 集思廣益	jsgy
 炯	jsh
 扃	jshk
@@ -45217,6 +45225,7 @@ PC端	pcdr
 妻離子散	qlzs
 氫離子濃度指數	qlzu
 前	qm
+欠	qm
 欠安	qman
 騫	qmb
 鉛筆	qmbi
@@ -48122,6 +48131,7 @@ PC端	pcdr
 肉爛在鍋裏	rlzl
 人力資源	rlzy
 人們	rm
+人民	rm
 人民幣	rmb
 人們的	rmd
 人民代表大會制度	rmdd
@@ -55473,8 +55483,8 @@ PC端	pcdr
 滲透	uftb
 身條	uftc
 身體	ufti
-神探	uftj
 神壇	uftj
+神探	uftj
 深套	uftk
 申討	uftk
 神態	uftl
@@ -60694,7 +60704,7 @@ PC端	pcdr
 著	vkc
 照此	vkci
 招財	vkcl
-召	vkd
+沼	vkd
 着調	vkdc
 找到	vkdk
 招待	vkdl
@@ -60737,6 +60747,7 @@ PC端	pcdr
 釽	vkjv
 鉊	vkjv
 招架	vkjw
+召	vkk
 嘲	vkki
 照看	vkkj
 招考	vkkk
@@ -62783,6 +62794,8 @@ PC端	pcdr
 五大三粗	wdsc
 我的天	wdt
 我的天啊	wdta
+我的天哪	wdtn
+我的天呐	wdtn
 問鼎天下	wdtx
 我的天呀	wdty
 無膽鼠輩	wdub
@@ -64710,6 +64723,7 @@ WiFi	wifi
 完完整整	wwvv
 唯物主義	wwvy
 無妄之災	wwvz
+嗚嗚嗚	www
 望聞問切	wwwq
 未爲晚也	wwwy
 歪歪斜斜	wwxx
@@ -66973,6 +66987,7 @@ WiFi	wifi
 仙女	xmnv
 姺	xmnx
 嫻	xmnx
+腺	xmo
 晛	xmoj
 睍	xmoj
 腺	xmoq
@@ -70733,6 +70748,7 @@ WiFi	wifi
 陽溝	yhgb
 陽光	yhgd
 秧歌	yhge
+有何貴幹	yhgg
 引吭高歌	yhgg
 羊羹	yhgg
 陽剛	yhgh
@@ -71656,8 +71672,8 @@ WiFi	wifi
 黫	yjht
 掩護	yjhu
 宴會	yjhv
-眼花	yjhw
 演化	yjhw
+眼花	yjhw
 衣錦還鄉	yjhx
 欲拒還迎	yjhy
 爓	yjhy
@@ -72495,6 +72511,7 @@ WiFi	wifi
 有名有姓	ymyx
 一模一樣	ymyy
 有模有樣	ymyy
+夜貓子	ymz
 因	yn
 尹	yna
 陰暗	ynan
@@ -72768,6 +72785,7 @@ WiFi	wifi
 一年又一年	ynyn
 酳	ynyo
 陰雲	ynyp
+氤氳	ynyp
 姻緣	ynyr
 引用	ynys
 音樂	ynyt

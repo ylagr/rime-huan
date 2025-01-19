@@ -8614,8 +8614,8 @@
 叩 ke
 只 kb
 叫 kj
-召 dk
 召 kd
+召 dk
 叭 kb
 叮 kd
 可 dk
@@ -43195,7 +43195,6 @@
 𢘲 yx
 𢘳 hx
 𢘳 xh
-𢘴 px
 𢘴 xd
 𢘵 lx
 𢘵 xl
@@ -60550,8 +60549,8 @@
 𦝝 oh
 𦝞 ot
 𦝟 ol
-𦝠 ou
-𦝠 wf
+𦝠 wx
+𦝠 wu
 𦝡 oy
 𦝢 og
 𦝣 ok
