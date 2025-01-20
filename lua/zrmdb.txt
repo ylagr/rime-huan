@@ -23181,7 +23181,6 @@
 臚 ol
 臛 oh
 臜 oz
-臝 dd
 臝 wf
 臞 oq
 臞 ov
@@ -25098,7 +25097,6 @@
 蠁 ix
 蠂 iy
 蠂 im
-蠃 dd
 蠃 ik
 蠃 wf
 蠄 iq
