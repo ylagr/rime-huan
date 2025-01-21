@@ -2241,6 +2241,7 @@ A4紙	asv
 半拉	bjla
 伴郎	bjlh
 辦理	bjli
+板栗	bjli
 斑斕	bjlj
 板臉	bjlm
 半裸	bjlo
@@ -10535,7 +10536,7 @@ C++	cjj
 毒打	duda
 肚兜	dudb
 大是大非	dudf
-電視電話	dudh
+讀檔	dudh
 大手大腳	dudj
 動手動腳	dudj
 獨到	dudk
@@ -16485,6 +16486,7 @@ C++	cjj
 過獎	gojd
 幗	gojg
 國際	goji
+国籍	goji
 裹緊	gojn
 過勁	gojn
 國君	gojp
@@ -23039,6 +23041,7 @@ C++	cjj
 春風滿面	ifmm
 臣民	ifmn
 沉默	ifmo
+沉沒	ifmo
 櫬	ifmq
 鷐	ifn
 陳釀	ifnd
@@ -24368,10 +24371,12 @@ C++	cjj
 長命百歲	imbs
 愁眉不展	imbv
 沉默不語	imby
+沉沒	imd
 纏綿悱惻	imfc
 長命富貴	imfg
 承蒙關照	imgv
 沉默寡言	imgy
+沉默	imh
 出謀劃策	imhc
 成名成家	imij
 炒買炒賣	imim
@@ -27463,6 +27468,7 @@ C++	cjj
 鞬	jmgj
 箭桿	jmgj
 見過	jmgo
+堅果	jmgo
 監管	jmgr
 監工	jmgs
 兼顧	jmgu
@@ -30514,8 +30520,9 @@ C++	cjj
 警員	jyyr
 雞鴨魚肉	jyyr
 經用	jyys
-鯨魚	jyyu
 境遇	jyyu
+鯨魚	jyyu
+敬語	jyyu
 錦衣玉食	jyyu
 見義勇爲	jyyw
 記憶猶新	jyyx
@@ -32053,7 +32060,7 @@ C++	cjj
 空洞	ksds
 崆峒	ksds
 空額	ksee
-空兒	kser
+空耳	kser
 控	ksf
 空乏	ksfa
 空房	ksfh
@@ -33868,8 +33875,8 @@ C++	cjj
 禮貌	limk
 粒	liml
 梨	liml
-櫟	liml
 驪	liml
+櫟	liml
 櫪	liml
 糲	liml
 欐	liml
@@ -35562,6 +35569,7 @@ C++	cjj
 令人討厭	lrty
 巒	lru
 孿生	lrug
+卵生	lrug
 亂世	lrui
 亂說	lruo
 攣	lrus
@@ -38891,7 +38899,8 @@ C++	cjj
 明槍易躲	mqyd
 馬前卒	mqz
 謬讚	mqzj
-默認	mr
+沒人	mr
+每人	mr
 明人不說暗話	mrbh
 茫然不解	mrbj
 明人不做暗事	mrbu
@@ -38937,6 +38946,7 @@ C++	cjj
 慢熱型	mrx
 盲人瞎馬	mrxm
 名人效應	mrxy
+默認	mry
 魔然音形	mryx
 美容養顏	mryy
 魔然字词	mrzc
@@ -39806,8 +39816,7 @@ C++	cjj
 沒趣	mzqu
 民族區域自治	mzqv
 每	mzr
-沒人	mzrf
-每人	mzrf
+美人	mzrf
 媒人	mzrf
 民族融合	mzrh
 每日	mzri
@@ -56389,6 +56398,7 @@ PC端	pcdr
 榯	uimu
 檡	uimx
 使命	uimy
+實名	uimy
 師妹	uimz
 始	uin
 屎尿	uinc
@@ -57756,6 +57766,7 @@ PC端	pcdr
 數據	uuju
 鉥	uuju
 暑假	uujw
+書架	uujw
 疏解	uujx
 殳	uujy
 試試看	uuk
@@ -57829,6 +57840,7 @@ PC端	pcdr
 薯片	uupm
 叔婆	uupo
 書鋪	uupu
+豎屏	uupy
 書評	uupy
 上上籤	uuq
 閃爍其詞	uuqc
@@ -61351,6 +61363,7 @@ PC端	pcdr
 轉交	vrjc
 轉角	vrjc
 專輯	vrji
+傳記	vrji
 專揀	vrjm
 轉筋	vrjn
 專家	vrjw
@@ -62000,9 +62013,9 @@ PC端	pcdr
 誅滅	vumx
 柷	vumx
 竹篾	vumx
+著名	vumy
 註明	vumy
 杼	vumy
-著名	vumy
 鴸	vun
 裝神弄鬼	vung
 鸀	vuni
@@ -62148,6 +62161,7 @@ PC端	pcdr
 招商銀行	vuyh
 注意	vuyi
 主意	vuyi
+主義	vuyi
 主演	vuyj
 主要	vuyk
 注音	vuyn
@@ -67070,6 +67084,7 @@ WiFi	wifi
 獻身	xmuf
 先生	xmug
 硍	xmug
+線上	xmuh
 獻上	xmuh
 顯示	xmui
 現實	xmui
@@ -67124,6 +67139,7 @@ WiFi	wifi
 纖秀	xmxq
 鮮血	xmxt
 閒暇	xmxw
+線下	xmxw
 險些	xmxx
 憪	xmxx
 線性	xmxy
@@ -67139,6 +67155,7 @@ WiFi	wifi
 性命攸關	xmyg
 咸陽	xmyh
 嫌疑	xmyi
+現役	xmyi
 鮮豔	xmyj
 蓄謀已久	xmyj
 信馬由繮	xmyj
@@ -71155,6 +71172,7 @@ WiFi	wifi
 遺傳	yiir
 益蟲	yiis
 溢出	yiiu
+移除	yiiu
 蟻	yiiy
 蜴	yiiy
 蛜	yiiy
@@ -71423,7 +71441,6 @@ WiFi	wifi
 議政	yivg
 一張	yivh
 依仗	yivh
-一直	yivi
 一致	yivi
 意志	yivi
 驛站	yivj
@@ -71442,6 +71459,7 @@ WiFi	wifi
 隿	yivy
 亦	yiw
 疑問	yiwf
+譯文	yiwf
 腰纏萬貫	yiwg
 以往	yiwh
 遺忘	yiwh
@@ -71452,6 +71470,7 @@ WiFi	wifi
 一窩	yiwo
 瓵	yiwt
 義務	yiwu
+衣物	yiwu
 毉	yiwu
 遺傳物質	yiwv
 運籌帷幄之中	yiwv
@@ -73372,6 +73391,7 @@ WiFi	wifi
 引人矚目	yrvm
 圓桌	yrvo
 圓轉	yrvr
+原著	yrvu
 援助	yrvu
 躍然紙上	yrvu
 圓錐	yrvv
@@ -73439,6 +73459,7 @@ WiFi	wifi
 原作	yrzo
 庸人自擾	yrzr
 遠足	yrzu
+原罪	yrzv
 庸人自擾之	yrzv
 用	ys
 癰	ysb
