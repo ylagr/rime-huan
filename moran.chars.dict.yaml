@@ -32346,11 +32346,11 @@ use_preset_vocabulary: false
 鼆	mg;mm	0
 鼇	ao;ma	0
 鼇	ao;mw	0
-鼈	bx;dh	0
 鼈	bx;mb	0
 鼈	bx;mw	0
-鼉	to;km	0
+鼈	bx;dh	0
 鼉	to;ma	0
+鼉	to;km	0
 鼉	to;sh	0
 鼊	bi;mb	0
 鼊	bi;mx	0
@@ -32360,9 +32360,9 @@ use_preset_vocabulary: false
 鼋	yr;ym	657
 鼌	ik;md	0
 鼌	ik;om	0
+鼍	to;ma	262
 鼍	to;kd	262
 鼍	to;km	262
-鼍	to;ma	262
 鼎	dy;oa	59165
 鼎	dy;od	59165
 鼏	dy;bd	0
