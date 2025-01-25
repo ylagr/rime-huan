@@ -17,10 +17,7 @@
 
 魔然是開放的、社區維護的項目。歡迎參與！
 
-- [用法](https://github.com/rimeinn/rime-moran/wiki/%E6%95%99%E7%A8%8B#%E5%85%B6%E4%B8%89%E6%9B%B0%E5%96%AE%E5%AD%97%E8%BC%B8%E5%85%A5%E6%96%B9%E5%BC%8F)
-- [說明書](https://github.com/rimeinn/rime-moran/wiki)
-- [常見問題](https://github.com/rimeinn/rime-moran/wiki/%E5%B8%B8%E8%A6%8B%E5%95%8F%E9%A1%8C)
-- [下載簡體版](https://github.com/rimeinn/rime-moran/wiki/%E7%AE%80%E4%BD%93%E7%89%88)
+- [瞭解更多](https://zrmfans.cn)
 
 | 簡快碼                              | 整句輔助模式                             |
 |-------------------------------------|------------------------------------------|
