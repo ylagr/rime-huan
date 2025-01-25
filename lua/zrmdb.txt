@@ -32212,12 +32212,10 @@
 鼆 mm
 鼇 ma
 鼇 mw
-鼈 dh
 鼈 mb
 鼈 mw
-鼉 km
 鼉 ma
-鼉 sh
+鼉 km
 鼊 mb
 鼊 mx
 鼊 zh
@@ -32226,9 +32224,9 @@
 鼋 ym
 鼌 md
 鼌 om
+鼍 ma
 鼍 kd
 鼍 km
-鼍 ma
 鼎 oa
 鼎 od
 鼏 bd
