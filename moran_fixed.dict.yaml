@@ -3661,6 +3661,7 @@ A4紙	asv
 白平衡	bph
 不平常	bpi
 剝皮抽筋	bpij
+B盤	bpj
 補偏救弊	bpjb
 被騙了	bpl
 杯盤狼藉	bplj
@@ -6400,6 +6401,7 @@ C++	cjj
 存車	cpie
 寸長	cpih
 存儲	cpiu
+C盤	cpj
 村級	cpji
 寸進	cpjn
 村居	cpju
@@ -9986,6 +9988,7 @@ C++	cjj
 打破常規	dpig
 躉船	dpir
 鈍	dpj
+D盤	dpj
 鈍角	dpjc
 鐓	dpjd
 遁跡	dpji
@@ -11749,6 +11752,7 @@ C++	cjj
 惡評	ep
 餓殍遍野	epby
 耳旁風	epf
+E盤	epj
 而且	eq
 二七大罷工	eqdg
 阿其所好	eqsh
@@ -13594,6 +13598,7 @@ C++	cjj
 扶貧幫困	fpbk
 奉陪到底	fpdd
 返璞歸真	fpgv
+F盤	fpj
 浮皮潦草	fplc
 風平浪靜	fplj
 覆盆之冤	fpvy
@@ -16653,6 +16658,7 @@ C++	cjj
 狗皮膏藥	gpgy
 滾回	gphv
 輥	gpi
+G盤	gpj
 公平競爭	gpjv
 國破家亡	gpjw
 公平交易	gpjy
@@ -20462,6 +20468,7 @@ C++	cjj
 混成	hpig
 混充	hpis
 觨	hpj
+H盤	hpj
 混交	hpjc
 猴皮筋兒	hpje
 黃牌警告	hpjg
@@ -22099,6 +22106,8 @@ C++	cjj
 華夏子孫	hxzs
 好戲在後頭	hxzt
 壞	hy
+還有	hy
+還要	hy
 懷錶	hybc
 劃一不二	hybe
 花樣百出	hybi
@@ -24505,6 +24514,7 @@ C++	cjj
 蠢蠢	ipip
 春初	ipiu
 錞	ipj
+I盤	ipj
 春季	ipji
 純鹼	ipjm
 純金	ipjn
@@ -30363,10 +30373,12 @@ C++	cjj
 經年	jynm
 鶄	jynq
 境內	jynz
-睛	jyo
+景	jyo
 脛	jyog
 景	jyoj
 晶	jyoo
+睛	jyoq
+腈	jyoq
 井噴	jypf
 精闢	jypi
 競拍	jypl
@@ -55543,13 +55555,13 @@ PC端	pcdr
 神州	ufvb
 是非之地	ufvd
 順風轉舵	ufvd
-身着	ufvo
 伸着	ufve
 深圳	ufvf
 伸張	ufvh
 甚至	ufvi
 伸展	ufvj
 是非只爲多開口	ufvk
+身着	ufvo
 身負重任	ufvr
 慎重	ufvs
 神主	ufvu
@@ -57379,6 +57391,7 @@ PC端	pcdr
 順差	upia
 順暢	upih
 順產	upij
+U盤	upj
 順腳	upjc
 食品加工	upjg
 瞬即	upji
@@ -61225,6 +61238,8 @@ PC端	pcdr
 準譜	vppu
 衆叛親離	vpql
 準確	vpqt
+製片人	vpr
+紙片人	vpr
 准入	vpru
 綧	vps
 埻	vpt
@@ -69988,6 +70003,7 @@ WiFi	wifi
 郵票	ybpc
 友朋	ybpg
 幽僻	ybpi
+優盤	ybpj
 右派	ybpl
 誘騙	ybpm
 猶抱琵琶半遮面	ybpm
@@ -84110,6 +84126,7 @@ WiFi	wifi
 照排機	vpji
 偵破率	vplv
 製片人	vprf
+紙片人	vpr
 重炮手	vpub
 佔便宜	vpyi
 週期表	vqbc
