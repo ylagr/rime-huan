@@ -2136,14 +2136,14 @@ use_preset_vocabulary: false
 励	li;ll	76447
 劲	jn;lg	327635
 劲	jy;lg	10000
-劳	lk;cl	236325
 劳	lk;lb	236325
-労	lk;dl	0
+劳	lk;cl	236325
 労	lk;lb	0
-劵	jr;jl	0
+労	lk;dl	0
 劵	jr;lf	0
-劵	qr;jl	0
+劵	jr;jl	0
 劵	qr;lf	0
+劵	qr;jl	0
 劶	kb;lh	0
 劷	yh;ly	0
 劷	yh;yl	0
@@ -2730,8 +2730,8 @@ use_preset_vocabulary: false
 台	tl;sk	676961
 台	yi;sk	0
 叱	ii;kb	18954
-史	ui;ad	409099
 史	ui;ki	409099
+史	ui;ad	409099
 右	yb;ku	483406
 右	yb;uk	483406
 叴	qq;jk	0
@@ -21499,6 +21499,7 @@ use_preset_vocabulary: false
 芔	ui;cc	0
 芕	sv;cx	0
 芖	vi;cd	0
+芖	xc;cd	0
 芗	xd;cx	171
 芘	bi;cb	101
 芘	pi;cb	0

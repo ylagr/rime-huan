@@ -129,6 +129,8 @@ AA制	aav
 按倒葫芦浮起瓢	adhp
 暗渡陈仓	adic
 暗度陈仓	adic
+按道理	adl
+暗地里	adl
 奥地利	adl
 澳大利亚	adly
 奥达曼	adm
@@ -340,6 +342,9 @@ A股	agu
 暗箭难防	ajnf
 暗箭伤人	ajur
 爱看不看	akbk
+奥卡姆	akm
+奥卡姆剃刀	akmd
+奥卡姆	akmu
 爱克斯光	aksg
 爱克斯射线	aksx
 阿里巴巴	albb
@@ -10240,7 +10245,8 @@ D盘	dpj
 嘟哝	duns
 独女	dunv
 镀镍	dunx
-肚	duo
+督	duo
+肚	duot
 督	duou
 睹	duov
 牍	dup
@@ -12874,7 +12880,8 @@ E盘	epj
 返祖	fjzu
 犯罪	fjzv
 反贼	fjzz
-飞快	fk
+疯狂	fk
+分开	fk
 富可敌国	fkdg
 反馈反馈	fkfk
 佛靠金装	fkjv
@@ -13061,6 +13068,7 @@ F盘	fpj
 飞禽走兽	fqzu
 烦人	fr
 非人	fr
+凡人	fr
 凡人不可貌相	frbx
 怫然不悦	frby
 福如东海	frdh
@@ -19391,6 +19399,8 @@ H股	hgu
 海藻	hlzk
 还在	hlzl
 回炉再造	hlzz
+还没	hm
+还没有	hm
 后面	hm
 好马不吃回头草	hmbc
 好马不回头	hmbt
@@ -21145,7 +21155,8 @@ H盘	hpj
 毫无疑问	hwyw
 毫无意义	hwyy
 毫无怨言	hwyy
-花子	hwzi
+华子	hwzi
+花籽	hwzi
 花在	hwzl
 化作	hwzo
 华族	hwzu
@@ -25373,6 +25384,7 @@ I盘	ipj
 吉尔吉斯	jejs
 吉尔吉斯斯坦	jejt
 久而久之	jejv
+就是了	jel
 接二连三	jels
 就是你	jen
 就是那样	jeny
@@ -25382,7 +25394,7 @@ I盘	ipj
 就是说啊	jeua
 就是这样	jevy
 就是我	jew
-就是行	jex
+就是像	jex
 敬而远之	jeyv
 简而言之	jeyv
 兼而有之	jeyv
@@ -26569,6 +26581,7 @@ I盘	ipj
 犴	jmqg
 捡起	jmqi
 建起	jmqi
+建群	jmqp
 毽球	jmqq
 健全	jmqr
 减去	jmqu
@@ -29176,6 +29189,7 @@ I盘	ipj
 荆门	jymf
 粳	jymg
 精密	jymi
+静谧	jymi
 檠	jymj
 经贸	jymk
 静脉	jyml
@@ -31468,6 +31482,7 @@ I盘	ipj
 看样子	kyz
 快走	kyzb
 筷子	kyzi
+快哉	kyzl
 快嘴	kyzv
 剋	kz
 剋	kzd
@@ -42485,6 +42500,7 @@ I盘	ipj
 乞哀告怜	qagl
 弃暗投明	qatm
 全部	qb
+岂不	qb
 寝不安席	qbax
 前不巴村	qbbc
 前半部分	qbbf
@@ -49126,6 +49142,8 @@ I盘	ipj
 脱不开身	tbku
 偷窥	tbkv
 头盔	tbkv
+太棒了	tbl
+填补了	tbl
 投料	tblc
 透亮	tbld
 头里	tbli
@@ -49134,6 +49152,7 @@ I盘	ipj
 投劳	tblk
 头脸	tblm
 透露	tblu
+头颅	tblu
 偷猎	tblx
 脱不了干系	tblx
 头领	tbly
@@ -63719,6 +63738,7 @@ U盘	upj
 修改修改	xgxg
 形槁心灰	xgxh
 下个星期	xgxq
+习惯于	xgy
 侠肝义胆	xgyd
 相关责任人	xgzr
 小鬼遭殃	xgzy
@@ -68157,6 +68177,7 @@ U盘	upj
 殃	yhdy
 泱	yhdy
 阳	yhe
+一会儿	yhe
 卬	yhea
 一挥而就	yhej
 一哄而起	yheq
@@ -69203,6 +69224,7 @@ U盘	upj
 淹死	yjsi
 一家三口	yjsk
 一己私利	yjsl
+一键三连	yjsl
 盐酸	yjsr
 演算	yjsr
 严肃	yjsu
@@ -73448,6 +73470,7 @@ U盘	upj
 造句	zkju
 灶具	zkju
 总会计师	zkju
+造假	zkjw
 造价	zkjw
 造假	zkjw
 遭劫	zkjx
@@ -74763,8 +74786,8 @@ U盘	upj
 啊对对	addv
 安道尔	ader
 奥地利	adli
-暗地里	adli
 按道理	adli
+暗地里	adli
 奥达曼	admj
 敖德萨	adsa
 爱迪生	adug
@@ -80252,9 +80275,7 @@ U盘	upj
 听不出	tbiu
 逃不出	tbiu
 听不见	tbjm
-太棒了	tble
 谈不来	tbll
-土八路	tblu
 天不怕	tbpa
 听不清	tbqy
 疼不疼	tbtg
