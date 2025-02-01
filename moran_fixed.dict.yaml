@@ -57,6 +57,7 @@ import_tables:
 》	;m
 
 #----------詞庫----------#
+
 啊	a	aaka
 啊	aa
 啊啊啊	aaa
@@ -129,6 +130,8 @@ AA制	aavi
 按倒葫蘆浮起瓢	adhp
 暗渡陳倉	adic
 暗度陳倉	adic
+按道理	adl
+暗地裏	adl
 奥地利	adl
 澳大利亞	adly
 奧達曼	adm
@@ -358,6 +361,9 @@ A股	agu
 暗箭難防	ajnf
 暗箭傷人	ajur
 愛看不看	akbk
+奧卡姆	akm
+奧卡姆剃刀	akmd
+奧卡姆	akmu
 愛克斯光	aksg
 愛克斯射線	aksx
 阿里巴巴	albb
@@ -10660,7 +10666,7 @@ D盤	dpj
 嘟噥	duns
 獨女	dunv
 鍍鎳	dunx
-肚	duo
+督	duo
 肚	duot
 督	duou
 睹	duov
@@ -13447,7 +13453,8 @@ E盤	epj
 返祖	fjzu
 犯罪	fjzv
 反賊	fjzz
-飛快	fk
+瘋狂	fk
+分開	fk
 富可敵國	fkdg
 反饋反饋	fkfk
 佛靠金裝	fkjv
@@ -13637,6 +13644,7 @@ F盤	fpj
 飛禽走獸	fqzu
 煩人	fr
 非人	fr
+凡人	fr
 凡人不可貌相	frbx
 怫然不悅	frby
 福如東海	frdh
@@ -20160,8 +20168,9 @@ G盤	gpj
 海藻	hlzk
 還在	hlzl
 回爐再造	hlzz
-後面	hm
+還沒	hm
 還沒有	hm
+後面	hm
 好馬不喫回頭草	hmbc
 好馬不回頭	hmbt
 昏迷不醒	hmbx
@@ -22017,7 +22026,8 @@ H盤	hpj
 毫無疑問	hwyw
 毫無意義	hwyy
 毫無怨言	hwyy
-花子	hwzi
+華子	hwzi
+花籽	hwzi
 花在	hwzl
 化作	hwzo
 華族	hwzu
@@ -26367,6 +26377,7 @@ I盤	ipj
 吉爾吉斯	jejs
 吉爾吉斯斯坦	jejt
 久而久之	jejv
+就是了	jel
 接二連三	jels
 就是你	jen
 就是那樣	jeny
@@ -26376,7 +26387,7 @@ I盤	ipj
 就是說啊	jeua
 就是這樣	jevy
 就是我	jew
-就是行	jex
+就是像	jex
 敬而遠之	jeyv
 簡而言之	jeyv
 兼而有之	jeyv
@@ -27637,6 +27648,7 @@ I盤	ipj
 撿起	jmqi
 建起	jmqi
 猏	jmqj
+建羣	jmqp
 毽球	jmqq
 健全	jmqr
 減去	jmqu
@@ -30362,6 +30374,7 @@ I盤	ipj
 粳	jymg
 驚夢	jymg
 精密	jymi
+靜謐	jymi
 經貿	jymk
 靜脈	jyml
 鏡面	jymm
@@ -32725,6 +32738,7 @@ I盤	ipj
 看樣子	kyz
 快走	kyzb
 筷子	kyzi
+快哉	kyzl
 快嘴	kyzv
 剋	kz
 剋	kzd
@@ -34296,6 +34310,7 @@ I盤	ipj
 老公	lkgs
 牢固	lkgu
 老鴰	lkgw
+烙	lkh
 老漢	lkhj
 澇害	lkhl
 老火	lkho
@@ -44161,6 +44176,7 @@ PC端	pcdr
 乞哀告憐	qagl
 棄暗投明	qatm
 全部	qb
+豈不	qb
 寢不安席	qbax
 前不巴村	qbbc
 前半部分	qbbf
@@ -51069,6 +51085,8 @@ PC端	pcdr
 脫不開身	tbku
 偷窺	tbkv
 頭盔	tbkv
+太棒了	tbl
+填補了	tbl
 投料	tblc
 透亮	tbld
 頭裏	tbli
@@ -51077,6 +51095,7 @@ PC端	pcdr
 投勞	tblk
 頭臉	tblm
 透露	tblu
+頭顱	tblu
 偷獵	tblx
 脫不了干係	tblx
 頭領	tbly
@@ -66172,6 +66191,7 @@ WiFi	wifi
 修改修改	xgxg
 形槁心灰	xgxh
 下個星期	xgxq
+習慣於	xgy
 俠肝義膽	xgyd
 相關責任人	xgzr
 小鬼遭殃	xgzy
@@ -69067,12 +69087,14 @@ WiFi	wifi
 小心謹慎	xxju
 協警	xxjy
 斜井	xxjy
-嗋	xxk
+叶	xxk
 謝客	xxke
 心胸寬廣	xxkg
 辛辛苦苦	xxkk
 斜靠	xxkk
+嗋	xxko
 修行靠個人	xxkr
+嗋	xxkx
 劦	xxl
 泄漏	xxlb
 泄露	xxlb
@@ -70800,6 +70822,7 @@ WiFi	wifi
 泱	yhdy
 瀁	yhdy
 陽	yhe
+一會兒	yhe
 一揮而就	yhej
 一哄而起	yheq
 樣兒	yher
@@ -71925,6 +71948,7 @@ WiFi	wifi
 淹死	yjsi
 一家三口	yjsk
 一己私利	yjsl
+一鍵三連	yjsl
 鹽酸	yjsr
 演算	yjsr
 嚴肅	yjsu
@@ -73074,6 +73098,7 @@ WiFi	wifi
 孕	ypzn
 運作	ypzo
 與其	yq
+尤其	yq
 燕雀安知鴻鵠之志	yqav
 陰晴不定	yqbd
 一去不返	yqbf
@@ -76314,6 +76339,7 @@ WiFi	wifi
 造句	zkju
 竈具	zkju
 總會計師	zkju
+造假	zkjw
 造價	zkjw
 造假	zkjw
 遭劫	zkjx
@@ -77659,8 +77685,8 @@ WiFi	wifi
 啊對對	addv
 安道爾	ader
 奧地利	adli
-暗地裏	adli
 按道理	adli
+暗地裏	adli
 奧達曼	admj
 敖德薩	adsa
 愛迪生	adug
@@ -83146,9 +83172,7 @@ WiFi	wifi
 聽不出	tbiu
 逃不出	tbiu
 聽不見	tbjm
-太棒了	tble
 談不來	tbll
-土八路	tblu
 天不怕	tbpa
 聽不清	tbqy
 疼不疼	tbtg

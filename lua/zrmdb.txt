@@ -8184,12 +8184,12 @@
 劰 lb
 励 ll
 劲 lg
-劳 cl
 劳 lb
-労 dl
+劳 cl
 労 lb
-劵 jl
+労 dl
 劵 lf
+劵 jl
 劶 lh
 劷 ly
 劷 yl
@@ -8621,8 +8621,8 @@
 可 dk
 台 sk
 叱 kb
-史 ad
 史 ki
+史 ad
 右 ku
 右 uk
 叴 jk
