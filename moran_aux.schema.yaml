@@ -1,7 +1,7 @@
 schema:
   schema_id: moran_aux
   name: 魔然·輔篩
-  version: "20241105"
+  version: "20250214"
   author:
     - 自然碼發明人：周志農
     - 方案製作：ksqsf
@@ -38,6 +38,7 @@ switches:
 engine:
   processors:
     - key_binder
+    - lua_processor@*moran_pin*pin_processor
     - ascii_composer
     - recognizer
     - speller
@@ -65,10 +66,12 @@ engine:
     #- table_translator@japanese            # 日語混輸
     #- table_translator@fixed               # 掛接用法
     - lua_translator@*moran_aux_translator
+    - lua_translator@*moran_pin*panacea_translator
   filters:
     #- lua_filter@*moran_aux_hint           # 輔助碼提示需要去掉本行開頭的 # 符號
     - lua_filter@*moran_charset_filter
     - lua_filter@*moran_fix_filter
+    - lua_filter@*moran_pin*pin_filter
     - simplifier
     - simplifier@emoji
     - simplifier@chaifen
@@ -234,7 +237,6 @@ key_binder:
       - :/key_binder/custom_bindings?
       - moran:/key_bindings/moran_switches
       - moran:/key_bindings/moran_tab
-      - moran:/key_bindings/moran_capital_for_last_syllable
       - moran:/key_bindings/moran_semicolon_for_2
       - moran:/key_bindings/moran_keypad
 
@@ -337,6 +339,27 @@ moran:
   # last：末字
   # any：任意字
   aux_position: any
+
+  # 「置頂」功能相關設置
+  # 輸入時通過快捷鍵 Ctrl+t 可以將高亮顯示的候選置頂，被置頂的候選位置固定，不再參與調頻
+  # 對同一輸入碼最高支持8個置頂詞，當嘗試置頂第9個詞時，最早被置頂的詞將會失效
+  pin:
+    # 「置頂」功能開關
+    enable: true
+    # 置頂詞提示符
+    indicator: "📌"
+    # 「萬靈藥」加詞功能
+    # 通過輸入 「編碼A」//「編碼B」 實現造詞功能，編碼A是這個新詞的新編碼 編碼B是目前可以打出該詞的編碼
+    # 例如 輸入 tnfb 不能得到「頭腦風暴」這一候選， 此時我們可以輸入 tnfb//tbnkfgbk 按下空格 讓「頭腦風暴」候選上屏，上屏的詞會被加入用戶詞庫中，之後我們可以用 tnfb 來得到「頭腦風暴」這一候選了
+    # 造出的詞與置頂詞是等同的
+    panacea:
+      # 加詞狀態提示
+      prompt: "〔加詞〕"
+      # 加詞中綴引導符
+      infix: "//"
+      # 自由加詞模式開關，開啓此模式後，輸入「編碼A」//並空格上屏後會進入加詞狀態，此時可以連續地、不受束縛地輸入，再次按下x//空格退出加詞狀態，期間輸入的內容將會被記錄爲「編碼A」的新置頂詞
+      # 此模式適合造一些混合詞，如「A4紙」、「KOS-MOS」等
+      freestyle: false
 
 # 默認啓用語言模型
 __include: moran:/octagram/enable_for_sentence
