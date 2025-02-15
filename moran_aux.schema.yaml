@@ -66,6 +66,7 @@ engine:
     #- table_translator@japanese            # 日語混輸
     #- table_translator@fixed               # 掛接用法
     - lua_translator@*moran_aux_translator
+    - lua_translator@*moran_pin*panacea_translator
   filters:
     #- lua_filter@*moran_aux_hint           # 輔助碼提示需要去掉本行開頭的 # 符號
     - lua_filter@*moran_charset_filter
@@ -347,6 +348,18 @@ moran:
     enable: true
     # 置頂詞提示符
     indicator: "📌"
+    # 「萬靈藥」加詞功能
+    # 通過輸入 「編碼A」//「編碼B」 實現造詞功能，編碼A是這個新詞的新編碼 編碼B是目前可以打出該詞的編碼
+    # 例如 輸入 tnfb 不能得到「頭腦風暴」這一候選， 此時我們可以輸入 tnfb//tbnkfgbk 按下空格 讓「頭腦風暴」候選上屏，上屏的詞會被加入用戶詞庫中，之後我們可以用 tnfb 來得到「頭腦風暴」這一候選了
+    # 造出的詞與置頂詞是等同的
+    panacea:
+      # 加詞狀態提示
+      prompt: "〔加詞〕"
+      # 加詞中綴引導符
+      infix: "//"
+      # 自由加詞模式開關，開啓此模式後，輸入「編碼A」//並空格上屏後會進入加詞狀態，此時可以連續地、不受束縛地輸入，再次按下x//空格退出加詞狀態，期間輸入的內容將會被記錄爲「編碼A」的新置頂詞
+      # 此模式適合造一些混合詞，如「A4紙」、「KOS-MOS」等
+      freestyle: false
 
 # 默認啓用語言模型
 __include: moran:/octagram/enable_for_sentence
