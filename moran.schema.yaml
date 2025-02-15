@@ -1,7 +1,7 @@
 schema:
   schema_id: moran
   name: 魔然
-  version: "20241105"
+  version: "20250214"
   author:
     - 自然碼發明人：周志農
     - 方案製作：ksqsf
@@ -147,7 +147,7 @@ custom_phrase: # 自定義短語
   initial_quality: 1000
 
 english:
-  # tag: english  # librime>=0.12 方可取消註釋
+  tag: english  # librime<=0.11 請在 custom 中置空
   dictionary: moran_english
   prism: moran_english
   enable_completion: true
