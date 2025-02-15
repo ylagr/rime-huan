@@ -54,8 +54,9 @@ function Module.init(env)
    env.aux_priority_length = env.engine.schema.config:get_int("moran/aux_priority_length") or 1
    env.aux_priority_indicator = env.engine.schema.config:get_string("moran/aux_priority_indicator") or "▾"
 
-   -- 辅筛标识码
-   env.infix = env.engine.schema.config:get_string("moran/pin/panacea/infix") or '//'
+   -- Pin 適配
+   env.pin_infix = env.engine.schema.config:get_string("moran/pin/panacea/infix") or '//'
+   env.pin_indicator = env.engine.schema.config:get_string("moran/pin/indicator") or '📌'
 
    -- 輔助碼作用位置
    local aux_position = env.engine.schema.config:get_string("moran/aux_position") or "any"
@@ -120,7 +121,7 @@ function Module.init(env)
 
    -- 在自帶的 OnSelect 之前生效，從而獲取到 selected candidate
    local function on_select_pre(ctx)
-      if (string.find(ctx:get_preedit().text, env.infix) == nil) then
+      if (string.find(ctx:get_preedit().text, env.pin_infix) == nil) then
          input_sans_aux = nil
 
          local composition = ctx.composition
@@ -134,8 +135,12 @@ function Module.init(env)
          end
 
          local cand = segment:get_selected_candidate()
+         local gcand = cand:get_genuine()
+         if gcand.type == "pinned" then
+            return
+         end
          if env.engine.context:get_option("chaifen") then
-            cand = cand:get_genuine()
+            cand = gcand
          end
          if cand and cand.comment and cand.comment ~= "" then
             local aux_length = #moran.rstrip(cand.comment, env.aux_priority_indicator)
