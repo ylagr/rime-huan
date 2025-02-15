@@ -2,7 +2,9 @@
 --
 -- Author: ksqsf
 -- License: GPLv3
--- Version: 0.2.1
+-- Version: 0.2.2
+--
+-- 0.2.2: 支持 tab 跳轉。
 --
 -- 0.2.1: 修正與 pin 的兼容性。
 --
@@ -114,12 +116,12 @@ function Module.init(env)
    -- ------------------------------------
    -- 上屏邏輯（清空輔助碼和其他內部狀態）
    -- ------------------------------------
-   local aux_length = nil
+   local input_sans_aux = nil
 
    -- 在自帶的 OnSelect 之前生效，從而獲取到 selected candidate
    local function on_select_pre(ctx)
       if (string.find(ctx:get_preedit().text, env.infix) == nil) then
-         aux_length = nil
+         input_sans_aux = nil
 
          local composition = ctx.composition
          if composition:empty() then
@@ -136,20 +138,23 @@ function Module.init(env)
             cand = cand:get_genuine()
          end
          if cand and cand.comment and cand.comment ~= "" then
-            aux_length = #moran.rstrip(cand.comment, env.aux_priority_indicator)
+            local aux_length = #moran.rstrip(cand.comment, env.aux_priority_indicator)
+            input_sans_aux = ctx.input:sub(1, segment._start)
+               .. ctx.input:sub(segment._start + 1, segment._end - aux_length)
+               .. ctx.input:sub(segment._end + 1)
          end
       end
    end
 
    -- 在自帶的 OnSelect 之後生效
    local function on_select_post(ctx)
-      if aux_length then
-         ctx.input = ctx.input:sub(1, #ctx.input - aux_length)
+      if input_sans_aux then
+         ctx.input = input_sans_aux
          if ctx.composition:has_finished_composition() then
             ctx:commit()
          end
       end
-      aux_length = nil
+      input_sans_aux = nil
       previous_word = ""
       previous_word_aux = ""
    end
