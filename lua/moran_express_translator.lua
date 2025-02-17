@@ -122,9 +122,9 @@ function top.func(input, seg, env)
                for cand in fixed_res:iter() do
                   local cand_len = utf8.len(cand.text)
                   if cand_len == 1 then
-                     top.output_char_from_fixed(cand)
+                     top.output_char_from_fixed(env, cand)
                   elseif cand_len == 2 then
-                     top.output_word_from_fixed(cand)
+                     top.output_word_from_fixed(env, cand)
                   end
                end
             elseif inflexible then
@@ -274,7 +274,7 @@ end
 
 function top.output_word_from_fixed(env, cand)
    cand.comment = env.quick_code_indicator
-   top.output(env, cand
+   top.output(env, cand)
 end
 
 function top.output_from_fixed(env, cand)
