@@ -34,6 +34,15 @@ deploy:
         assert: cand[2].text == "🇺🇸"
       - send: vsgo
         assert: cand[2].text == "🇨🇳"
+      - send: y
+        assert: cand[2].text == "1️⃣"
+      # 測試分號處理
+      - send: 'e;'
+        assert: commit == '兒'
+      - send: 'y;'
+        assert: commit == "又"
+      - send: 'sd;'
+        assert: commit == "3D"
 
   # 自定義簡快碼
   quick_code_indicator_empty:
