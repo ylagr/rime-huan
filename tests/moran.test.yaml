@@ -11,7 +11,7 @@ deploy:
   default:
     tests:
       - send: l
-        assert: eq(cand[1].text, '了') and eq(cand[1].comment, '⚡')
+        assert: eq(cand[1].text, '了') and eq(cand[1].comment, "⚡️")
       - send: le
         assert: eq(cand[1].text, "樂") and eq(cand[1].comment, "⚡️")
       - send: lem
