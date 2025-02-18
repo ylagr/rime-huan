@@ -2,7 +2,10 @@
 -- Synopsis: 選擇第二個首選項，但可用於跳過 emoji 濾鏡產生的候選
 -- Author: ksqsf
 -- License: MIT license
--- Version: 0.1.3
+-- Version: 0.1.4
+
+-- ChangeLog:
+--  0.1.4: 數字也增加到條件裏
 
 -- NOTE: This processor depends on, and thus should be placed before,
 -- the built-in "selector" processor.
@@ -54,9 +57,10 @@ local function processor(key_event, env)
       local cand = menu:get_candidate_at(i)
       local cand_text = cand.text
       local codepoint = utf8.codepoint(cand_text, 1)
-      if moran.unicode_code_point_is_chinese(codepoint)
-         or (codepoint >= 97 and codepoint <= 122)
-         or (codepoint >= 65 and codepoint <= 90)
+      if moran.unicode_code_point_is_chinese(codepoint) -- 漢字
+         or (codepoint >= 97 and codepoint <= 122)      -- a-z
+         or (codepoint >= 65 and codepoint <= 90)       -- A-Z
+         or (codepoint >= 48 and codepoint <= 57)       -- 0-9
       then
          context:select(i)
          return kAccepted

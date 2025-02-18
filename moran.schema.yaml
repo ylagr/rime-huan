@@ -57,7 +57,6 @@ engine:
     - recognizer
     - speller
     - punctuator
-    - lua_processor@*moran_launcher     # 輸入 omorj 或 ogrwh 後回車打開魔然官網
     - selector
     - navigator
     - express_editor
