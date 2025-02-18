@@ -60,7 +60,7 @@ local function processor(key_event, env)
       if moran.unicode_code_point_is_chinese(codepoint) -- 漢字
          or (codepoint >= 97 and codepoint <= 122)      -- a-z
          or (codepoint >= 65 and codepoint <= 90)       -- A-Z
-         or (codepoint >= 48 and codepoint <= 57)       -- 0-9
+         or (codepoint >= 48 and codepoint <= 57 and cand.type ~= "simplified") -- 0-9
       then
          context:select(i)
          return kAccepted
