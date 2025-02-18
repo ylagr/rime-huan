@@ -1,91 +1,92 @@
 schema: moran
 source_dir: ..
+script: |
+  function eq(left, right)
+    print('Left  = ' .. tostring(left))
+    print('Right = ' .. tostring(right))
+    return left == right
+  end
+
 deploy:
-  # 出廠設置
   default:
     tests:
       - send: l
-        assert: cand[1].text == "了" and cand[1].comment == "⚡️"
+        assert: eq(cand[1].text, '了') and eq(cand[1].comment, '⚡')
       - send: le
-        assert: cand[1].text == "樂" and cand[1].comment == "⚡️"
+        assert: eq(cand[1].text, "樂") and eq(cand[1].comment, "⚡️")
       - send: lem
-        assert: cand[1].text == "樂" and cand[1].comment == "⚡️"
+        assert: eq(cand[1].text, "樂") and eq(cand[1].comment, "⚡️")
       - send: lemd
-        assert: cand[1].text == "楽" and cand[1].comment == ""
-      - send: hello  # 英語混輸
-        assert: cand[1].text == "hello"
+        assert: eq(cand[1].text, "楽") and eq(cand[1].comment, "")
+      - send: hello
+        assert: eq(cand[1].text, "hello")
       - send: jis
-        assert: cand[1].text == "級" and cand[1].comment == "⚡️"
-      - send: jisjo  # 出簡讓全
-        assert: cand[1].text == "紀"
+        assert: eq(cand[1].text, "級") and eq(cand[1].comment, "⚡️")
+      - send: jisjo
+        assert: eq(cand[1].text, "紀")
 
-  # 顏文字，測試 has_emoji 規則
   emoji:
     options:
       emoji: true
     tests:
       - send: hk
-        assert: cand[2].text == "👌"
+        assert: eq(cand[2].text, "👌")
       - send: o
-        assert: cand[2].text == "😯"
+        assert: eq(cand[2].text, "😯")
       - send: ou
-        assert: cand[2].text == "€"
+        assert: eq(cand[2].text, "€")
       - send: mzgo
-        assert: cand[2].text == "🇺🇸"
+        assert: eq(cand[2].text, "🇺🇸")
       - send: vsgo
-        assert: cand[2].text == "🇨🇳"
+        assert: eq(cand[2].text, "🇨🇳")
       - send: y
-        assert: cand[2].text == "1️⃣"
-      # 測試分號處理
+        assert: eq(cand[2].text, "1️⃣")
       - send: 'e;'
-        assert: commit == '兒'
+        assert: eq(commit, '兒')
       - send: 'y;'
-        assert: commit == "又"
+        assert: eq(commit, "又")
       - send: 'sd;'
-        assert: commit == "3D"
+        assert: eq(commit, "3D")
 
-  # 自定義簡快碼
   quick_code_indicator_empty:
     patch:
       moran/quick_code_indicator: ""
     tests:
       - send: l
-        assert: cand[1].text == "了" and cand[1].comment == ""
+        assert: eq(cand[1].text, "了") and eq(cand[1].comment, "")
   quick_code_indicator_other:
     patch:
       moran/quick_code_indicator: "💥"
     tests:
       - send: l
-        assert: cand[1].text == "了" and cand[1].comment == "💥"
+        assert: eq(cand[1].text, "了") and eq(cand[1].comment, "💥")
       - send: le
-        assert: cand[1].text == "樂" and cand[1].comment == "💥"
+        assert: eq(cand[1].text, "樂") and eq(cand[1].comment, "💥")
       - send: lem
-        assert: cand[1].text == "樂" and cand[1].comment == "💥"
+        assert: eq(cand[1].text, "樂") and eq(cand[1].comment, "💥")
       - send: lemd
-        assert: cand[1].text == "楽" and cand[1].comment == ""
+        assert: eq(cand[1].text, "楽") and eq(cand[1].comment, "")
 
-  # 詞輔
   word_filter:
     patch:
       moran/enable_word_filter: true
     tests:
       - send: lmjx
-        assert: cand[1].text == "鏈接"
+        assert: eq(cand[1].text, "鏈接")
       - send: lmjxz
-        assert: cand[1].text == "連接"
+        assert: eq(cand[1].text, "連接")
 
-  # pin
   pin:
     options:
       emoji: false
     tests:
       - send: 'lmjx'
-        assert: cand[1].text == '鏈接' and cand[2].text == '連接'
-      - send: 'lmjx{Control+t}'  # SIDE-EFFECT!!
-        assert: cand[1].comment == "📌"
+        assert: eq(cand[1].text, '鏈接') and eq(cand[2].text, '連接')
       - send: 'lmjx{Control+t}'
-        assert: cand[1].comment == ""
+        assert: eq(cand[1].comment, "📌")
+      - send: 'lmjx{Control+t}'
+        assert: eq(cand[1].comment, "")
       - send: 'lmjx{Down}{Control+t}'
-        assert: cand[1].text == '連接' and cand[1].comment == "📌"
+        assert: eq(cand[1].text, '連接') and eq(cand[1].comment, "📌")
       - send: 'lmjx'
-        assert: cand[1].text == '連接' and cand[1].comment == "📌"
+        assert: eq(cand[1].text, '連接') and eq(cand[1].comment, "📌")
