@@ -2,9 +2,10 @@
 -- Synopsis: 選擇第二個首選項，但可用於跳過 emoji 濾鏡產生的候選
 -- Author: ksqsf
 -- License: MIT license
--- Version: 0.1.4
+-- Version: 0.1.5
 
 -- ChangeLog:
+--  0.1.5: 修復獲取 candidate_count 的邏輯
 --  0.1.4: 數字也增加到條件裏
 
 -- NOTE: This processor depends on, and thus should be placed before,
@@ -30,6 +31,7 @@ local function processor(key_event, env)
 
    local segment = composition:back()
    local menu = segment.menu
+   local page_size = env.engine.schema.page_size
 
    -- Special cases: for 'ovy' and 快符, just send ';'
    if context.input:find('^ovy') or context.input:find('^;') then
@@ -37,13 +39,13 @@ local function processor(key_event, env)
    end
 
    -- Special case: if there is only one candidate, just select it!
-   if menu:candidate_count() == 1 then
+   local candidate_count = menu:prepare(page_size)
+   if candidate_count == 1 then
       context:select(0)
       return kAccepted
    end
 
    -- If it is not the first page, simply send 2.
-   local page_size = env.engine.schema.page_size
    local selected_index = segment.selected_index
    if selected_index >= page_size then
       local page_num = selected_index // page_size
@@ -55,6 +57,10 @@ local function processor(key_event, env)
    local i = 1
    while i < page_size do
       local cand = menu:get_candidate_at(i)
+      if cand == nil then
+         context:select(1)
+         return kNoop
+      end
       local cand_text = cand.text
       local codepoint = utf8.codepoint(cand_text, 1)
       if moran.unicode_code_point_is_chinese(codepoint) -- 漢字
