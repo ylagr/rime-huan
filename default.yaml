@@ -8,7 +8,7 @@ schema_list:
   - schema: moran_fixed
   - schema: moran_sentence
   - schema: moran_aux
-  - schema: tiger
+  - schema: huan
   # - schema: luna_pinyin
   # - schema: luna_pinyin_simp
   # - schema: luna_pinyin_fluency
@@ -67,9 +67,9 @@ recognizer:
 ascii_composer:
   good_old_caps_lock: true
   switch_key:
-    Shift_L: commit_code
-    Shift_R: commit_text
-    Control_L: noop
-    Control_R: noop
+    Shift_L: noop
+    Shift_R: noop
+    Control_L: commit_code
+    Control_R: commit_text
     Caps_Lock: clear
     Eisu_toggle: clear

@@ -15,7 +15,7 @@ schema:
     - moran_english
     #- moran_japanese # 日語混輸
     - stroke
-    - tiger
+    - huan
     - cangjie5
     - bopomofo
     - zrlf
@@ -26,6 +26,7 @@ switches:
   - name: full_shape
     states: [ 半角, 全角 ]
   - name: simplification
+    reset: 1
     states: [ 漢字, 汉字 ]
   - name: ascii_punct
     states: [ 。，, ．， ]
@@ -57,6 +58,7 @@ engine:
     - recognizer
     - speller
     - punctuator
+    - lua_processor@*moran_launcher     # 輸入 omorj 或 ogrwh 後回車打開魔然官網
     - selector
     - navigator
     - express_editor
@@ -72,7 +74,7 @@ engine:
     - punct_translator
     - reverse_lookup_translator@reverse_tick
     - reverse_lookup_translator@reverse_universal
-    - reverse_lookup_translator@reverse_tiger
+    - reverse_lookup_translator@reverse_huan
     - reverse_lookup_translator@reverse_stroke
     - reverse_lookup_translator@reverse_cangjie5
     - reverse_lookup_translator@reverse_zrlf
@@ -231,12 +233,12 @@ reverse_format:
   preedit_format:
     - xform/^o(lf|bh|cj|vy|hm)//
 
-reverse_tiger:
-  tag: reverse_tiger
-  dictionary: tiger
+reverse_huan:
+  tag: reverse_huan
+  dictionary: huan
   enable_completion: true
   prefix: "ohm"
-  tips: 〔虎碼〕
+  tips: 〔环碼〕
   __include: reverse_format
 
 reverse_universal:
@@ -283,7 +285,7 @@ reverse_bopomofo:
     - "xlit|1qaz2wsxedcrfv5tgbyhnujm8ik,9ol.0p;/- 6347'|ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙㄧㄨㄩㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥㄦˉˊˇˋ˙ |"
 
 reverse_tick:
-  __include: reverse_tiger
+  __include: reverse_huan
   tag: reverse_tick
   prefix: "`"
 
@@ -291,7 +293,7 @@ reverse_lookup:
   extra_tags:
     - reverse_tick
     - reverse_universal
-    - reverse_tiger
+    - reverse_huan
     - reverse_stroke
     - reverse_cangjie5
     - reverse_zrlf
@@ -323,7 +325,7 @@ recognizer:
     # 反查
     reverse_universal: "(^(`[a-z`]+))|(^([a-z]{2}(`[a-z`]?|[a-z`]`)))"
     reverse_tick: "(^`$)|(^`[a-zA-Z]+$)"
-    reverse_tiger: "^ohm[a-z]+$"
+    reverse_huan: "^ohm[a-z]+$"
     reverse_stroke: "^obh[A-Za-z]*$"
     reverse_cangjie5: "^ocj[A-Za-z]*$"
     reverse_zrlf: "^olf[A-Za-z]*$"
