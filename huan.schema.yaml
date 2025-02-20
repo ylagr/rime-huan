@@ -54,9 +54,9 @@ translator:
   dictionary: huan
   enable_charset_filter: false
   enable_encoder: true
-  enable_sentence: false
+  enable_sentence: true
   encode_commit_history: true
-  max_phrase_length: 4
+  max_phrase_length: 3
   enable_user_dict: false
   enable_completion: false
 
@@ -83,3 +83,8 @@ recognizer:
 
 #menu:
 #  page_size: 3
+# 默認啓用語言模型
+__include: moran:/octagram/enable_for_sentence
+# 若要禁用，可直接刪掉上面的 __include，或在 custom 文件中寫入：
+# patch:
+#   __include: moran:/octagram/disable
