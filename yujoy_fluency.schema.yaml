@@ -152,7 +152,7 @@ yuhao_chaifen:
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba/
-  initials: yxwvutsrqponmlkjihgfedcba/
+  initials: zyxwvutsrqponmlkjihgfedcba/
   delimiter: " `"
 
 translator:
@@ -252,7 +252,7 @@ recognizer:
 
 style:
   horizontal: false
-  inline_preedit: true
+  inline_preedit: false
   preedit_type: preview
   inline_candidate: true
 

@@ -1,0 +1,9 @@
+# Rime table
+#@/db_name	yujoy_sc
+#@/db_type	tabledb
+#@/rime_version	1.11.2
+#@/tick	6
+森林	aaaa	2
+森	aaam	2
+中国	k	6
+手疾眼快	klsb	2
