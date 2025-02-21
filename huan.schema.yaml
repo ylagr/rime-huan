@@ -50,6 +50,10 @@ speller:
 #  auto_select: true
 #  max_code_length: 4
 
+quick_repeat:  # 快速重複上屏
+  input: "z"
+  size: 1
+  initial_quality: 0
 
 translator:
   dictionary: huan
@@ -58,9 +62,9 @@ translator:
   enable_sentence: true
   encode_commit_history: true
   max_phrase_length: 3
-  enable_user_dict: false
+  enable_user_dict: true
   enable_completion: false
-
+  user_dict: huan_user
 reverse_lookup:
   dictionary: moran.chars
   prefix: "`"

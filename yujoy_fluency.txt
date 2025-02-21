@@ -2,6 +2,8 @@
 #@/db_name	yujoy_fluency
 #@/db_type	tabledb
 #@/rime_version	1.11.2
-#@/tick	2
+#@/tick	4
 查甲	ajfi aj	1
+想想	asnx asnx	1
 吾吾	fkkv fkkv	1
+种种	gkls gkls	1
