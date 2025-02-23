@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yujoy.adjusted"
-version: "20250210"
+version: "20250222"
 sort: original
 columns:
   - text
@@ -150,6 +150,7 @@ columns:
 槲	aoir
 櫷	aojc
 橡	aojk
+𱢿	aoti
 𱂃	aowd
 𣞭	aoxt
 槾	aqad
@@ -336,6 +337,7 @@ columns:
 懈	boip
 𢠽	bojk
 𥦺	bomd
+𮹂	boti
 窗	bowi
 懊	bowm
 憁	bown
@@ -525,6 +527,7 @@ columns:
 𦧀	ccix
 䑁	cciy
 𰶆	cclt
+𣎭	ccyn
 䮲	cdam
 駿	cdet
 𥚂	cdet
@@ -952,6 +955,7 @@ columns:
 𦭃	dosk
 ㈸	dosl
 ㊘	dosl
+𮶞	doti
 蒋	dovh
 薁	dowm
 蔥	down
@@ -1172,6 +1176,7 @@ columns:
 像	eojk
 像	eojk
 㪱	eoqm
+𬾘	eotw
 傯	eown
 僈	eqad
 闒	eqak
@@ -1340,6 +1345,7 @@ columns:
 𡙶	fmwh
 𢹊	fmwk
 𰀙	fmwp
+𬲊	fnot
 𢰘	focd
 探	foea
 𫎩	foea
@@ -2320,6 +2326,7 @@ columns:
 蟓	iojk
 営	ioko
 𰴣	iooh
+𱿙	ioti
 𮔬	iovh
 鿫	iowm
 𡪿	iowm
@@ -2867,6 +2874,7 @@ columns:
 戜	kknr
 𠴔	kknr
 㪬	kkot
+𦐭	kkot
 䎑	kkqe
 𦑼	kkqk
 𛄂	kkv
@@ -3028,8 +3036,9 @@ columns:
 𤬴	leen
 𤟶	leeq
 𡦌	lfdj
-𡲂	lfle
-𡰮	lflt
+𫡃	lfls
+𡲂	lfte
+𡰮	lfts
 痜	lgee
 㿗	lgeh
 𱍮	lgie
@@ -3107,6 +3116,7 @@ columns:
 㿍	loip
 𫮻	lojh
 豫	lojk
+𲆧	loti
 𦕻	lowi
 𤺾	lowm
 聰	lown
@@ -3309,6 +3319,7 @@ columns:
 𤒅	mojc
 𪚯	mojc
 𭶆	mojk
+𮳛	moti
 𭵲	movh
 燠	mowm
 熜	mown
@@ -3326,6 +3337,7 @@ columns:
 𬋙	mqfm
 㶧	mqir
 𩬀	mqir
+𫗌	mrdt
 𱅸	mrlk
 𪹹	mrqk
 𥏦	msat
@@ -4041,8 +4053,15 @@ columns:
 𱑓	osdr
 𫄯	oset
 鱮	oswm
+𬲉	otdb
+𮨶	othd
+飞	oti
+⻜	oti
 🈡	otje
 鱋	otjf
+𮸽	otot
+𠃧	otot
+𩙱	otow
 艣	otqs
 䲐	otqs
 舲	oufd
@@ -4800,6 +4819,7 @@ columns:
 䘵	sqes
 衲	sqir
 𥄋	sqir
+𩄩	sqwt
 𲊒	srqd
 𩘤	srsj
 襅	ssdr
@@ -4966,7 +4986,6 @@ columns:
 𬶫	tdsm
 𲇘	tdwt
 𨰎	tebm
-𠑶	tee
 䥨	teko
 鉛	tekv
 𢧝	telk
@@ -5078,6 +5097,8 @@ columns:
 鐌	tojk
 𬶲	tojk
 𧆪	tosk
+𰼠	toti
+𱭙	toti
 𡲱	tour
 鳉	tovh
 𨪙	tovh
@@ -5874,6 +5895,7 @@ columns:
 𢩤	woqd
 𤡵	woqq
 𢻠	word
+𱙆	woti
 𢼚	wotp
 㜩	wowm
 𱅝	wpbm

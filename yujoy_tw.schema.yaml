@@ -142,7 +142,7 @@ yuhao_chaifen:
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba/
-  initials: yxwvutsrqponmlkjihgfedcba/
+  initials: zyxwvutsrqponmlkjihgfedcba/
   delimiter: "`"
   max_code_length: 4
   auto_select: false
@@ -182,7 +182,7 @@ fixed:
 
 history:
   input: z
-  size: 1
+  size: 9
   initial_quality: 1
 
 reverse_lookup:
