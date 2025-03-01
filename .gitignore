@@ -1,2 +1,6 @@
 build
 *.userdb
+user.yml
+yes
+yes.pub
+
