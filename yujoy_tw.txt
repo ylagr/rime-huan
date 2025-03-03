@@ -1,0 +1,6 @@
+# Rime table
+#@/db_name	yujoy_tw
+#@/db_type	tabledb
+#@/rime_version	1.11.2
+#@/tick	2
+用	a	4
