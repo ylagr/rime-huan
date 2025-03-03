@@ -54,7 +54,7 @@ engine:
   processors:
     - key_binder
     - lua_processor@*moran_pin*pin_processor
-    - lua_processor@*moran_semicolon_processor
+    - lua_processor@*moran_processor
     - ascii_composer
     - recognizer
     - speller
@@ -149,7 +149,7 @@ custom_phrase: # 自定義短語
   initial_quality: 1000
 
 english:
-  tag: english  # librime<=0.11 請在 custom 中置空
+  tag: english  # librime<=1.11 請在 custom 中置空
   dictionary: moran_english
   prism: moran_english
   enable_completion: true
@@ -197,6 +197,7 @@ chaifen:
   show_in_comment: true
   comment_form:
     - "xform/-/ /"
+    - "xform/〕〔/｜/"
 
 pinyinhint:
   option_name: pinyinhint
@@ -413,3 +414,4 @@ __include: moran:/octagram/enable_for_sentence
 # 若要禁用，可直接刪掉上面的 __include，或在 custom 文件中寫入：
 # patch:
 #   __include: moran:/octagram/disable
+ 

@@ -1,6 +1,6 @@
 quick: gen-zrmdb gen-chai-filter
 
-all: gen-zrmdb gen-chai-filter update-compact-dicts
+all: gen-zrmdb gen-chai-filter sync-essay update-compact-dicts dazhu
 
 gen-zrmdb:
 	python3 gen_zrmdb.py | sort -k1,1 -s > data/zrmdb.txt
@@ -18,4 +18,7 @@ dazhu:
 	python3 dazhu.py -c='' > dazhu-hant.txt
 	python3 dazhu.py -c='' --dict ../moran_fixed_simp.dict.yaml > dazhu-hans.txt
 
-.PHONY: quick all dict gen-zrmdb gen-chai-filter update-compact-dicts dazhu
+sync-essay:
+	python3 sync_essay.py
+
+.PHONY: quick all dict gen-zrmdb gen-chai-filter update-compact-dicts dazhu sync-essay

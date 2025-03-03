@@ -1,0 +1,16 @@
+on: [push]
+name: Test
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        schema: [moran, moran_aux]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Mira
+        run: |
+          wget https://github.com/rimeinn/mira/releases/download/latest/mira
+          chmod +x mira
+      - name: Test ${{ matrix.schema }}
+        run: ./mira -C cache tests/${{ matrix.schema }}.test.yaml
