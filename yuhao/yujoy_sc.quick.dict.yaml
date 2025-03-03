@@ -1,7 +1,7 @@
 # encoding: utf-8
 ---
 name: "yujoy_sc.quick"
-version: "20250210"
+version: "20250222"
 sort: original
 columns:
   - text
@@ -87,7 +87,7 @@ columns:
 匕	bb
 驳	bc
 怕	bd
-快	be
+四	be
 究	bf
 悔	bg
 骄	bh
@@ -397,7 +397,7 @@ columns:
 测	nf
 工	ng
 法	nh
-步	ni
+注	ni
 温	nj
 否	nk
 酒	nl
@@ -719,7 +719,7 @@ columns:
 围绕	ba
 匕首	bb
 驳回	bc
-快乐	be
+四川	be
 究竟	bf
 悔恨	bg
 骄傲	bh
@@ -976,7 +976,7 @@ columns:
 测试	nf
 工作	ng
 法国	nh
-步伐	ni
+注意	ni
 温暖	nj
 否则	nk
 酒店	nl
@@ -1246,7 +1246,7 @@ columns:
 冶	adk
 檬	ado
 棉	adr
-运	adu
+横	adu
 桃	aea
 桦	aeb
 决	aeu
@@ -1268,7 +1268,7 @@ columns:
 桥	ahr
 姿	ahw
 盗	ahx
-棕	aic
+柠	aic
 凋	aih
 栅	aii
 枸	aik
@@ -1309,12 +1309,12 @@ columns:
 樵	aom
 榷	aoo
 违	aou
-净	aov
+檐	aov
 杨	aow
 冼	ape
 棘	aqa
 桐	aqf
-枣	aqj
+楔	aqj
 梆	aqp
 凛	arb
 枝	ard
@@ -1334,7 +1334,7 @@ columns:
 楼	atw
 框	aty
 枪	aue
-检	auf
+桢	auf
 桩	auh
 栓	auy
 橱	avf
@@ -1360,6 +1360,7 @@ columns:
 驸	beh
 恼	bej
 惧	bem
+快	beu
 团	bew
 悟	bfk
 舔	bfm
@@ -1485,7 +1486,7 @@ columns:
 谜	ctu
 谑	ctv
 论	cub
-谕	cuf
+祯	cuf
 谢	cuh
 诊	cuw
 禧	cvk
@@ -1536,7 +1537,7 @@ columns:
 董	dje
 葛	dji
 茁	djj
-莫	djm
+墓	djm
 皑	djw
 萌	djy
 萼	dkk
@@ -1579,7 +1580,7 @@ columns:
 茱	dpm
 荫	dpy
 莽	dqd
-藉	dqm
+荻	dqm
 获	dqq
 芮	dqu
 蔷	drl
@@ -1607,7 +1608,7 @@ columns:
 蕃	dwt
 薯	dxh
 惹	dxk
-荐	dxl
+茬	dxl
 萝	dxy
 熊	dyb
 蔡	dyc
@@ -1692,7 +1693,7 @@ columns:
 佟	etj
 僻	etk
 俯	eue
-偷	euf
+侦	euf
 伶	eui
 倒	euo
 健	eva
@@ -1736,7 +1737,7 @@ columns:
 抚	ffm
 抛	ffs
 捷	ffv
-婴	ffw
+鹦	ffw
 拖	fge
 撬	fgg
 撑	fgk
@@ -1819,7 +1820,7 @@ columns:
 撤	frd
 掖	fre
 摔	frj
-撕	frl
+摘	frl
 赎	fro
 抗	frs
 搁	frt
@@ -1934,7 +1935,7 @@ columns:
 较	grm
 透	gru
 算	gsd
-颓	gsm
+纂	gsm
 辗	gtd
 簪	gte
 氅	gtg
@@ -1966,7 +1967,7 @@ columns:
 卦	hhu
 均	hia
 坍	hir
-熬	hit
+骜	hit
 坦	hjf
 超	hjk
 煮	hjm
@@ -2065,7 +2066,7 @@ columns:
 寂	ioi
 耀	iok
 辉	ioo
-寝	iov
+蟾	iov
 蝴	ioy
 宪	ipe
 蛛	ipm
@@ -2237,7 +2238,7 @@ columns:
 喊	kkf
 啄	kki
 品	kkk
-串	kkl
+患	kkl
 嚣	kkm
 戳	kko
 器	kkq
@@ -2274,7 +2275,7 @@ columns:
 嗔	kre
 吸	kri
 囔	krk
-嘶	krl
+嘀	krl
 咬	krm
 嗦	kro
 喃	krq
@@ -2352,7 +2353,7 @@ columns:
 孢	lin
 逊	liu
 曾	ljj
-弟	ljl
+剃	ljl
 醒	ljp
 逆	lju
 瘟	ljx
@@ -2504,7 +2505,7 @@ columns:
 清	nhy
 沟	nid
 泳	nie
-演	nif
+洲	nif
 浪	nii
 滨	nil
 频	nim
@@ -2621,7 +2622,7 @@ columns:
 绸	oih
 约	oii
 绚	oij
-艘	oil
+缤	oil
 灸	oim
 纱	oiw
 玺	oiy
@@ -2713,7 +2714,7 @@ columns:
 陲	pjd
 靼	pjf
 貂	pjk
-靠	pkf
+陨	pkf
 造	pku
 隧	plk
 隘	plm
@@ -2826,7 +2827,7 @@ columns:
 啬	rlb
 阅	rlk
 丧	rll
-帝	rlo
+啻	rlo
 商	rlq
 衮	rmd
 阉	rmh
@@ -2874,7 +2875,7 @@ columns:
 睛	shy
 霓	sie
 袍	sin
-瞎	siq
+鹫	siq
 褪	siu
 裆	siv
 眇	siw
@@ -2929,7 +2930,7 @@ columns:
 糗	tcq
 殴	tcs
 鸥	tcx
-殿	tdm
+臀	tdm
 匿	tdx
 犀	tep
 粳	tfj
@@ -2946,7 +2947,7 @@ columns:
 屑	tiy
 屈	tjj
 虞	tkf
-避	tkj
+臂	tkj
 鳄	tkk
 遽	tku
 牒	tla
@@ -2986,7 +2987,7 @@ columns:
 饶	ugw
 令	uid
 饱	uin
-今	uio
+含	uio
 馆	uit
 廊	uiv
 桌	uja
@@ -3078,7 +3079,7 @@ columns:
 厦	vvs
 麽	vwd
 镜	vwj
-群	vwk
+郡	vwk
 遥	vwu
 铲	vww
 镯	vxi
@@ -3111,7 +3112,7 @@ columns:
 靖	why
 娘	wii
 嫁	wik
-嫂	wil
+嫔	wil
 妙	wiw
 往	wiy
 竟	wje
@@ -3190,7 +3191,7 @@ columns:
 蹦	xjy
 躁	xkk
 蹑	xld
-存	xll
+蹲	xll
 蹂	xlw
 跨	xmf
 盔	xmx

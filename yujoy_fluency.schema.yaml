@@ -252,7 +252,7 @@ recognizer:
 
 style:
   horizontal: false
-  inline_preedit: false
+  inline_preedit: true
   preedit_type: preview
   inline_candidate: true
 

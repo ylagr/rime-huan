@@ -2,6 +2,7 @@
 #@/db_name	yujoy_fluency
 #@/db_type	tabledb
 #@/rime_version	1.11.2
+<<<<<<< HEAD
 #@/tick	195
 本用	afi ai	1
 查甲	ajfi aj	1
@@ -47,6 +48,26 @@
 一会	fi uadm	0
 抄	fiwp	0
 抄都不会抄	fiwp hjpf nb uadm fiwp	1
+=======
+#@/tick	100
+二	ae	1
+二兄	ae kee	1
+查甲	ajfi aj	1
+想想	asnx asnx	1
+因此	bmd nbb	11
+穷穷	bsl bsl	1
+哥哥	ckck ckck	1
+哥哥哥哥	ckck ckck ckck ckck	2
+的	diid	0
+的是一	diid jfnz fi	1
+能老	dybb hbb	1
+停停	edcd edcd	1
+你的	eoix diid	3
+什么	ers wdm	5
+非常	ff grj	10
+万万	fib fib	0
+万万不	fib fib nb	2
+>>>>>>> d2cfe58ab8262bb8da148711a9d4c824ba697a4f
 吾吾	fkkv fkkv	1
 无穷	fmw bsl	0
 再过	fqht huc	0
@@ -54,6 +75,7 @@
 两个	fquu uls	1
 复师	gjtp lfrj	1
 种种	gkls gkls	1
+<<<<<<< HEAD
 怎么	gunx wdm	8
 怎么做	gunx wdm eotp	0
 移动	gyyx adsl	0
@@ -160,3 +182,27 @@
 然后	yqmb hfkv	6
 然后或者	yqmb hfkv kkfi hjr	1
 多喝水	yyx kjit es	0
+=======
+怎么	gunx wdm	4
+为上	isid os	1
+是一	jfnz fi	0
+是了	jfnz vl	1
+卿云	jvdm adm	1
+曾经	ljjr odng	11
+奇奇	mckv mckv	1
+不	nb	0
+经常	odng grj	2
+组织	oeq okmb	7
+甚至	rti uz	1
+卜	ub	1
+由車该	ui xc crh	1
+应该	uix crh	5
+努力	wdsl sl	11
+得们	wjfh erm	1
+得时	wjfh jhc	1
+在个	xlht uls	2
+在人	xlht ur	2
+在有	xlht xyv	1
+琳琳	yaam yaam	1
+然着	yqmb msm	1
+>>>>>>> d2cfe58ab8262bb8da148711a9d4c824ba697a4f
