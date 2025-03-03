@@ -1,0 +1,7 @@
+# Rime table
+#@/db_name	yujoy_full
+#@/db_type	tabledb
+#@/rime_version	1.11.2
+#@/tick	2
+亻尔	er oix	1
+怎𠂤	gunx wd	1

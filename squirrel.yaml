@@ -17,7 +17,7 @@ chord_duration: 0.1  # seconds
 show_notifications_when: appropriate
 
 style:
-  inline_preedit: true    # 在文本框顯示輸入串
+  inline_preedit: false    # 在文本框顯示輸入串
   inline_candidate: false # 在文本框顯示首選項
   translucency: true      # 透明度總開關
 

@@ -1,0 +1,208 @@
+# Rime table
+#@/db_name	yujoy_fluency
+#@/db_type	tabledb
+#@/rime_version	1.11.2
+<<<<<<< HEAD
+#@/tick	195
+本用	afi ai	1
+查甲	ajfi aj	1
+想想	asnx asnx	1
+检查	aufi ajfi	0
+检查检查吗	aufi ajfi aufi ajfi kbm	1
+比	bbb	0
+快	beur	0
+国家	byid iks	1
+可以	ckv tiur	0
+可以先多喝水	ckv tiur pee yyx kjit es	1
+说错了	clke vdjr vl	0
+词	cofk	0
+词无穷	cofk fmw bsl	1
+通红	dauc ong	1
+双拼	ddi fldn	2
+双拼肯定比全拼快	ddi fldn nyv ifnz bbb uyw fldn beur	1
+的	diid	0
+的一	diid fi	2
+的是	diid jfnz	1
+难	doc	0
+难不难难不难不难	doc nb doc doc nb doc nb doc	1
+菜了	dvam vl	6
+能他	dybb eei	1
+体检	eafi aufi	0
+华为	ebrs isid	0
+华为不	ebrs isid nb	1
+也是这样	ei jfnz euc ami	0
+也有	ei xyv	0
+俺	emhd	0
+俺也有	emhd ei xyv	1
+你自己	eoix cz wj	0
+做功	eotp nsl	1
+做个	eotp uls	0
+做个体检	eotp uls eafi aufi	1
+什么	ers wdm	5
+这是	euc jfnz	0
+这是怎么做到的	euc jfnz gunx wdm eotp uod diid	1
+打	fcd	0
+打词不行	fcd cofk nb woc	1
+打水	fcd es	0
+一样	fi ami	5
+一会	fi uadm	0
+抄	fiwp	0
+抄都不会抄	fiwp hjpf nb uadm fiwp	1
+=======
+#@/tick	100
+二	ae	1
+二兄	ae kee	1
+查甲	ajfi aj	1
+想想	asnx asnx	1
+因此	bmd nbb	11
+穷穷	bsl bsl	1
+哥哥	ckck ckck	1
+哥哥哥哥	ckck ckck ckck ckck	2
+的	diid	0
+的是一	diid jfnz fi	1
+能老	dybb hbb	1
+停停	edcd edcd	1
+你的	eoix diid	3
+什么	ers wdm	5
+非常	ff grj	10
+万万	fib fib	0
+万万不	fib fib nb	2
+>>>>>>> d2cfe58ab8262bb8da148711a9d4c824ba697a4f
+吾吾	fkkv fkkv	1
+无穷	fmw bsl	0
+再过	fqht huc	0
+再过一会就要	fqht huc fi uadm siqi lwn	1
+两个	fquu uls	1
+复师	gjtp lfrj	1
+种种	gkls gkls	1
+<<<<<<< HEAD
+怎么	gunx wdm	8
+怎么做	gunx wdm eotp	0
+移动	gyyx adsl	0
+移动沙	gyyx adsl niwp	1
+却	hdej	0
+却见	hdej dj	1
+却觉得	hdej iodj wjfh	1
+都不会	hjpf nb uadm	0
+过来	huc ftm	0
+起来	hwj ftm	0
+起点	hwj ukmb	1
+宋	iam	0
+宋大仁	iam md eae	1
+觉得	iodj wjfh	3
+觉得应该	iodj wjfh uix crh	1
+学吗	iolz kbm	1
+害了	iqkv vl	1
+省手	iwsm ks	1
+发展	jdid tdlv	3
+是	jfnz	0
+是了	jfnz vl	2
+是我	jfnz wfkg	0
+是我说错了	jfnz wfkg clke vdjr vl	1
+吗	kbm	0
+感觉	kfkn iodj	1
+吃完了	kgoi ifow vl	1
+吃饭	kgoi uhdi	2
+叫你	kjj eoix	1
+或者	kkfi hjr	6
+或者说	kkfi hjr clke	1
+中国	kls byid	10
+看	ksm	0
+看起来是	ksm hwj ftm jfnz	1
+看着	ksm msm	10
+别人	ksod ur	9
+道法	lcuc nhdm	1
+世界	ls surj	7
+大	md	0
+大仁	md eae	0
+大不高兴	md nb dg imb	1
+公司	mdm ofkv	4
+态态态态	minx minx minx minx	1
+不	nb	0
+不高兴	nb dg imb	0
+不难	nb doc	0
+不行	nb woc	0
+不在	nb xlht	1
+工二	ng ae	1
+工作	ng eguv	1
+沙	niwp	0
+洗洗	npee npee	1
+还行	nuc woc	2
+肯定	nyv ifnz	0
+那些	oapf nbae	6
+状态	oqq minx	1
+胡言乱语	oyv ri bti cfkk	0
+胡言乱语了	oyv ri bti cfkk vl	1
+先	pee	0
+先去	pee hdm	0
+先去打水	pee hdm fcd es	1
+生活	ps nbs	3
+陪着	pwkv msm	1
+真是	remb jfnz	1
+问题	rkv jfnm	4
+问道	rkv lcuc	1
+就传	siqi eati	1
+就要	siqi lwn	0
+需要	ske lwn	6
+加的	skv diid	0
+男女	ssl wn	3
+以后	tiur hfkv	1
+会啊	uadm kpck	1
+会不会是	uadm nb uadm jfnz	0
+会不会是你自己加的	uadm nb uadm jfnz eoix cz wj skv diid	1
+应该	uix crh	2
+点头	ukmb jmd	1
+到的	uod diid	0
+从今	uur uioi	0
+全拼	uyw fldn	0
+了	vl	0
+魔然繁	vmg yqmb gqtu	2
+我	wfkg	0
+我们	wfkg erm	1
+我打	wfkg fcd	1
+我是说	wfkg jfnz clke	1
+我以前	wfkg tiur lyod	0
+我以前也是这样的	wfkg tiur lyod ei jfnz euc ami diid	1
+我会	wfkg uadm	0
+我会过来	wfkg uadm huc ftm	1
+我从今	wfkg uur uioi	1
+已关	wi lmd	1
+很是	wig jfnz	1
+好像	wlz eokk	1
+好玩	wlz yfow	2
+女	wn	0
+女或者	wn kkfi hjr	1
+行动力	woc adsl sl	2
+徐天宏	wufa fmd ixdm	1
+在那	xlht oapf	1
+有	xyv	1
+变动	ydi adsl	0
+变动吗	ydi adsl kbm	1
+然电口或	yqmb hd kv kkfi	1
+然后	yqmb hfkv	6
+然后或者	yqmb hfkv kkfi hjr	1
+多喝水	yyx kjit es	0
+=======
+怎么	gunx wdm	4
+为上	isid os	1
+是一	jfnz fi	0
+是了	jfnz vl	1
+卿云	jvdm adm	1
+曾经	ljjr odng	11
+奇奇	mckv mckv	1
+不	nb	0
+经常	odng grj	2
+组织	oeq okmb	7
+甚至	rti uz	1
+卜	ub	1
+由車该	ui xc crh	1
+应该	uix crh	5
+努力	wdsl sl	11
+得们	wjfh erm	1
+得时	wjfh jhc	1
+在个	xlht uls	2
+在人	xlht ur	2
+在有	xlht xyv	1
+琳琳	yaam yaam	1
+然着	yqmb msm	1
+>>>>>>> d2cfe58ab8262bb8da148711a9d4c824ba697a4f
