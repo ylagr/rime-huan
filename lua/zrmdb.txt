@@ -1,3 +1,10 @@
+⺈ dk
+⺋ ee
+⺌ xc
+⺗ xn
+⺧ nq
+⺻ yv
+⻊ zu
 ⻗ yu
 〇 aa
 の aa
@@ -6492,6 +6499,7 @@
 䴗 in
 䴘 ns
 䴙 nb
+䴙 nx
 䴚 lk
 䴛 lx
 䴜 lg
@@ -8601,7 +8609,6 @@
 叡 yr
 叡 yo
 叢 yq
-叢 sd
 叢 yy
 口 aa
 古 uk
@@ -10938,8 +10945,8 @@
 季 hz
 孤 zg
 孥 zn
-学 dz
 学 zb
+学 dz
 孧 zy
 孨 zz
 孩 zh
@@ -10965,8 +10972,8 @@
 孶 zz
 孷 wz
 孷 zi
-學 jz
 學 zb
+學 jz
 孹 zx
 孺 zx
 孻 zj
@@ -20609,7 +20616,6 @@
 离 wl
 禼 bd
 禼 br
-禼 sd
 禽 rl
 禾 pd
 禾 pm
@@ -22869,7 +22875,6 @@
 胒 on
 胓 op
 胔 rc
-胔 sd
 胕 of
 胖 ob
 胗 op
@@ -30049,8 +30054,8 @@
 項 gy
 項 yg
 順 yi
-頇 gy
 頇 yg
+頇 gy
 須 py
 須 yp
 頉 vy
@@ -32183,7 +32188,6 @@
 黶 ih
 黷 hm
 黸 hl
-黹 sd
 黹 yb
 黺 fb
 黺 yf
@@ -32435,10 +32439,15 @@
 龲 jk
 龴 si
 龵 pp
+龵 kj
+龵 ub
+龶 fg
 龶 qy
+龷 ck
 龷 nm
 龸 ih
 龹 jr
+龺 ji
 龺 uz
 龻 lm
 龼 tr
@@ -32489,25 +32498,6 @@
 鿾 tl
 鿿 fu
 鿿 ur
- yi
- dk
- ee
- si
- xc
- xn
- kj
- ub
- fg
- ck
- nq
- fg
- yv
- jr
- zu
- ji
- yy
- nb
- nx
 郎 el
 凉 dj
 秊 hq
@@ -32694,6 +32684,7 @@
 𠂢 pp
 𠂣 px
 𠂤 vv
+𠂤 pk
 𠂥 pc
 𠂦 pa
 𠂧 ps
@@ -38517,6 +38508,7 @@
 𡗕 db
 𡗖 kd
 𡗖 dk
+𡗗 fg
 𡗗 sr
 𡗘 ta
 𡗘 da
@@ -50991,6 +50983,7 @@
 𤇹 hb
 𤇻 hd
 𤇽 hr
+𤇾 yy
 𤇾 yb
 𤇾 hb
 𤈀 dh
@@ -81516,6 +81509,9 @@
 𫜶 od
 𫜷 ue
 𫜸 kb
+𫜹 xt
+𫜹 aa
+𫜹 vh
 𫝁 ak
 𫝁 qk
 𫝂 aa

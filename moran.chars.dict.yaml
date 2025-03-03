@@ -761,6 +761,7 @@ use_preset_vocabulary: false
 伜	cv;ru	0
 伜	cv;rz	0
 伝	ir;ry	0
+伝	vr;ry	0
 伝	yp;ry	0
 伞	sj;ru	33523
 伟	wz;rw	242973
@@ -2700,7 +2701,6 @@ use_preset_vocabulary: false
 叡	rv;yr	0
 叡	rv;yo	0
 叢	cs;yq	0
-叢	cs;sd	0
 叢	cs;yy	0
 口	kb;aa	2375024
 古	gu;uk	621960
@@ -5773,10 +5773,10 @@ use_preset_vocabulary: false
 季	ji;hz	1028550
 孤	gu;zg	241832
 孥	nu;zn	310
-学	xc;dz	0
 学	xc;zb	0
-学	xt;dz	2566533
+学	xc;dz	0
 学	xt;zb	2566533
+学	xt;dz	2566533
 孧	yb;zy	0
 孨	ni;zz	0
 孨	vr;zz	0
@@ -5807,10 +5807,10 @@ use_preset_vocabulary: false
 孶	zi;zz	0
 孷	li;wz	0
 孷	li;zi	0
-學	xc;jz	0
 學	xc;zb	0
-學	xt;jz	0
+學	xc;jz	0
 學	xt;zb	0
+學	xt;jz	0
 孹	bi;zx	0
 孹	bo;zx	0
 孺	ru;zx	9093
@@ -16185,6 +16185,7 @@ use_preset_vocabulary: false
 甏	pg;wp	0
 甐	ln;wl	0
 甑	zg;wc	627
+甑	jy;wc	0
 甒	wu;ww	0
 甓	pi;wb	35
 甓	pi;wx	35
@@ -18054,7 +18055,6 @@ use_preset_vocabulary: false
 离	li;wl	1222359
 禼	xx;bd	0
 禼	xx;br	0
-禼	xx;sd	0
 禽	qn;rl	20600
 禾	he;pd	16993
 禾	he;pm	16993
@@ -20282,7 +20282,6 @@ use_preset_vocabulary: false
 美	mz;yd	1692264
 羏	yh;yp	0
 羐	yb;aj	0
-羐	yb;sd	0
 羑	yb;yj	145
 羒	ff;yf	0
 羓	ba;yb	3
@@ -20795,7 +20794,6 @@ use_preset_vocabulary: false
 胓	pg;op	0
 胓	py;op	0
 胔	zi;rc	0
-胔	zi;sd	0
 胕	fu;of	0
 胖	ph;ob	178105
 胖	pj;ob	1
@@ -29790,10 +29788,10 @@ use_preset_vocabulary: false
 項	xd;gy	0
 項	xd;yg	0
 順	up;yi	0
-頇	gj;gy	0
 頇	gj;yg	0
-頇	hj;gy	0
+頇	gj;gy	0
 頇	hj;yg	0
+頇	hj;gy	0
 須	xu;py	0
 須	xu;yp	0
 頉	yi;vy	0
@@ -30157,6 +30155,7 @@ use_preset_vocabulary: false
 餂	tm;uu	0
 餃	jc;uj	0
 餄	he;uh	0
+餄	ho;uh	0
 餄	jw;uh	0
 餅	by;ub	0
 餆	yk;uv	0
@@ -30171,6 +30170,7 @@ use_preset_vocabulary: false
 餍	yj;iu	403
 餍	yj;uy	403
 餎	le;ug	0
+餎	lo;ug	0
 餏	xi;uy	0
 餐	cj;uy	201053
 餑	bo;ub	0
@@ -30320,6 +30320,8 @@ use_preset_vocabulary: false
 饷	xd;ux	9645
 饸	he;uh	49
 饹	le;ug	55
+饸	ho;uh	0
+饹	lo;ug	0
 饺	jc;uj	11790
 饻	xi;uy	0
 饼	by;ub	40371
@@ -32318,7 +32320,6 @@ use_preset_vocabulary: false
 黶	yj;ih	0
 黷	du;hm	0
 黸	lu;hl	0
-黹	vi;sd	113
 黹	vi;yb	113
 黺	ff;fb	0
 黺	ff;yf	0
@@ -32640,8 +32641,8 @@ use_preset_vocabulary: false
 鿭	ni;je	0
 鿭	nx;je	0
 鿺	ml;nm	0
-	pi;nb	0
-	pi;nx	0
+䴙	pi;nb	0
+䴙	pi;nx	0
 郎	lh;el	0
 凉	ld;dj	0
 秊	qm;hq	0
@@ -34107,7 +34108,7 @@ use_preset_vocabulary: false
 廾	pp;ck	0
 廿	pp;ck	0
 弋	pp;yi	0
-彐	pp;xt	0
+𫜹	pp;xt	0
 彑	pp;ji	0
 彡	pp;px	0
 彳	pp;rf	0
@@ -34157,27 +34158,26 @@ use_preset_vocabulary: false
 阝	pp;er	0
 飠	pp;ui	0
 饣	pp;ui	0
-	pp;yi	0
-	pp;dk	0
-	pp;ee	0
-	pp;si	0
-	pp;xc	0
-	pp;xn	0
-	pp;kj	0
-	pp;ub	0
-	pp;fg	0
-	pp;ck	0
-	pp;nq	0
-	pp;fg	0
-	pp;yv	0
-	pp;jr	0
-	pp;zu	0
-	pp;ji	0
-	pp;yy	0
+乁	pp;yi	0
+⺈	pp;dk	0
+⺋	pp;ee	0
+龴	pp;si	0
+⺌	pp;xc	0
+⺗	pp;xn	0
+龵	pp;kj	0
+龵	pp;ub	0
+龶	pp;fg	0
+龷	pp;ck	0
+⺧	pp;nq	0
+𡗗	pp;fg	0
+⺻	pp;yv	0
+龹	pp;jr	0
+⻊	pp;zu	0
+龺	pp;ji	0
+𤇾	pp;yy	0
 兀	pp;wu	0
 𡭔	pp;xc	0
 䒑	pp;qm	0
-龴	pp;si	0
 龶	pp;qy	0
 龷	pp;nm	0
 龸	pp;ih	0
@@ -119720,9 +119720,9 @@ use_preset_vocabulary: false
 嚌	vl;kq	0
 尐	jx;xd	0
 屰	ji;qc	0
-彐	xt;aa	0
-彐	xt;vh	0
-彐	xt;xt	0
+𫜹	xt;aa	0
+𫜹	xt;vh	0
+𫜹	xt;xt	0
 懠	ji;xq	0
 撽	yk;fj	0
 撽	yk;fw	0
@@ -121911,6 +121911,9 @@ use_preset_vocabulary: false
 # 手工增補
 𩚨	kq;uq	0
 𱹀	kq;uj	0
+𠂤	dv;pk	0
+𠂤	ui;pk	0
+𠂤	vv;pk	0
 
 # 一些會對正常輸入造成干擾的字
 # 直接禁用掉

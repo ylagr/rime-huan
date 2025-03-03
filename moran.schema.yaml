@@ -15,7 +15,7 @@ schema:
     - moran_english
     #- moran_japanese # 日語混輸
     - stroke
-    - tiger
+    - huan
     - cangjie5
     - bopomofo
     - zrlf
@@ -26,6 +26,7 @@ switches:
   - name: full_shape
     states: [ 半角, 全角 ]
   - name: traditionalization
+    reset: 1
     states: [ 汉字, 漢字 ]
   - name: ascii_punct
     states: [ 。，, ．， ]
@@ -33,6 +34,7 @@ switches:
     states: [ 通用, 增廣 ]
   - name: inflexible
     states: [ 動詞, 固詞 ] # 「固詞」表示「固頂詞」
+    reset: 1
     # 默認情況下，輸入 4 碼時，會禁止碼表輸出（「動詞」模式）。
     # 這是因爲碼表最大碼長爲 4，可能會產生較低頻的多字詞，覆蓋過用戶自造的常用詞語。
     # 當固詞模式啓動後，輸入 4 碼時會優先輸出碼表中的二字詞，這些輸出帶有「⚡️」標記。
@@ -52,11 +54,12 @@ engine:
   processors:
     - key_binder
     - lua_processor@*moran_pin*pin_processor
-    - lua_processor@*moran_semicolon_processor
+    - lua_processor@*moran_processor
     - ascii_composer
     - recognizer
     - speller
     - punctuator
+    - lua_processor@*moran_launcher     # 輸入 omorj 或 ogrwh 後回車打開魔然官網
     - selector
     - navigator
     - express_editor
@@ -72,7 +75,7 @@ engine:
     - punct_translator
     - reverse_lookup_translator@reverse_tick
     - reverse_lookup_translator@reverse_universal
-    - reverse_lookup_translator@reverse_tiger
+    - reverse_lookup_translator@reverse_huan
     - reverse_lookup_translator@reverse_stroke
     - reverse_lookup_translator@reverse_cangjie5
     - reverse_lookup_translator@reverse_zrlf
@@ -146,7 +149,7 @@ custom_phrase: # 自定義短語
   initial_quality: 1000
 
 english:
-  tag: english  # librime<=0.11 請在 custom 中置空
+  tag: english  # librime<=1.11 請在 custom 中置空
   dictionary: moran_english
   prism: moran_english
   enable_completion: true
@@ -194,6 +197,7 @@ chaifen:
   show_in_comment: true
   comment_form:
     - "xform/-/ /"
+    - "xform/〕〔/｜/"
 
 pinyinhint:
   option_name: pinyinhint
@@ -231,12 +235,12 @@ reverse_format:
   preedit_format:
     - xform/^o(lf|bh|cj|vy|hm)//
 
-reverse_tiger:
-  tag: reverse_tiger
-  dictionary: tiger
+reverse_huan:
+  tag: reverse_huan
+  dictionary: huan
   enable_completion: true
   prefix: "ohm"
-  tips: 〔虎碼〕
+  tips: 〔环碼〕
   __include: reverse_format
 
 reverse_universal:
@@ -283,7 +287,7 @@ reverse_bopomofo:
     - "xlit|1qaz2wsxedcrfv5tgbyhnujm8ik,9ol.0p;/- 6347'|ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙㄧㄨㄩㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥㄦˉˊˇˋ˙ |"
 
 reverse_tick:
-  __include: reverse_tiger
+  __include: reverse_huan
   tag: reverse_tick
   prefix: "`"
 
@@ -291,7 +295,7 @@ reverse_lookup:
   extra_tags:
     - reverse_tick
     - reverse_universal
-    - reverse_tiger
+    - reverse_huan
     - reverse_stroke
     - reverse_cangjie5
     - reverse_zrlf
@@ -323,7 +327,7 @@ recognizer:
     # 反查
     reverse_universal: "(^(`[a-z`]+))|(^([a-z]{2}(`[a-z`]?|[a-z`]`)))"
     reverse_tick: "(^`$)|(^`[a-zA-Z]+$)"
-    reverse_tiger: "^ohm[a-z]+$"
+    reverse_huan: "^ohm[a-z]+$"
     reverse_stroke: "^obh[A-Za-z]*$"
     reverse_cangjie5: "^ocj[A-Za-z]*$"
     reverse_zrlf: "^olf[A-Za-z]*$"
@@ -378,10 +382,10 @@ moran:
 
   # 簡快碼提示（包括字和詞）
   # 例如 輸入 yy te er 英特爾 會提示「⚡yte」，即使用 yte 可以打出這個詞
-  enable_quick_code_hint: false
+  enable_quick_code_hint: true
 
   # 輸入四碼時，如果簡碼碼表中含有對應條目，則放置在第二選項。
-  show_chars_anyway: false   # 是否輸出簡碼碼表單字，例：輸入 jwrg 時，次選爲「佳」
+  show_chars_anyway: true   # 是否輸出簡碼碼表單字，例：輸入 jwrg 時，次選爲「佳」
   show_words_anyway: true   # 是否輸出簡碼碼表詞語，例：輸入 lmsd 時，次選爲「兩面三刀」
 
   # 「置頂」功能相關設置
@@ -410,3 +414,4 @@ __include: moran:/octagram/enable_for_sentence
 # 若要禁用，可直接刪掉上面的 __include，或在 custom 文件中寫入：
 # patch:
 #   __include: moran:/octagram/disable
+ 
