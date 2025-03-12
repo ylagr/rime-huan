@@ -26,6 +26,7 @@ algebra:
         - moran_defs:/fly/ny_nw  # ZRM-SPECIFIC
         - moran_defs:/fly/yn_yw  # ZRM-SPECIFIC
         - moran_defs:/fly/my_mw  # ZRM-SPECIFIC
+        - moran_defs:/fly/xw_xk  # ZRM-SPECIFIC
         
         # 模糊音設置
         # - moran_defs:/bufen/z_zh
