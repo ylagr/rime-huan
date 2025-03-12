@@ -67,7 +67,9 @@ fly:
   my_mw:
     __append:
       - derive/my;/mw;/
-
+  xw_xk:
+    __append:
+      - derive/xw;/xk;/
 # 小寫可匹配大寫編碼（用於英語混輸）
 casefold:
   __append:

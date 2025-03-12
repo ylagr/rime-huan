@@ -2,9 +2,9 @@ schema:
   author:
     - {}
   description: |
-    环码官方单字
+    环
     敲 ` 鍵進入拼音反查
-  name: "环码官方单字"
+  name: "环"
   schema_id: huan
   version: 0.1
 
@@ -59,7 +59,7 @@ translator:
   dictionary: huan
   enable_charset_filter: false
   enable_encoder: true
-  enable_sentence: true
+  enable_sentence: false
   encode_commit_history: true
   max_phrase_length: 3
   enable_user_dict: true
