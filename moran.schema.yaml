@@ -95,9 +95,8 @@ engine:
     - lua_filter@*moran_charset_filter
     - lua_filter@*moran_pin*pin_filter
     - lua_filter@*moran_reorder_filter
-    - lua_filter@*moran_quick_code_hint
-    - lua_filter@*moran_aux_hint
     - lua_filter@*moran_ijrq_filter
+    - lua_filter@*moran_hint_filter
     - simplifier@emoji
     - simplifier@chaifen
     - simplifier@pinyinhint
@@ -196,7 +195,7 @@ chaifen:
   opencc_config: moran_chaifen.json
   tips: char
   show_in_comment: true
-  comment_form:
+  comment_format:
     - "xform/-/ /"
     - "xform/〕〔/｜/"
 
@@ -316,6 +315,7 @@ key_binder:
       - moran:/key_bindings/moran_tab
       - moran:/key_bindings/moran_switches
       - moran:/key_bindings/moran_keypad
+      - moran:/key_bindings/moran_toggle_inflexible
       # 大寫字母追加輔助碼到上一音節
       # 該功能可使用 Shift-tab 替代
       # - moran:/key_bindings/moran_capital_for_last_syllable
@@ -361,6 +361,11 @@ moran:
   # 意思是輸入 j *或* f 都可以定位到這個詞，而不是說要同時輸入 jf 兩個碼
   # （相反，同時輸入 jf 兩碼後反而無法得到該選項）。
   enable_word_filter: false
+  # 重設詞輔匹配提示符爲其他字符串。
+  # 即輸入 lmjxz 時被詞輔匹配的候選「連接」的提示符，不影響輔助碼提示功能的輸出。
+  # 設爲 "" 完全取消提示。
+  # 設爲 {} 表示不重設詞輔提示符。
+  word_filter_match_indicator: {}
 
   # 「出簡讓全」相關設置
   # 當一個字具有簡碼時，打其全碼（不論是 yyxx 還是 yyxxo）都會導致該
@@ -376,9 +381,13 @@ moran:
     # 若開啓詞語級讓全，則 lmjxf 的首選會被調整爲「鏈接」
     enable_word: false
 
-  # 單字輔助碼提示
-  # 注：會顯示出所有可能的輔助碼，且不顯示拆分
+  # 單字或詞輔的輔助碼提示
+  # 
+  # 單字輔助碼會顯示出所有可能的輔助碼，且不顯示拆分
   # 建議使用 Ctrl+i 切換輔助碼拆分提示功能
+  #
+  # 詞輔助碼提示僅在開啓 enable_word_filter 時生效
+  # 具體提示格式請參考上面「詞輔功能」的說明
   enable_aux_hint: false
 
   # 簡快碼提示（包括字和詞）
