@@ -1,10 +1,16 @@
 -- Moran Translator (for Express Editor)
 -- Copyright (c) 2023, 2024, 2025 ksqsf
 --
--- Ver: 0.7.1
+-- Ver: 0.8.1
 --
 -- This file is part of Project Moran
 -- Licensed under GPLv3
+--
+-- 0.8.1: 支持 word_filter_match_indicator。
+--
+-- 0.8.0: 適配 hint_filter，支持詞輔提前提示。
+--
+-- 0.7.2: 修正詞輔在三字詞可能不生效的問題。
 --
 -- 0.7.1: 修正詞輔與整句輔的一處兼容性問題，並優化了性能。
 --
@@ -66,6 +72,8 @@ function top.init(env)
    env.ijrq_hint = env.engine.schema.config:get_bool("moran/ijrq/show_hint")
    env.ijrq_suffix = env.engine.schema.config:get_string("moran/ijrq/suffix") or 'o'
    env.enable_word_filter = env.engine.schema.config:get_bool("moran/enable_word_filter")
+   env.word_filter_match_indicator = env.engine.schema.config:get_string("moran/word_filter_match_indicator")
+   env.enable_aux_hint = env.engine.schema.config:get_bool("moran/enable_aux_hint")
    env.show_chars_anyway = env.engine.schema.config:get_bool("moran/show_chars_anyway")
    env.show_words_anyway = env.engine.schema.config:get_bool("moran/show_words_anyway")
 
@@ -120,9 +128,9 @@ function top.func(input, seg, env)
                for cand in fixed_res:iter() do
                   local cand_len = utf8.len(cand.text)
                   if cand_len == 1 then
-                     top.output_char_from_fixed(cand)
+                     top.output_char_from_fixed(env, cand)
                   elseif cand_len == 2 then
-                     top.output_word_from_fixed(cand)
+                     top.output_word_from_fixed(env, cand)
                   end
                end
             elseif inflexible then
@@ -167,11 +175,15 @@ function top.func(input, seg, env)
       local user_ac = input:sub(input_len, input_len)
       local iter = top.raw_query_smart(env, real_input, seg, true)
       for cand in iter do
-         local idx = cand.comment:find(user_ac)
-         local only_sp = (cand.preedit:sub(3,3) == ' ')
-         if only_sp and idx ~= nil and ((input_len == 5) or (input_len == 7 and idx ~= 1)) then
+         local len_match = (input_len == 7 and #cand.preedit == 8) or (input_len == 5 and #cand.preedit == 5)
+         local idx = len_match and cand.comment:find(user_ac)
+         local only_sp = (cand.preedit:sub(3,3) == ' ') and (#cand.preedit < 6 or cand.preedit:sub(6,6) == ' ')
+         if only_sp and idx then
             cand._end = cand._end + 1
             cand.preedit = input
+            if env.word_filter_match_indicator then
+               cand.comment = env.word_filter_match_indicator
+            end
             top.output(env, cand)
          end
          if #cand.preedit <= 2 then
@@ -181,7 +193,8 @@ function top.func(input, seg, env)
    end
 
    -- smart 在 fixed 之後輸出。
-   local smart_iter = top.raw_query_smart(env, input, seg, false)
+   -- 當需要詞輔時，保留 comment，以「提前」（用戶輸入詞輔前）提示輔助碼。
+   local smart_iter = top.raw_query_smart(env, input, seg, env.enable_word_filter and env.enable_aux_hint)
    if smart_iter ~= nil then
       local ijrq_enabled = env.ijrq_enable
          and (env.engine.context.input == input)
@@ -250,6 +263,7 @@ end
 
 -- | 支持候選注入的 yield
 function top.output(env, cand)
+   -- 注意：需要保證 spelling hint 僅對 3 字以下詞開啓
    yield(cand)
    env.output_i = env.output_i + 1
    if env.output_i == 1 then
