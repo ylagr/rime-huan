@@ -1,6 +1,7 @@
 on: [push]
 jobs:
   simplified-moran:
+    if: ${{ github.repository == 'rimeinn/rime-moran' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -31,6 +32,7 @@ jobs:
         if: ${{ failure() }}
         uses: mxschmitt/action-tmate@v3
   traditional-moran:
+    if: ${{ github.repository == 'rimeinn/rime-moran' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -54,6 +56,7 @@ jobs:
             dist/moran.hanyu.dict.yaml
             dist/moran.words.dict.yaml
       - name: Deploy to branch
+        if: ${{ github.repository == 'rimeinn/rime-moran' }}
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -61,6 +64,7 @@ jobs:
           publish_branch: trad
 
   demo-simp:
+    if: ${{ github.repository == 'rimeinn/rime-moran' }}
     runs-on: ubuntu-24.04
     needs: [simplified-moran]
     steps:
@@ -93,6 +97,7 @@ jobs:
             opencc/
 
   demo-trad:
+    if: ${{ github.repository == 'rimeinn/rime-moran' }}
     runs-on: ubuntu-24.04
     needs: [traditional-moran]
     steps:
