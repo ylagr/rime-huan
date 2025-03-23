@@ -44,3 +44,17 @@ def latest_essay():
     df = pd.DataFrame(ret, columns=['text', 'weight'])
     df = df.astype({'weight': int})
     return df
+
+
+def charset():
+    RE_LINE = re.compile(r"^(.*)\tt$")
+    ret = set()
+    with open('../moran_charset.dict.yaml', 'r') as f:
+        for l in f:
+            l = l.rstrip()
+            matches = RE_LINE.findall(l)
+            if not matches:
+                continue
+            char = matches[0]
+            ret.add(char)
+    return ret
