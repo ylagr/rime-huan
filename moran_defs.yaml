@@ -70,6 +70,15 @@ fly:
   xw_xk:
     __append:
       - derive/xw;/xk;/
+  mu_mr:
+    __append:
+      - derive/mu;/mr;/
+  vr_vn:
+    __append:
+      - derive/vr;/vn;/
+  ce_cn:
+    __append:
+      - derive/ce;/cn;/
 # 小寫可匹配大寫編碼（用於英語混輸）
 casefold:
   __append:
