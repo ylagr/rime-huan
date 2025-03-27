@@ -34,6 +34,7 @@ function Module.init(env)
       env.quick_code_hint_reverse = nil
    end
    env.quick_code_indicator = env.engine.schema.config:get_string("moran/quick_code_indicator") or "⚡"
+   env.fix_code_indicator = env.engine.schema.config:get_string("moran/fix_code_indicator") or "☯️"
 end
 
 function Module.fini(env)

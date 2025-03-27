@@ -64,6 +64,7 @@ function top.init(env)
    env.smart = Component.Translator(env.engine, "", "script_translator@translator")
    env.rfixed = ReverseLookup(env.engine.schema.config:get_string("fixed/dictionary") or "moran_fixed")
    env.quick_code_indicator = env.engine.schema.config:get_string("moran/quick_code_indicator") or "⚡️"
+   env.fix_code_indicator = env.engine.schema.config:get_string("moran/fix_code_indicator") or "☯️"
    if env.name_space == 'with_reorder' then
       env.quick_code_indicator = '`F'
    end
@@ -104,7 +105,7 @@ function top.func(input, seg, env)
    local input_len = utf8.len(input)
    local inflexible = env.engine.context:get_option("inflexible")
    local indicator = env.quick_code_indicator
-
+   local fix_indicator = env.fix_code_indicator
    -- 用戶尚未選過字時，調用碼表。
    if (env.engine.context.input == input) then
       local fixed_res = env.fixed:query(input, seg)
@@ -162,7 +163,7 @@ function top.func(input, seg, env)
          local cand_len = utf8.len(cand.text)
          if (env.show_chars_anyway and cand_len == 1) or (env.show_words_anyway and cand_len > 2) then
             if cand_len ~= 1 or (cand_len == 1 and not env.quick_code_indicator_skip_chars) then
-               cand:get_genuine().comment = indicator
+               cand:get_genuine().comment = fix_indicator
             end
             table.insert(env.output_injected_secondary, cand)
          end
@@ -249,7 +250,7 @@ function top.func(input, seg, env)
    -- 最后：如果 smart 輸出爲空，並且 fixed 之前沒有調用過，此時再嘗試調用一下
    if env.output_i == 0 then
       for cand in moran.query_translation(env.fixed, input, seg, nil) do
-         cand.comment = indicator
+         cand.comment = fix_indicator
          yield(cand)
       end
    end
@@ -278,13 +279,13 @@ end
 
 function top.output_char_from_fixed(env, cand)
    if not env.quick_code_indicator_skip_chars then
-      cand.comment = env.quick_code_indicator
+      cand.comment = env.fix_code_indicator
    end
    top.output(env, cand)
 end
 
 function top.output_word_from_fixed(env, cand)
-   cand.comment = env.quick_code_indicator
+   cand.comment = env.fix_code_indicator
    top.output(env, cand)
 end
 

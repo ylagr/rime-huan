@@ -16,6 +16,7 @@ function Top.init(env)
    -- for performance's sake.
    env.reorder_threshold = 200
    env.quick_code_indicator = env.engine.schema.config:get_string("moran/quick_code_indicator") or "⚡️"
+   env.fix_code_indicator = env.engine.schema.config:get_string("moran/fix_code_indicator") or "☯️"
    env.cache = {}
 end
 
