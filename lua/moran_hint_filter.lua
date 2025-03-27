@@ -123,7 +123,8 @@ function Module.func(translation, env)
       return
    end
 
-   local major_sep = " ¦ "
+   -- local major_sep = "¦"
+   local major_sep = "¦"
    local minor_sep = env.quick_code_indicator
    if #minor_sep == 0 then
       minor_sep = "⚡"
