@@ -2934,6 +2934,7 @@ A4纸	asv
 贬低	bmdi
 扁担	bmdj
 编导	bmdk
+变多	bmdo
 变短	bmdr
 变动	bmds
 编队	bmdv
@@ -3092,6 +3093,7 @@ A4纸	asv
 编上	bmuh
 辨识	bmui
 便是	bmui
+变少	bmuk
 表面上看	bmuk
 不明事理	bmul
 辩说	bmuo
@@ -6035,8 +6037,8 @@ C++	cpp
 存在	cpzl
 村组	cpzu
 蹲	cpzz
-此前	cq
 从前	cq
+此前	cq
 此起彼伏	cqbf
 此起彼落	cqbl
 残缺不全	cqbq
@@ -7897,6 +7899,7 @@ C语言	cyy
 地宫	digs
 低估	digu
 低谷	digu
+嘀咕	digu
 鞮	digu
 递归	digv
 地瓜	digw
@@ -12074,6 +12077,7 @@ E盘	epj
 放出	fhiu
 纺锤	fhiv
 钫	fhj
+非黑即白	fhjb
 方角	fhjc
 风华绝代	fhjd
 方剂	fhji
@@ -13002,6 +13006,7 @@ F盘	fpj
 复命	fumy
 赴美	fumz
 妇	fun
+赋能	fung
 拂逆	funi
 凫	funj
 俯念	funm
@@ -14771,6 +14776,7 @@ F盘	fpj
 干练	gjlm
 甘霖	gjln
 干流	gjlq
+趕路	gjlu
 甘露	gjlu
 过街老鼠	gjlu
 干裂	gjlx
@@ -15299,6 +15305,7 @@ F盘	fpj
 谷类作物	glzw
 官僚资本主义	glzy
 干嘛	gm
+购买	gm
 过目不忘	gmbw
 光明大道	gmdd
 关门打狗	gmdg
@@ -15480,8 +15487,8 @@ F盘	fpj
 过虑	golv
 粿	gom
 国门	gomf
-国民	gomn
 过敏	gomn
+国民	gomn
 过目	gomu
 椁	gomx
 国名	gomy
@@ -20019,6 +20026,7 @@ H盘	hpj
 湖畔	hupj
 互派	hupl
 湖泊	hupo
+琥珀	hupo
 横竖撇点折	hupv
 狐	huq
 糊墙	huqd
@@ -22166,6 +22174,7 @@ H盘	hpj
 菖蒲	ihpu
 昌平	ihpy
 猖	ihq
+长枪	ihqd
 唱腔	ihqd
 瞠乎其后	ihqh
 长期	ihqi
@@ -23553,12 +23562,13 @@ I盘	ipj
 重奏	iszb
 虫子	iszi
 冲澡	iszk
-虫灾	iszl
 重载	iszl
+虫灾	iszl
 重做	iszo
 充足	iszu
 重组	iszu
 冲突	it
+传统	it
 丑态百出	itbi
 丑态毕露	itbl
 长痛不如短痛	itbt
@@ -24206,6 +24216,7 @@ I盘	ipj
 基本国策	jbgc
 绝不姑息	jbgx
 基本工资	jbgz
+煎饼馃子	jbgz
 基本货币	jbhb
 金碧辉煌	jbhh
 久别重逢	jbif
@@ -25779,6 +25790,7 @@ I盘	ipj
 既来之则安之	jlvv
 蕨类植物	jlvw
 经理	jlw
+叽里哇啦	jlwl
 价廉物美	jlwm
 精力旺盛	jlwu
 见利忘义	jlwy
@@ -28210,6 +28222,7 @@ I盘	ipj
 解救	jxjq
 解决	jxjt
 结局	jxju
+拮据	jxju
 节假	jxjw
 结痂	jxjw
 姐姐	jxjx
@@ -28926,13 +28939,14 @@ I盘	ipj
 扣除	kbiu
 科班出身	kbiu
 扣缴	kbjc
+口角	kbjc
 可比价格	kbjg
 口技	kbji
 叩击	kbji
 扣减	kbjm
 口紧	kbjn
-口角	kbjt
 口诀	kbjt
+口角	kbjt
 可不就是	kbju
 口径	kbjy
 叩	kbk
@@ -37463,6 +37477,7 @@ I盘	ipj
 美	mzd
 美德	mzde
 每当	mzdh
+美的	mzdi
 每到	mzdk
 没带	mzdl
 没电	mzdm
@@ -44856,6 +44871,7 @@ I盘	ipj
 热	re
 然而	re
 热爱	reai
+热榜	rebh
 热播	rebo
 热补	rebu
 热病	reby
@@ -50910,8 +50926,8 @@ I盘	ipj
 退养	tvyh
 退役	tvyi
 推移	tvyi
-弹指一挥间	tvyj
 推演	tvyj
+弹指一挥间	tvyj
 退隐	tvyn
 特种邮票	tvyp
 颓	tvyt
@@ -53306,6 +53322,8 @@ T恤衫	txuj
 屎尿	uinc
 师娘	uind
 势能	uing
+使能	uing
+失能	uing
 实乃	uinl
 十年	uinm
 侍弄	uins
@@ -66373,6 +66391,7 @@ U盘	upj
 有得有失	ydyu
 有胆有识	ydyu
 有多远滚多远	ydyy
+异地灾备	ydzb
 一肚子火	ydzh
 一肚子气	ydzq
 一肚子坏水	ydzu
@@ -70162,6 +70181,7 @@ U盘	upj
 预征	yuvg
 鱼水之欢	yuvh
 预知	yuvi
+阈值	yuvi
 一时之间	yuvj
 预展	yuvj
 预兆	yuvk
@@ -73708,6 +73728,7 @@ U盘	upj
 不然呢	brn
 哺乳期	brq
 不饶人	brr
+比热容	brr
 比如说	bru
 不如说	bru
 不认识	bru
@@ -75089,9 +75110,9 @@ U盘	upj
 港澳台	gat
 孤哀子	gaz
 干巴巴	gbb
-搞不定	gbd
-搞不懂	gbd
 怪不得	gbd
+搞不懂	gbd
+搞不定	gbd
 该不该	gbg
 够不够	gbg
 敢不敢	gbg
@@ -75574,6 +75595,7 @@ U盘	upj
 黄褐斑	hhb
 黄花菜	hhc
 好好儿	hhe
+换行符	hhf
 哈哈哈	hhh
 黑乎乎	hhh
 好好好	hhh
@@ -75624,6 +75646,7 @@ U盘	upj
 好几回	hjh
 户籍警	hjj
 好极了	hjl
+含金量	hjl
 好几年	hjn
 火箭炮	hjp
 婚介所	hjs
@@ -79447,6 +79470,7 @@ U盘	upj
 耍态度	utd
 收摊儿	ute
 手推车	uti
+实体机	utj
 石炭纪	utj
 伤透了	utl
 受胎率	utl
@@ -80161,6 +80185,7 @@ U盘	upj
 乌拉圭	wlg
 网络化	wlh
 乌龙茶	wli
+物理机	wlj
 往来款	wlk
 无理码	wlm
 五六年	wln
@@ -80620,6 +80645,7 @@ U盘	upj
 小蛮腰	xmy
 小妞儿	xne
 小女孩	xnh
+虚拟机	xnj
 心内膜	xnm
 小年夜	xny
 新娘子	xnz
@@ -81294,6 +81320,7 @@ U盘	upj
 原则上	yzu
 有组织	yzv
 原则性	yzx
+源自于	yzy
 咬字眼	yzy
 一座座	yzz
 则安之	zav
@@ -81389,6 +81416,7 @@ U盘	upj
 载货量	zhl
 走后门	zhm
 杂货铺	zhp
+组合拳	zhq
 枣红色	zhs
 再回头	zht
 纵横谈	zht
