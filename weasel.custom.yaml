@@ -1,0 +1,11 @@
+patch:
+  app_optins:
+    neovide.exe:
+      ascii_mode: true
+      vim_mode: true
+    vim.exe:
+      ascii_mode: true
+      vim_mode: true
+    nvim.exe:
+      ascii_mode: true
+      vim_mode: true
