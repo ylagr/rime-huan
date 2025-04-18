@@ -2,13 +2,27 @@
 # It is not intended for manual editing.
 
 [metadata]
-groups = ["default"]
-strategy = ["cross_platform", "inherit_metadata"]
+groups = ["default", "dev"]
+strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:7eed89f194e2d1db0a123cf4daaa0b874fd33facf6278e29cb6053712c8728b9"
+content_hash = "sha256:887dd800169f3a14f37c8b28962b4aee0eab9784991b03905f801f8c5c72eb58"
 
 [[metadata.targets]]
 requires_python = "==3.12.*"
+
+[[package]]
+name = "basedpyright"
+version = "1.28.5"
+requires_python = ">=3.8"
+summary = "static type checking for Python (but based)"
+groups = ["dev"]
+dependencies = [
+    "nodejs-wheel-binaries>=20.13.1",
+]
+files = [
+    {file = "basedpyright-1.28.5-py3-none-any.whl", hash = "sha256:33dab5a88832c17dbce6207e2c9df244c227ad0bf71d7e38d8728a227244e980"},
+    {file = "basedpyright-1.28.5.tar.gz", hash = "sha256:f2f13d1158c77edffe827b0a8366a8d6ec8c3a69aa9f4c938ec8fe6026d1e309"},
+]
 
 [[package]]
 name = "certifi"
@@ -56,6 +70,27 @@ groups = ["default"]
 files = [
     {file = "idna-3.7-py3-none-any.whl", hash = "sha256:82fee1fc78add43492d3a1898bfa6d8a904cc97d8427f683ed8e798d07761aa0"},
     {file = "idna-3.7.tar.gz", hash = "sha256:028ff3aadf0609c1fd278d8ea3089299412a7a8b9bd005dd08b9f8285bcb5cfc"},
+]
+
+[[package]]
+name = "nodejs-wheel-binaries"
+version = "22.14.0"
+requires_python = ">=3.7"
+summary = "unoffical Node.js package"
+groups = ["dev"]
+dependencies = [
+    "typing-extensions; python_version < \"3.8\"",
+]
+files = [
+    {file = "nodejs_wheel_binaries-22.14.0-py2.py3-none-macosx_11_0_arm64.whl", hash = "sha256:d8ab8690516a3e98458041286e3f0d6458de176d15c14f205c3ea2972131420d"},
+    {file = "nodejs_wheel_binaries-22.14.0-py2.py3-none-macosx_11_0_x86_64.whl", hash = "sha256:b2f200f23b3610bdbee01cf136279e005ffdf8ee74557aa46c0940a7867956f6"},
+    {file = "nodejs_wheel_binaries-22.14.0-py2.py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:d0877832abd7a9c75c8c5caafa37f986c9341ee025043c2771213d70c4c1defa"},
+    {file = "nodejs_wheel_binaries-22.14.0-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:8fded5a70a8a55c2135e67bd580d8b7f2e94fcbafcc679b6a2d5b92f88373d69"},
+    {file = "nodejs_wheel_binaries-22.14.0-py2.py3-none-musllinux_1_2_aarch64.whl", hash = "sha256:c1ade6f3ece458b40c02e89c91d5103792a9f18aaad5026da533eb0dcb87090e"},
+    {file = "nodejs_wheel_binaries-22.14.0-py2.py3-none-musllinux_1_2_x86_64.whl", hash = "sha256:34fa5ed4cf3f65cbfbe9b45c407ffc2fc7d97a06cd8993e6162191ff81f29f48"},
+    {file = "nodejs_wheel_binaries-22.14.0-py2.py3-none-win_amd64.whl", hash = "sha256:ca7023276327455988b81390fa6bbfa5191c1da7fc45bc57c7abc281ba9967e9"},
+    {file = "nodejs_wheel_binaries-22.14.0-py2.py3-none-win_arm64.whl", hash = "sha256:fd59c8e9a202221e316febe1624a1ae3b42775b7fb27737bf12ec79565983eaf"},
+    {file = "nodejs_wheel_binaries-22.14.0.tar.gz", hash = "sha256:c1dc43713598c7310d53795c764beead861b8c5021fe4b1366cb912ce1a4c8bf"},
 ]
 
 [[package]]
