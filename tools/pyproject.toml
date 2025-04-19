@@ -20,8 +20,3 @@ license = {text = "GPLv3"}
 
 [tool.pdm]
 distribution = false
-
-[dependency-groups]
-dev = [
-    "basedpyright>=1.28.5",
-]
