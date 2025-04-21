@@ -132,12 +132,12 @@ def main(args):
             table.add(char, 'olf' + code)
 
     # bihua
-    with open('/Library/Input Methods/Squirrel.app/Contents/SharedSupport/stroke.dict.yaml') as f:
-        for l in f:
-            matches = re.findall(r'(\w+)	([a-z]+)', l)
-            if not matches: continue
-            char, code = matches[0]
-            table.add(char, 'obh' + code)
+    # with open('/Library/Input Methods/Squirrel.app/Contents/SharedSupport/stroke.dict.yaml') as f:
+    #     for l in f:
+    #         matches = re.findall(r'(\w+)	([a-z]+)', l)
+    #         if not matches: continue
+    #         char, code = matches[0]
+    #         table.add(char, 'obh' + code)
 
     # 拆分表
     with open('../opencc/moran_chaifen.txt', 'r') as f:

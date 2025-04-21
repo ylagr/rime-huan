@@ -4,8 +4,11 @@
 [metadata]
 groups = ["default"]
 strategy = ["cross_platform", "inherit_metadata"]
-lock_version = "4.4.1"
-content_hash = "sha256:dc73fee2c85cd803e93ec07ad7c934bb3bd29b38326a111c74bd03d645bd2130"
+lock_version = "4.5.0"
+content_hash = "sha256:7eed89f194e2d1db0a123cf4daaa0b874fd33facf6278e29cb6053712c8728b9"
+
+[[metadata.targets]]
+requires_python = "==3.12.*"
 
 [[package]]
 name = "certifi"
@@ -98,6 +101,8 @@ requires_python = ">=3.9"
 summary = "Powerful data structures for data analysis, time series, and statistics"
 groups = ["default"]
 dependencies = [
+    "numpy>=1.22.4; python_version < \"3.11\"",
+    "numpy>=1.23.2; python_version == \"3.11\"",
     "numpy>=1.26.0; python_version >= \"3.12\"",
     "python-dateutil>=2.8.2",
     "pytz>=2020.1",
@@ -120,6 +125,11 @@ version = "0.50.0"
 requires_python = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*, <4"
 summary = "汉字拼音转换模块/工具."
 groups = ["default"]
+dependencies = [
+    "argparse; python_version < \"2.7\"",
+    "enum34; python_version < \"3.4\"",
+    "typing; python_version < \"3.5\"",
+]
 files = [
     {file = "pypinyin-0.50.0-py2.py3-none-any.whl", hash = "sha256:a6ff9a58b8c3ba4599e5ebccf7fab7850257114be70c05a7baab435d1208358f"},
     {file = "pypinyin-0.50.0.tar.gz", hash = "sha256:72e77c4b9b78bad102aca5fefccebdb23439b02717c626039be14a78643980fb"},

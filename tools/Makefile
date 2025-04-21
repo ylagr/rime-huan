@@ -1,6 +1,6 @@
 quick: gen-zrmdb gen-chai-filter
 
-all: gen-zrmdb gen-chai-filter update-compact-dicts dazhu
+all: gen-zrmdb gen-chai-filter update-compact-dicts
 
 gen-zrmdb:
 	python3 gen_zrmdb.py | sort -k1,1 -s > data/zrmdb.txt

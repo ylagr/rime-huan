@@ -1,14 +1,16 @@
 # gen_chai_filter.py
 # 生成拆分濾鏡數據
 
-from collections import defaultdict
+from collections import OrderedDict
 
-chaidb = defaultdict(dict)
+chaidb = OrderedDict()
 with open('data/moran_chai.txt', 'r') as f:
     for l in f:
         if l == '\n' or l.startswith('#'):
             continue
         [char, code, chai] = l.strip().split(' ')
+        if char not in chaidb:
+            chaidb[char] = OrderedDict()
         chaidb[char][code] = chai
 
 cur = []
@@ -27,6 +29,8 @@ def print_and_clear():
 with open('data/zrmdb.txt', 'r') as f:
     for l in f:
         [char, code] = l.strip().split(' ')
+        if char not in chaidb:
+            chaidb[char] = OrderedDict()
         chai = chaidb[char].get(code, '.')
         if len(cur) > 0 and cur[0][0] != char:
             print_and_clear()
