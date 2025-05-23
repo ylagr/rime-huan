@@ -14,9 +14,9 @@ update-compact-dicts:
 	./update_compact_dicts.sh
 
 dazhu:
-	python3 dazhu.py > dazhu-hant2s.txt
-	python3 dazhu.py -c='' > dazhu-hant.txt
-	python3 dazhu.py -c='' --dict ../moran_fixed_simp.dict.yaml > dazhu-hans.txt
+	uv run dazhu.py > dazhu-hant2s.txt
+	uv run dazhu.py -c='' > dazhu-hant.txt
+	uv run dazhu.py -c='' --dict ../moran_fixed_simp.dict.yaml > dazhu-hans.txt
 
 sync-essay:
 	python3 sync_essay.py
