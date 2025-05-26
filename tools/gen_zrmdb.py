@@ -14,6 +14,9 @@ with open('../moran.chars.dict.yaml', 'r') as f:
             if code not in table[char]:
                 table[char].append(code)
 
-for (char, codes) in table.items():
+tosort = list(table.items())
+tosort.sort(key=lambda x: ord(x[0][0]))
+
+for (char, codes) in tosort:
     for code in codes:
         print(f'{char} {code}')
