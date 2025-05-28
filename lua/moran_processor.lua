@@ -2,14 +2,16 @@
 -- Synopsis: 適用於魔然方案默認模式的按鍵處理器
 -- Author: ksqsf
 -- License: MIT license
--- Version: 0.3
+-- Version: 0.4
 
 -- 主要功能：
 -- 1. 選擇第二個首選項，但可用於跳過 emoji 濾鏡產生的候選
 -- 2. 快速切換強制切分
 -- 3. 快速取出/放回被吞掉的輔助碼
+-- 4. shorthand 略碼
 
 -- ChangeLog:
+--  0.4.0：增加固定格式略碼功能
 --  0.3.0: 增加取出/放回被吞掉的輔助碼的能力
 --  0.2.0: 增加快速切換切分的能力，因而從 moran_semicolon_processor 更名爲 moran_processor
 --  0.1.5: 修復獲取 candidate_count 的邏輯
@@ -162,6 +164,51 @@ local function force_segmentation_processor(key_event, env)
    return kAccepted
 end
 
+local shorthands = {
+   [string.byte("B")] = function(env, s)
+      return s .. "不" .. s
+   end,
+   [string.byte("L")] = function(env, s)
+      return s .. "了" .. s
+   end,
+   [string.byte("Y")] = function(env, s)
+      return s .. "一" .. s
+   end,
+   [string.byte("V")] = function(env, s)
+      if not env.engine.context:get_option("std_tw") then
+         return s .. "着" .. s .. "着"
+      else
+         return s .. "著" .. s .. "著"
+      end
+   end,
+   [string.byte("Q")] = function(env, s)
+      if (env.engine.context:get_option("simplification") == true) then
+         return s .. "来" .. s .. "去"
+      else
+         return s .. "來" .. s .. "去"
+      end
+   end,
+}
+
+local function shorthand_processor(key_event, env)
+   local shf = shorthands[key_event.keycode]
+   if not key_event:shift() or shf == nil then
+      return kNoop
+   end
+
+   local composition = env.engine.context.composition
+   if composition:empty() then
+      return kNoop
+   end
+
+   local segment = composition:back()
+   local cand = segment:get_selected_candidate()
+   local text = cand.text
+   env.engine:commit_text(shf(env, text))
+   env.engine.context:clear()
+   return kAccepted
+end
+
 return {
    init = function(env)
       env.processors = {
@@ -169,6 +216,10 @@ return {
          steal_auxcode_processor,
          force_segmentation_processor,
       }
+
+      if env.engine.schema.config:get_bool("moran/shorthands") then
+         table.insert(env.processors, shorthand_processor)
+      end
    end,
 
    fini = function(env)
