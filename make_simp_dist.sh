@@ -102,7 +102,7 @@ for f in *.schema.yaml moran.yaml ; do
     sedi 's/漢字, 汉字/汉字, 漢字/' $f
     sedi 's/moran_t2s.json/s2t.json/' $f
 done
-
+sedi 's|(env.engine.context:get_option("simplification") == true)|(env.engine.context:get_option("traditionalization") == false)|' lua/moran_processor.lua
 
 ########################################################################
 # 替换 emoji 用字为简体字
