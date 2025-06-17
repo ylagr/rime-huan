@@ -1,6 +1,9 @@
 distribution_code_name: Weasel
 distribution_name: "小狼毫"
-distribution_version: 0.16.3
+distribution_version: 0.17.3
 install_time: "Wed Feb 19 21:39:57 2025"
-installation_id: "c06d02b6-0283-4080-80c5-e6b046123b3a"
-rime_version: 1.11.2
+installation_id: huan
+rime_version: 1.13.1
+sync_dir: "C:\\Users\\suiwp\\OneDrive\\app_data\\rime_sync\\"
+update_time: "Mon May 26 16:09:26 2025"
+backup_config_files: false
