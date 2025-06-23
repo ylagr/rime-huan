@@ -126,7 +126,7 @@ translator:    # 整句輸入模式設置，在 top_translator 中被調用
   initial_quality: 5
   max_homophones: 7
   spelling_hints: 3
-  contextual_suggestions: true
+  contextual_suggestions: false
   preedit_format:
     - xform/([a-z][a-z][a-z][a-z])o/$1°/
 
