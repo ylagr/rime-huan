@@ -17575,10 +17575,10 @@ use_preset_vocabulary: false
 硾	vv;ui	307
 硿	ks;uk	346
 碀	cg;uv	206
-碁	ji;qu	0
 碁	ji;uq	0
-碁	qi;qu	791
+碁	ji;qu	0
 碁	qi;uq	791
+碁	qi;qu	791
 碂	cs;uz	292
 碂	zs;uz	292
 碃	qy;uq	393
@@ -27746,6 +27746,7 @@ use_preset_vocabulary: false
 鉹	ii;jd	213
 鉺	er;je	589
 鉻	ge;jg	982
+鉻	lo;jg	582
 鉼	by;jb	340
 鉽	ui;ju	485
 鉾	mb;jm	342
@@ -28613,6 +28614,7 @@ use_preset_vocabulary: false
 铫	dc;jv	0
 铫	yk;jv	0
 铬	ge;jg	0
+铬	lo;jg	0
 铭	my;jm	0
 铮	vg;jv	0
 铯	se;js	0
@@ -36363,7 +36365,9 @@ use_preset_vocabulary: false
 㱎	kp;qs	0	# auto
 㱎	kp;qt	0	# auto
 㱏	vg;av	0	# auto
+㱔	so;xc	0	# auto
 㱔	so;cx	0	# auto
+㱔	xx;xc	0	# auto
 㱔	xx;cx	0	# auto
 㱖	cv;vz	0	# auto
 㱗	xq;vi	0	# auto
@@ -108605,7 +108609,7 @@ use_preset_vocabulary: false
 𮎼	il;ca	0	# auto
 𮎽	il;ci	0	# auto
 𮎾	pu;ct	0	# auto
-𮎿	qx;cq	0	# auto
+𮎿	qx;cr	0
 𮏀	ly;cm	0	# auto
 𮏁	ns;cm	0	# auto
 𮏂	jy;cx	0	# auto
@@ -109001,9 +109005,13 @@ use_preset_vocabulary: false
 𮖿	ly;xl	0	# auto
 𮗀	qm;xd	0	# auto
 𮗁	ly;xd	0	# auto
+𮗂	qn;xa	0	# auto
 𮗂	qn;xb	0	# auto
+𮗂	tj;xa	0	# auto
 𮗂	tj;xb	0	# auto
+𮗂	uj;xa	0	# auto
 𮗂	uj;xb	0	# auto
+𮗂	yj;xa	0	# auto
 𮗂	yj;xb	0	# auto
 𮗃	qm;xd	0	# auto
 𮗄	he;xf	0	# auto
@@ -122061,6 +122069,8 @@ use_preset_vocabulary: false
 𖿲	er;pg	1
 𖿳	er;ej	1
 𖿳	er;je	1
+𮍌	if;aa	0
+𮍌	if;kk	0
 
 # CJK Ext I
 𤚴	fj;nm	0
