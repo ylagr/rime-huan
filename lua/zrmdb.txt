@@ -6757,7 +6757,6 @@
 丧 yy
 丨 aa
 丨 au
-丨 uu
 丩 aa
 丩 jc
 丩 vu
@@ -22736,8 +22735,8 @@
 聓 eg
 联 eg
 聕 eg
-聖 ew
 聖 wk
+聖 ew
 聗 ej
 聘 ek
 聘 ep
@@ -35555,6 +35554,7 @@
 𠨭 ie
 𠨮 ia
 𠨯 iz
+𠨰 ig
 𠨱 iy
 𠨲 ii
 𠨲 ic
@@ -57300,6 +57300,7 @@
 𥥷 xd
 𥥸 xy
 𥥹 xy
+𥥺 xk
 𥥻 xg
 𥥼 xe
 𥥽 xq
@@ -61665,7 +61666,6 @@
 𦫱 bs
 𦫱 sb
 𦫲 ss
-𦫳 gu
 𦫳 ca
 𦫶 cj
 𦫷 cg
@@ -61853,6 +61853,7 @@
 𦯂 cd
 𦯃 cj
 𦯅 cx
+𦯆 ck
 𦯇 cx
 𦯈 cj
 𦯈 cy
@@ -66777,6 +66778,7 @@
 𧶸 bv
 𧶹 bj
 𧶺 bt
+𧶻 bk
 𧶼 bb
 𧶼 bg
 𧶽 bw
@@ -68058,6 +68060,7 @@
 𨌞 iq
 𨌟 ii
 𨌠 il
+𨌡 ik
 𨌢 iv
 𨌣 ir
 𨌤 iw
@@ -69377,6 +69380,7 @@
 𨞳 eb
 𨞳 be
 𨞴 ye
+𨞵 eb
 𨞶 ze
 𨞷 te
 𨞸 yy
@@ -70463,8 +70467,8 @@
 𨱔 jz
 𨱕 jj
 𨱖 jw
-𨱗 ka
-𨱗 ra
+𨱗 ad
+𨱗 id
 𨱘 ba
 𨱘 ib
 𨱙 ij
@@ -73652,6 +73656,7 @@
 𩜓 uc
 𩜔 bu
 𩜔 ub
+𩜕 uk
 𩜖 ue
 𩜗 ub
 𩜘 uz
