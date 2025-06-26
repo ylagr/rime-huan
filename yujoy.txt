@@ -1,6 +1,0 @@
-# Rime table
-#@/db_name	yujoy
-#@/db_type	tabledb
-#@/rime_version	1.11.2
-#@/tick	1
-想	a	2
