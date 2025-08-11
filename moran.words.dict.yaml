@@ -956,7 +956,7 @@ columns:
 全情投入	1
 全無是處	1
 全盤西化	1
-全碼	10000
+全碼	50
 全票通過	1
 全色片	1
 全讓	1
@@ -2309,7 +2309,7 @@ columns:
 尿墊	1
 尿褲子	1
 局外之人	1
-局麻	1
+局麻	50
 屁事沒有	1
 屁大點事	1
 屁民	1
@@ -9101,6 +9101,46 @@ columns:
 地下偶像	10
 奪旗賽	100
 奪旗	345
+三趾鷸	10
+濱鷸	10
+牛鷸	10
+牛眼鷸	10
+紅背鷸	10
+紅尾	1
+水鴝	10
+芳綸	100
+擼鐵	100
+防呆	100
+防呆設計	100
+男凝	100
+男性凝視	100
+單測	10
+零零後	10
+一零後	10
+二零後	10
+三零後	10
+四零後	10
+五零後	10
+六零後	10
+七零後	10
+八零後	10
+九零後	10
+冰可樂	10
+冰咖啡	10
+冰雪碧	10
+冰果粒橙	10
+冰芬達	10
+冰濃縮	10
+萌音	10
+萌聲	10
+萌聲線	10
+達美樂	100
+廢案	1000
+完犢子	100
+十三香	10
+專注達	10
+㖆㖆	10
+控分	100
 
 # Mini Lyre Dict
 # https://github.com/rimeinn/Lyre/commit/c020d23d334aec77a59b1d5a5b3bcc8c07c86bd0
@@ -10192,20 +10232,27 @@ MIDI鍵盤	1	midi jm;jj pj;mb
 總譜
 
 # 中西混合詞
+哆啦A夢	100	do;kd la;kl A mg;cx
 哆啦A夢	100	do;kd la;kl aa mg;cx
 哆啦A夢	100	do;kd la;kl ei mg;cx
-卡拉OK	100	ka;bx la;fl ok
+U盤	100	U pj;mb
 U盤	100	yb pj;mb
+T恤	100	T xu;xx
 T恤	100	ti xu;xx
 up主	100	up vu;dw
+QQ羣	100	QQ qp;yj
 QQ羣	100	qq qp;yj
 高ping	100	gk;wk ping
 高ping	100	gk;dk ping
 高ping	100	gk;wk py
 高ping	100	gk;dk py
 打call	10	da;fd kk
+K歌	10	K ge;qg
 K歌	10	kz ge;qg
+卡拉OK	10	ka;ux la;fl OK
+卡拉OK	100	ka;bx la;fl ok
 卡拉OK	10	ka;ux la;fl ou kz
+OK	10	OK
 OK	10	ou kz
 
 # 整句可用的無理碼

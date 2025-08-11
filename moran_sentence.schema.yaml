@@ -97,6 +97,8 @@ translator:
   initial_quality: 5
   preedit_format:
     - xform/([a-z][a-z][a-z][a-z])o/$1°/
+  core_word_length: 4
+  max_word_length: 10
 
 custom_phrase: # 自定義短語
   dictionary: ""
@@ -107,12 +109,12 @@ custom_phrase: # 自定義短語
   initial_quality: 10
 
 english:
-  # tag: english  # librime>=0.12 方可取消註釋
+  tag: english  # librime<=1.11 請在 custom 中置空
   dictionary: moran_english
   enable_completion: true
   enable_sentence: false
   enable_user_dict: true
-  initial_quality: 1
+  initial_quality: 0
   enable_encoder: false
   encode_commit_history: false
   comment_format:
@@ -264,8 +266,9 @@ recognizer:
 
 recognizer_secondary:
   patterns:
-    # {4} 表示輸入長度達到 4 後開始輸出英語
-    english: '^[A-Za-z]{4}[A-Za-z]*'
+    # 輸入長度達到 4 後開始輸出英語 *或* 前 4 字母中有大寫字母
+    english: '(^[A-Za-z]{4}[A-Za-z]*)|(^[A-Z][A-Za-z]*)|(^[a-z][A-Z][a-zA-Z]*)|(^[a-z][a-z][A-Z][a-zA-Z]*)'
+    # 其他可能的設置請參見 moran.schema.yaml
 
 moran:
   # 「通用」字符集設置

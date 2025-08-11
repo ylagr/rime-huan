@@ -66,6 +66,7 @@ engine:
   segmentors:
     - ascii_segmentor
     - matcher
+    - matcher@recognizer_emoji
     - matcher@recognizer_secondary
     - affix_segmentor@japanese_o
     - abc_segmentor
@@ -129,6 +130,8 @@ translator:    # 整句輸入模式設置，在 top_translator 中被調用
   contextual_suggestions: false
   preedit_format:
     - xform/([a-z][a-z][a-z][a-z])o/$1°/
+  core_word_length: 4
+  max_word_length: 10
 
 fixed:         # 固頂輸入模式設置，在 top_translator 中被調用
   dictionary: moran_fixed
@@ -154,7 +157,7 @@ english:
   enable_completion: true
   enable_sentence: false
   enable_user_dict: true
-  initial_quality: 1
+  initial_quality: 0
   enable_encoder: false
   encode_commit_history: false
   comment_format:
@@ -203,6 +206,8 @@ pinyinhint:
   opencc_config: moran_pinyinhint.json
   tips: char
   show_in_comment: true
+  comment_format:
+    __include: :/chaifen/comment_format
 
 emoji:
   opencc_config: moran_emoji.json
@@ -307,7 +312,8 @@ key_binder:
   import_preset: default
   custom_bindings:
     __append:
-      # 在這裏添加只在本方案中生效的按鍵綁定
+      # 在這裏添加只在本方案中生效的按鍵綁定，如
+      # - { when: has_menu, accept: apostrophe, send: '3' }  # 單引號3選
   bindings:
     __patch:
       - :/key_binder/custom_bindings?
@@ -332,16 +338,23 @@ recognizer:
     reverse_cangjie5: "^ocj[A-Za-z]*$"
     reverse_zrlf: "^olf[A-Za-z]*$"
     reverse_bopomofo: '^ovy[A-Za-z0-9,.;/\-]*$'
-    # CAVEAT: 排除 ^; 避免 ;d 無法自動上屏
-    # CAVEAT: ^o 只保留 ^ou 和 ^o$，避免反查被干擾
-    has_emoji: '(^[a-np-z][a-z/]*$)|(^[a-z]$)|(^ou[a-z/]*$)'
     # ojp 引導日語輸入
     japanese_o: '(^ojp[a-z]*$)'
 
+recognizer_emoji:
+  patterns:
+    # CAVEAT: 排除 ^; 避免 ;d 無法自動上屏
+    # CAVEAT: ^o 只保留 ^ou 和 ^o$，避免反查被干擾
+    has_emoji: '(^[a-np-z][a-z/]*$)|(^[a-z]$)|(^ou[a-z/]*$)'
+
 recognizer_secondary:
   patterns:
-    # {4} 表示輸入長度達到 4 後開始輸出英語
-    english: '^[A-Za-z]{4}[A-Za-z]*'
+    # 1. 輸入長度達到 4 後開始輸出英語 *或* 前 4 字母中有大寫字母
+    english: '(^[A-Za-z]{4}[A-Za-z]*)|(^[A-Z][A-Za-z]*)|(^[a-z][A-Z][a-zA-Z]*)|(^[a-z][a-z][A-Z][a-zA-Z]*)'
+    # 2. 對任何輸入都輸出英語
+    # english: '.*'
+    # 3. 輸入長度達到 4 後開始輸出英語
+    # english: '^[A-Za-z]{4}[A-Za-z]*'
 
 moran:
   # 簡快碼提示符
@@ -380,6 +393,11 @@ moran:
     # 想要「鏈接」時，增加 f ，但是由於這兩個候選仍然共享 lmjxf 編碼，因此順序不變。
     # 若開啓詞語級讓全，則 lmjxf 的首選會被調整爲「鏈接」
     enable_word: false
+    # 僅在設定 *毫秒* 之後，才有詞語級讓全效果
+    # 該值可以設定爲「檢視候選發現錯誤 -> 然後補充輔助碼」的時長
+    #     （根據個人情況設定，一般爲 200 上下）
+    # （僅 librime >= 1.14 可用）
+    enable_word_delay: 0
 
   # 單字或詞輔的輔助碼提示
   # 
@@ -397,8 +415,12 @@ moran:
   quick_code_hint_skip_chars: false
 
   # 輸入四碼時，如果簡碼碼表中含有對應條目，則放置在第二選項。
-  show_chars_anyway: true   # 是否輸出簡碼碼表單字，例：輸入 jwrg 時，次選爲「佳」
-  show_words_anyway: true   # 是否輸出簡碼碼表詞語，例：輸入 lmsd 時，次選爲「兩面三刀」
+  # show_chars_anyway: true   # 是否輸出簡碼碼表單字，例：輸入 jwrg 時，次選爲「佳」
+  # show_words_anyway: true   # 是否輸出簡碼碼表詞語，例：輸入 lmsd 時，次選爲「兩面三刀」
+  inject_fixed_chars: true   # 是否輸出簡碼碼表單字，例：輸入 jwrg 時，次選爲「佳」
+  inject_fixed_words: true    # 是否輸出簡碼碼表詞語，例：輸入 lmsd 時，次選爲「兩面三刀」
+  # (僅*動詞模式*) 是否優先輸出單字或詞組
+  inject_prioritize: "any"    # char 優先單字, word 優先詞組，其他取值理解爲按碼表順序
 
   # 「置頂」功能相關設置
   # 輸入時通過快捷鍵 Ctrl+t 可以將高亮顯示的候選置頂，被置頂的候選位置固定，不再參與調頻
