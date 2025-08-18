@@ -19,4 +19,4 @@ patch:
   "style/mark_text": ""
   "style/vertical_auto_reverse": true
   "style/paging_on_scroll": false
-  "show_notifications_time": 12000
+  "show_notifications_time": 2000
