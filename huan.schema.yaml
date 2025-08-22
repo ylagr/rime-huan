@@ -47,8 +47,9 @@ engine:
 speller:
   delimiter: " '"
 #  auto_clear: max_length
-#  auto_select: true
-#  max_code_length: 4
+  # auto_select: true
+  # max_code_length: 2
+  auto_select_pattern: ^(\w+)
 
 quick_repeat:  # 快速重複上屏
   input: "z"
@@ -59,11 +60,11 @@ translator:
   dictionary: huan
   enable_charset_filter: false
   enable_encoder: true
-  enable_sentence: false
-  encode_commit_history: true
-  max_phrase_length: 3
-  enable_user_dict: true
-  enable_completion: false
+  enable_sentence: true
+  encode_commit_history: false
+  max_phrase_length: 7
+  enable_user_dict: false
+  enable_completion: true
   user_dict: huan_user
 reverse_lookup:
   dictionary: moran.chars
