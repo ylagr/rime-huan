@@ -11,15 +11,15 @@ Purpose: 宇浩輸入法的 RIME lua 提供核心函數
 Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
 --------------------------------------------------------------------------------
 版本：
-20230418: 寫成 `set_from_str()`, `is_subset()`.
-20240107: 寫成 `is_intersected()`.
-20240512: 重構函數, 寫成 `len_of_set()`, `string_is_in_set()`,
-    `char_is_in_unicode_blocks()`, `string_is_in_unicode_blocks()`
-    `string_is_in_charset_or_not_in_cjk()`
-20240514: 增加 `string_starts_with()`.
+20230418: 寫成 `set_from_str`, `is_subset`.
+20240107: 寫成 `is_intersected`.
+20240512: 重構函數, 寫成 `len_of_set`, `string_is_in_set`,
+    `char_is_in_unicode_blocks`, `string_is_in_unicode_blocks`
+    `string_is_in_charset_or_not_in_cjk`
+20240514: 增加 `string_starts_with`.
 20240919: 更新對於 CJK 區塊的定義, 加入西夏文和契丹小字等.
-20250210: 增加 `string_is_intersected_with_set()`.
-20250211: 更新對於 CJK 區塊的定義, 加入韓文音節等.
+20250711: 增加泛 CJK 區塊的定義.
+20250712: 增加 CJK 核心標點符號區塊的定義.
 --------------------------------------------------------------------------------
 ]]
 
@@ -96,18 +96,7 @@ function core.is_intersected(set1, set2)
     return false
 end
 
---- 判斷一個字符串中存在 set 中的字符
----@param text string
----@param set table
----@return boolean
-function core.string_is_intersected_with_set(text, set)
-    local set_of_text = core.set_from_str(text)
-    return core.is_intersected(set_of_text, set)
-end
-
-core.cjk_blocks = { -- CJK 區塊(非符號區)
-    -- { 0x3000, 0x303F },   -- 中日韓符號和標點
-
+core.cjk_blocks = {       -- CJK 區塊(非符號區)
     { 0x4E00,  0x9FFF },  -- 中日韓統一表意文字
     { 0x3400,  0x4DBF },  -- 中日韓統一表意文字擴展區A
     { 0x20000, 0x323AF }, -- 中日韓統一表意文字擴展區B到擴展區H
@@ -122,9 +111,44 @@ core.cjk_blocks = { -- CJK 區塊(非符號區)
     { 0x2F800, 0x2FA1F }, -- 中日韓兼容表意文字補充
     { 0x3190,  0x319F },  -- 漢文訓讀
 
+    { 0x2FF0,  0x2FFF },  -- 表意文字描述字符
+    -- { 0x3000, 0x303F },   -- 中日韓符號和標點
+    -- { 0x3200,  0x32FF },  -- 中日韓帶圈字符及月份
+    { 0x1F200, 0x1F2FF }, -- 帶圈表意文字補充
+    { 0x1F000, 0x1F02F }, -- 麻將牌
+    { 0x2600,  0x26FF },  -- 雜項符號(太極兩儀四象八卦)
+    { 0x4DC0,  0x4DFF },  -- 易經六十四卦
+    { 0x1D300, 0x1D35F }, -- 太玄經卦爻
+
+    { 0x17000, 0x187FF }, -- 西夏文
+    { 0x18800, 0x18AFF }, -- 西夏文部件
+    { 0x18D00, 0x18D7F }, -- 西夏文補充
+    { 0x18B00, 0x18CFF }, -- 契丹小字
+
     { 0xE000,  0xF8FF },  -- 私用區 宇浩字根在此區
 
+    { 0x1B000, 0x1B0FF }, -- 補充假名
+    { 0x1B100, 0x1B12F }, -- 假名擴展
+}
+
+core.pan_cjk_blocks = {   -- 泛 CJK 區塊(非符號區)
+    { 0x4E00,  0x9FFF },  -- 中日韓統一表意文字
+    { 0x3400,  0x4DBF },  -- 中日韓統一表意文字擴展區A
+    { 0x20000, 0x323AF }, -- 中日韓統一表意文字擴展區B到擴展區H
+    { 0x2EBF0, 0x2EE5F }, -- 中日韓統一表意文字擴展區I
+
+    { 0x2E80,  0x2EFF },  -- 中日韓漢字部首補充
+    { 0x2F00,  0x2FDF },  -- 康熙部首
+    { 0x31C0,  0x31EF },  -- 中日韓筆畫
+    { 0x3300,  0x33FF },  -- 中日韓兼容字符
+    { 0xF900,  0xFAFF },  -- 中日韓兼容表意文字
+    { 0xFE30,  0xFE4F },  -- 中日韓兼容形式
+    { 0x2F800, 0x2FA1F }, -- 中日韓兼容表意文字補充
+    { 0x3190,  0x319F },  -- 漢文訓讀
+
     { 0x2FF0,  0x2FFF },  -- 表意文字描述字符
+    -- { 0x3000, 0x301F },   -- 中日韓符號和標點1
+    { 0x3020,  0x303F },  -- 中日韓符號和標點2
     { 0x3200,  0x32FF },  -- 中日韓帶圈字符及月份
     { 0x1F200, 0x1F2FF }, -- 帶圈表意文字補充
     { 0x1F000, 0x1F02F }, -- 麻將牌
@@ -132,20 +156,35 @@ core.cjk_blocks = { -- CJK 區塊(非符號區)
     { 0x4DC0,  0x4DFF },  -- 易經六十四卦
     { 0x1D300, 0x1D35F }, -- 太玄經卦爻
 
-    { 0x3040,  0x309F },  -- 平假名
-    { 0x30A0,  0x30FF },  -- 片假名
-    { 0x1B000, 0x1B0FF }, -- 補充假名
-    { 0x1B100, 0x1B12F }, -- 假名擴展
-    { 0xAC00,  0xD7AF },  -- 諺文音節
-    { 0x1100,  0x11FF },  -- 諺文字母
-    { 0x3130,  0x318F },  -- 諺文兼容字母
-    { 0xA960,  0xA97F },  -- 谚文字母扩展-A
-    { 0xD7B0,  0xD7FF },  -- 谚文字母扩展-B
+    { 0x3100,  0x312F },  -- 注音符號
+    { 0x31A0,  0x31BF },  -- 注音符號擴展
+
+    { 0x16FE0, 0x16FFF }, -- 表意文字符號和標點
 
     { 0x17000, 0x187FF }, -- 西夏文
     { 0x18800, 0x18AFF }, -- 西夏文部件
     { 0x18D00, 0x18D7F }, -- 西夏文補充
     { 0x18B00, 0x18CFF }, -- 契丹小字
+
+    { 0xE000,  0xF8FF },  -- 私用區 宇浩字根在此區
+
+    { 0x3040,  0x309F },  -- 平假名
+    { 0x30A0,  0x30FF },  -- 片假名
+    { 0x1B000, 0x1B0FF }, -- 補充假名
+    { 0x1B100, 0x1B12F }, -- 假名擴展
+    { 0x1B130, 0x1B16F }, -- 小型假名擴展
+
+    { 0xAC00,  0xD7AF },  -- 韓文音節
+    { 0x1100,  0x11FF },  -- 諺文字母
+    { 0x3130,  0x318F },  -- 諺文兼容字母
+}
+
+core.cjk_punc_blocks = { -- CJK 核心標點符號區塊
+    { 0x3000, 0x301F },  -- 中日韓符號和標點1
+    { 0xFE50, 0xFE6F },  -- 小寫變體形式
+    { 0xFE10, 0xFE1F },  -- 豎排形式
+    { 0xFF00, 0xFFEF },  -- 半角及全角字符
+    { 0x0000, 0x007f },  -- ASCII 字符
 }
 
 --- 判斷一個字符是不是在一組 Unicode 區位中
@@ -182,6 +221,17 @@ function core.string_is_in_charset_or_not_in_cjk(text, charset)
     local is_in_charset = core.string_is_in_set(text, charset)
     local is_in_cjk = core.string_is_in_unicode_blocks(text, core.cjk_blocks)
     return is_in_charset or not is_in_cjk
+end
+
+--- 判斷一個字符串的所有字符都在一個指定集合中,或有一個非泛 CJK 漢字
+--- 比以上更嚴格
+---@param text string
+---@param charset table
+---@return boolean
+function core.string_is_in_charset_or_not_in_pan_cjk(text, charset)
+    local is_in_charset = core.string_is_in_set(text, charset)
+    local is_in_pan_cjk = core.string_is_in_unicode_blocks(text, core.pan_cjk_blocks)
+    return is_in_charset or not is_in_pan_cjk
 end
 
 ---To check whether the first string begins with the second string

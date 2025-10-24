@@ -112,9 +112,9 @@ engine:
 speller:
   alphabet: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ/;
   delimiter: " `"
-  auto_select: true
+  auto_select: false
   auto_select_pattern: ^;(\w+|;)
-  max_code_length: 5
+  #max_code_length: 5
   algebra:
     __patch:
       - moran:/algebra/user_force_top?

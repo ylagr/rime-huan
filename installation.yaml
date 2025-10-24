@@ -1,9 +1,9 @@
 backup_config_files: false
-distribution_code_name: Weasel
-distribution_name: "小狼毫"
-distribution_version: 0.17.4
+distribution_code_name: "fcitx-rime"
+distribution_name: Rime
+distribution_version: 5.1.11
 install_time: "Wed Feb 19 21:39:57 2025"
 installation_id: huan_yk
-rime_version: 1.13.1
+rime_version: 1.14.0
 sync_dir: "C:\\Users\\suiwp\\OneDrive\\app_data\\rime_sync\\"
-update_time: "Thu Jun 26 16:06:35 2025"
+update_time: "Fri Sep 19 16:49:39 2025"

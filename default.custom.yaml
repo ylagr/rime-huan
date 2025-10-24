@@ -8,3 +8,6 @@ patch:
   schema_list:
     - {schema: moran}
     - {schema: huan}
+    - {schema: yuming}
+    - {schema: yuming_essence}
+    - {schema: wubi091}

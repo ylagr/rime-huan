@@ -33,16 +33,21 @@ So a lua filter would be helpful to filter the frequently used
 20221001: 使用遍歷法寫成.
 20230418: 使用集合法重寫代碼,大幅度提升運行效率,不再有卡頓現象.
 20240107: 更改判斷邏輯.詞語中只要有一個字符在常用字符集内,則提高詞語
-    整體優先級.此前,詞語中的所有字符都必須在常用字符集内纔會優先.
+          整體優先級.此前,詞語中的所有字符都必須在常用字符集内纔會優先.
 20240407: 只判斷長度爲 1 到 10 的候選項.
 20240512: 重構代碼.將核心函數寫入 yuhao_core.lua 文件.將常用字符集寫
-    入 yuhao_charset.lua 文件.增加一項判斷: 始終不過濾非 CJK 字符.
-    增加常用繁簡字符集和通規字符集.
+          入 yuhao_charset.lua 文件.增加一項判斷: 始終不過濾非 CJK 字符.
+          增加常用繁簡字符集和通規字符集.
 20240807: 重構並加入常用字前置代碼.
 20240819: 前置常用漢字功能只對 CJK 内的漢字生效.
 20240820: 前置常用漢字功能只在輸入爲四碼時方纔生效.
 20240908: 加入前置極常用繁簡漢字功能.
-20250210: 詞語中只要有一個字符在常用字符集内,就前置之.
+20250429: 加入前置簡化漢字或傳統漢字功能.
+          現在,開啟輸入預測時,常用字前置功能會跳過預測候選項,對精確匹配字詞進行
+          排序.因此上,前置功能在輸入不足四碼時也能生效,並且不會造成卡頓.
+20250712: 當輸入前綴是'z`, '/', 或 '`' 時,不過濾候選項.因爲它们分别引導了
+          反查,特殊符號輸入,精確造詞等功能.
+          過濾通規字和通規繁體字時,進行更嚴格的判斷.
 ------------------------------------------------------------------------
 ]]
 
@@ -57,25 +62,35 @@ local set_of_harmonic_chars = core.set_from_str(yuhao_charsets.harmonic)
 local function yuhao_charset_prioritizer(input, env, option, charset)
     local switch_on = env.engine.context:get_option(option)
     local chars_of_low_priority = {}
-    local length_of_input_is_4 = (string.len(env.engine.context.input) == 4)
-    if not length_of_input_is_4 then
-        for cand in input:iter() do
+    local skip = false
+    for cand in input:iter() do
+        if skip then
             yield(cand)
-        end
-    end
-    if length_of_input_is_4 then
-        for cand in input:iter() do
-            local is_charset_or_not_cjk = core.string_is_intersected_with_set(cand.text, charset)
-            -- 二種情況顯示字符: (1) 極常用 (2) 過濾器關閉
-            if is_charset_or_not_cjk or not switch_on then
+        else
+            if cand.type == "completion" then
+                -- 遇到第一個預測的候選項,則彈出已存的後置字詞
+                for _, postponed_cand in ipairs(chars_of_low_priority) do
+                    yield(postponed_cand)
+                end
+                -- 彈出本詞
                 yield(cand)
+                -- 修改狀態器
+                skip = true
             else
-                table.insert(chars_of_low_priority, cand)
+                local is_charset_or_not_cjk = core.string_is_in_set(cand.text, charset)
+                -- 二種情況顯示字符: (1) 極常用 (2) 過濾器關閉
+                if is_charset_or_not_cjk or not switch_on then
+                    yield(cand)
+                else
+                    table.insert(chars_of_low_priority, cand)
+                end
             end
         end
-        -- 非常用字词后置
-        for i, cand in ipairs(chars_of_low_priority) do
-            yield(cand)
+    end
+    if not skip then
+        -- 説明没有遇到預測的候選項,需要在此處彈出已存的後置字詞
+        for _, postponed_cand in ipairs(chars_of_low_priority) do
+            yield(postponed_cand)
         end
     end
 end
@@ -90,7 +105,24 @@ local function yuhao_charset_prioritizer_common(input, env)
     yuhao_charset_prioritizer(input, env, "yuhao_charset_prioritizer_common", set_of_common_chars)
 end
 
+--- 前置常用簡化漢字
+local function yuhao_charset_prioritizer_tonggui(input, env)
+    yuhao_charset_prioritizer(input, env, "yuhao_charset_prioritizer_tonggui", set_of_tonggui_chars)
+end
+
+--- 前置常用傳統漢字
+local function yuhao_charset_prioritizer_harmonic(input, env)
+    yuhao_charset_prioritizer(input, env, "yuhao_charset_prioritizer_harmonic", set_of_harmonic_chars)
+end
+
 local function yuhao_charset_filter_common(input, env)
+    if env.engine.context.input:match("^[z/`]") then
+        -- If the input starts with 'z', '/', or '`', we yield all candidates.
+        for cand in input:iter() do
+            yield(cand)
+        end
+        return
+    end
     local switch_on = env.engine.context:get_option("yuhao_charset_filter_common")
     for cand in input:iter() do
         local is_charset_or_not_cjk = core.string_is_in_charset_or_not_in_cjk(cand.text, set_of_common_chars)
@@ -102,22 +134,40 @@ local function yuhao_charset_filter_common(input, env)
 end
 
 local function yuhao_charset_filter_tonggui(input, env)
+    if env.engine.context.input:match("^[z/`]") then
+        -- If the input starts with 'z', '/', or '`', we yield all candidates.
+        for cand in input:iter() do
+            yield(cand)
+        end
+        return
+    end
     local switch_on = env.engine.context:get_option("yuhao_charset_filter_tonggui")
     for cand in input:iter() do
-        local is_charset_or_not_cjk = core.string_is_in_charset_or_not_in_cjk(cand.text, set_of_tonggui_chars)
-        -- 三種情況顯示字符: (1) 常用 (2) 非 CJK (3) 過濾器關閉
-        if is_charset_or_not_cjk or not switch_on then
+        local is_in_charset = core.string_is_in_set(cand.text, set_of_tonggui_chars)
+        local is_core_punc = core.string_is_in_unicode_blocks(cand.text, core.cjk_punc_blocks)
+        local is_charset_or_is_core_punc = is_in_charset or is_core_punc
+        -- 三種情況顯示字符: (1) 通規傳統字 (2) 核心標點符號 (3) 過濾器關閉
+        if is_charset_or_is_core_punc or not switch_on then
             yield(cand)
         end
     end
 end
 
 local function yuhao_charset_filter_harmonic(input, env)
+    if env.engine.context.input:match("^[z/`]") then
+        -- If the input starts with 'z', '/', or '`', we yield all candidates.
+        for cand in input:iter() do
+            yield(cand)
+        end
+        return
+    end
     local switch_on = env.engine.context:get_option("yuhao_charset_filter_harmonic")
     for cand in input:iter() do
-        local is_charset_or_not_cjk = core.string_is_in_charset_or_not_in_cjk(cand.text, set_of_harmonic_chars)
-        -- 三種情況顯示字符: (1) 常用 (2) 非 CJK (3) 過濾器關閉
-        if is_charset_or_not_cjk or not switch_on then
+        local is_in_charset = core.string_is_in_set(cand.text, set_of_harmonic_chars)
+        local is_core_punc = core.string_is_in_unicode_blocks(cand.text, core.cjk_punc_blocks)
+        local is_charset_or_is_core_punc = is_in_charset or is_core_punc
+        -- 三種情況顯示字符: (1) 通規傳統字 (2) 核心標點符號 (3) 過濾器關閉
+        if is_charset_or_is_core_punc or not switch_on then
             yield(cand)
         end
     end
@@ -126,6 +176,8 @@ end
 return {
     yuhao_charset_prioritizer_ubiquitous = yuhao_charset_prioritizer_ubiquitous,
     yuhao_charset_prioritizer_common = yuhao_charset_prioritizer_common,
+    yuhao_charset_prioritizer_tonggui = yuhao_charset_prioritizer_tonggui,
+    yuhao_charset_prioritizer_harmonic = yuhao_charset_prioritizer_harmonic,
     yuhao_charset_filter_common = yuhao_charset_filter_common,
     yuhao_charset_filter_tonggui = yuhao_charset_filter_tonggui,
     yuhao_charset_filter_harmonic = yuhao_charset_filter_harmonic,
