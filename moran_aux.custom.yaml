@@ -1,0 +1,3 @@
+patch:
+  moran/fix/use_dict: true
+  moran/fix/use_dict_max_length: 4
