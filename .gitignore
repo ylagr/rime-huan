@@ -1,0 +1,7 @@
+build/
+installation.yaml
+moran.userdb/
+moran_english.userdb/
+moran_pin.userdb/
+sync/
+user.yaml
