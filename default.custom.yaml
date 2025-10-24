@@ -6,6 +6,7 @@ customization:
   rime_version: 1.13.1
 patch:
   schema_list:
+    - {schema: moran_aux}
     - {schema: moran}
     - {schema: huan}
     - {schema: yuming}
