@@ -6,7 +6,7 @@ schema:
     - 自然碼發明人：周志農
     - 方案製作：ksqsf
   description: |
-    無簡快碼的輸入純粹整句輸入模式。
+    無簡快碼的純粹整句輸入方案。
   dependencies:
     - tiger
     - moran_charset
@@ -34,6 +34,8 @@ switches:
     states: [ 🈚, 🈶 ]
   - name: chaifen
     states: [ 不拆, 扌斥 ]
+  - name: pinyinhint
+    states: [ 🔇, 🔊 ]
   - name: unicode_comment
     states: [ U開, U關 ]
   - options: [ std_opencc,  std_tw, std_hk, std_dzing ]
@@ -73,11 +75,13 @@ engine:
     #- lua_filter@*moran_hint_filter           # 輔助碼提示需要去掉本行開頭的 # 符號
     - lua_filter@*moran_charset_filter     # 字集過濾需要去掉本行開頭的 # 符號
     - simplifier@chaifen
+    - simplifier@pinyinhint
     - simplifier@emoji
     - simplifier
     - simplifier@std_tw
     - simplifier@std_hk
     - simplifier@std_dzing
+    - lua_filter@*moran_english_filter
     - uniquifier
 
 speller:
@@ -148,6 +152,14 @@ emoji:
   opencc_config: moran_emoji.json
   option_name: emoji
   tips: all
+
+pinyinhint:
+  option_name: pinyinhint
+  opencc_config: moran_pinyinhint.json
+  tips: char
+  show_in_comment: true
+  comment_format:
+    __include: :/chaifen/comment_format
 
 std_hk:
   opencc_config: t2hk.json
@@ -220,19 +232,9 @@ reverse_bopomofo:
     - "xlit|1qaz2wsxedcrfv5tgbyhnujm8ik,9ol.0p;/- 6347'|ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙㄧㄨㄩㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥㄦˉˊˇˋ˙ |"
 
 reverse_tick:
-  __include: reverse_tiger
+  __include: reverse_zrlf
   tag: reverse_tick
   prefix: "`"
-
-reverse_lookup:
-  extra_tags:
-    - reverse_tick
-    - reverse_universal
-    - reverse_tiger
-    - reverse_stroke
-    - reverse_cangjie5
-    - reverse_zrlf
-    - reverse_bopomofo
 
 punctuator:
   import_preset: symbols
@@ -256,9 +258,14 @@ key_binder:
 recognizer:
   import_preset: default
   patterns:
+    unicode: "^U[a-fA-F0-9]+"
+    number: "^S[0-9]+"
+    shijian: "^N[0-9]+"
+    uppercase: "[A-Z][-_+.'A-Za-z]*$"
     punct: '^/([0-9]0?|[A-Za-z]+)$'
     reverse_universal: "(^(`[a-z`]+))|(^([a-z]{2}(`[a-z`]?|[a-z`]`))|^([a-z]{4}`))"
-    reverse_tiger: "(^`$)|(^`[a-zA-Z]+$)"
+    reverse_tick: "(^`$)|(^`[a-zA-Z]+$)"
+    reverse_tiger: "^ohm[a-z]+$"
     reverse_stroke: "^obh[A-Za-z]*$"
     reverse_cangjie5: "^ocj[A-Za-z]*$"
     reverse_zrlf: "^olf[A-Za-z]*$"

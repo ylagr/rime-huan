@@ -1,12 +1,12 @@
 schema:
   schema_id: moran_aux
   name: 魔然·輔篩
-  version: "20250418"
+  version: "20251002"
   author:
     - 自然碼發明人：周志農
     - 方案製作：ksqsf
   description: |
-    在輸入完畢雙拼碼後，可以輸入輔助碼篩選候選項，與「魔然」方案不同。
+    在輸入完畢完整一句的雙拼碼後，可以輸入輔助碼篩選候選項。
   dependencies:
     - tiger
     - moran_charset
@@ -29,11 +29,11 @@ switches:
     states: [ 🈚, 🈶 ]
   - name: chaifen
     states: [ 不拆, 扌斥 ]
+  - name: pinyinhint
+    states: [ 🔇, 🔊 ]
   - name: unicode_comment
     states: [ U關, U開 ]
-  - name: dzing
-    states: [ 通, 寍 ]
-  - options: [ std_opencc,  std_tw, std_hk, std_dzing ]
+  - options: [ std_opencc, std_tw, std_hk, std_dzing ]
     states: [ 通, 臺, 港, 寍 ]
 
 engine:
@@ -65,7 +65,6 @@ engine:
     - table_translator@custom_phrase        # 自定義短語
     #- table_translator@english             # 英語混輸
     #- table_translator@japanese            # 日語混輸
-    #- table_translator@fixed               # 掛接用法
     - lua_translator@*moran_aux_translator
     - lua_translator@*moran_pin*panacea_translator
   filters:
@@ -75,6 +74,7 @@ engine:
     - lua_filter@*moran_pin*pin_filter
     - simplifier@emoji
     - simplifier@chaifen
+    - simplifier@pinyinhint
     - simplifier
     - simplifier@std_tw
     - simplifier@std_hk
@@ -112,7 +112,7 @@ custom_phrase: # 自定義短語
   enable_sentence: false
   initial_quality: 10
 
-# 掛接用法，需解除 translators 中對應的註釋
+# 固頂和掛接設置
 fixed:
   dictionary: moran_fixed
   initial_quality: 10
@@ -156,6 +156,14 @@ chaifen:
   comment_format:
     - "xform/-/ /"
     - "xform/〕〔/｜/"
+
+pinyinhint:
+  option_name: pinyinhint
+  opencc_config: moran_pinyinhint.json
+  tips: char
+  show_in_comment: true
+  comment_format:
+    __include: :/chaifen/comment_format
 
 std_hk:
   opencc_config: t2hk.json
@@ -215,18 +223,9 @@ reverse_zrlf:
   __include: reverse_format
 
 reverse_tick:
-  __include: reverse_tiger
+  __include: reverse_zrlf
   tag: reverse_tick
   prefix: "`"
-
-reverse_lookup:
-  extra_tags:
-    - reverse_tiger
-    - reverse_universal
-    - reverse_stroke
-    - reverse_cangjie5
-    - reverse_zrlf
-    - reverse_tick
 
 punctuator:
   import_preset: symbols
@@ -247,6 +246,10 @@ key_binder:
 recognizer:
   import_preset: default
   patterns:
+    unicode: "^U[a-fA-F0-9]+"
+    number: "^S[0-9]+"
+    shijian: "^N[0-9]+"
+    uppercase: "[A-Z][-_+.'A-Za-z]*$"
     punct: '^/([0-9]0?|[A-Za-z]+)$'
     # 反查
     reverse_universal: "(^(`[a-z`]+))|(^([a-z]{2}(`[a-z`]?|[a-z`]`))|^([a-z]{4}`))"
@@ -266,17 +269,30 @@ moran:
   # 設置爲小於等於 0 的數相當於無限制。
   # 設置爲正數時：數字越小，速度越快，被輔到的字越少；
   #               數字越大，速度越慢，能被輔到字就越多。
-  # 默認爲無限制。
+  # 一般的文本錄入需求可設爲 100~200。
   # 如果在某些性能較低的設備上使用時感到卡頓，可以設置爲 50 或更小的數字。
   # 如果感到被輔生僻字過多，也可以考慮設置爲較小的數字。
-  prefetch: -1
+  # 設爲較小正數且確需輸入生僻字的情況，可用反查功能。
+  prefetch: 150
 
-  # 固定一二級簡碼。參考設置：
+  # 固定簡碼。
   quick_code_indicator: "⚡"
   fix:
+    # 使用掛接碼表中的字詞？
+    # 若使用，則下面指定的 fix 設置失效。
+    use_dict: false
+    # 最大輸入幾碼時可以插入
+    # 若設爲 3，則輸入 4 碼以上時不會插入任何碼表候選
+    # 若設爲 4，則相當於掛接用法
+    use_dict_max_length: 3
+
+    # 若不使用掛接碼表，可手動指定一、二級簡碼。
+    # 若需固頂大量候選，請使用 use_dict: true。
+    # **僅在 moran/fix/use_dict: false 時生效**
     d: 的
     l: 了
     j: 就
+    hk: 好
 
   # 首選固定爲句子，使得在輸入長句時，首選的長度不會跳變
   # 例如，輸入「不太理解」輸入到 "bu tl l" 時，

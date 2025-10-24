@@ -1,5 +1,5 @@
 schema: moran
-source_dir: ..
+source_dir: ../dist
 script: |
   function eq(left, right)
     print('Left  = ' .. tostring(left))
@@ -34,6 +34,12 @@ deploy:
         assert: eq(cand[1].text, "霖")
       - send: hodd
         assert: eq(cand[1].text, "火")
+      - send: N2000
+        assert: eq(cand[1].text, "2000年01月01日")
+      - send: U8888
+        assert: eq(cand[1].text, '袈')
+      - send: S114514
+        assert: eq(cand[1].text, '十一万四千五百一十四')
 
   emoji:
     options:
@@ -95,6 +101,20 @@ deploy:
       - send: lmjxz
         assert: eq(cand[1].text, "連接") and eq(cand[1].comment, "🎯")
 
+  word_ijrq:
+    patch:
+      moran/ijrq/enable_word: true
+    tests:
+      - send: lmjxf
+        assert: eq(cand[1].text, "連接") and eq(cand[2].text, "鏈接")
+  word_ijrq_defer:
+    patch:
+      moran/ijrq/enable_word: true
+      moran/ijrq/enable_word_defer: 2
+    tests:
+      - send: lmjxf
+        assert: eq(cand[1].text, "連接") and eq(cand[2].text, "聯接") and eq(cand[3].text, "鏈接")
+
   pin:
     options:
       emoji: false
@@ -111,6 +131,10 @@ deploy:
         assert: eq(cand[1].text, '連接') and eq(cand[1].comment, "📌")
       - send: 'xad//xnraidg 2 xad'
         assert: eq(cand[1].text, '信愛等')
+      - send: 'a{Control+t}{Down}{Control+t}{Control+equal}'
+        assert: eq(cand[1].text, '啊') and eq(cand[2].text, '愛') and eq(cand[1].comment, "📌") and eq(cand[2].comment, "📌")
+      - send: 'ai{Control+t}{Down}{Control+t}{Down}{Control+minus}'
+        assert: eq(cand[1].text, '愛') and eq(cand[2].text, '唉') and eq(cand[1].comment, "📌") and eq(cand[2].comment, "📌")
 
   force_segmentation:
     tests:
@@ -149,6 +173,14 @@ deploy:
         assert: eq(cand[1].text, '動')
       - send: 'mzfadsl2{Control+l}{Control+l}'
         assert: eq(cand[1].text, '賽')
+      - send: 'ljflkr'
+        assert: eq(cand[1].text, '攔款')
+      - send: 'ljflkr2'
+        assert: eq(cand[1].text, '款')
+      - send: 'ljflkr2{Control+l}'
+        assert: eq(cand[1].text, '佬')
+      - send: 'ljflkr2{Control+l}{Control+l}'
+        assert: eq(cand[1].text, '款')
 
   inject_chars:
     patch:
@@ -174,5 +206,24 @@ deploy:
     tests:
       - send: 'wuyw'
         assert: eq(cand[1].text, '霧') and eq(cand[2].text, '誣') and eq(cand[5].text, '爲時已晚')
+
+  english:
+    tests:
+      - send: 'monkey'
+        assert: eq(cand[1].text, 'monkey')
+      - send: 'Monke'
+        assert: eq(cand[1].text, 'Monkey')
+      - send: 'iphone'
+        assert: eq(cand[1].text, 'iPhone')
+      - send: 'iPho'
+        assert: eq(cand[1].text, 'iPhone')
+      - send: 'IPh'
+        assert: "#cand == 0"
+      - send: 'nihkHello '
+        assert: eq(cand[1].text, 'Hello')
+      - send: 'U75'
+        assert: eq(cand[1].text, 'u')
+      - send: 'ArchL'
+        assert: eq(cand[1].text, 'Arch Linux')
 
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rimeinn/mira/refs/heads/master/spec/mira.schema.json

@@ -80,6 +80,7 @@ from collections import defaultdict
 
 for (k, v) in 映射表.items():
     反向映射表[v].append(k)
+反向映射表['o'] = ['uo'] # only lo, bo, po, mo, fo
 
 def unzrmify1(sp: str):
     '''將一個自然碼雙拼轉換回拼音'''
@@ -88,8 +89,12 @@ def unzrmify1(sp: str):
     if sp == 'ls': return 'long'
     if sp == 'nv': return 'nv'
     if sp == 'lv': return 'lv'
-    if sp[0] in 'aoe':
-        return sp
+    if sp in ['aa', 'ee', 'oo']: return sp[0]
+    if sp[0] in 'aoe': return sp
+    if sp[1] == 's' and sp[0] in 'dltyn': return sp[0] + 'ong'
+    if sp[1] == 'o' and sp[0] in 'bpmfwy': return sp[0] + 'o'
+    if sp[1] == 'v' and sp[0] in 'dt': return sp[0] + 'ui'
+    if sp[1] == 't' and sp[0] in 'nl': return sp[0] + 've'
 
     聲 = {'v':'zh', 'u':'sh', 'i': 'ch'}.get(sp[0], sp[0])
     可能的韻 = 反向映射表[sp[1]]
@@ -97,7 +102,7 @@ def unzrmify1(sp: str):
     if len(可能的韻) == 1:
         res = 聲 + 可能的韻[0]
     else:
-        if 可能的韻[0][0] == 'i':
+        if 可能的韻[0][0] in 'iv':
             i韻 = 可能的韻[0]
             非i韻 = 可能的韻[1]
         else:
@@ -108,7 +113,7 @@ def unzrmify1(sp: str):
         else:
             res = 聲 + 非i韻
 
-    if len(res) >= 2:
+    if len(res) > 2:
         if res[1] == 'v' and res[0] in 'dtnljqxy':
             return res[0] + 'u' + res[2:]
     return res
@@ -124,7 +129,20 @@ ALL_PINYIN = ["a", "ai", "an", "ang", "ao", "ba", "bai", "ban", "bang", "bao", "
 
 ALL_ZRMSP = [zrmify1(py) for py in ALL_PINYIN]
 
+import string
+import itertools
+
+ALL_NON_SP = sorted(list(set(a+b for (a,b) in itertools.product(string.ascii_lowercase, string.ascii_lowercase)) - set(ALL_ZRMSP)))
+
+def _test_roundtrip():
+    for py in ALL_PINYIN:
+        sp = zrmify1(py)
+        pyr = unzrmify1(sp)
+        if pyr != py:
+            print(f'Error: {py=}, {sp=}, {pyr=}')
+
 ################################################################################
+
 def main():
     import sys
     for line in sys.stdin:
@@ -135,3 +153,70 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+def is_valid_pinyin(s):
+    """
+    判断字符串是否由声母和韵母组成的有效拼音音节
+    """
+    if not s:
+        return False
+    
+    # 声母列表（包括零声母情况）
+    initials = [
+        'b', 'p', 'm', 'f',
+        'd', 't', 'n', 'l', 
+        'g', 'k', 'h',
+        'j', 'q', 'x',
+        'zh', 'ch', 'sh', 'r',
+        'z', 'c', 's',
+        'y', 'w'
+    ]
+    
+    # 韵母列表
+    finals = [
+        # 单韵母
+        'a', 'o', 'e', 'i', 'u', 'v',
+        # 复韵母
+        'ai', 'ei', 'ao', 'ou',
+        'ia', 'ie', 'iao', 'iou', 'ua', 'uo', 'uai', 'ui',
+        've', 'ue',
+        # 鼻韵母
+        'an', 'en', 'in', 'un', 'vn',
+        'ang', 'eng', 'ing', 'ong',
+        'ian', 'uan', 'van',
+        'iang', 'uang', 'iong',
+        # 特殊韵母
+        'er'
+    ]
+    
+    # 尝试匹配声母+韵母的组合
+    for initial in sorted(initials, key=len, reverse=True):
+        if s.startswith(initial):
+            remaining = s[len(initial):]
+            if remaining in finals:
+                return True
+    
+    # 检查零声母情况（直接以韵母开头）
+    if s in finals:
+        return True
+        
+    # 检查一些特殊的韵母变化规则
+    # 如 iou -> iu, uei -> ui, uen -> un
+    special_mappings = {
+        'iu': 'iou',
+        'ui': 'uei', 
+        'un': 'uen'
+    }
+    
+    for initial in sorted(initials, key=len, reverse=True):
+        if s.startswith(initial):
+            remaining = s[len(initial):]
+            if remaining in special_mappings and special_mappings[remaining] in finals:
+                return True
+    
+    # 检查直接的特殊韵母
+    for special in special_mappings:
+        if s == special:
+            return True
+    
+    return False

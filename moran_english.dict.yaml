@@ -6,7 +6,7 @@
 
 ---
 name: moran_english
-version: "20241019"
+version: "20251008"
 sort: original
 use_preset_vocabulary: false
 ...
@@ -4383,7 +4383,7 @@ Avar	Avar
 avarice	avarice
 avaricious	avaricious
 avast	avast
-AVAST!	avast
+AVAST!	AVAST
 avatar	avatar
 avaunt	avaunt
 Ave	Ave
@@ -57268,4 +57268,7 @@ Kagi	Kagi
 Orion	Orion
 MoonBit	MoonBit
 Excel	Excel
-Roam Research	Roam Research
+Roam Research	RoamResearch
+Typst	Typst
+LLVM	LLVM
+CoCo	CoCo
