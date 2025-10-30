@@ -82,6 +82,9 @@ fly:
   tv_tn:
     __append:
       - derive/tv;/tn;/
+  rf_rl:
+    __append:
+      - derive/rf;/rl;/
 # 小寫可匹配大寫編碼（用於英語混輸）
 casefold:
   __append:

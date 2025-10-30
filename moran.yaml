@@ -31,6 +31,7 @@ algebra:
         - moran_defs:/fly/vr_vn  # ZRM-SPECIFIC
         - moran_defs:/fly/ce_cn  # ZRM-SPECIFIC
         - moran_defs:/fly/tv_tn  # ZRM-SPECIFIC
+        - moran_defs:/fly/rf_rl  # ZRM-SPECIFIC
         
         # 模糊音設置
         # - moran_defs:/bufen/z_zh
