@@ -21,6 +21,7 @@ switches:
     states: [ 半角, 全角 ]
   - name: simplification
     states: [ 漢字, 汉字 ]
+    reset: 1
   - name: ascii_punct
     states: [ 。，, ．， ]
   - name: extended_charset
@@ -222,21 +223,8 @@ reverse_zrlf:
   tips: 〔兩分〕
   __include: reverse_format
 
-# reverse_tick:
-  # __include: reverse_zrlf
-  # tag: reverse_tick
-  # prefix: "`"
-
-reverse_huan:
-  tag: reverse_huan
-  dictionary: huan
-  prefix: "ohr"
-  enable_completion: true
-  tips: 〔甄嬛〕
-  __include: reverse_format
-  
 reverse_tick:
-  __include: reverse_huan
+  __include: reverse_zrlf
   tag: reverse_tick
   prefix: "`"
 

@@ -79,6 +79,9 @@ fly:
   ce_cn:
     __append:
       - derive/ce;/cn;/
+  tv_tn:
+    __append:
+      - derive/tv;/tn;/
 # 小寫可匹配大寫編碼（用於英語混輸）
 casefold:
   __append:

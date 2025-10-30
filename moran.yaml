@@ -30,12 +30,14 @@ algebra:
         - moran_defs:/fly/mu_mr  # ZRM-SPECIFIC
         - moran_defs:/fly/vr_vn  # ZRM-SPECIFIC
         - moran_defs:/fly/ce_cn  # ZRM-SPECIFIC
+        - moran_defs:/fly/tv_tn  # ZRM-SPECIFIC
         
         # 模糊音設置
         # - moran_defs:/bufen/z_zh
         # - moran_defs:/bufen/c_ch
         # - moran_defs:/bufen/s_sh
         # - moran_defs:/bufen/en_eng
+        - moran_defs:/bufen/in_ing
   user_sentence_bottom:
 
   # 用於生成用戶輸入碼的核心演算式
@@ -134,13 +136,13 @@ octagram:
   enable_for_sentence:
     __patch:
       grammar:
-        language: zh-hant-t-essay-bgw
+        language: zh-hant-t-s1-tgc.gram
         collocation_max_length: 4
         collocation_min_length: 3
   enable_for_fixed:
     __patch:
       grammar:
-        language: zh-hant-t-essay-bgc
+        language: zh-hant-t-s1-tgc.gram
         collocation_max_length: 4
         collocation_min_length: 2
       fixed/+:
