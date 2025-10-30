@@ -12,3 +12,4 @@ patch:
     - {schema: yuming}
     - {schema: yuming_essence}
     - {schema: wubi091}
+  moran/word_filter_match_indicator: "🎯"

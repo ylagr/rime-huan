@@ -75,6 +75,8 @@ function top.init(env)
    env.rfixed = ReverseLookup(env.engine.schema.config:get_string("fixed/dictionary") or "moran_fixed")
    env.quick_code_indicator = env.engine.schema.config:get_string("moran/quick_code_indicator") or "⚡️"
    env.fix_code_indicator = env.engine.schema.config:get_string("moran/fix_code_indicator") or "☯️"
+   env.sentence_indicator = env.engine.schema.config:get_string("moran/sentence_indicator") or "💧"
+   env.user_phrase_indicator = env.engine.schema.config:get_string("moran/user_phrase_indicator") or ""
    if env.name_space == 'with_reorder' then
       env.quick_code_indicator = '`F'
    end 
@@ -125,6 +127,7 @@ function top.func(input, seg, env)
    local inflexible = env.engine.context:get_option("inflexible")
    local indicator = env.quick_code_indicator
    local fix_indicator = env.fix_code_indicator
+   
    -- 用戶尚未選過字時，調用碼表。
    if (env.engine.context.input == input) then
       local fixed_res = env.fixed:query(input, seg)
@@ -248,6 +251,13 @@ function top.func(input, seg, env)
       if not ijrq_enabled then
          -- 不啓用出簡讓全時
          for cand in smart_iter do
+	    -- if cand.type ~= "phrase" then
+	    if cand.type == "sentence" then
+	       cand.comment = env.sentence_indicator
+	    end
+	    if cand.type == "user_phrase" then
+	       cand.comment = env.user_phrase_indicator
+	    end
             top.output(env, cand)
          end
       else
@@ -255,6 +265,13 @@ function top.func(input, seg, env)
          local immediate_set = {}
          local deferred_set = {}
          for cand in smart_iter do
+	    -- if cand.type ~= "phrase" then
+	    if cand.type == "sentence" then
+	       cand.comment = env.sentence_indicator
+	    end
+	    if cand.type == "user_phrase" then
+	       cand.comment = env.user_phrase_indicator
+	    end
             local defer = false
             -- 如果輸出有詞，說明在拼詞，用戶很可能要使用高頻字，故此時停止出簡讓全。
             if (ijrq_enabled and utf8.len(cand.text) > 1) then

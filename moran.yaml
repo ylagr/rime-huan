@@ -137,13 +137,13 @@ octagram:
   enable_for_sentence:
     __patch:
       grammar:
-        language: zh-hant-t-s1-tgc.gram
+        language: zh-hant-t-s1-tgc
         collocation_max_length: 4
         collocation_min_length: 3
   enable_for_fixed:
     __patch:
       grammar:
-        language: zh-hant-t-s1-tgc.gram
+        language: zh-hant-t-s1-tgc
         collocation_max_length: 4
         collocation_min_length: 2
       fixed/+:

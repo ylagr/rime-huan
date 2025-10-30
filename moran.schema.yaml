@@ -130,6 +130,8 @@ translator:    # 整句輸入模式設置，在 top_translator 中被調用
   max_homophones: 7
   spelling_hints: 3
   contextual_suggestions: false
+  comment_format:
+    - xform/(.*)/$1💧/
   preedit_format:
     - xform|([a-z][a-z][a-z][a-z]?)/|$1°|
 
@@ -375,7 +377,8 @@ moran:
   # 建議在熟悉簡碼後再取消
   quick_code_indicator: "⚡️"
   fix_code_indicator: "☯️️"
-
+  sentence_indicator: "💧"
+  # user_phrase_indicator: "👤"   # 用户词添加提示符
   # 詞輔功能
   # 當輸入二字或三字詞時，允許詞末輸入 *一位* 輔助碼篩選詞語。
   # 例如輸入 lmjxz 得到「連接」，輸入 lmjxj 得到「鏈接」。
