@@ -255,9 +255,9 @@ function top.func(input, seg, env)
 	    if cand.type == "sentence" then
 	       cand.comment = env.sentence_indicator
 	    end
-	    if cand.type == "user_phrase" then
-	       cand.comment = env.user_phrase_indicator
-	    end
+	    -- if cand.type == "user_phrase" then
+	       -- cand.comment = env.user_phrase_indicator
+	    -- end
             top.output(env, cand)
          end
       else
@@ -269,9 +269,9 @@ function top.func(input, seg, env)
 	    if cand.type == "sentence" then
 	       cand.comment = env.sentence_indicator
 	    end
-	    if cand.type == "user_phrase" then
-	       cand.comment = env.user_phrase_indicator
-	    end
+	    -- if cand.type == "user_phrase" then
+	       -- cand.comment = env.user_phrase_indicator
+	    -- end
             local defer = false
             -- 如果輸出有詞，說明在拼詞，用戶很可能要使用高頻字，故此時停止出簡讓全。
             if (ijrq_enabled and utf8.len(cand.text) > 1) then
