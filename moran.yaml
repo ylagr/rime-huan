@@ -37,7 +37,7 @@ algebra:
         # - moran_defs:/bufen/c_ch
         # - moran_defs:/bufen/s_sh
         # - moran_defs:/bufen/en_eng
-        - moran_defs:/bufen/in_ing
+        # - moran_defs:/bufen/in_ing
   user_sentence_bottom:
 
   # 用於生成用戶輸入碼的核心演算式
