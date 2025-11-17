@@ -127,7 +127,7 @@ function top.func(input, seg, env)
    local inflexible = env.engine.context:get_option("inflexible")
    local indicator = env.quick_code_indicator
    local fix_indicator = env.fix_code_indicator
-   
+   env.output_injected_secondary = {}
    -- 用戶尚未選過字時，調用碼表。
    if (env.engine.context.input == input) then
       local fixed_res = env.fixed:query(input, seg)
@@ -137,13 +137,23 @@ function top.func(input, seg, env)
             if inflexible and env.inject_fixed_words and env.inject_fixed_chars then
                -- 如果固詞, inject_fixed_words 和 inject_fixed_chars 同時打開，則理解爲掛接用法，直接輸出碼表。
                for cand in fixed_res:iter() do
-                  top.output_from_fixed(env, cand)
+		  if utf8.len(cand.text) >=4 then
+		     cand.comment = fix_indicator
+		     table.insert(env.output_injected_secondary, cand)
+		  else
+		     top.output_from_fixed(env, cand)
+		  end
                end
             elseif inflexible and env.inject_fixed_words then
                -- 固詞 + 長詞 = 只有詞
                for cand in fixed_res:iter() do
                   if utf8.len(cand.text) > 1 then
-                     top.output_word_from_fixed(env, cand)
+		     if utf8.len(cand.text) >=4 then
+			cand.comment = fix_indicator
+			table.insert(env.output_injected_secondary, cand)
+		     else
+			top.output_word_from_fixed(env, cand)
+		     end
                   end
                end
             elseif inflexible and env.inject_fixed_chars then
@@ -251,13 +261,6 @@ function top.func(input, seg, env)
       if not ijrq_enabled then
          -- 不啓用出簡讓全時
          for cand in smart_iter do
-	    -- if cand.type ~= "phrase" then
-	    if cand.type == "sentence" then
-	       cand.comment = env.sentence_indicator
-	    end
-	    -- if cand.type == "user_phrase" then
-	       -- cand.comment = env.user_phrase_indicator
-	    -- end
             top.output(env, cand)
          end
       else
@@ -265,13 +268,6 @@ function top.func(input, seg, env)
          local immediate_set = {}
          local deferred_set = {}
          for cand in smart_iter do
-	    -- if cand.type ~= "phrase" then
-	    if cand.type == "sentence" then
-	       cand.comment = env.sentence_indicator
-	    end
-	    -- if cand.type == "user_phrase" then
-	       -- cand.comment = env.user_phrase_indicator
-	    -- end
             local defer = false
             -- 如果輸出有詞，說明在拼詞，用戶很可能要使用高頻字，故此時停止出簡讓全。
             if (ijrq_enabled and utf8.len(cand.text) > 1) then
@@ -326,6 +322,9 @@ end
 
 -- | 支持候選注入的 yield
 function top.output(env, cand)
+   if cand.type == "sentence" then
+      cand.comment = env.sentence_indicator
+   end
    -- 注意：需要保證 spelling hint 僅對 3 字以下詞開啓
    yield(cand)
    env.output_i = env.output_i + 1
