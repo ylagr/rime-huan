@@ -79,6 +79,7 @@ function top.init(env)
    env.user_phrase_indicator = env.engine.schema.config:get_string("moran/user_phrase_indicator") or ""
    if env.name_space == 'with_reorder' then
       env.quick_code_indicator = '`F'
+      env.fix_code_indicator = 'G'
    end 
    env.ijrq_enable = env.engine.schema.config:get_bool("moran/ijrq/enable")
    env.ijrq_defer = env.engine.schema.config:get_int("moran/ijrq/defer") or env.engine.schema.config:get_int("menu/page_size") or 5
