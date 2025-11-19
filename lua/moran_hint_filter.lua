@@ -36,6 +36,7 @@ function Module.init(env)
       env.quick_code_hint_reverse = nil
    end
    env.quick_code_indicator = env.engine.schema.config:get_string("moran/quick_code_indicator") or "⚡"
+
    -- 若開啓 inject_fixed_words，則可以提示長詞（>=3）
    env.inject_fixed_words = env.engine.schema.config:get_bool("moran/inject_fixed_words") or false
    -- NOTE: 暫不提示二字詞

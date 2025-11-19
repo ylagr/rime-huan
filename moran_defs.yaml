@@ -96,7 +96,6 @@ fly:
     __append:
       - derive/xy;/xj;/
       
-
 # 小寫可匹配大寫編碼（用於英語混輸）
 casefold:
   __append:
