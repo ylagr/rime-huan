@@ -65,7 +65,7 @@ function Top.func(t_input, env)
       end
 
       if reorder_phase == 0 then
-         if cand.comment == '`F' then
+         if cand.comment == '`F' or cand.comment == 'G' then
             if not pin_set[cand.text] then
                table.insert(fixed_list, cand)
             end
@@ -114,6 +114,9 @@ function Top.func(t_input, env)
          if cand.comment == "`F" then
             cand.comment = env.quick_code_indicator
          end
+	 if cand.comment == "G" then
+	    cand.comment = env.fix_code_indicator
+	 end
          yield(cand)
       end
 
@@ -149,6 +152,9 @@ function Top.DoPhase1(env, fixed_list, smart_list, cand)
          if fcand.comment == "`F" then
             fcand.comment = env.quick_code_indicator
          end
+	 if fcand.comment == "G" then
+	    fcand.comment = env.fix_code_indicator
+	 end
          yield(fcand)
          table.remove(fixed_list, 1)
       else
@@ -185,6 +191,9 @@ function Top.ClearEntries(env, reorder_phase, fixed_list, smart_list, delay_slot
       if cand.comment == "`F" then
          cand.comment = env.quick_code_indicator
       end
+      if cand.comment == "G" then
+	 cand.comment = env.fix_code_indicator
+      end
       yield(cand)
       fixed_list[i] = nil
    end
@@ -196,6 +205,9 @@ function Top.ClearEntries(env, reorder_phase, fixed_list, smart_list, delay_slot
       if cand.comment == "`F" then
          cand.comment = env.quick_code_indicator
       end
+      if cand.comment == "G" then
+	 cand.comment = env.fix_code_indicator
+      end
       yield(cand)
       smart_list[i] = nil
    end
@@ -206,6 +218,9 @@ function Top.YieldSmartInPlaceOfFixed(env, scand, fcand)
       scand.comment = env.quick_code_indicator .. scand.comment
    elseif fcand.type == "pinned" then
       scand.comment = env.pin_indicator
+   end   
+   if fcand.comment == "G" then
+      scand.comment = env.fix_code_indicator .. scand.comment
    end
    yield(scand)
 end
