@@ -58,6 +58,10 @@ fly:
   xq_xo:
     __append:
       - derive/xq;/xo;/
+  wz_wk:
+    __append:
+      - derive/wz;/wk;/
+
   ny_nw:
     __append:
       - derive/ny;/nw;/
@@ -88,14 +92,11 @@ fly:
   ly_lf:
     __append:
       - derive/ly;/lf;/
-  wz_wk:
-    __append:
-      - derive/wz;/wk;/
   xy_xj:
     __append:
       - derive/xy;/xj;/
       
-  
+
 # 小寫可匹配大寫編碼（用於英語混輸）
 casefold:
   __append:

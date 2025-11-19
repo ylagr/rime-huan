@@ -39,7 +39,9 @@ deploy:
       - send: U8888
         assert: eq(cand[1].text, '袈')
       - send: S114514
-        assert: eq(cand[1].text, '十一万四千五百一十四')
+        assert: eq(cand[1].text, '一十一萬四千五百一十四')
+      - send: olfuvuv
+        assert: eq(cand[1].text, '冰') and eq(cand[1].comment, 'by[du] ny[du]')
 
   emoji:
     options:
@@ -168,19 +170,19 @@ deploy:
   steal_auxcode:
     tests:
       - send: 'mzfadsl2'
-        assert: eq(cand[1].text, '賽')
+        assert: eq(cand[1].text, '塞')
       - send: 'mzfadsl2{Control+l}'
         assert: eq(cand[1].text, '動')
       - send: 'mzfadsl2{Control+l}{Control+l}'
-        assert: eq(cand[1].text, '賽')
+        assert: eq(cand[1].text, '塞')
       - send: 'ljflkr'
         assert: eq(cand[1].text, '攔款')
       - send: 'ljflkr2'
-        assert: eq(cand[1].text, '款')
+        assert: eq(cand[1].text, '寬')
       - send: 'ljflkr2{Control+l}'
         assert: eq(cand[1].text, '佬')
       - send: 'ljflkr2{Control+l}{Control+l}'
-        assert: eq(cand[1].text, '款')
+        assert: eq(cand[1].text, '寬')
 
   inject_chars:
     patch:

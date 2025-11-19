@@ -124,7 +124,7 @@ speller:
       - moran:/algebra/user_sentence_bottom?
       - moran:/algebra/user_force_bottom?
 
-translator:    # 整句輸入模式設置，在 top_translator 中被調用
+smart:         # 整句輸入模式設置，在 top_translator 中被調用
   dictionary: moran.extended
   prism: moran
   initial_quality: 5
@@ -198,7 +198,7 @@ quick_repeat:  # 快速重複上屏
 simplifier:
   option_name: simplification
   opencc_config: moran_t2s.json
-  tags: [abc]
+  tags: [abc, number]
 
 chaifen:
   option_name: chaifen
@@ -242,6 +242,7 @@ std_dzing:
   tags: [abc]
 
 reverse_format:
+  target: smart
   comment_format:
     - xform/(\w\w);(\w\w)/$1[$2]/
   preedit_format:
@@ -342,7 +343,7 @@ recognizer:
   import_preset: default
   patterns:
     unicode: "^U[a-fA-F0-9]+"
-    number: "^S[0-9]+"
+    number: "^S[0-9\\.]+"
     shijian: "^N[0-9]+"
     uppercase: "[A-Z][-_+.'A-Za-z]*$"
     punct: '^/([0-9]0?|[A-Za-z]+)$'
@@ -377,9 +378,15 @@ moran:
   # 修改爲 "" 可取消提示符
   # 建議在熟悉簡碼後再取消
   quick_code_indicator: "⚡️"
+  # 在造詞/造句選字過程中亦使用固頂簡快碼，默認開啓
+  # 若設爲 false，則造詞時過程中完全不使用簡碼
+  # 通常來說，不應該禁用該選項。如果你有禁用它的理由，請告知開發者，以免該選項在未來被刪除。
+  quick_code_in_sentence_making: true
+
   fix_code_indicator: "☯️️"
   sentence_indicator: "💧"
   # user_phrase_indicator: "👤"   # 用户词添加提示符
+
   # 詞輔功能
   # 當輸入二字或三字詞時，允許詞末輸入 *一位* 輔助碼篩選詞語。
   # 例如輸入 lmjxz 得到「連接」，輸入 lmjxj 得到「鏈接」。

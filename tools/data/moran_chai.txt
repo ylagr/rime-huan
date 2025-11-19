@@ -6959,7 +6959,7 @@
 与	aa	一一	
 丏	ag	一㇉	
 丐	ag	一㇉	
-丑	aa	一丨	
+丑	aa	乛丨	
 丑	at	乛土	
 丑	vt	乛土	
 丒	ar	一刃	
@@ -7165,7 +7165,7 @@
 亓	ed	二リ	
 五	aa	一一	
 井	aa	一丨	
-井	ep	二リ	
+井	ed	二リ	
 亖	ee	二二	
 亗	ue	山二	
 亘	aa	一一	
@@ -8024,7 +8024,7 @@
 共	bc	八龷	
 兲	wb	王八	
 关	qd	䒑大	
-关	bt	八天	
+关	bt	丷天	
 兴	ba	八一	
 兴	db	丶八	
 兵	qb	丘八	
@@ -8306,8 +8306,8 @@
 削	dx	刂肖	
 剋	dk	刂克	
 剌	du	刂束	
-前	bd	丷刂	
 前	qd	䒑刂	
+前	bd	丷刂	
 剎	du	刂杀	
 剏	rb	刄并	
 剐	dg	刂呙	
@@ -8657,6 +8657,7 @@
 卖	um	十买	
 南	ua	十丨	
 南	uy	十𢆉	
+南	aa	一丨	
 単	dd	丶{単下}	
 卙	uu	甚十	
 博	uc	十寸	
@@ -8829,9 +8830,9 @@
 叏	ya	又一	
 叏	fy	𰀁又	
 叐	py	丿友	
-发	ay	𠃋又	
+发	ay	𠃊又	
 发	fd	{发去点}丶	
-发	vy	乛又	
+发	vy	𠃊又	
 发	yd	又丶	
 叒	yu	又双	
 叓	yv	又中	
@@ -12492,9 +12493,9 @@
 彥	wp	文彡	
 彦	ip	产彡	
 彦	wp	亠彡	
+彧	ph	彡或	
 彧	kp	口彡	
-彧	hd	一丶	
-彧	hp	一彡	
+彧	hp	或彡	
 彨	pl	彡丽	
 彩	pc	彡采	
 彪	hp	虎彡	
@@ -13341,7 +13342,7 @@
 戠	og	日戈	
 戠	yg	音戈	
 戡	gu	戈甚	
-戢	ge	戈二	
+戢	ge	戈耳	
 戢	gq	戈咠	
 戢	kg	口戈	
 戢	ad	丨丶	
@@ -14559,8 +14560,8 @@
 时	oc	日寸	
 旷	og	日广	
 旸	oy	日𠃓	
-旹	co	屮日	
 旹	oa	日一	
+旹	co	屮日	
 旺	ow	日王	
 旻	ow	日文	
 旻	wo	文日	
@@ -17920,10 +17921,8 @@
 炗	ch	廿火	
 炗	hc	火廿	
 炘	hj	火斤	
-炙	ho	火{月}	
-炙	hy	火{月}	
 炙	oh	{月}火	
-炙	yh	{月}火	
+炙	ho	火{月}	
 炚	oh	日火	
 炛	hh	火化	
 炜	hw	火韦	
@@ -19266,7 +19265,6 @@
 瓧	wu	瓦十	
 瓨	gw	工瓦	
 瓨	wg	瓦工	
-瓩	wa	瓦千	
 瓩	wq	瓦千	
 瓪	wf	瓦反	
 瓫	wf	瓦分	
@@ -19341,7 +19339,9 @@
 生	na	牛一	
 甠	ou	日生	
 甡	uu	生生	
+產	ui	生厂	
 產	wu	文生	
+産	ui	生产	
 産	iu	产生	
 産	lu	立生	
 甤	uu	生豕	
@@ -19435,9 +19435,9 @@
 畨	mt	米田	
 畨	tm	田米	
 畩	ty	田衣	
+番	tm	田米	
 番	tb	田釆	
 番	pt	丿田	
-番	tm	田米	
 畫	ya	肀一	
 畫	ta	田一	
 畬	ty	田余	
@@ -20091,7 +20091,6 @@
 睼	ou	目是	
 睽	og	目癸	
 睽	ot	目天	
-睾	ps	丿十	
 睾	px	丿幸	
 睿	or	目人	
 睿	bo	卜目	
@@ -20175,9 +20174,8 @@
 瞽	og	目鼓	
 瞾	ko	空目	
 瞾	ok	目空	
-瞿	vo	隹目	
 瞿	ov	目隹	
-瞿	vm	隹目	
+瞿	vo	隹目	
 矀	ow	目微	
 矁	oi	目愁	
 矂	oz	目喿	
@@ -20247,9 +20245,8 @@
 矲	ub	矢罷	
 矲	un	矢能	
 石	kp	口丿	
-石	aa	丆一	
 石	ak	丆口	
-石	pk	丿口	
+石	aa	丆一	
 矴	ud	石丁	
 矵	ud	石刂	
 矶	uj	石几	
@@ -24029,7 +24026,7 @@
 萙	cv	艹枕	
 萚	cz	艹择	
 萛	cc	艹廾	
-萛	cm	廾目	
+萛	co	廾目	
 萜	ct	艹帖	
 萝	cl	艹罗	
 萞	cb	艹比	
@@ -25856,8 +25853,8 @@
 视	uj	示见	
 觇	jv	见占	
 览	jv	见{竹半}	
-觉	dj	丶见	
 觉	jb	见冖	
+觉	dj	丶见	
 觊	jj	见己	
 觊	jq	见岂	
 觋	jw	见巫	
@@ -30930,7 +30927,7 @@
 驩	mv	馬隹	
 驪	ml	馬麗	
 驫	mm	馬馬	
-马	aa	一一	
+马	aa	乛一	
 马	vh	乛一	
 驭	my	马又	
 驮	md	马大	
@@ -32963,7 +32960,8 @@
 𠄲	wd	五电	auto
 𠄴	yf	云弗	auto
 𠄵	aa	一一	auto
-𠄷	ea	二亅	auto
+𠄷	ka	口一	
+𠄷	ea	二亅	
 𠄸	aa	一一	
 𠄹	aa	一一	auto
 𠄽	ep	二排	auto
@@ -34024,8 +34022,8 @@
 𠔡	qf	其分	auto
 𠔢	fv	分枝	auto
 𠔣	gg	巩共	auto
-𠔥	bh	八灬	auto
 𠔥	qh	䒑灬	auto
+𠔥	bh	八灬	auto
 𠔧	bj	八臼	auto
 𠔧	tb	土八	auto
 𠔨	ba	八一	auto
@@ -34732,7 +34730,8 @@
 𠞱	jd	堇刂	auto
 𠞲	di	刀厂	auto
 𠞲	wd	未刀	auto
-𠞳	qd	䒑刂	auto
+𠞳	dp	刂朋	
+𠞳	qd	䒑刂	
 𠞴	cr	倉刃	auto
 𠞵	sd	罒刂	auto
 𠞶	dd	啇刂	auto
@@ -35406,7 +35405,6 @@
 𠧤	bi	卜乂	auto
 𠧥	bb	卜卜	auto
 𠧥	eb	二卜	auto
-𠧦	by	卜幺	auto
 𠧦	qb	䒑卜	auto
 𠧧	bw	卜夂	auto
 𠧨	bg	卜各	auto
@@ -48452,7 +48450,6 @@
 𣦤	dv	敦正	auto
 𣦥	vy	正堯	auto
 𣦦	so	歲目	auto
-𣦦	sm	歲目	auto
 𣦧	si	歲出	auto
 𣦨	pl	丿來	auto
 𣦨	vl	止來	auto
@@ -54535,7 +54532,7 @@
 𥇠	wo	夂目	auto
 𥇡	sg	罒干	auto
 𥇢	ov	目斩	auto
-𥇤	mj	目届	
+𥇤	oj	目届	
 𥇤	of	目𰀁	
 𥇥	ok	目口	auto
 𥇦	ox	目析	auto
@@ -59081,7 +59078,7 @@
 𦕈	eu	耳少	auto
 𦕉	eu	耳少	auto
 𦕉	ue	少耳	auto
-𦕊	ek	耳口	auto
+𦕊	eg	耳㇉	
 𦕋	ey	耳又	auto
 𦕌	eu	耳氏	auto
 𦕌	ue	氏耳	auto
@@ -67468,7 +67465,8 @@
 𨚚	by	半邑	auto
 𨚚	yb	邑半	auto
 𨚛	be	匕阝	auto
-𨚜	be	丷阝	auto
+𨚜	eg	阝{干}	
+𨚜	be	丷阝	
 𨚟	de	冬阝	auto
 𨚠	gy	甘邑	auto
 𨚠	yg	邑甘	auto
@@ -76361,7 +76359,8 @@
 𪙒	ic	齒从	auto
 𪙓	gi	圭齒	auto
 𪙓	iy	齒尤	auto
-𪙔	wi	亠齒	auto
+𪙔	id	齒丶	
+𪙔	wi	亠齒	
 𪙕	iv	齒展	auto
 𪙖	id	齒大	auto
 𪙖	pi	丿齒	auto
@@ -79849,7 +79848,7 @@
 𫜭	is	齿所	auto
 𫜮	iy	齿彦	auto
 𫜯	ih	齿害	auto
-𫜰	xi	献齿	auto
+𫜰	ix	齿献	
 𫜲	yl	有龙	auto
 𫜳	gr	龟冉	auto
 𫜳	rg	冉龟	auto
@@ -80149,8 +80148,8 @@
 𫡹	aa	一一	auto
 𫡹	ea	二一	auto
 𫡺	wu	亠士	auto
-𫡼	mm	亩目	auto
-𫡼	mo	亩目	auto
+𫡼	wo	亠目	
+𫡼	mo	亩目	
 𫡿	wm	亠米	auto
 𫢀	wi	亠虫	auto
 𫢁	wj	亠京	auto
@@ -84559,7 +84558,8 @@
 𬻐	ad	一丁	auto
 𬻑	pd	丿丶	auto
 𬻔	ad	一丶	auto
-𬻕	ao	一目	auto
+𬻕	ae	一二	
+𬻕	ao	一目	
 𬻛	bq	不去	auto
 𬻜	ae	一二	auto
 𬻜	ee	二二	auto
@@ -86165,11 +86165,11 @@
 𭠙	fy	扌业	auto
 𭠛	fg	扌干	auto
 𭠜	ft	扌土	auto
-𭠠	ad	一丶	auto
+𭠠	ud	手丶	
 𭠡	fk	扌口	auto
 𭠦	fg	扌干	auto
-𭠧	lu	列手	auto
 𭠧	ul	手列	auto
+𭠧	lu	列手	auto
 𭠪	fz	扌自	auto
 𭠬	fm	扌名	auto
 𭠭	fd	扌丹	auto
@@ -86187,7 +86187,8 @@
 𭡌	fa	扌一	auto
 𭡍	bx	拜下	auto
 𭡒	fv	扌咒	auto
-𭡓	vw	折攵	auto
+𭡓	fw	扌攵	
+𭡓	wv	攵折	
 𭡔	fb	扌巴	auto
 𭡖	fy	扌衣	auto
 𭡗	fj	扌咎	auto
@@ -86279,7 +86280,8 @@
 𭣛	vv	支執	auto
 𭣟	dv	翟支	auto
 𭣟	vd	支翟	auto
-𭣡	lw	了攵	auto
+𭣡	wl	攵了	
+𭣡	lw	了攵	
 𭣢	pa	攴丨	auto
 𭣢	rp	亻攴	auto
 𭣣	pw	丬攵	auto
@@ -93848,118 +93850,131 @@
 𱉅	nv	鳥隹	auto
 𱉅	qn	其鳥	auto
 𱉆	nu	鳥氺	auto
-𱉇	ny	鸟乙	auto
-𱉈	dn	刀鸟	auto
-𱉉	ln	了鸟	auto
-𱉊	gn	干鸟	auto
-𱉋	ng	鸟干	auto
-𱉌	ny	鸟义	auto
-𱉍	wn	王鸟	auto
-𱉎	fn	夫鸟	auto
-𱉏	vn	专鸟	auto
-𱉐	bn	贝鸟	auto
-𱉑	fn	分鸟	auto
-𱉒	on	月鸟	auto
-𱉓	hn	户鸟	auto
-𱉔	gn	夬鸟	auto
-𱉕	nk	鸟可	auto
-𱉖	pn	丕鸟	auto
-𱉗	dn	旦鸟	auto
-𱉘	qn	且鸟	auto
-𱉙	nv	鸟只	auto
-𱉚	un	失鸟	auto
-𱉛	un	矢鸟	auto
-𱉜	fn	付鸟	auto
-𱉝	sn	巳鸟	auto
-𱉞	mn	母鸟	auto
-𱉟	yn	又鸟	auto
-𱉡	bn	弁鸟	auto
-𱉢	yn	幼鸟	auto
-𱉣	nr	鸟戎	auto
-𱉤	gn	圭鸟	auto
-𱉥	jn	吉鸟	auto
-𱉦	ln	老鸟	auto
-𱉧	gn	戈鸟	auto
-𱉨	yn	亚鸟	auto
-𱉩	yn	夷鸟	auto
-𱉪	an	艾鸟	auto
-𱉫	vn	朱鸟	auto
-𱉬	qn	乔鸟	auto
-𱉭	wn	危鸟	auto
-𱉮	gn	各鸟	auto
-𱉯	yn	羊鸟	auto
-𱉰	xn	兴鸟	auto
-𱉱	jn	军鸟	auto
-𱉲	mn	牟鸟	auto
-𱉳	mn	买鸟	auto
-𱉴	yn	杨鸟	auto
-𱉵	ln	来鸟	auto
-𱉶	hn	旱鸟	auto
-𱉷	yn	役鸟	auto
-𱉸	ny	鸟余	auto
-𱉹	xn	希鸟	auto
-𱉺	fn	孚鸟	auto
+𱉇	ny	鸟乙	
+𱉈	nd	鸟刀	
+𱉉	nl	鸟了	
+𱉊	ng	鸟干	
+𱉋	ng	鸟干	
+𱉌	ny	鸟义	
+𱉍	nw	鸟王	
+𱉎	nf	鸟夫	
+𱉏	nv	鸟专	
+𱉐	nb	鸟贝	
+𱉑	nf	鸟分	
+𱉒	no	鸟月	
+𱉓	hn	户鸟	
+𱉔	ng	鸟夬	
+𱉕	nk	鸟可	
+𱉖	np	鸟丕	
+𱉗	nd	鸟旦	
+𱉘	nq	鸟且	
+𱉙	nv	鸟只	
+𱉚	nu	鸟失	
+𱉛	nu	鸟矢	
+𱉜	nf	鸟付	
+𱉝	nd	鸟丶	
+𱉞	nm	鸟母	
+𱉟	nf	鸟𰀁	
+𱉡	nb	鸟弁	
+𱉢	ny	鸟幼	
+𱉣	nr	鸟戎	
+𱉤	ng	鸟圭	
+𱉥	nj	鸟吉	
+𱉦	nl	鸟老	
+𱉦	ln	老鸟	
+𱉧	gn	戈鸟	
+𱉧	ng	鸟戈	
+𱉨	ny	鸟亚	
+𱉩	ny	鸟夷	
+𱉪	na	鸟艾	
+𱉫	nv	鸟朱	
+𱉬	nq	鸟乔	
+𱉭	nw	鸟危	
+𱉮	ng	鸟各	
+𱉯	ny	鸟羊	
+𱉰	nx	鸟兴	
+𱉰	xn	兴鸟	
+𱉱	nj	鸟军	
+𱉲	nm	鸟牟	
+𱉳	nm	鸟买	
+𱉴	ny	鸟杨	
+𱉵	nl	鸟来	
+𱉶	nh	鸟旱	
+𱉷	ny	鸟役	
+𱉸	ny	鸟余	
+𱉹	nx	鸟希	
+𱉺	nf	鸟孚	
 𱉻	nt	鸟妥	
-𱉼	jn	即鸟	auto
-𱉽	jn	忌鸟	auto
-𱉾	sn	厶鸟	auto
-𱉿	nw	鸟夂	auto
-𱊀	tn	土鸟	auto
-𱊁	qn	奇鸟	auto
-𱊂	mn	明鸟	auto
-𱊃	hn	禾鸟	auto
-𱊄	ne	鸟兒	auto
-𱊅	nv	鸟隹	auto
-𱊆	tn	兔鸟	auto
-𱊇	gn	勹鸟	auto
-𱊈	en	兒鸟	auto
-𱊉	xn	学鸟	auto
+𱉼	nj	鸟即	
+𱉽	nj	鸟忌	
+𱉾	ns	鸟夋	
+𱉿	nw	鸟夂	
+𱊀	nt	鸟土	
+𱊁	nq	鸟奇	
+𱊂	nm	鸟明	
+𱊃	nd	鸟{刀}	
+𱊄	ne	鸟兒	
+𱊅	nv	鸟隹	
+𱊅	vn	隹鸟	
+𱊆	nt	鸟兔	
+𱊆	tn	兔鸟	
+𱊇	nj	鸟匊	
+𱊇	nm	鸟米	
+𱊈	ne	鸟兒	
+𱊉	nx	鸟学	
 𱊊	nk	鸟空	
-𱊋	jn	肩鸟	auto
+𱊋	nj	鸟肩	
 𱊌	nj	鸟居	
-𱊍	vn	叕鸟	auto
-𱊎	zn	甾鸟	auto
-𱊏	an	一鸟	auto
-𱊐	jn	皆鸟	auto
-𱊑	dn	盾鸟	auto
-𱊒	yn	爰鸟	auto
-𱊓	mn	脉鸟	auto
-𱊔	fn	复鸟	auto
-𱊕	dn	帝鸟	auto
-𱊖	tn	突鸟	auto
-𱊗	rn	柔鸟	auto
-𱊘	tn	彖鸟	auto
-𱊙	vn	振鸟	auto
-𱊚	vn	真鸟	auto
-𱊛	sn	隼鸟	auto
-𱊜	nn	鸟鸟	auto
-𱊝	tn	唐鸟	auto
-𱊞	sn	涑鸟	auto
-𱊟	hn	害鸟	auto
-𱊠	tn	荼鸟	auto
-𱊡	wn	唯鸟	auto
-𱊢	ln	笠鸟	auto
-𱊣	jn	今鸟	auto
-𱊤	yn	庸鸟	auto
-𱊥	un	商鸟	auto
-𱊦	yn	壹鸟	auto
-𱊧	jn	厥鸟	auto
-𱊨	nq	鸟渠	auto
-𱊩	tn	屠鸟	auto
-𱊪	ln	零鸟	auto
-𱊫	yn	虞鸟	auto
+𱊍	nv	鸟叕	
+𱊎	nz	鸟甾	
+𱊎	nt	鸟田	
+𱊏	nf	鸟畐	
+𱊏	nt	鸟田	
+𱊐	nj	鸟皆	
+𱊑	nd	鸟盾	
+𱊒	ny	鸟爰	
+𱊓	nm	鸟脉	
+𱊔	nf	鸟复	
+𱊕	nd	鸟帝	
+𱊖	nt	鸟突	
+𱊗	nr	鸟柔	
+𱊘	nt	鸟彖	
+𱊙	nv	鸟振	
+𱊚	nv	鸟真	
+𱊛	ns	鸟隼	
+𱊜	nn	鸟鸟	
+𱊝	nt	鸟唐	
+𱊞	ns	鸟涑	
+𱊟	nh	鸟害	
+𱊠	nt	鸟荼	
+𱊡	nw	鸟唯	
+𱊢	nl	鸟笠	
+𱊣	ny	鸟酉	
+𱊤	ny	鸟庸	
+𱊥	nu	鸟商	
+𱊦	ny	鸟壹	
+𱊧	nj	鸟厥	
+𱊧	in	厂鸟	
+𱊧	jn	厥鸟	
+𱊨	nq	鸟渠	
+𱊩	nt	鸟屠	
+𱊪	nl	鸟零	
+𱊫	ny	鸟虞	
 𱊬	nu	鸟蜀	
 𱊬	ni	鸟虫	
-𱊭	yn	與鸟	auto
-𱊮	wn	亡鸟	auto
-𱊯	jn	敫鸟	auto
-𱊰	yn	意鸟	auto
-𱊱	dn	翟鸟	auto
-𱊲	bn	暴鸟	auto
+𱊭	jn	{臼}鸟	
+𱊭	ny	與鸟	
+𱊮	wn	亡鸟	
+𱊯	nw	鸟攵	
+𱊯	nj	鸟敫	
+𱊰	ny	鸟意	
+𱊱	nd	鸟翟	
+𱊲	nb	鸟暴	
 𱊳	nl	鸟畾	
 𱊳	nt	鸟田	
-𱊴	yn	燕鸟	auto
-𱊵	yn	龠鸟	auto
+𱊴	ny	鸟燕	
+𱊵	nc	鸟冊	
+𱊵	ny	鸟龠	
 𱊶	bu	卜十	auto
 𱊸	bj	卜今	auto
 𱊹	bj	卜旧	auto
@@ -96916,7 +96931,7 @@
 𲏿	rs	乳所	auto
 𲐀	ru	乳事	auto
 𲐂	eu	二山	auto
-𲐃	sb	三白	auto
+𲐃	eb	二百	auto
 𲐄	yb	云巴	auto
 𲐆	ef	二非	auto
 𲐈	ey	二云	auto
@@ -96929,7 +96944,7 @@
 𲐗	ra	人一	auto
 𲐘	rq	亻切	auto
 𲐙	rm	人木	auto
-𲐛	rg	亻㇉	auto
+𲐛	rk	亻丂	
 𲐜	rq	亻欠	auto
 𲐜	rd	人⺈	auto
 𲐝	rd	亻丁	auto
@@ -99830,6 +99845,11 @@
 𮐼	cg	艹戈	
 𮮡	ky	冂又	
 𮮡	ay	丨又	
+𥌷	ox	目憲	
+𩢆	mk	馬丂	
+𰀊	kk	冂丂	
+𰀊	ag	丨㇉	
+𭼆	bw	疒王	
 
 # 待考
 
@@ -103443,8 +103463,6 @@
 #𥌧	ol	目魯	
 #𥌫	ov	目篆	
 #𥌬	oi	目廛	
-#𥌷	mx	目憲	
-#𥌷	ox	目心	
 #𥌸	oy	目閻	
 #𥌹	oj	目錦	
 #𥍍	ol	目藍	
@@ -108850,7 +108868,6 @@
 #𬅡	qc	欠册	
 #𬅦	fq	孚欠	
 #𬅦	qf	欠孚	
-#𬅧	cm	次目	
 #𬅧	co	次目	
 #𬅨	cq	屮欠	
 #𬅨	qk	欠口	
@@ -112117,7 +112134,6 @@
 #𭻼	tv	田奓	
 #𭻽	py	毗藥	
 #𭼁	gb	工卜	
-#𭼆	bw	疒王	
 #𭼇	bh	疒化	
 #𭼈	bb	疒白	
 #𭼊	bg	疒共	
@@ -116569,7 +116585,6 @@
 #𱲰	on	目奴	
 #𱲱	oj	目尖	
 #𱲳	oh	目伙	
-#𱲶	lm	礼目	
 #𱲶	lo	礼目	
 #𱲹	oz	目足	
 #𱲼	wm	亡眉	

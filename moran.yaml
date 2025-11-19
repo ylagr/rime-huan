@@ -23,6 +23,8 @@ algebra:
       __patch:
         - moran_defs:/fly/qx_qo  # ZRM-SPECIFIC
         - moran_defs:/fly/xq_xo  # ZRM-SPECIFIC
+        - moran_defs:/fly/wz_wk  # ZRM-SPECIFIC
+
         - moran_defs:/fly/ny_nw  # ZRM-SPECIFIC
         - moran_defs:/fly/yn_yw  # ZRM-SPECIFIC
         - moran_defs:/fly/my_mw  # ZRM-SPECIFIC
@@ -33,9 +35,8 @@ algebra:
         - moran_defs:/fly/tv_tn  # ZRM-SPECIFIC
         - moran_defs:/fly/rf_rl  # ZRM-SPECIFIC
         - moran_defs:/fly/ly_lf  # ZRM-SPECIFIC
-        - moran_defs:/fly/wz_wk  # ZRM-SPECIFIC
         - moran_defs:/fly/xy_xj  # ZRM-SPECIFIC
-        
+
         # 模糊音設置
         # - moran_defs:/bufen/z_zh
         # - moran_defs:/bufen/c_ch
