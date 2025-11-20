@@ -2,8 +2,7 @@ backup_config_files: false
 distribution_code_name: "fcitx-rime"
 distribution_name: Rime
 distribution_version: 5.1.11
-install_time: "Wed Feb 19 21:39:57 2025"
-installation_id: huan_yk
+install_time: "Thu Nov 20 17:08:32 2025"
+# installation_id: "0c5f76b7-3b2e-4920-9794-678551529140"
 rime_version: 1.14.0
-sync_dir: "C:\\Users\\suiwp\\OneDrive\\app_data\\rime_sync\\"
 update_time: "Fri Sep 19 16:49:39 2025"
