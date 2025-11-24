@@ -351,6 +351,7 @@ end
 
 -- | 支持候選注入的 yield
 function top.output(env, cand)
+   -- log.error(tostring(cand.type .. "|" .. cand.comment .. "|" .. cand.text .. "|" .. cand.quality .. "|" .. cand.start .. "|" .. cand._end .. "|" .. cand.preedit ))
    if cand.type == "sentence" then
       cand.comment = env.sentence_indicator
    end
