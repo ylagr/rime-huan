@@ -220,6 +220,11 @@ function top.func(input, seg, env)
    -- (1) 在此種情況下，下面的代碼會直接修改 env.output_injected_secondary
    -- (2) inject_prioritize != kAny 時會先把結果寄存在 inject_chars 和 inject_words 中
    --     在遍歷完成後才得到 env.output_injected_secondary
+   if #env.output_injected_secondary > 0 then 
+      for i,c in pairs(env.output_injected_secondary) do
+	 top.output(env, c)
+      end
+   end
    env.output_injected_secondary = {}
    local inject_has_priority = env.inject_prioritize and (env.inject_prioritize ~= kAny)
    local inject_chars = {}  -- valid only when inject_has_priority
