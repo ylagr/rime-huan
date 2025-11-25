@@ -384,7 +384,8 @@ moran:
   # 通常來說，不應該禁用該選項。如果你有禁用它的理由，請告知開發者，以免該選項在未來被刪除。
   quick_code_in_sentence_making: true
 
-  fix_code_indicator: "☯️️"
+  # fix_code_indicator: "☯ꯁ𓁀֍"
+  fix_code_indicator: "🦄"
   sentence_indicator: "💧"
   # user_phrase_indicator: "👤"   # 用户词添加提示符
 
