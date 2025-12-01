@@ -86,14 +86,12 @@ function top.init(env)
    env.quick_code_indicator = env.engine.schema.config:get_string("moran/quick_code_indicator") or "⚡️"
    env.quick_code_in_sentence_making = moran.get_config_bool(env, "moran/quick_code_in_sentence_making", true)
 
-   env.fix_code_indicator = env.engine.schema.config:get_string("moran/fix_code_indicator") or "☯️"
    env.sentence_indicator = env.engine.schema.config:get_string("moran/sentence_indicator") or "💧"
    env.user_phrase_indicator = env.engine.schema.config:get_string("moran/user_phrase_indicator") or ""
 
    if env.name_space == 'with_reorder' then
       -- `F 表示碼表輸出，會被 reorder_filter 重排
       env.quick_code_indicator = '`F'
-      env.fix_code_indicator = 'G'
    else
       -- 若不啓用 reorder_filter，則不允許造句時產生碼表輸出
       env.quick_code_in_sentence_making = false
@@ -146,7 +144,6 @@ function top.func(input, seg, env)
    local input_len = utf8.len(input)
    local inflexible = env.engine.context:get_option("inflexible")
    local indicator = env.quick_code_indicator
-   local fix_indicator = env.fix_code_indicator
    env.output_injected_secondary = {}
    -- 用戶尚未選過字時，調用碼表。
    local is_sentence_making = not (env.engine.context.input == input)
@@ -159,7 +156,7 @@ function top.func(input, seg, env)
                -- 如果固詞, inject_fixed_words 和 inject_fixed_chars 同時打開，則理解爲掛接用法，直接輸出碼表。
                for cand in fixed_res:iter() do
 		  if utf8.len(cand.text) >=4 then
-		     cand.comment = fix_indicator
+		     cand.comment = indicator
 		     table.insert(env.output_injected_secondary, cand)
 		  else
 		     top.output_from_fixed(env, cand)
@@ -170,7 +167,7 @@ function top.func(input, seg, env)
                for cand in fixed_res:iter() do
                   if utf8.len(cand.text) > 1 then
 		     if utf8.len(cand.text) >=4 then
-			cand.comment = fix_indicator
+			cand.comment = indicator
 			table.insert(env.output_injected_secondary, cand)
 		     else
 			top.output_word_from_fixed(env, cand)
@@ -235,7 +232,7 @@ function top.func(input, seg, env)
          local cand_len = utf8.len(cand.text)
          if (env.inject_fixed_chars and cand_len == 1) or (env.inject_fixed_words and cand_len > 2) then
             if cand_len ~= 1 or (cand_len == 1 and not env.quick_code_indicator_skip_chars) then
-               cand:get_genuine().comment = fix_indicator
+               cand:get_genuine().comment = indicator
             end
             if not inject_has_priority then
                table.insert(env.output_injected_secondary, cand)
@@ -341,7 +338,7 @@ function top.func(input, seg, env)
    if env.output_i == 0 then
       for cand in moran.query_translation(env.fixed, input, seg, nil) do
          if not is_sentence_making or utf8.len(cand.text) == 1 then
-            cand.comment = fix_indicator
+            cand.comment = indicator
             yield(cand)
          end
       end
@@ -375,13 +372,13 @@ end
 
 function top.output_char_from_fixed(env, cand)
    if not env.quick_code_indicator_skip_chars then
-      cand.comment = env.fix_code_indicator
+      cand.comment = env.quick_code_indicator
    end
    top.output(env, cand)
 end
 
 function top.output_word_from_fixed(env, cand)
-   cand.comment = env.fix_code_indicator
+   cand.comment = env.quick_code_indicator
    top.output(env, cand)
 end
 

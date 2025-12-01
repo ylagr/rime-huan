@@ -384,15 +384,9 @@ moran:
   # 通常來說，不應該禁用該選項。如果你有禁用它的理由，請告知開發者，以免該選項在未來被刪除。
   quick_code_in_sentence_making: true
 
-  # fix_code_indicator: "☯ꯁ𓁀֍"
-  fix_code_indicator: "🦄"
   sentence_indicator: "💧"
   # user_phrase_indicator: "👤"   # 用户词添加提示符
 
-  # 在造詞/造句選字過程中亦使用固頂簡快碼，默認開啓
-  # 若設爲 false，則造詞時過程中完全不使用簡碼
-  # 通常來說，不應該禁用該選項。如果你有禁用它的理由，請告知開發者，以免該選項在未來被刪除。
-  quick_code_in_sentence_making: true
 
   # 詞輔功能
   # 當輸入二字或三字詞時，允許詞末輸入 *一位* 輔助碼篩選詞語。
@@ -443,7 +437,9 @@ moran:
 
   # 簡快碼提示（包括字和詞）
   # 例如 輸入 yy te er 英特爾 會提示「⚡yte」，即使用 yte 可以打出這個詞
-  enable_quick_code_hint: true
+  enable_quick_code_hint: false
+  # 默認值 null 表示使用 quick_code_indicator 提示簡快碼，若有需要可重設爲其他提示符或 ""
+  quick_code_hint_indicator: null
   # 取消單字的簡快碼提示
   quick_code_hint_skip_chars: false
 

@@ -1,5 +1,13 @@
 patch:
+  moran/inject_fixed_words: true
   moran/inject_fixed_chars: true
+  moran/enable_quick_code_hint: true
+  moran/quick_code_hint_indicator: "⚡"
+  moran/quick_code_indicator: "🦄"
+  moran/sentence_indicator: "💧"
+  moran/ijrq/enable_word: true
+  moran/enable_aux_hint: true
+  # moran/enable_word_filter: true
   switches/@2/reset: 1
   switches/@3/reset: 0
   switches/@5/reset: 1

@@ -5,7 +5,7 @@
 
 ---
 name: moran_fixed_simp
-version: "20251121"
+version: "20251129"
 sort: original
 columns:
   - text
@@ -2231,6 +2231,7 @@ AVL树	avlu
 不负责任	bfzr
 不飞则已	bfzy
 崩	bg
+不管	bg
 保国安民	bgam
 不顾安危	bgaw
 甭	bgb
@@ -4156,8 +4157,8 @@ AVL树	avlu
 拨乱济危	bljw
 拜节	bljx
 白净	bljy
-兵来将挡水来土掩	bljy
 本来就有	bljy
+兵来将挡水来土掩	bljy
 兵来将挡，水来土掩	bljy
 呗	blk
 百科	blke
@@ -6332,7 +6333,6 @@ B盘	bpj
 杯中之物	bvvw
 不止这些	bvvx
 帮助中心	bvvx
-北镇中学	bvvx
 不知者不罪	bvvz
 帮助文档	bvwd
 不知为何	bvwh
@@ -11030,7 +11030,6 @@ C语言	cyy
 第二份半价	defj
 第二方面	defm
 得而复失	defu
-底	deg
 第二国际	degj
 第二根半价	degj
 德国	dego
@@ -12614,6 +12613,7 @@ C语言	cyy
 到了	dkle
 刀螂	dklh
 道理	dkli
+倒立	dkli
 断开连接	dklj
 打开链接	dklj
 抵抗力下降	dklj
@@ -14284,7 +14284,6 @@ D盘	dpj
 东门	dsmf
 东盟	dsmg
 动漫	dsmj
-等什么君	dsmj
 动脉	dsml
 冬眠	dsmm
 东面	dsmm
@@ -19125,7 +19124,6 @@ F盘	fpj
 发起偷袭	fqtx
 分清是非	fquf
 夫妻双方	fquf
-风情少妇	fquf
 夫妻生活	fquh
 夫妻双双把家还	fquh
 肺气上逆	fqun
@@ -23554,10 +23552,10 @@ F盘	fpj
 过宽	gokr
 国库	goku
 锅盔	gokv
+过了	gol
 果料	golc
 过量	gold
 过了	gole
-国乐	gole
 过冷	golg
 锅里	goli
 国力	goli
@@ -23668,6 +23666,7 @@ F盘	fpj
 过瘾	goyn
 国运	goyp
 果园	goyr
+国乐	goyt
 过于	goyu
 国营	goyy
 过硬	goyy
@@ -25275,6 +25274,8 @@ G盘	gpj
 归罪	gvzv
 个中滋味	gvzw
 挂	gw
+各位	gw
+官网	gw
 挂碍	gwai
 寡	gwb
 挂表	gwbc
@@ -26614,6 +26615,7 @@ G盘	gpj
 荒落	hdlo
 遑论	hdlp
 慌乱	hdlr
+荒乱	hdlr
 黄龙	hdls
 洪都拉斯	hdls
 黄栌	hdlu
@@ -30171,7 +30173,6 @@ H盘	hpj
 后事之师	huvu
 话是这么说	huvu
 笏	huvw
-衡水中学	huvx
 颔首致意	huvy
 还是这样	huvy
 琥	huw
@@ -37350,9 +37351,10 @@ I盘	ipj
 激光照排	jgvp
 几个钟头	jgvt
 居功至伟	jgvw
-军国主义	jgvy
 尽管这样	jgvy
-就该这样	jgvy
+军国主义	jgvy
+结构主义	jgvy
+解构主义	jgvy
 将功折罪	jgvz
 坚固无比	jgwb
 叫个外卖	jgwm
@@ -39446,6 +39448,7 @@ JK制服	jkvf
 艰难曲折	jnqv
 尽情	jnqy
 仅	jnr
+金	jnr
 金	jnra
 今	jnra
 筋肉	jnrb
@@ -40194,7 +40197,6 @@ JK制服	jkvf
 金融经济	jrjj
 矫若惊龙	jrjl
 桊	jrjm
-嘉然今天吃什么	jrjm
 卷进	jrjn
 镌	jrjn
 眷	jrjo
@@ -41261,6 +41263,7 @@ JK制服	jkvf
 举手之劳	juvl
 筥	juvl
 举世瞩目	juvm
+具身智能	juvn
 九十周年	juvn
 积善之家，必有余庆	juvq
 技术转让	juvr
@@ -42387,7 +42390,6 @@ JK制服	jkvf
 接站	jxvj
 接招	jxvk
 借债	jxvl
-纪湘战四郎	jxvl
 结转	jxvr
 借重	jxvs
 接种	jxvs
@@ -46654,6 +46656,7 @@ JK制服	jkvf
 两行	ldhh
 两汉	ldhj
 良好	ldhk
+靓号	ldhk
 流动红旗	ldhq
 劳动合同	ldht
 两湖	ldhu
@@ -55092,7 +55095,6 @@ JK制服	jkvf
 命运共同体	mygt
 鸣鼓	mygu
 名贵	mygv
-绵阳高中	mygv
 忙于公务	mygw
 没有关系	mygx
 贸易关系	mygx
@@ -55277,7 +55279,6 @@ JK制服	jkvf
 名牌	mypl
 名片	mypm
 名品	mypn
-绵阳普明中学	mypx
 朙月拼音	mypy
 没有区别	myqb
 免疫球蛋白	myqb
@@ -55393,7 +55394,6 @@ JK制服	jkvf
 名扬中外	myvw
 没有指望	myvw
 贸易中心	myvx
-绵阳中学	myvx
 没有之一	myvy
 没有这样	myvy
 明文	mywf
@@ -56969,7 +56969,6 @@ JK制服	jkvf
 内科主任	nkvr
 闹钟	nkvs
 孬种	nkvs
-南开中学	nkvx
 你可知罪	nkvz
 瑙	nkw
 宁可我负天下人	nkwr
@@ -57690,7 +57689,7 @@ JK制服	jkvf
 你若盛开	nruk
 你若盛开，蝴蝶自来	nrul
 耐人深思	nrus
-男人至死是少女	nrvn
+男人至死是少年	nrvn
 内容摘要	nrvy
 懦弱无能	nrwn
 疑人勿用	nrwy
@@ -58116,10 +58115,10 @@ JK制服	jkvf
 女权	nvqr
 囊中取物	nvqw
 那种情况下	nvqx
-胬	nvr
 女人	nvrf
 女主人公	nvrg
 男主人公	nvrg
+胬	nvrn
 那种热情	nvrq
 女色	nvse
 囊中所有	nvsy
@@ -58558,7 +58557,6 @@ JK制服	jkvf
 农业社会	nyuh
 难以释怀	nyuh
 凝视	nyui
-农业生产	nyui
 那一瞬间	nyuj
 哪有时间	nyuj
 农业生产资料	nyul
@@ -59959,6 +59957,7 @@ JK制服	jkvf
 盼盼	pjpj
 啤酒瓶子	pjpz
 拼尽全力	pjql
+盘前	pjqm
 攀亲	pjqn
 盘曲	pjqu
 平均气温	pjqw
@@ -62227,7 +62226,6 @@ P站	pvj
 抢抓	qdvw
 起点中文	qdvw
 起点中文网	qdvw
-启东中学	qdvx
 玱	qdw
 强吻	qdwf
 千刀万剐	qdwg
@@ -63077,7 +63075,7 @@ P站	pvj
 棋差一着	qiyv
 青春永驻	qiyv
 弃婴	qiyy
-起	qiz
+迄	qiz
 气走	qizb
 启奏	qizb
 起赃	qizh
@@ -67936,6 +67934,7 @@ P站	pvj
 仍然没有	rrmy
 媆	rrn
 热热闹闹	rrnn
+软糯	rrno
 让人难以	rrny
 柔弱女子	rrnz
 朊	rro
@@ -73412,6 +73411,7 @@ P站	pvj
 太谨慎了	tjul
 谈说	tjuo
 贪睡	tjuv
+碳水	tjuv
 提交事务	tjuw
 碳基生物	tjuw
 坦率	tjuy
@@ -77587,7 +77587,6 @@ T恤衫	txuj
 深度睡眠	udum
 上当受骗	udup
 手动输入	udur
-时代少年团	udut
 双数	uduu
 胜读十年书	uduu
 神挡杀神	uduu
@@ -77880,7 +77879,6 @@ T恤衫	txuj
 申办	ufbj
 尚方宝剑	ufbj
 身份背景	ufbj
-少妇白洁	ufbj
 申报	ufbk
 十分不利	ufbl
 身边	ufbm
@@ -79208,7 +79206,6 @@ T恤衫	txuj
 炻	uih
 时候	uihb
 拾荒	uihd
-生产活动	uihd
 适合	uihe
 失衡	uihg
 试航	uihh
@@ -81355,6 +81352,7 @@ U盘	upj
 生死不明	usbm
 势所必然	usbr
 杀死比赛	usbs
+事实标准	usbv
 生死不知	usbv
 生死不渝	usby
 生死边缘	usby
@@ -81586,6 +81584,7 @@ U盘	upj
 双手抱头	uubt
 恕不	uubu
 涉世不深	uubu
+事实标准	uubv
 伸手不见五指	uubv
 生生不息	uubx
 实属不易	uuby
@@ -88035,7 +88034,6 @@ U盘	upj
 踵事增华	vuzh
 柱子	vuzi
 竹子	vuzi
-躅	vuzi
 铸造	vuzk
 主宰	vuzl
 植树造林	vuzl
@@ -88812,6 +88810,7 @@ U盘	upj
 这有何难	vyhn
 转移话题	vyht
 主要还是	vyhu
+主义	vyi
 主要成分	vyif
 止于唇齿	vyii
 斩妖除魔	vyim
@@ -94904,6 +94903,7 @@ U盘	upj
 心甘情愿	xgqy
 侠骨柔肠	xgri
 相关软件	xgrj
+性格软糯	xgrn
 侠骨柔情	xgrq
 性格软弱	xgrr
 下岗人员	xgry
@@ -98618,6 +98618,7 @@ U盘	upj
 侠	xwr
 希望如此	xwrc
 吓人	xwrf
+虾仁	xwrf
 夏日	xwri
 希望人没事	xwru
 鲜为人知	xwrv
@@ -98702,7 +98703,6 @@ U盘	upj
 下雪	xwxt
 臭味相投	xwxt
 瞎写	xwxx
-希望小学	xwxx
 下行	xwxy
 新闻学院	xwxy
 相偎相依	xwxy
@@ -99488,7 +99488,6 @@ U盘	upj
 行权	xyqr
 稀有气体	xyqt
 兴趣	xyqu
-新约全书	xyqu
 行窃	xyqx
 性情	xyqy
 行人	xyrf
@@ -104646,6 +104645,7 @@ U盘	upj
 妘	ypn
 酝酿	ypnd
 亚平宁半岛	ypnd
+孕囊	ypnh
 云霓	ypni
 云南	ypnj
 允诺	ypno
@@ -108204,7 +108204,7 @@ U盘	upj
 依依惜别	yyxb
 营销	yyxc
 影响	yyxd
-遥遥相对	yyxd
+影像	yyxd
 鱼与熊掌不可兼得	yyxd
 语言习惯	yyxg
 阴阳相隔	yyxg
@@ -115148,6 +115148,7 @@ git	git
 古铜色	gts
 共同体	gtt
 光秃秃	gtt
+甘特图	gtt
 共同社	gtu
 共同性	gtx
 共同语	gty
@@ -115263,6 +115264,7 @@ git	git
 海岸带	had
 毫安时	hau
 海岸线	hax
+汉堡包	hbb
 还不错	hbc
 黑板擦	hbc
 恨不得	hbd
@@ -115499,7 +115501,6 @@ git	git
 海内外	hnw
 海南戏	hnx
 哈尼族	hnz
-汉堡包	hpb
 和平鸽	hpg
 后怕虎	hph
 黄浦江	hpj
@@ -116833,9 +116834,8 @@ Keynote	knt
 两三年	lsn
 累死人	lsr
 凉飕飕	lss
+冷飕飕	lss
 两三岁	lss
-冷嗖嗖	lss
-凉嗖嗖	lss
 两三天	lst
 罗宋汤	lst
 类似于	lsy
@@ -118014,6 +118014,7 @@ PVP	pvp
 亲切感	qqg
 全球化	qqh
 氢气球	qqq
+QQ群	qqq
 全球性	qqx
 情人节	qrj
 去死吧	qsb
@@ -118396,8 +118397,9 @@ SD卡	sdk
 三句话	sjh
 三结合	sjh
 私家车	sji
-三角尺	sji
+时间差	sji
 时间戳	sji
+三角尺	sji
 三角架	sjj
 丧家犬	sjq
 三九天	sjt
@@ -118664,6 +118666,7 @@ SD卡	sdk
 拖后腿	tht
 同花顺	thu
 拓荒者	thv
+醍醐味	thw
 挺好用	thy
 桃花运	thy
 跳出来	til
@@ -119012,6 +119015,7 @@ SD卡	sdk
 世界观	ujg
 十几个	ujg
 手机号	ujh
+时间差	uji
 时间戳	uji
 审计局	ujj
 数据库	ujk
@@ -119044,6 +119048,7 @@ SD卡	sdk
 失落感	ulg
 数理化	ulh
 省略号	ulh
+数量级	ulj
 睡懒觉	ulj
 生力军	ulj
 水利局	ulj
@@ -119699,6 +119704,7 @@ SD卡	sdk
 职业化	vyh
 专业户	vyh
 这一回	vyh
+制药厂	vyi
 制衣厂	vyi
 转眼间	vyj
 照妖镜	vyj
@@ -119928,6 +119934,7 @@ Word	wrd
 无人机	wrj
 万人坑	wrk
 万人迷	wrm
+无人区	wrq
 污染区	wrq
 委任状	wrv
 我认为	wrw
@@ -120686,6 +120693,7 @@ Word	wrd
 银行卡	yhk
 一回来	yhl
 月活量	yhl
+优惠券	yhq
 氧化铁	yht
 雨花台	yht
 印花税	yhu
@@ -121343,6 +121351,7 @@ Word	wrd
 总医院	zyy
 怎样做	zyz
 坐月子	zyz
+纵坐标	zzb
 自造词	zzc
 早早儿	zze
 曾祖父	zzf
@@ -121352,6 +121361,3 @@ Word	wrd
 早自习	zzx
 再怎样	zzy
 啧啧啧	zzz
-优惠券	yhq
-纵坐标	zzb
-醍醐味	thw

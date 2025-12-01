@@ -4,7 +4,7 @@
 
 ---
 name: moran_fixed
-version: "20251121"
+version: "20251129"
 sort: by_weight
 columns:
   - text
@@ -2286,6 +2286,7 @@ AVL樹	avlu
 不負責任	bfzr
 不飛則已	bfzy
 崩	bg
+不管	bg
 保國安民	bgam
 不顧安危	bgaw
 甭	bgb
@@ -4280,8 +4281,8 @@ AVL樹	avlu
 撥亂濟危	bljw
 拜節	bljx
 白淨	bljy
-兵來將擋水來土掩	bljy
 本來就有	bljy
+兵來將擋水來土掩	bljy
 兵來將擋，水來土掩	bljy
 兡	blk
 百科	blke
@@ -6480,7 +6481,6 @@ Bilibili	bvj
 杯中之物	bvvw
 不止這些	bvvx
 幫助中心	bvvx
-北鎮中學	bvvx
 不知者不罪	bvvz
 幫助文檔	bvwd
 不知爲何	bvwh
@@ -13000,6 +13000,7 @@ C盤	cpj
 到了	dkle
 刀螂	dklh
 道理	dkli
+倒立	dkli
 斷開連接	dklj
 打開鏈接	dklj
 抵抗力下降	dklj
@@ -14721,7 +14722,6 @@ D盤	dpj
 東門	dsmf
 東盟	dsmg
 動漫	dsmj
-等什麼君	dsmj
 動脈	dsml
 冬眠	dsmm
 東面	dsmm
@@ -24274,10 +24274,10 @@ F盤	fpj
 過寬	gokr
 國庫	goku
 鍋盔	gokv
+過了	gol
 果料	golc
 過量	gold
 過了	gole
-國樂	gole
 過冷	golg
 鍋裏	goli
 國力	goli
@@ -24387,6 +24387,7 @@ F盤	fpj
 過癮	goyn
 國運	goyp
 果園	goyr
+國樂	goyt
 過於	goyu
 國營	goyy
 過硬	goyy
@@ -26042,6 +26043,8 @@ G盤	gpj
 歸罪	gvzv
 箇中滋味	gvzw
 瓜	gw
+各位	gw
+官網	gw
 掛礙	gwai
 寡	gwb
 掛錶	gwbc
@@ -27402,6 +27405,7 @@ G盤	gpj
 荒落	hdlo
 遑論	hdlp
 慌亂	hdlr
+荒亂	hdlr
 黃龍	hdls
 洪都拉斯	hdls
 黃櫨	hdlu
@@ -31061,7 +31065,6 @@ H盤	hpj
 互助	huvu
 後事之師	huvu
 話是這麼說	huvu
-衡水中學	huvx
 頷首致意	huvy
 還是這樣	huvy
 瑚	huw
@@ -38437,9 +38440,10 @@ I盤	ipj
 激光照排	jgvp
 幾個鐘頭	jgvt
 居功至偉	jgvw
-軍國主義	jgvy
 儘管這樣	jgvy
-就該這樣	jgvy
+軍國主義	jgvy
+結構主義	jgvy
+解構主義	jgvy
 將功折罪	jgvz
 堅固無比	jgwb
 叫個外賣	jgwm
@@ -41385,7 +41389,6 @@ JK制服	jkvf
 錈	jrjj
 金融經濟	jrjj
 矯若驚龍	jrjl
-嘉然今天喫什麼	jrjm
 捲進	jrjn
 鋗	jrjo
 加入進去	jrjq
@@ -42501,6 +42504,7 @@ JK制服	jkvf
 筥	juvl
 貗	juvl
 舉世矚目	juvm
+具身智能	juvn
 九十週年	juvn
 瞿	juvo
 積善之家，必有餘慶	juvq
@@ -43675,7 +43679,6 @@ JK制服	jkvf
 接站	jxvj
 接招	jxvk
 借債	jxvl
-紀湘戰四郎	jxvl
 結轉	jxvr
 借重	jxvs
 接種	jxvs
@@ -48054,6 +48057,7 @@ JK制服	jkvf
 兩行	ldhh
 兩漢	ldhj
 良好	ldhk
+靚號	ldhk
 流動紅旗	ldhq
 勞動合同	ldht
 兩湖	ldhu
@@ -56732,7 +56736,6 @@ JK制服	jkvf
 命運共同體	mygt
 鳴鼓	mygu
 名貴	mygv
-綿陽高中	mygv
 忙於公務	mygw
 沒有關係	mygx
 貿易關係	mygx
@@ -56921,7 +56924,6 @@ JK制服	jkvf
 名牌	mypl
 名片	mypm
 名品	mypn
-綿陽普明中學	mypx
 朙月拼音	mypy
 沒有區別	myqb
 免疫球蛋白	myqb
@@ -57037,7 +57039,6 @@ JK制服	jkvf
 名揚中外	myvw
 沒有指望	myvw
 貿易中心	myvx
-綿陽中學	myvx
 沒有之一	myvy
 沒有這樣	myvy
 明文	mywf
@@ -58653,7 +58654,6 @@ JK制服	jkvf
 內科主任	nkvr
 鬧鐘	nkvs
 孬種	nkvs
-南開中學	nkvx
 你可知罪	nkvz
 瑙	nkw
 寧可我負天下人	nkwr
@@ -59397,7 +59397,7 @@ JK制服	jkvf
 你若盛開	nruk
 你若盛開，蝴蝶自來	nrul
 耐人深思	nrus
-男人至死是少女	nrvn
+男人至死是少年	nrvn
 內容摘要	nrvy
 懦弱無能	nrwn
 疑人勿用	nrwy
@@ -59832,6 +59832,7 @@ JK制服	jkvf
 女人	nvrf
 女主人公	nvrg
 男主人公	nvrg
+胬	nvrn
 那種熱情	nvrq
 女色	nvse
 囊中所有	nvsy
@@ -60292,7 +60293,6 @@ JK制服	jkvf
 農業社會	nyuh
 難以釋懷	nyuh
 凝視	nyui
-農業生產	nyui
 那一瞬間	nyuj
 哪有時間	nyuj
 農業生產資料	nyul
@@ -61822,6 +61822,7 @@ PC端	pcd
 盼盼	pjpj
 啤酒瓶子	pjpz
 拼盡全力	pjql
+盤前	pjqm
 攀親	pjqn
 盤曲	pjqu
 平均氣溫	pjqw
@@ -64112,7 +64113,6 @@ P站	pvj
 搶抓	qdvw
 起點中文	qdvw
 起點中文網	qdvw
-啓東中學	qdvx
 強吻	qdwf
 千刀萬剮	qdwg
 牆外	qdwl
@@ -64987,7 +64987,7 @@ P站	pvj
 棋差一着	qiyv
 青春永駐	qiyv
 棄嬰	qiyy
-起	qiz
+迄	qiz
 氣走	qizb
 啓奏	qizb
 起贓	qizh
@@ -69996,6 +69996,7 @@ P站	pvj
 軟木	rrmu
 仍然沒有	rrmy
 熱熱鬧鬧	rrnn
+軟糯	rrno
 讓人難以	rrny
 柔弱女子	rrnz
 朊	rro
@@ -75624,6 +75625,7 @@ P站	pvj
 談說	tjuo
 碳	tjut
 貪睡	tjuv
+碳水	tjuv
 提交事務	tjuw
 碳基生物	tjuw
 坦率	tjuy
@@ -79904,7 +79906,6 @@ T恤衫	txuj
 深度睡眠	udum
 上當受騙	udup
 手動輸入	udur
-時代少年團	udut
 雙數	uduu
 勝讀十年書	uduu
 神擋殺神	uduu
@@ -81544,7 +81545,6 @@ T恤衫	txuj
 戺	uih
 時候	uihb
 拾荒	uihd
-生產活動	uihd
 適合	uihe
 失衡	uihg
 試航	uihh
@@ -83735,6 +83735,7 @@ U盤	upj
 生死不明	usbm
 勢所必然	usbr
 殺死比賽	usbs
+事實標準	usbv
 生死不知	usbv
 生死不渝	usby
 生死邊緣	usby
@@ -83966,6 +83967,7 @@ U盤	upj
 恕不	uubu
 癙	uubu
 涉世不深	uubu
+事實標準	uubv
 伸手不見五指	uubv
 生生不息	uubx
 實屬不易	uuby
@@ -90621,7 +90623,6 @@ U盤	upj
 踵事增華	vuzh
 柱子	vuzi
 竹子	vuzi
-躅	vuzi
 鑄造	vuzk
 主宰	vuzl
 植樹造林	vuzl
@@ -91408,6 +91409,7 @@ U盤	upj
 這有何難	vyhn
 轉移話題	vyht
 主要還是	vyhu
+主義	vyi
 主要成分	vyif
 止於脣齒	vyii
 斬妖除魔	vyim
@@ -97654,6 +97656,7 @@ WiFi	wifi
 心甘情願	xgqy
 俠骨柔腸	xgri
 相關軟件	xgrj
+性格軟糯	xgrn
 俠骨柔情	xgrq
 性格軟弱	xgrr
 下崗人員	xgry
@@ -101535,6 +101538,7 @@ WiFi	wifi
 俠	xwr
 希望如此	xwrc
 嚇人	xwrf
+蝦仁	xwrf
 夏日	xwri
 希望人沒事	xwru
 鮮爲人知	xwrv
@@ -101622,7 +101626,6 @@ WiFi	wifi
 下雪	xwxt
 臭味相投	xwxt
 瞎寫	xwxx
-希望小學	xwxx
 下行	xwxy
 新聞學院	xwxy
 相偎相依	xwxy
@@ -102438,7 +102441,6 @@ WiFi	wifi
 行權	xyqr
 稀有氣體	xyqt
 興趣	xyqu
-新約全書	xyqu
 狌	xyqu
 行竊	xyqx
 性情	xyqy
@@ -107795,6 +107797,7 @@ WiFi	wifi
 妘	ypn
 醞釀	ypnd
 亞平寧半島	ypnd
+孕囊	ypnh
 雲霓	ypni
 雲南	ypnj
 允諾	ypno
@@ -111455,7 +111458,7 @@ WiFi	wifi
 依依惜別	yyxb
 營銷	yyxc
 影響	yyxd
-遙遙相對	yyxd
+影像	yyxd
 魚與熊掌不可兼得	yyxd
 語言習慣	yyxg
 陰陽相隔	yyxg
@@ -118638,6 +118641,7 @@ git	git
 古銅色	gts
 共同體	gtt
 光禿禿	gtt
+甘特圖	gtt
 共同社	gtu
 共同性	gtx
 共同語	gty
@@ -118752,6 +118756,7 @@ git	git
 海岸帶	had
 毫安時	hau
 海岸線	hax
+漢堡包	hbb
 還不錯	hbc
 黑板擦	hbc
 還不到	hbd
@@ -118988,7 +118993,6 @@ git	git
 海內外	hnw
 海南戲	hnx
 哈尼族	hnz
-漢堡包	hpb
 和平鴿	hpg
 後怕虎	hph
 黃浦江	hpj
@@ -120324,9 +120328,8 @@ Keynote	knt
 兩三年	lsn
 累死人	lsr
 涼颼颼	lss
+冷颼颼	lss
 兩三歲	lss
-冷嗖嗖	lss
-涼嗖嗖	lss
 兩三天	lst
 羅宋湯	lst
 類似於	lsy
@@ -121501,6 +121504,7 @@ PVP	pvp
 親切感	qqg
 全球化	qqh
 氫氣球	qqq
+QQ羣	qqq
 全球性	qqx
 情人節	qrj
 去死吧	qsb
@@ -121885,8 +121889,9 @@ SD卡	sdk
 三句話	sjh
 三結合	sjh
 私家車	sji
-三角尺	sji
+時間差	sji
 時間戳	sji
+三角尺	sji
 三角架	sjj
 喪家犬	sjq
 三九天	sjt
@@ -122505,6 +122510,7 @@ SD卡	sdk
 十幾個	ujg
 世界觀	ujg
 手機號	ujh
+時間差	uji
 時間戳	uji
 審計局	ujj
 數據庫	ujk
@@ -122537,6 +122543,7 @@ SD卡	sdk
 失落感	ulg
 數理化	ulh
 省略號	ulh
+數量級	ulj
 睡懶覺	ulj
 生力軍	ulj
 水利局	ulj
@@ -123190,6 +123197,7 @@ SD卡	sdk
 專業戶	vyh
 職業化	vyh
 這一回	vyh
+製藥廠	vyi
 製衣廠	vyi
 轉眼間	vyj
 照妖鏡	vyj
@@ -123216,8 +123224,8 @@ SD卡	sdk
 志願者	vyv
 主義者	vyv
 朱元璋	vyv
-只因爲	vyw
 正因爲	vyw
+只因爲	vyw
 中英文	vyw
 這也行	vyx
 重要性	vyx
@@ -123418,6 +123426,7 @@ Word	wrd
 無人機	wrj
 萬人坑	wrk
 萬人迷	wrm
+無人區	wrq
 污染區	wrq
 委任狀	wrv
 我認爲	wrw

@@ -8,7 +8,7 @@
 
 ---
 name: moran.moe
-version: "20251112"
+version: "20251125"
 sort: by_weight
 use_preset_vocabulary: false
 ...
@@ -90400,8 +90400,8 @@ use_preset_vocabulary: false
 車禍	ie;aa ho;ug
 車禍曲	ie;aa ho;ug qu;aa
 車站裏的神明大人	ie;aa vj;lv li;wy de;bu uf;uu my;oo da;ad rf;pd
-車萬	ie;aa wj;cy
-車萬女僕	ie;aa wj;cy nv;aa pu;rp
+車万	ie;aa wj;ag
+車万女僕	ie;aa wj;ag nv;aa pu;rp
 車載反循環鑽機	ie;aa zl;ig fj;py xp;xd hr;wh zr;jz ji;mj
 車載式反循環鑽機	ie;aa zl;ig ui;gy fj;py xp;xd hr;wh zr;jz ji;mj
 車輪之國向日葵的少女	ie;aa lp;il vi;dd go;kh xd;pk ri;aa kv;cg de;bu uk;xp nv;aa
