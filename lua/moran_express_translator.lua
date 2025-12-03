@@ -77,6 +77,7 @@ local kChar = 1
 local kWord = 2
 
 function top.init(env)
+   env.cache = {}
    -- Rime 組件
    env.fixed = Component.Translator(env.engine, "", "table_translator@fixed")
    env.smart = Component.Translator(env.engine, "", "script_translator@smart")
@@ -88,7 +89,7 @@ function top.init(env)
 
    env.sentence_indicator = env.engine.schema.config:get_string("moran/sentence_indicator") or "💧"
    env.user_phrase_indicator = env.engine.schema.config:get_string("moran/user_phrase_indicator") or ""
-
+   
    if env.name_space == 'with_reorder' then
       -- `F 表示碼表輸出，會被 reorder_filter 重排
       env.quick_code_indicator = '`F'
@@ -288,12 +289,33 @@ function top.func(input, seg, env)
          and (env.engine.context.input == input)
          and ((input_len == 4) or (input_len == 5 and input:sub(5,5) == env.ijrq_suffix))
       if not ijrq_enabled then
+	 -- log.error("ijrq_enable: false")
          -- 不啓用出簡讓全時
+	 local last_index = 1
+         local last_cand = env.smart_last_cand
+	 local last_input_len = env.smart_last_input_len
          for cand in smart_iter do
+	    if last_index == 1 then
+	       env.smart_last_second_cand = env.smart_last_cand
+	       env.smart_last_cand = cand
+	       env.smart_last_input_len = input_len
+	       env.smart_last_input = input
+	       last_index = last_index + 1
+	       if fixed_triggered and last_cand ~= nil and input_len > 1 and last_input_len < input_len and (input_len ~= 5 or env.smart_last_cand.type == "sentence") then
+		  smart_second_output(env, input, input_len, seg, last_cand)
+	       end
+	    elseif last_index == 2 and last_cand ~= nil and input_len > 1 and last_input_len < input_len and (input_len ~= 5 or env.smart_last_cand.type == "sentence") then
+	       if not fixed_triggered then
+		  smart_second_output(env, input, input_len, seg, last_cand)
+	       end
+	       last_index = last_index + 1
+	    end
+	    
             top.output(env, cand)
          end
       else
          -- 啓用出簡讓全時
+	 -- log.error("ijrq_enable: true")
          local immediate_set = {}
          local deferred_set = {}
          for cand in smart_iter do
@@ -322,9 +344,26 @@ function top.func(input, seg, env)
                table.insert(deferred_set, cand)
             end
          end
+	 
+	 local last_cand = env.smart_last_cand
+	 local last_input_len = env.smart_last_input_len
          for i = 1, math.min(env.ijrq_defer, #immediate_set) do
+	    if i == 1 then
+	       env.smart_last_second_cand = env.smart_last_cand
+	       env.smart_last_cand = immediate_set[1]
+	       env.smart_last_input_len = input_len
+	       env.smart_last_input = input
+	       if fixed_triggered and last_cand ~= nil and input_len > 1 and last_input_len < input_len then
+		  smart_second_output(env, input, input_len, seg, last_cand)
+	       end
+	       -- log.error("ijrq: len:" .. #immediate_set)
+	    end
             top.output(env, immediate_set[i])
          end
+	 if not fixed_triggered and last_cand ~= nil and input_len > 1 and last_input_len < input_len then
+	    smart_second_output(env, input, input_len, seg, last_cand)
+	 end
+	 
          for i = 1, #deferred_set do
             top.output(env, deferred_set[i])
          end
@@ -343,6 +382,41 @@ function top.func(input, seg, env)
          end
       end
    end
+   if smart == nil and input_len > 1 then
+      local last_index = 1
+      local last_cand = env.smart_last_cand
+      local last_input_len = env.smart_last_input_len
+      local last_second_cand = env.smart_last_second_cand
+      if last_cand ~= nil and last_input_len < input_len then
+	 smart_second_output(env, input, input_len, seg, last_cand)
+      elseif last_second_cand ~= nil and last_input_len == input_len then
+	 smart_second_output(env, input, input_len, seg, last_second_cand)
+      end
+   end
+   
+end
+
+function smart_second_output(env, input, input_len, seg, last_cand)
+   local append_cand = last_cand
+   local append_text = smart_second_fix_end(env, input, input_len)
+   if append_text ~= nil then
+      local candidate = Candidate(input, seg.start, seg._end, tostring(append_cand.text) .. tostring(append_text), "")
+      candidate.comment = env.sentence_indicator
+      yield(candidate)
+      -- top.output(env, candidate)
+   end
+end
+function smart_second_fix_end(env, input_str, input_len)
+   local input = input_str:sub(input_len)
+   if env.cache[input] then
+      return env.cache[input]
+   end
+   if input:find("/") then
+      return nil
+   end
+   local val = env.engine.schema.config:get_string("moran/fix_end/" .. input)
+   env.cache[input] = val
+   return val
 end
 
 -- | 每次 translation 開始前應該初始化 output 狀態
