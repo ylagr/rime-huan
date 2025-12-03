@@ -9,6 +9,21 @@ patch:
   moran/ijrq/suffix: "/"
   moran/enable_aux_hint: true
   # moran/enable_word_filter: true
+  'engine/filters/@before 6':
+    simplifier@mine_simplifier
+  mine_simplifier:
+    opencc_config: moran_mine_t2s.json
+    option_name: mine_t_to_s
+    # tips: all
+    tags: [abc, number]
+  # switches/@2:
+      # states: [ "漢字", "汉字", "私"]
+      # reset: 1
+      # options: [ src, simplification, mine_t_to_s ]
+  'switches/+':
+    - name: mine_t_to_s
+      reset: 0
+      states: [ "源", "私" ]
   switches/@2/reset: 1
   switches/@3/reset: 0
   switches/@5/reset: 1
@@ -19,6 +34,7 @@ patch:
   key_binder/bindings/+:
     - {when: always, accept: Control+Shift+asterisk, toggle: ascii_punct}
     - {when: has_menu, accept: Shift+Tab, send: Control+Left}
+    - {when: has_menu, accept: Control+j, toggle: mine_t_to_s }
   moran/fix_end/+:
     a: 啊
     b: 吧
