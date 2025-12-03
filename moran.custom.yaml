@@ -16,6 +16,9 @@ patch:
   "menu/page_size": 6
   'engine/processors/@before 0':
     lua_processor@*ylagr.select_character
+  key_binder/bindings/+:
+    - {when: always, accept: Control+Shift+asterisk, toggle: ascii_punct}
+    - {when: has_menu, accept: Shift+Tab, send: Control+Left}
   moran/fix_end/+:
     a: 啊
     b: 吧
@@ -43,8 +46,5 @@ patch:
     x: 像
     y: 又
     z: 在
-  key_binder/bindings/+:
-    - {when: always, accept: Control+Shift+asterisk, toggle: ascii_punct}
-    - {when: has_menu, accept: Shift+Tab, send: Control+Left}
 
     
