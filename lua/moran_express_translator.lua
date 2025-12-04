@@ -281,6 +281,10 @@ function top.func(input, seg, env)
       end
    end
 
+   
+   local last_cand = env.smart_last_cand
+   local last_input_len = env.smart_last_input_len
+   
    -- smart 在 fixed 之後輸出。
    -- 當需要詞輔時，保留 comment，以「提前」（用戶輸入詞輔前）提示輔助碼。
    local smart_iter = top.raw_query_smart(env, input, seg, env.enable_word_filter and env.enable_aux_hint)
@@ -292,11 +296,8 @@ function top.func(input, seg, env)
 	 -- log.error("ijrq_enable: false")
          -- 不啓用出簡讓全時
 	 local last_index = 1
-         local last_cand = env.smart_last_cand
-	 local last_input_len = env.smart_last_input_len
          for cand in smart_iter do
 	    if last_index == 1 then
-	       env.smart_last_second_cand = env.smart_last_cand
 	       env.smart_last_cand = cand
 	       env.smart_last_input_len = input_len
 	       env.smart_last_input = input
@@ -345,11 +346,8 @@ function top.func(input, seg, env)
             end
          end
 	 
-	 local last_cand = env.smart_last_cand
-	 local last_input_len = env.smart_last_input_len
          for i = 1, math.min(env.ijrq_defer, #immediate_set) do
 	    if i == 1 then
-	       env.smart_last_second_cand = env.smart_last_cand
 	       env.smart_last_cand = immediate_set[1]
 	       env.smart_last_input_len = input_len
 	       env.smart_last_input = input
@@ -383,14 +381,8 @@ function top.func(input, seg, env)
       end
    end
    if smart == nil and input_len > 1 then
-      local last_index = 1
-      local last_cand = env.smart_last_cand
-      local last_input_len = env.smart_last_input_len
-      local last_second_cand = env.smart_last_second_cand
       if last_cand ~= nil and last_input_len < input_len then
 	 smart_second_output(env, input, input_len, seg, last_cand)
-      elseif last_second_cand ~= nil and last_input_len == input_len then
-	 smart_second_output(env, input, input_len, seg, last_second_cand)
       end
    end
    
