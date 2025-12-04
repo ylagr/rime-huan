@@ -22,6 +22,7 @@ encoder:
       formula: "AaBaCaZa"
 import_tables:
   - moran_fixed.symbols
+  - moran_fixed_end
 ...
 
 #----------詞庫----------#

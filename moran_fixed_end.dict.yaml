@@ -3,7 +3,7 @@
 # license: CC-BY-SA 4.0
 
 ---
-name: moran_fixed_end
+name: moran_fixed
 version: "20250301"
 sort: by_weight
 columns:
@@ -25,4 +25,4 @@ columns:
 #  - moran_fixed_end
 ...
 
-
+duang	dd
