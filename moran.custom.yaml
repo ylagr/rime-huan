@@ -8,6 +8,7 @@ patch:
   moran/ijrq/enable_word: true
   moran/ijrq/suffix: "/"
   moran/enable_aux_hint: true
+  moran/word_filter_match_indicator: "🎯"
   # moran/enable_word_filter: true
   'engine/filters/@before 6':
     simplifier@mine_simplifier
