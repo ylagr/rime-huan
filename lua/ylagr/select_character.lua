@@ -54,15 +54,13 @@ local function select_character(key, env)
    local first_key = config:get_string('key_binder/select_first_character') or 'bracketleft'
    local last_key = config:get_string('key_binder/select_last_character') or 'bracketright'
 
-   local commit_text = context:get_commit_text()
-
-   if (key:repr() == first_key and commit_text ~= "") then
+   if (key:repr() == first_key and context.input ~= "[" and context:get_commit_text() ~= "") then
       engine:commit_text(get_commit_text(context, first_character))
 
       return 1 -- kAccepted
    end
 
-   if (key:repr() == last_key and commit_text ~= "") then
+   if (key:repr() == last_key and context.input ~= "]" and context:get_commit_text() ~= "") then
       engine:commit_text(get_commit_text(context, last_character))
 
       return 1 -- kAccepted

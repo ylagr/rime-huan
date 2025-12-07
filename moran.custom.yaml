@@ -12,6 +12,8 @@ patch:
   # moran/enable_word_filter: true
   'engine/filters/@before 6':
     simplifier@mine_simplifier
+  'engine/filters/@next':
+    lua_filter@*ylagr.src_value_append_to_type_filter
   mine_simplifier:
     opencc_config: moran_mine_t2s.json
     option_name: mine_t_to_s
@@ -32,6 +34,8 @@ patch:
   "menu/page_size": 6
   'engine/processors/@before 0':
     lua_processor@*ylagr.select_character
+  'engine/processors/@before 1':
+    lua_processor@*ylagr.raw_commit
   key_binder/bindings/+:
     - {when: always, accept: Control+Shift+asterisk, toggle: ascii_punct}
     - {when: has_menu, accept: Shift+Tab, send: Control+Left}
