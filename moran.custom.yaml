@@ -12,6 +12,8 @@ patch:
   # moran/enable_word_filter: true
   'engine/filters/@before 6':
     simplifier@mine_simplifier
+  'engine/translators/+':
+    - lua_translator@*ylagr.input_statistics
   mine_simplifier:
     opencc_config: moran_mine_t2s.json
     option_name: mine_t_to_s

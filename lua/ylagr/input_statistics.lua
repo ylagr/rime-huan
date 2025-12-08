@@ -1,0 +1,356 @@
+-- github.com/amzxyz
+--[[
+首先，把本脚本放在你的方案下的lua文件夹内
+
+其次，在你的方案补丁文件中，在translators节点加入 input_statistics 的引用，如下的第二项
+  engine/translators/+:				#定制translator如下
+	- lua_translator@*input_statistics				# 统计输入速度等信息
+
+最后，重新部署你的rime/同文
+
+再最后，为了让统计数据在输入 /01 时有响应，你需要在方案补丁文件中加入以下补丁（让方案捕捉/xx [xx为数字] 这类输入):
+  recognizer/patterns/punct: '^/([0-9]+|[A-Za-z]+)$'
+
+使用提示：
+/01 /rtj	 查看日统计
+/02 /ztj	 查看周统计
+/03 /ytj	 查看月统计
+/04 /ntj	 查看年统计
+/009 /qctj	 清除统计数据
+]]
+
+-- 输入方案名称
+local schema_name = "魔然"
+
+-- 分配一个变量，用于字符串拼接
+local strTable = {}
+
+-- 下面的信息是自动获取的
+local software_name = rime_api.get_distribution_code_name()
+local software_version = rime_api.get_distribution_version()
+
+-- 初始化统计表（若未加载）
+input_stats = input_stats or {
+	daily = {count = 0, length = 0, fastest = 0, ts = 0, lengths = {}},
+	weekly = {count = 0, length = 0, fastest = 0, ts = 0, lengths = {}},
+	monthly = {count = 0, length = 0, fastest = 0, ts = 0, lengths = {}},
+	yearly = {count = 0, length = 0, fastest = 0, ts = 0, lengths = {}},
+	daily_max = 0,
+	recent = {}
+}
+
+-- 时间戳工具函数
+local function start_of_day(t)
+	return os.time{year=t.year, month=t.month, day=t.day, hour=0}
+end
+local function start_of_week(t)
+	local d = t.wday == 1 and 6 or (t.wday - 2)
+	return os.time{year=t.year, month=t.month, day=t.day - d, hour=0}
+end
+local function start_of_month(t)
+	return os.time{year=t.year, month=t.month, day=1, hour=0}
+end
+local function start_of_year(t)
+	return os.time{year=t.year, month=1, day=1, hour=0}
+end
+
+-- 更新统计数据
+local function update_stats(input_length)
+	local now = os.date("*t")
+	local now_ts = os.time(now)
+
+	local day_ts = start_of_day(now)
+	local week_ts = start_of_week(now)
+	local month_ts = start_of_month(now)
+	local year_ts = start_of_year(now)
+
+	if input_stats.daily.ts ~= day_ts then
+		input_stats.daily = {count = 0, length = 0, fastest = 0, ts = day_ts, lengths = {}}
+		input_stats.daily_max = 0
+		input_stats.recent = {}
+	end
+	if input_stats.weekly.ts ~= week_ts then
+		input_stats.weekly = {count = 0, length = 0, fastest = 0, ts = week_ts, lengths = {}}
+	end
+	if input_stats.monthly.ts ~= month_ts then
+		input_stats.monthly = {count = 0, length = 0, fastest = 0, ts = month_ts, lengths = {}}
+	end
+	if input_stats.yearly.ts ~= year_ts then
+		input_stats.yearly = {count = 0, length = 0, fastest = 0, ts = year_ts, lengths = {}}
+	end
+
+	-- 更新记录
+	local update = function(stat)
+		stat.count = stat.count + 1
+		stat.length = stat.length + input_length
+	end
+	update(input_stats.daily)
+	update(input_stats.weekly)
+	update(input_stats.monthly)
+	update(input_stats.yearly)
+
+	if input_length > input_stats.daily_max then
+		input_stats.daily_max = input_length
+	end
+	
+	-- 更新输入字/词组数据
+	input_stats.daily.lengths[input_length] = (input_stats.daily.lengths[input_length] or 0) + 1
+	input_stats.weekly.lengths[input_length] = (input_stats.weekly.lengths[input_length] or 0) + 1
+	input_stats.monthly.lengths[input_length] = (input_stats.monthly.lengths[input_length] or 0) + 1
+	input_stats.yearly.lengths[input_length] = (input_stats.yearly.lengths[input_length] or 0) + 1
+
+	-- 最近一分钟统计
+	local ts = os.time()
+	table.insert(input_stats.recent, {ts = ts, len = input_length})
+	local threshold = ts - 60
+	local total = 0
+	local new_recent = {}
+	for _, item in ipairs(input_stats.recent) do
+		if item.ts >= threshold then
+			total = total + item.len
+			table.insert(new_recent, item)
+		end
+	end
+	input_stats.recent = new_recent
+	if total > input_stats.daily.fastest then input_stats.daily.fastest = total end
+	if total > input_stats.weekly.fastest then input_stats.weekly.fastest = total end
+	if total > input_stats.monthly.fastest then input_stats.monthly.fastest = total end
+	if total > input_stats.yearly.fastest then input_stats.yearly.fastest = total end
+end
+
+-- 表序列化工具（请自行根据实际添加到环境中）
+table.serialize = function(tbl)
+	local lines = {"{"}
+	for k, v in pairs(tbl) do
+		local key = (type(k) == "string") and ("[\"" .. k .. "\"]") or ("[" .. k .. "]")
+		local val
+		if type(v) == "table" then
+			val = table.serialize(v)
+		elseif type(v) == "string" then
+			val = '"' .. v .. '"'
+		else
+			val = tostring(v)
+		end
+		table.insert(lines, string.format("	%s = %s,", key, val))
+	end
+	table.insert(lines, "}")
+	return table.concat(lines, "\n")
+end
+
+-- 保存至文件
+local function save_stats()
+	local path = rime_api.get_user_data_dir() .. "/lua/input_stats.lua"
+	local file = io.open(path, "w")
+	if not file then return end
+	file:write("input_stats = " .. table.serialize(input_stats) .. "\n")
+	file:close()
+end
+
+-- 显示函数（日统计）
+local function format_daily_summary()
+	local s = input_stats.daily
+	if s.count == 0 then return "※ 今天没有任何记录。" end
+	
+	-- 统计各类输入组合的占比
+	local val1 = s.lengths[1] or 0  -- 防止索引不存在时报错，默认0
+	local val2 = (s.lengths[2] or 0) * 2
+	local val3 = 0
+	local total = 0
+	for key, value in pairs(s.lengths) do
+		total = total + key * value  -- 累加所有值
+	end
+	if total == 0 then total = 1 end  -- 防止除以0报错
+	val3 = total - val1 - val2
+	local ratio1 = (val1 / total) * 100
+	local ratio2 = (val2 / total) * 100
+	local ratio3 = (val3 / total) * 100
+	
+	strTable[1] = '※ 日统计：'
+	strTable[3] = string.format('上屏 %d 次',s.count)
+	strTable[4] = string.format('输入 %d 字',s.length)
+	strTable[5] = string.format('最大分速 %d 字',s.fastest)
+	strTable[7] = string.format('单字占比：%.0f％',ratio1)
+	strTable[8] = string.format('2字词占比：%.0f％',ratio2)
+	strTable[9] = string.format('>2字词占比：%.0f％',ratio3)
+
+	return table.concat(strTable, '\n')
+end
+
+-- 显示函数（周统计）
+local function format_weekly_summary()
+	local s = input_stats.weekly
+	if s.count == 0 then return "※ 本周没有任何记录。" end
+	
+	-- 统计各类输入组合的占比
+	local val1 = s.lengths[1] or 0  -- 防止索引不存在时报错，默认0
+	local val2 = (s.lengths[2] or 0) * 2
+	local val3 = 0
+	local total = 0
+	for key, value in pairs(s.lengths) do
+		total = total + key * value  -- 累加所有值
+	end
+	if total == 0 then total = 1 end  -- 防止除以0报错
+	val3 = total - val1 - val2
+	local ratio1 = (val1 / total) * 100
+	local ratio2 = (val2 / total) * 100
+	local ratio3 = (val3 / total) * 100
+	
+	strTable[1] = '※ 周统计：'
+	strTable[3] = string.format('上屏 %d 次',s.count)
+	strTable[4] = string.format('输入 %d 字',s.length)
+	strTable[5] = string.format('最大分速 %d 字',s.fastest)
+	strTable[7] = string.format('单字占比：%.0f％',ratio1)
+	strTable[8] = string.format('2字词占比：%.0f％',ratio2)
+	strTable[9] = string.format('>2字词占比：%.0f％',ratio3)
+	return table.concat(strTable, '\n')
+end
+
+-- 显示函数（月统计）
+local function format_monthly_summary()
+	local s = input_stats.monthly
+	if s.count == 0 then return "※ 本月没有任何记录。" end
+	
+	-- 统计各类输入组合的占比
+	local val1 = s.lengths[1] or 0  -- 防止索引不存在时报错，默认0
+	local val2 = (s.lengths[2] or 0) * 2
+	local val3 = 0
+	local total = 0
+	for key, value in pairs(s.lengths) do
+		total = total + key * value  -- 累加所有值
+	end
+	if total == 0 then total = 1 end  -- 防止除以0报错
+	val3 = total - val1 - val2
+	local ratio1 = (val1 / total) * 100
+	local ratio2 = (val2 / total) * 100
+	local ratio3 = (val3 / total) * 100
+	
+	strTable[1] = '※ 月统计：'
+	strTable[3] = string.format('上屏 %d 次',s.count)
+	strTable[4] = string.format('输入 %d 字',s.length)
+	strTable[5] = string.format('最大分速 %d 字',s.fastest)
+	strTable[7] = string.format('单字占比：%.0f％',ratio1)
+	strTable[8] = string.format('2字词占比：%.0f％',ratio2)
+	strTable[9] = string.format('>2字词占比：%.0f％',ratio3)
+	return table.concat(strTable, '\n')
+end
+
+-- 显示函数（年统计）
+local function format_yearly_summary()
+	local s = input_stats.yearly
+	if s.count == 0 then return "※ 本年没有任何记录。" end
+	
+	-- 统计各类输入组合的占比
+	local val1 = s.lengths[1] or 0  -- 防止索引不存在时报错，默认0
+	local val2 = (s.lengths[2] or 0) * 2
+	local val3 = 0
+	local total = 0
+	for key, value in pairs(s.lengths) do
+		total = total + key * value  -- 累加所有值
+	end
+	if total == 0 then total = 1 end  -- 防止除以0报错
+	val3 = total - val1 - val2
+	local ratio1 = (val1 / total) * 100
+	local ratio2 = (val2 / total) * 100
+	local ratio3 = (val3 / total) * 100
+	
+	strTable[1] = '※ 年统计：'
+	strTable[3] = string.format('上屏 %d 次',s.count)
+	strTable[4] = string.format('输入 %d 字',s.length)
+	strTable[5] = string.format('最大分速 %d 字',s.fastest)
+	strTable[7] = string.format('单字占比：%.0f％',ratio1)
+	strTable[8] = string.format('2字词占比：%.0f％',ratio2)
+	strTable[9] = string.format('>2字词占比：%.0f％',ratio3)
+	return table.concat(strTable, '\n')
+end
+-- 转换器函数：处理命令 /rtj /ztj /ytj /ntj
+local function translator(input, seg, env)
+	if input:sub(1, 1) ~= "/" then return end
+	local summary = ""
+	if input == "/01" or input == "/rtj" then
+		summary = format_daily_summary()
+	elseif input == "/02" or input == "/ztj" then
+		summary = format_weekly_summary()
+	elseif input == "/03" or input == "/ytj" then
+		summary = format_monthly_summary()
+	elseif input == "/04" or input == "/ntj" then
+		summary = format_yearly_summary()
+	elseif input == "/009" or input == "/qctj" then
+		input_stats = {
+			daily = {count = 0, length = 0, fastest = 0, ts = 0, lengths = {}},
+			weekly = {count = 0, length = 0, fastest = 0, ts = 0, lengths = {}},
+			monthly = {count = 0, length = 0, fastest = 0, ts = 0, lengths = {}},
+			yearly = {count = 0, length = 0, fastest = 0, ts = 0, lengths = {}},
+			daily_max = 0,
+			recent = {}
+		}
+		save_stats()
+		summary = "※ 所有统计数据已清空。"
+	end
+
+	if summary ~= "" then
+		yield(Candidate("stat", seg.start, seg._end, summary, ""))
+	end
+end
+-- 加载保存的统计数据（input_stats.lua）
+local function load_stats_from_lua_file()
+	local path = rime_api.get_user_data_dir() .. "/lua/input_stats.lua"
+	local ok, result = pcall(function()
+		local env = {}
+		local f = loadfile(path, "t", env)
+		if f then f() end
+		return env.input_stats
+	end)
+	if ok and type(result) == "table" then
+		input_stats = result
+	else
+		-- 保底初始化，防止错误
+		input_stats = {
+			daily = {count = 0, length = 0, fastest = 0, ts = 0, lengths = {}},
+			weekly = {count = 0, length = 0, fastest = 0, ts = 0, lengths = {}},
+			monthly = {count = 0, length = 0, fastest = 0, ts = 0, lengths = {}},
+			yearly = {count = 0, length = 0, fastest = 0, ts = 0, lengths = {}},
+			daily_max = 0,
+			recent = {}
+		}
+	end
+end
+local function init(env)
+	local ctx = env.engine.context
+	local splitor = string.rep("─", 14)
+
+	-- 加载历史统计数据
+	load_stats_from_lua_file()
+	
+	-- 初始化统计字符串
+	strTable[2] = splitor
+	strTable[6] = splitor
+	strTable[10] = splitor
+	strTable[11] = '◉ 方案：'..schema_name
+	strTable[12] = '◉ 平台：'..software_name..' '..software_version
+	strTable[13] = splitor
+	strTable[14] = '脚本：₂₀₂₅1204・A'
+
+	-- 注册提交通知回调
+	ctx.commit_notifier:connect(function()
+		local commit_text = ctx:get_commit_text()
+		if not commit_text or commit_text == "" then return end
+		
+		-- 如果输入与上屏内容一致，例如编码上屏，则不统计此项
+		if ctx.input == commit_text then return end
+		
+		-- 如果输入是以 / 引导的，则不统计这个输入项
+		if ctx.input:find("^/") then return end
+
+		-- 如果是标点符号，则不进行统计
+		if commit_text:match("^[！!@#$％^&?,.;？，。；/0123456789]+$") then return end
+
+		-- 保存最近一次 commit 内容
+		env.last_commit_text = commit_text
+
+		-- 统计长度
+		local input_length = utf8.len(commit_text) or string.len(commit_text)
+		update_stats(input_length)
+		save_stats()
+	end)
+end
+return { init = init, func = translator }
