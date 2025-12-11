@@ -8,7 +8,7 @@
 
 ---
 name: moran.moe
-version: "20251125"
+version: "20251208"
 sort: by_weight
 use_preset_vocabulary: false
 ...
@@ -9852,7 +9852,7 @@ use_preset_vocabulary: false
 兩面佛	ld;ar mm;aa fu;rf
 兩面佛呱	ld;ar mm;aa fu;rf gu;kg
 兩面包夾之勢	ld;ar mm;aa bk;gs jw;dc vi;dd ui;lv
-兩面包夾芝士	ld;ar mm;aa bk;gs jw;dc vi;cv ui;aa
+兩麪包夾芝士	ld;ar mm;mm bk;gs jw;dc vi;cv ui;aa
 兩面宿儺	ld;ar mm;aa su;bb no;rn
 兩面性	ld;ar mm;aa xy;xu
 兩頭忙	ld;ar tb;yd mh;xw
