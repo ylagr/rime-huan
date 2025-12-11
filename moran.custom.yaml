@@ -1,4 +1,24 @@
 patch:
+  "menu/page_size": 6
+  ascii_composer/good_old_caps_lock: true
+  ascii_composer/switch_key/Shift_L: noop
+  ascii_composer/switch_key/Shift_R: noop
+  ascii_composer/switch_key/Control_L: commit_code
+  ascii_composer/switch_key/Control_R: commit_text
+  ascii_composer/switch_key/Caps_Lock: clear
+  ascii_composer/switch_key/Eisu_toggle: clear
+  
+  emoji/tips: all
+  style/horizontal: false
+  fixed/dictionary: moran_fixed_pre
+  reverse_tiger/dictionary: huan
+  reverse_tiger/tips: 〔环〕
+  reverse_tick/dictionary: "huan"
+  reverse_tick/tips: 〔环〕
+  
+  # smart/contextual_suggestions: false
+  smart/preedit_format/+:
+    - xform|([a-z][a-z][a-z][a-z]?)/|$1°|
   moran/inject_fixed_words: true
   moran/inject_fixed_chars: true
   moran/enable_quick_code_hint: true
@@ -31,7 +51,7 @@ patch:
   switches/@3/reset: 0
   switches/@5/reset: 1
   switches/@6/reset: 0
-  "menu/page_size": 6
+
   'engine/processors/@before 0':
     lua_processor@*ylagr.select_character
   'engine/processors/@before 1':
