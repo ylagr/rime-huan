@@ -40,18 +40,25 @@ patch:
     option_name: mine_t_to_s
     # tips: all
     tags: [abc, number]
-  # switches/@2:
-      # states: [ "漢字", "汉字", "私"]
-      # reset: 1
-      # options: [ src, simplification, mine_t_to_s ]
   'switches/+':
     - name: mine_t_to_s
       reset: 0
       states: [ "源", "私" ]
-  switches/@2/reset: 1
-  switches/@3/reset: 0
-  switches/@5/reset: 1
-  switches/@6/reset: 0
+  switches/@0/reset: 0 #中文
+  switches/@1/reset: 0 #半角
+  switches/@2/reset: 1 #简体
+  # switches/@2:
+      # states: [ "漢字", "汉字", "私"]
+      # reset: 1
+      # options: [ src, simplification, mine_t_to_s ]
+  switches/@3/reset: 0 #标点
+  switches/@4/reset: 1 #通用/增广
+  switches/@5/reset: 1 #固词
+  switches/@6/reset: 0 #emoji
+  switches/@7/reset: 0 #拆分
+  switches/@8/reset: 0 #拼音
+  switches/@9/reset: 0 #Uni提示
+  switches/@10/reset: 0 #字集
 
   'engine/processors/@before 0':
     lua_processor@*ylagr.select_character
