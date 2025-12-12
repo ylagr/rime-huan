@@ -22,7 +22,6 @@ encoder:
       formula: "AaBaCaZa"
 import_tables:
   - moran_fixed.symbols
-
 ...
 
 #----------詞庫----------#
@@ -3197,7 +3196,6 @@ AVL樹	avlu
 閉嘴	bizv
 本初子午線	bizx
 半	bj
-不就	bj
 比較	bj
 畢竟	bj
 背景	bj
@@ -9628,7 +9626,6 @@ C盤	cpj
 從頭做起	ctzq
 蒼天在上	ctzu
 粗	cu
-測試	cu
 瘯	cub
 測試版本	cubb
 粗笨	cubf
@@ -16612,7 +16609,6 @@ D盤	dpj
 餓得要死	edys
 摁倒在地	edzd
 餓	ee
-呃呃	ee
 恩恩愛愛	eeaa
 痾	eeb
 惡霸	eeba
@@ -37136,7 +37132,6 @@ I盤	ipj
 成字字根	izzg
 就	j	jqyj
 覺得	j
-加	ja
 驕傲	ja
 桀驁不馴	jabx
 敬愛的老師	jadu
@@ -47528,7 +47523,6 @@ JK制服	jkvf
 蠟筆	labi
 蠟板	labj
 蠟白	labl
-落	lac
 菈	lac
 藟	lacl
 剌	lad
@@ -48387,7 +48381,6 @@ JK制服	jkvf
 樂園	leyr
 樂於	leyu
 樂子	lezi
-零	lf
 浪費	lf
 流芳百世	lfbu
 聊復爾爾	lfee
@@ -52960,11 +52953,10 @@ JK制服	jkvf
 亂糟糟的	lzzd
 雷子	lzzi
 嫘祖	lzzu
-沒	mz	mzdu
-馬	ma
-嗎	m	ma
-沒	m
+沒	m	mzdu
 沒有	m
+嗎	ma
+馬	maa
 馬鞍	maan
 痲	mab
 碼表	mabc
@@ -55686,7 +55678,6 @@ JK制服	jkvf
 墨奇音形	mqyx
 謬讚	mqzj
 明確責任	mqzr
-木	mr
 默認	mr
 沒人	mr
 每人	mr
@@ -56441,7 +56432,6 @@ JK制服	jkvf
 迷之自信	mvzx
 蜜汁自信	mvzx
 民主自由	mvzy
-名	mw
 末尾	mw
 冥頑不化	mwbh
 漫無邊際	mwbj
@@ -57139,7 +57129,7 @@ JK制服	jkvf
 貿易組織	myzv
 買一贈一	myzy
 沒有作用	myzy
-每	mzp
+每	mz
 寐	mzb
 眉筆	mzbi
 美白	mzbl
@@ -59900,7 +59890,6 @@ JK制服	jkvf
 女足	nvzu
 內外	nw
 南無阿彌陀佛	nwaf
-寧	nwb
 那我不管	nwbg
 那我不會	nwbh
 那我不去	nwbq
@@ -72112,7 +72101,6 @@ P站	pvj
 三套	sjtk
 喪盡天良	sjtl
 三天	sjtm
-身娇体柔	sjtr
 三通	sjts
 時間停止	sjtv
 三級跳遠	sjty
@@ -72384,7 +72372,6 @@ P站	pvj
 塞族	slzu
 森林資源	slzy
 什麼	sm
-是嗎	sm
 掃描病毒	smbd
 四面八方	smbf
 什麼辦法	smbf
@@ -76523,8 +76510,6 @@ P站	pvj
 天災	tmzl
 天尊	tmzp
 天足	tmzu
-推	tn
-退	tn
 太難	tn
 太牛逼了	tnbl
 頭腦不清	tnbq
@@ -76849,8 +76834,6 @@ P站	pvj
 褪	tpyt
 天蓬元帥	tpyu
 屯子	tpzi
-头	tq
-透	tqz
 提前	tq
 天氣	tq
 太強	tq
@@ -78945,8 +78928,6 @@ T恤衫	txuj
 投資意向	tzyx
 是	u	uiop
 時	u
-什	u
-仕	u
 啥	ua
 痧	uab
 沙壩	uaba
@@ -79670,7 +79651,6 @@ T恤衫	txuj
 恃才自傲	ucza
 刷存在感	uczg
 雙	ud
-是的	ud
 誰都不愛	udba
 書讀百遍	udbb
 說的不錯	udbc
@@ -89108,7 +89088,6 @@ U盤	upj
 豬腦過載	vngz
 乍暖還寒	vnhh
 祝你好運	vnhy
-轉	vni
 祝你成功	vnig
 智能檢測	vnjc
 智能家居	vnjj
@@ -98456,7 +98435,6 @@ WiFi	wifi
 習作	xizo
 蹝	xizv
 宣傳作用	xizy
-行	xj
 新建	xj
 血跡斑斑	xjbb
 鏽跡斑斑	xjbb
@@ -98639,7 +98617,6 @@ WiFi	wifi
 心靜自然涼	xjzl
 小家子氣	xjzq
 消極作用	xjzy
-下	xk
 辛苦	xk
 幸虧	xk
 笑哭	xk
@@ -101678,9 +101655,8 @@ WiFi	wifi
 纖維組織	xwzv
 新聞自由	xwzy
 寫	xx
-謝謝	xx
 想想	xx
-些	xx
+謝謝	xx
 小興安嶺	xxal
 信息安全	xxaq
 寫	xxb
@@ -101769,7 +101745,6 @@ WiFi	wifi
 協定	xxdy
 洩	xxdy
 信心大增	xxdz
-卸	xxe
 些	xxe
 卸	xxea
 邪惡	xxee
@@ -102073,7 +102048,6 @@ WiFi	wifi
 學習使用	xxuy
 循循善誘	xxuy
 信心十足	xxuz
-些	xxv
 宵小之輩	xxvb
 現行政策	xxvc
 下下之策	xxvc
@@ -107300,7 +107274,6 @@ WiFi	wifi
 迎面走來	ymzl
 以免造成不必要的損失	ymzu
 因	yn
-因	ywd
 尹	yna
 陰靄	ynai
 陰暗	ynan
@@ -107427,7 +107400,6 @@ WiFi	wifi
 遇難呈祥	ynix
 螾	yniy
 銀	ynj
-銀	ywj
 引腳	ynjc
 一念及此	ynjc
 銀獎	ynjd
@@ -107446,7 +107418,6 @@ WiFi	wifi
 鈏	ynjy
 銦	ynjy
 吟	ynk
-吟	ywk
 銀礦	ynkd
 怨女曠夫	ynkf
 引開	ynkl
@@ -107454,7 +107425,6 @@ WiFi	wifi
 喑	ynky
 圁	ynky
 音	ynl
-音	ywl
 飲料	ynlc
 音量	ynld
 淫樂	ynle
@@ -110314,7 +110284,6 @@ WiFi	wifi
 業務範圍	ywfw
 意外發現	ywfx
 英文翻譯	ywfy
-引	ywg
 越王勾踐	ywgj
 業務管理	ywgl
 藥物過量	ywgl
