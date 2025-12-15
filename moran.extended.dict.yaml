@@ -23,7 +23,7 @@ import_tables:
 加	ja
 味	wk
 #未	we			已经内置整句可打
-是不是	ubu	99999999
+# 是不是	ubu	99999999
 名	mw
 吗	m
 怎麼	zm
@@ -57,3 +57,5 @@ _	on
 活	ho;du	9999999
 活了	ho;du le;aa	9999999
 瘪	bm;bl	9999999
+ Windows 	win
+
