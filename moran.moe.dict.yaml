@@ -8,7 +8,7 @@
 
 ---
 name: moran.moe
-version: "20251212"
+version: "20251219"
 sort: by_weight
 use_preset_vocabulary: false
 ...
@@ -2507,14 +2507,6 @@ use_preset_vocabulary: false
 世界觀及角色	ui;ca jx;tj gr;jv ji;nd jt;dy se;db
 世界觀和術語	ui;ca jx;tj gr;jv he;hk uu;xu yu;yw
 世界計劃	ui;ca jx;tj ji;yu hw;dh
-世界計劃交響樂	ui;ca jx;tj ji;yu hw;dh jc;li xd;yx yt;my
-世界計劃其他歌曲	ui;ca jx;tj ji;yu hw;dh qi;ba ta;ry ge;qg qu;aa
-世界計劃其他演唱歌曲	ui;ca jx;tj ji;yu hw;dh qi;ba ta;ry yj;dy ih;ki ge;qg qu;aa
-世界計劃其他翻唱歌曲	ui;ca jx;tj ji;yu hw;dh qi;ba ta;ry fj;yf ih;ki ge;qg qu;aa
-世界計劃學院	ui;ca jx;tj ji;yu hw;dh xt;zb yr;ew
-世界計劃虛擬歌手演唱歌曲	ui;ca jx;tj ji;yu hw;dh xu;hy ni;fy ge;qg ub;pa yj;dy ih;ki ge;qg qu;aa
-世界計劃虛擬歌手翻唱歌曲	ui;ca jx;tj ji;yu hw;dh xu;hy ni;fy ge;qg ub;pa fj;yf ih;ki ge;qg qu;aa
-世界計劃遊戲原聲帶	ui;ca jx;tj ji;yu hw;dh yb;zy xi;gd yr;ix ug;eq dl;jb
 世界語	ui;ca jx;tj yu;yw
 世界變成了咖啡屋	ui;ca jx;tj bm;ws ig;gg le;aa ka;kj fz;kf wu;uv
 世界讓夢想熊熊燃燒	ui;ca jx;tj rh;yx mg;cx xd;xx xs;hn xs;hn rj;hr uk;hy
@@ -6496,7 +6488,6 @@ use_preset_vocabulary: false
 佐賀	zo;rz he;bj
 佐賀事變	zo;rz he;bj ui;aa bm;ws
 佐賀偶像是傳奇	zo;rz he;bj ou;ry xd;rx ui;op ir;rv qi;dk
-佐賀偶像是傳奇原聲帶	zo;rz he;bj ou;ry xd;rx ui;op ir;rv qi;dk yr;ix ug;eq dl;jb
 佐賀娘	zo;rz he;bj nd;nl
 佐賀沙織	zo;rz he;bj ua;du vi;sg
 佐賀縣	zo;rz he;bj xm;xx
@@ -12860,7 +12851,6 @@ use_preset_vocabulary: false
 動物園怪談遊戲主題音樂	ds;lv wu;nw yr;ky gy;xu tj;yy yb;zy xi;gd vu;dw ti;uy yn;lo yt;my
 動物圖鑑	ds;lv wu;nw tu;kh jm;jj
 動物好友	ds;lv wu;nw hk;nz yb;yu
-動物好友原聲帶	ds;lv wu;nw hk;nz yb;yu yr;ix ug;eq dl;jb
 動物娘	ds;lv wu;nw nd;nl
 動物學家	ds;lv wu;nw xt;zb jw;bu
 動物帽子	ds;lv wu;nw mk;jm zi;aa
@@ -12896,7 +12886,6 @@ use_preset_vocabulary: false
 動畫化輕小說	ds;lv hw;ya hw;rb qy;ig xc;ad uo;yd
 動畫原畫師	ds;lv hw;ya yr;ix hw;ya ui;vb
 動畫原聲帶	ds;lv hw;ya yr;ix ug;eq dl;jb
-動畫原聲帶和角色曲介紹	ds;lv hw;ya yr;ix ug;eq dl;jb he;hk jt;dy se;db qu;aa jx;ra uk;sv
 動畫同好會	ds;lv hw;ya ts;kk hk;nz hv;ro
 動畫大王漫畫行	ds;lv hw;ya da;ad wh;aa mj;dm hw;ya xy;xi
 動畫女主什麼的夠了啦	ds;lv hw;ya nv;aa vu;dw uf;ru me;my de;bu gb;dj le;aa la;kl
@@ -13592,7 +13581,6 @@ use_preset_vocabulary: false
 千年墨痕	qm;pa nm;ra mo;th hf;bg
 千年天平	qm;pa nm;ra tm;ad py;aa
 千年女優	qm;pa nm;ra nv;aa yb;rw
-千年女優原聲帶	qm;pa nm;ra nv;aa yb;rw yr;ix ug;eq dl;jb
 千年山海	qm;pa nm;ra uj;aa hl;dm
 千年智慧輪	qm;pa nm;ra vi;ov hv;xh lp;il
 千年樹之森	qm;pa nm;ra uu;mc vi;dd sf;ml
@@ -13620,7 +13608,6 @@ use_preset_vocabulary: false
 千從狩	qm;pa cs;xv ub;qu
 千慮	qm;pa lv;hs
 千戀萬花	qm;pa lm;xs wj;cy hw;ch
-千戀萬花原聲帶	qm;pa lm;xs wj;cy hw;ch yr;ix ug;eq dl;jb
 千戶	qm;pa hu;pk
 千手扉間	qm;pa ub;pa fz;hf jm;mo
 千手柱間	qm;pa ub;pa vu;mv jm;mo
@@ -38274,7 +38261,6 @@ use_preset_vocabulary: false
 惡魔太郎之歌	ee;xy mo;gm tl;dd lh;el vi;dd ge;qg
 惡魔奶爸	ee;xy mo;gm nl;nn ba;fb
 惡魔姐姐	ee;xy mo;gm jx;nq jx;nq
-惡魔媽媽摸妹妹	ee;xy mo;gm ma;nm ma;nm mo;fm mz;nw mz;nw
 惡魔子	ee;xy mo;gm zi;aa
 惡魔寶寶	ee;xy mo;gm bk;bb bk;bb
 惡魔小丑	ee;xy mo;gm xc;ad ib;aa
@@ -47792,7 +47778,6 @@ use_preset_vocabulary: false
 月影和鞦韆	yt;pa yy;pj he;hk qq;gq qm;gq
 月影武士	yt;pa yy;pj wu;vy ui;aa
 月影特工	yt;pa yy;pj te;ns gs;aa
-月影特工原聲帶	yt;pa yy;pj te;ns gs;aa yr;ix ug;eq dl;jb
 月影百合	yt;pa yy;pj bl;ab he;rk
 月影的夢幻曲	yt;pa yy;pj de;bu mg;cx hr;yg qu;aa
 月影的幻影	yt;pa yy;pj de;bu hr;yg yy;pj
@@ -60661,8 +60646,6 @@ use_preset_vocabulary: false
 火影忍者手遊	ho;dd yy;pj rf;xr ve;ol ub;pa yb;zy
 火影忍者新時代	ho;dd yy;pj rf;xr ve;ol xn;jq ui;os dl;ry
 火影忍者疾風傳	ho;dd yy;pj rf;xr ve;ol ji;bu fg;ji ir;rv
-火影忍者疾風傳劇場版	ho;dd yy;pj rf;xr ve;ol ji;bu fg;ji ir;rv ju;dj ih;ty bj;pf
-火影忍者疾風傳原聲帶	ho;dd yy;pj rf;xr ve;ol ji;bu fg;ji ir;rv yr;ix ug;eq dl;jb
 火影次世代	ho;dd yy;pj ci;dq ui;ca dl;ry
 火影繼承人	ho;dd yy;pj ji;sy ig;ad rf;pd
 火影跑	ho;dd yy;pj pk;zb
@@ -60809,7 +60792,6 @@ use_preset_vocabulary: false
 火葬	ho;dd zh;cc
 火葬曲	ho;dd zh;cc qu;aa
 火藍之心	ho;dd lj;cj vi;dd xn;dd
-火藍之心原聲帶	ho;dd lj;cj vi;dd xn;dd yr;ix ug;eq dl;jb
 火藥	ho;dd yk;cl
 火蜥蜴	ho;dd xi;ix yi;iy
 火蝠	ho;dd fu;if
@@ -63824,7 +63806,6 @@ use_preset_vocabulary: false
 獸奴假面	ub;qu nu;ny jw;rj mm;aa
 獸娘	ub;qu nd;nl
 獸娘動物園	ub;qu nd;nl ds;lv wu;nw yr;ky
-獸娘動物園原聲帶	ub;qu nd;nl ds;lv wu;nw yr;ky yr;ix ug;eq dl;jb
 獸娘育成方案	ub;qu nd;nl yu;os ig;gg fh;wd an;ma
 獸孃的撫育方法	ub;qu nd;nx de;bu fu;fw yu;os fh;wd fa;dq
 獸孃的育成方法	ub;qu nd;nx de;bu yu;os ig;gg fh;wd fa;dq
@@ -83143,7 +83124,6 @@ use_preset_vocabulary: false
 蔚藍月下的回憶	wz;cw lj;cj yt;pa xw;ab de;bu hv;kk yi;xy
 蔚藍構想	wz;cw lj;cj gb;mg xd;xx
 蔚藍檔案	wz;cw lj;cj dh;md an;ma
-蔚藍檔案原聲帶	wz;cw lj;cj dh;md an;ma yr;ix ug;eq dl;jb
 蔚藍畫具	wz;cw lj;cj hw;ya ju;ba
 蔚藍的星球	wz;cw lj;cj de;bu xy;ou qq;wq
 蔚藍的靈柩	wz;cw lj;cj de;bu ly;wl jq;mj
@@ -85208,6 +85188,8 @@ use_preset_vocabulary: false
 蝶柒	dx;im qi;mq
 蝶海夢花	dx;im hl;dm mg;cx hw;ch
 蝶祈	dx;im qi;uj
+楪祈	ye;mm qi;uj
+楪祈	dx;mm qi;uj
 蝶翼	dx;im yi;yg
 蝶翼型翅膀	dx;im yi;yg xy;tx ii;yv bh;op
 蝶與花	dx;im yu;ba hw;ch
@@ -85501,7 +85483,6 @@ use_preset_vocabulary: false
 血獄	xt;pa yu;qq
 血獅	xt;pa ui;qu
 血界戰線	xt;pa jx;tj vj;gd xm;sq
-血界戰線原聲帶	xt;pa jx;tj vj;gd xm;sq yr;ix ug;eq dl;jb
 血盟騎士團	xt;pa mg;mm qi;mq ui;aa tr;kv
 血精靈	xt;pa jy;mq ly;wl
 血紅滿月之夜	xt;pa hs;sg mj;dr yt;pa vi;dd ye;wd
@@ -93484,7 +93465,6 @@ use_preset_vocabulary: false
 重啓	is;pa qi;kw
 重啓人生	is;pa qi;kw rf;pd ug;na
 重啓咲良田	is;pa qi;kw xc;kg ld;dg tm;aa
-重啓咲良田原聲帶	is;pa qi;kw xc;kg ld;dg tm;aa yr;ix ug;eq dl;jb
 重啓系統	is;pa qi;kw xi;ps ts;si
 重啓重試	is;pa qi;kw is;pa ui;yu
 重型打樁機	vs;pa xy;tx da;fd vd;mi ji;mj
