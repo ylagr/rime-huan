@@ -24,6 +24,7 @@ encoder:
 import_tables:
   - moran_fixed
   - moran_fixed_end
+  - moran_fixed.symbols
 ...
 
 #----------词库----------#
@@ -37,12 +38,15 @@ import_tables:
 餓	eeu
 峨	eeuw
 加	ja
+角色	jcse
 開個	klg
 拉	la
 落	la
 拉	laf
 擸	lafl
 零	lf
+玲	lfw
+靈	lfw
 嗎	m
 馬	ma
 木	mr
@@ -69,6 +73,7 @@ import_tables:
 谢谢	x
 卸	xxe
 些	xxv
+有点	yd
 因	ywd
 銀	ywj
 吟	ywk
