@@ -2716,7 +2716,8 @@
 㷰	hl	火离	
 㷱	hq	灬去	
 㷲	hd	火動	
-㷳	hy	火雁	auto
+㷳	hy	火雁	
+㷳	ih	厂火	
 㷴	hh	火禾	auto
 㷴	ih	厂火	auto
 㷵	hh	火黑	auto
@@ -8577,6 +8578,7 @@
 匘	bx	匕囟	
 匙	bu	匕是	
 匙	ub	是匕	
+匚	aa	一𠃊	
 匚	kd	{匚}	
 匛	kj	匚久	
 匜	ky	匚也	
@@ -44225,15 +44227,16 @@
 𢧛	gn	戈女	auto
 𢧜	gi	戈呈	auto
 𢧝	bg	卜戈	auto
-𢧞	dv	冫舟	auto
-𢧟	gd	戈丶	auto
-𢧠	go	戈月	auto
-𢧡	uw	上戊	auto
-𢧢	gr	戈人	auto
-𢧢	ug	十戈	auto
+𢧞	gv	戈舟	
+𢧟	gd	戈丶	
+𢧟	gp	戈丿	
+𢧠	go	戈月	
+𢧡	uw	上戊	
+𢧢	gr	戈人	
+𢧢	ug	十戈	
 𢧣	gm	戈木	auto
 𢧣	tg	土戈	auto
-𢧤	gd	戈大	auto
+𢧤	gi	戈呈	
 𢧥	gj	戈兼	auto
 𢧥	jg	兼戈	auto
 𢧦	wy	戊要	auto
@@ -50888,7 +50891,8 @@
 𤎚	ho	火日	auto
 𤎚	uh	山火	auto
 𤎛	hy	火淫	auto
-𤎝	yh	雁灬	auto
+𤎝	hy	灬雁	
+𤎝	yh	雁灬	
 𤎞	hu	火氺	auto
 𤎟	bh	宀火	auto
 𤎟	ht	火土	auto
@@ -64619,12 +64623,12 @@
 𧫜	jy	既言	auto
 𧫝	yw	言夂	auto
 𧫞	yy	言雨	auto
-𧫟	yv	言隹	auto
+𧫟	yd	言大	
 𧫠	yj	言基	auto
 𧫡	yv	言窒	auto
 𧫢	yw	言望	auto
-𧫣	iy	敕言	auto
 𧫣	yi	言敕	auto
+𧫣	iy	敕言	auto
 𧫤	yb	言畢	auto
 𧫥	ya	言庵	auto
 𧫦	yy	医言	auto
@@ -99893,6 +99897,7 @@
 𲘥	km	囗芒	
 𪜭	ry	亻囙	
 𱰜	yg	用乚	
+𠜠	dk	刂困
 
 # 待考
 
