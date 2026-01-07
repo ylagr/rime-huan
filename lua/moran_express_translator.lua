@@ -394,6 +394,9 @@ function top.func(input, seg, env)
 end
 
 function smart_second_output(env, input, input_len, seg, last_cand)
+   if input:sub(1,1) == ';' then
+      return
+   end
    local append_cand = last_cand
    local append_text = smart_second_fix_end(env, input, input_len)
    if append_text ~= nil then
