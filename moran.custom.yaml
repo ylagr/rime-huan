@@ -1,4 +1,6 @@
 patch:
+  schema/dependencies/+:
+    - huan
   "menu/page_size": 6
   ascii_composer/good_old_caps_lock: true
   ascii_composer/switch_key/Shift_L: noop
