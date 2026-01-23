@@ -1,4 +1,9 @@
 patch:
+  
+  schema/dependencies/+: [moran_japanese]
+  engine/translators/+:
+    # - table_translator@japanese  #混入正常输入
+    - table_translator@japanese_o
   schema/dependencies/+:
     - huan
   "menu/page_size": 6

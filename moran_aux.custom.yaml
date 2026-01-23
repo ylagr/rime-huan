@@ -1,0 +1,4 @@
+patch:
+  moran/fix/use_dict: true
+  moran/fix/use_dict_max_length: 3
+  translator/dictionary: moran_fixed_pre
