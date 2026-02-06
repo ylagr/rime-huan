@@ -1,29 +1,27 @@
 
-local Module = {}
-
-function Module.init(env)
-
+local function commit_history(input, seg, env)
    local ctx = env.engine.context
-   log.error(type(ctx))
-   log.error(tostring(ctx))
+   -- log.error(tostring(ctx))
    -- ctx.commit_notifier:connect(function()
    -- local commit_text = ctx:get_commit_text()
    -- if not commit_text or commit_text == "" then return end
    ctx.commit_notifier:connect(
       function ()
-	 local commit_text = ctx:get_commit_text()
-	 if not commit_text or commit_text == "" then return end
 	 
+	 local commit_text = ctx:get_commit_text()
+
+	 if not commit_text or commit_text == "" then return end
+	 log.error(commit_text)	 
       end
    )
 
 end
 
-function Module.func(input, seg, env)
+local function func(input, seg, env)
    local ctx = env.engine.context
    log.error(type(env))
    log.error(type(ctx))
    
 end
 
-return Module
+return commit_history

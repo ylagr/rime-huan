@@ -71,6 +71,7 @@
 -- 目前版本的解決方法是：用戶選過字後，臨時禁用 table 翻譯器，使得
 -- script 可以看到所有輸入，從而解決造詞問題。
 
+local ijjp = require("ylagr.ijjp")
 local moran = require("moran")
 local top = {}
 
@@ -79,6 +80,7 @@ local kChar = 1
 local kWord = 2
 
 function top.init(env)
+   ijjp.init(env)
    env.cache = {}
    -- Rime 組件
    env.fixed = Component.Translator(env.engine, "", "table_translator@fixed")
@@ -136,6 +138,7 @@ function top.fini(env)
    env.smart = nil
    env.rfixed = nil
    env.output_injected_secondary = nil
+   ijjp.fini(env)
    collectgarbage()
 end
 
@@ -394,8 +397,24 @@ function top.func(input, seg, env)
 end
 
 function smart_second_output(env, input, input_len, seg, last_cand)
-   if input:sub(1,1) == ';' then
-      return
+   -- if input:sub(1,1) == ';' then
+      -- return
+   -- end
+   if input:find("^[;`]") or input:find("/") or input:find("^o[^o]+") then
+      return nil
+   end
+   
+   if input_len >= 5 then
+
+      if env.commit_history_list ~= nil then
+	 local words_table = env.commit_history_trie:findByPrefix(input)
+	 local word = env.commit_history_trie:startsWith(input)
+	 if words_table ~= nil and #words_table >= 1 then
+	    local word_k, word_v = next(words_table)
+	    local text = env.commit_history_table[word_v]
+	    yield(Candidate(input, seg.start, seg._end, text, env.sentence_indicator))
+	 end
+      end
    end
    local append_cand = last_cand
    local append_text = smart_second_fix_end(env, input, input_len)

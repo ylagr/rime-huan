@@ -41,6 +41,8 @@ patch:
   'engine/filters/@before 6':
     simplifier@mine_simplifier
   'engine/translators/+':
+    # - lua_translator@*ylagr.commit_history
+    # - lua_translator@*ylagr.ijjp
     - lua_translator@*ylagr.input_statistics
   mine_simplifier:
     opencc_config: moran_mine_t2s.json
@@ -71,6 +73,8 @@ patch:
     lua_processor@*ylagr.select_character
   'engine/processors/@before 1':
     lua_processor@*ylagr.raw_origin_commit
+  # 'engine/processors/+':
+    # - lua_processor@*ylagr*init
   key_binder/bindings/+:
     - {when: always, accept: Control+Shift+asterisk, toggle: ascii_punct}
     - {when: has_menu, accept: Shift+Tab, send: Control+Left}

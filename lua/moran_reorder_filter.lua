@@ -65,7 +65,7 @@ function Top.func(t_input, env)
          yield(cand)
          goto continue
       end
-
+      -- log.error(cand.text .. " " .. cand.comment .. " genuine:  " .. cand:get_genuine().comment)
       if reorder_phase == 0 then
          if cand.comment == '`F' or cand.comment == 'G' then
             if not pin_set[cand.text] then
@@ -140,7 +140,7 @@ end
 
 local function reorderable(cand)
    local len = utf8.len(cand.text)
-   return (len > 1 and #cand.preedit >= 2 * len) or (len == 1 and #cand.preedit <= 3)
+   return (len > 1 and #cand.preedit >= 2 * len) or (len == 1 and #cand.preedit <= 4)
 end
 
 -- Return 2 if fixed_list is handled completely.
@@ -149,6 +149,7 @@ function Top.DoPhase1(env, fixed_list, smart_list, cand)
    table.insert(smart_list, cand)
    while #fixed_list > 0 do
       local fcand = fixed_list[1]
+      -- log.error(tostring(reorderable(fcand)) .. fcand.text .. " " .. fcand.comment .. " genuine: " .. fcand:get_genuine().comment)
       if not reorderable(fcand) then
          if fcand.comment == "`F" then
             fcand.comment = env.quick_code_indicator
