@@ -4,7 +4,7 @@
 
 ---
 name: moran.words
-version: "20251227"
+version: "20260212"
 sort: by_weight
 use_preset_vocabulary: false
 columns:
@@ -8137,7 +8137,7 @@ columns:
 標準正交	1
 包外估計	1
 輸出門	1
-輸出調製法	1
+輸出調制法	1
 過度參數化	1
 過完備	1
 過估計	1
@@ -9319,6 +9319,15 @@ columns:
 鬍青	100
 焚訣	100
 玄貓	100
+犯蠢	10000
+印錢	100
+浮盈	100
+浮虧	100
+安那其	100
+無治	1
+無治主義	1
+僞史	10
+僞史論	1
 
 # Mini Lyre Dict
 # https://github.com/rimeinn/Lyre/commit/c020d23d334aec77a59b1d5a5b3bcc8c07c86bd0
@@ -23817,7 +23826,7 @@ MIDI鍵盤	1	midi jm;jj pj;mb
 靜馬
 非貓
 靠大
-面包店
+麪包店
 面堂
 面大
 面體

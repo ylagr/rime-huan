@@ -135,9 +135,9 @@ deploy:
       - send: 'lmjx'
         assert: eq(cand[1].text, '鏈接') and eq(cand[2].text, '連接')
       - send: 'lmjx{Control+t}'
-        assert: eq(cand[1].comment, "📌")
+        assert: eq(cand[1].comment, "📌") and eq(preedit, "lm jx")
       - send: 'lmjx{Control+t}'
-        assert: eq(cand[1].comment, "")
+        assert: eq(cand[1].comment, "") and eq(preedit, "lm jx")
       - send: 'lmjx{Down}{Control+t}'
         assert: eq(cand[1].text, '連接') and eq(cand[1].comment, "📌")
       - send: 'lmjx'
@@ -165,6 +165,10 @@ deploy:
         assert: eq(preedit, "daj'whk")
       - send: 'dajwhk{Control+l}{Control+l}'
         assert: eq(preedit, "da'jw'hk")
+      - send: 'luylkr'
+        assert: eq(preedit, "luyl kr")
+      - send: 'luylkr{Control+l}'
+        assert: eq(preedit, "luy'lkr")
       # input_len = 7
       - send: 'dajwhkn'
         assert: eq(preedit, 'da jw hkn')
@@ -177,6 +181,11 @@ deploy:
       # 單字
       - send: 'mumho{Control+l}'
         assert: eq(preedit, "mu'mho")
+      # 四碼
+      - send: 'jism{Control+l}'
+        assert: eq(preedit, "ji'sm")
+      - send: 'jism{Control+l}{Control+l}'
+        assert: eq(preedit, 'jism')
 
   steal_auxcode:
     tests:

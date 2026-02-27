@@ -1,0 +1,127 @@
+on: [push]
+
+jobs:
+  build:
+    if: ${{ github.repository == 'rimeinn/rime-moran' }}
+    runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        variant: [trad, simp]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v5
+      - name: Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y opencc p7zip-full
+      - name: Build
+        run: |
+          if [ ${{ matrix.variant }} == trad ]; then
+            make dist
+          else
+            ./make_simp_dist.sh
+          fi
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: "${{ matrix.variant == 'trad' && 'Trad' || 'Simp' }}-FullPack"
+          path: dist/**
+      - uses: actions/upload-artifact@v4
+        with:
+          name: "${{ matrix.variant == 'trad' && 'Trad' || 'Simp' }}-DictsOnly"
+          path: |
+            dist/moran.base.dict.yaml
+            dist/moran.tencent.dict.yaml
+            dist/moran.moe.dict.yaml
+            dist/moran.computer.dict.yaml
+            dist/moran.words.dict.yaml
+      - name: Deploy to branch
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+          publish_branch: ${{ matrix.variant }}
+      - name: Setup tmate session
+        if: ${{ failure() }}
+        uses: mxschmitt/action-tmate@v3
+
+  demo:
+    if: ${{ github.repository == 'rimeinn/rime-moran' }}
+    runs-on: ubuntu-24.04
+    needs: [build]
+    strategy:
+      matrix:
+        variant: [trad, simp]
+    steps:
+      - name: Download dist
+        uses: actions/download-artifact@v4
+        with:
+          name: "${{ matrix.variant == 'trad' && 'Trad' || 'Simp' }}-FullPack"
+      - name: Build demo ${{ matrix.variant }}
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y librime-data librime-bin
+          rm -f *.gram
+          cat >moran.extended.dict.yaml <<EOF
+          ---
+          name: moran.extended
+          version: "mini"
+          sort: by_weight
+          use_preset_vocabulary: false
+          import_tables: [moran.chars, moran.base, moran.words]
+          ...
+          EOF
+
+          rime_deployer --build . /usr/share/rime-data ./build
+          rm -rf ./*.yaml
+      - name: Upload demo ${{ matrix.variant }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: "${{ matrix.variant == 'trad' && 'Trad' || 'Simp' }}-Demo"
+          path: |
+            build/
+            lua/
+            opencc/
+
+  test:
+    if: ${{ github.repository == 'rimeinn/rime-moran' }}
+    needs: [build]
+    runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        schema: [moran, moran_aux, moran.hint, moran.charset]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v5
+      - name: Download Rime config
+        uses: actions/download-artifact@v4
+        with:
+          name: "Trad-FullPack"
+          path: ./dist
+      - name: Setup Mira
+        run: |
+          wget https://github.com/rimeinn/mira/releases/download/latest/mira
+          chmod +x mira
+      - name: Test ${{ matrix.schema }}
+        run: ./mira -C cache tests/${{ matrix.schema }}.test.yaml
+      - name: Setup tmate session
+        if: ${{ failure() }}
+        uses: mxschmitt/action-tmate@v3
+
+  dict-qa:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - name: 檢查簡體碼表是否有繁體字
+        run: uv run tools/check_simp_table.py
+      - name: 檢查詞庫裏是否混入了多空格
+        run: |
+          perl -ne '
+            $c=1 if /^\.\.\./;
+            die "Bad line: $ARGV: $_" if $c && /^[^#].*  /;
+            $c=0 if eof
+          ' *.dict.yaml

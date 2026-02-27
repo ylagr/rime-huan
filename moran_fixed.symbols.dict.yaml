@@ -11,7 +11,7 @@
 
 ---
 name: moran_fixed
-version: "20251221"
+version: "20260125"
 sort: original
 columns:
   - text
@@ -2292,6 +2292,7 @@ _	on
 ±	ozfh
 □	ozfk
 ■	ozfk
+←	ozh
 ﹉	ozh
 ﹊	ozh
 ﹋	ozh
@@ -2308,8 +2309,11 @@ _	on
 ﹏	ozhh
 ―	ozi
 ―	ozih
+↓	ozj
 ←	ozjt
+↑	ozk
 （	ozkh
+→	ozl
 ◇	ozl
 ◆	ozl
 ◇	ozlx
