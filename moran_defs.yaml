@@ -98,6 +98,9 @@ fly:
   tb_tq:
     __append:
       - derive/tb;/tq;/
+  ly_lw:
+    __append:
+      - derive/ly;/lw;/
       
 # 小寫可匹配大寫編碼（用於英語混輸）
 casefold:

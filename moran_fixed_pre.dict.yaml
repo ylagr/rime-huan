@@ -39,6 +39,7 @@ import_tables:
 峨	eeuw
 加	ja
 角色	jcse
+集	jivm
 開個	klg
 拉	la
 落	la
@@ -47,6 +48,13 @@ import_tables:
 零	lf
 玲	lfw
 靈	lfw
+# todo 处理飞键固定码
+零	lw
+陵	lwe
+聆	lwel
+令	lwr
+玲	lww
+靈	lww
 嗎	m
 馬	ma
 木	mr
