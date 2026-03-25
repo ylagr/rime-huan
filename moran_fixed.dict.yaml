@@ -4,7 +4,7 @@
 
 ---
 name: moran_fixed
-version: "20260215"
+version: "20260324"
 sort: by_weight
 columns:
   - text
@@ -4970,6 +4970,7 @@ AVL樹	avlu
 八年抗戰	bnkv
 瀕臨	bnl
 百年老店	bnld
+檳榔	bnlh
 賓利	bnli
 不難理解	bnlj
 殯殮	bnlm
@@ -8524,7 +8525,6 @@ C++	cjj
 餐具	cjju
 殘局	cjju
 參加	cjjw
-摻假	cjjw
 慘景	cjjy
 喰	cjk
 慘況	cjkd
@@ -8594,7 +8594,6 @@ C++	cjj
 蠶食	cjui
 孱	cjun
 參數	cjuu
-摻水	cjuv
 嶄	cjuv
 篸	cjv
 殘渣	cjva
@@ -8639,7 +8638,6 @@ C++	cjj
 辭舊迎新	cjyx
 殘影	cjyy
 曾經擁有	cjyy
-摻雜	cjza
 參雜	cjza
 參贊	cjzj
 慘遭	cjzk
@@ -10527,7 +10525,6 @@ C盤	cpj
 都	db
 數據庫	db
 豆	dba
-鬥	dba
 鬥	dbaa
 痘	dbb
 大半部分	dbbf
@@ -10796,6 +10793,7 @@ C盤	cpj
 都不重要	dbvy
 單邊主義	dbvy
 倒不至於	dbvy
+鬥	dbw
 都不爲過	dbwg
 德邦物流	dbwl
 斷臂維納斯	dbws
@@ -14857,6 +14855,7 @@ D盤	dpj
 得脫樊籬	dtfl
 對天發誓	dtfu
 動態範圍	dtfw
+動態分析	dtfx
 黨同伐異	dtfy
 動態規劃	dtgh
 打通關節	dtgj
@@ -27804,6 +27803,7 @@ G盤	gpj
 喝醉	hezv
 華爾茲舞	hezw
 很	hf
+恢復	hf
 很愛	hfai
 很暗	hfan
 痕	hfb
@@ -34543,6 +34543,7 @@ H盤	hpj
 鐔	ijjt
 覘	ijjv
 幨	ijjv
+摻假	ijjw
 產假	ijjw
 纏結	ijjx
 鋋	ijjy
@@ -34645,6 +34646,7 @@ H盤	hpj
 巉	ijut
 闡述	ijuu
 羼	ijuu
+摻水	ijuv
 磛	ijuv
 長江上游	ijuy
 成就事業	ijuy
@@ -34710,6 +34712,7 @@ H盤	hpj
 諂	ijyx
 裧	ijyy
 躔	ijz
+摻雜	ijza
 串家走戶	ijzh
 產自	ijzi
 籌集資金	ijzj
@@ -35531,6 +35534,7 @@ I盤	ipj
 春秋戰國	iqvg
 長驅直入	iqvr
 出奇制勝	iqvu
+長期主義	iqvy
 春秋五霸	iqwb
 超強五筆	iqwb
 重慶衛視	iqwu
@@ -41705,6 +41709,7 @@ JK制服	jkvf
 捔	jtfj
 家庭婦女	jtfn
 具體分析	jtfx
+靜態分析	jtfx
 絕非	jtfz
 彏	jtg
 姜太公釣魚願者上鉤	jtgg
@@ -42450,8 +42455,8 @@ JK制服	jkvf
 進身之階	juvj
 劇照	juvk
 舉債	juvl
-接受治療	juvl
 舉手之勞	juvl
+接受治療	juvl
 筥	juvl
 貗	juvl
 舉世矚目	juvm
@@ -44600,8 +44605,8 @@ JK制服	jkvf
 空不異色	kbys
 口語	kbyu
 可別怨我	kbyw
-膾不厭細	kbyx
 刻板印象	kbyx
+膾不厭細	kbyx
 口不應心	kbyx
 恐怖遊戲	kbyx
 可變資本	kbzb
@@ -44913,6 +44918,7 @@ JK制服	jkvf
 嗑	kekm
 可控	keks
 刻苦	keku
+柯爾克孜	kekz
 柯爾克孜族	kekz
 克拉	kela
 可樂	kele
@@ -53566,6 +53572,7 @@ JK制服	jkvf
 盟邦	mgbh
 矇蔽	mgbi
 懵逼	mgbi
+蒙版	mgbj
 忙個不停	mgbt
 蒙	mgc
 莔	mgcj
@@ -58780,6 +58787,7 @@ JK制服	jkvf
 能力越大責任越大	nlyd
 奶羊	nlyh
 捏了一把汗	nlyh
+能量飲料	nlyl
 哪裏有賣	nlym
 納蘭嫣然	nlyr
 耐用	nlys
@@ -72200,8 +72208,8 @@ P站	pvj
 掃碼登陸	smdl
 蘇門答臘	smdl
 什麼東西	smdx
-什麼都沒有	smdy
 什麼都有	smdy
+什麼都沒有	smdy
 死馬當活馬醫	smdy
 死馬當作活馬醫	smdy
 什麼都不做	smdz
@@ -73996,6 +74004,7 @@ P站	pvj
 投身	tbuf
 挑撥是非	tbuf
 偷生	tbug
+淘寶閃購	tbug
 頭上	tbuh
 談不上好	tbuh
 透視	tbui
@@ -92394,8 +92403,9 @@ U盤	upj
 無官不貪	wgbt
 五官不正	wgbv
 我敢保證	wgbv
-蓊	wgc
+蕹	wgc
 蕹菜	wgcl
+蓊	wgcw
 違規操作	wgcz
 甕	wgd
 王公大臣	wgdi
@@ -94499,6 +94509,7 @@ WiFi	wifi
 問題解決	wtjj
 味同嚼蠟	wtjl
 無條件反射	wtju
+無糖可樂	wtkl
 文體兩開花	wtlh
 問題來了	wtll
 委託律師	wtlu
@@ -97950,7 +97961,7 @@ WiFi	wifi
 騱	ximx
 榽	ximx
 洗煤	ximz
-嬉	xin
+犧	xin
 吸納	xina
 犀鳥	xinc
 細嫩	xinf
@@ -97965,7 +97976,7 @@ WiFi	wifi
 戲弄	xins
 犀	xinu
 息怒	xinu
-犧	xinx
+嬉	xinx
 媳	xinx
 鵗	xinx
 鸂	xinx
@@ -99139,6 +99150,7 @@ WiFi	wifi
 信服	xnfu
 心腹	xnfu
 心扉	xnfz
+心肺	xnfz
 鬵	xng
 新歌	xnge
 心梗	xngg
@@ -111747,6 +111759,8 @@ WiFi	wifi
 最低價格	zdjg
 自動檢索	zdjs
 自動加速	zdjs
+自動駕駛系統	zdjt
+自動駕駛	zdju
 自動駕駛儀	zdjy
 自動開關	zdkg
 自動控制原理	zdkl
@@ -117205,6 +117219,7 @@ CD機	cdj
 地對空	ddk
 得到了	ddl
 大道理	ddl
+大動脈	ddm
 擔擔麪	ddm
 電燈泡	ddp
 對得起	ddq
@@ -119409,6 +119424,7 @@ git	git
 俱樂部	jlb
 加勒比	jlb
 接力棒	jlb
+近鄰寶	jlb
 家裏蹲	jld
 交流電	jld
 金鑾殿	jld
@@ -119624,6 +119640,7 @@ git	git
 看得懂	kdd
 空蕩蕩	kdd
 看得慣	kdg
+快遞櫃	kdg
 肯定會	kdh
 看得出	kdi
 刻度尺	kdi
@@ -119642,6 +119659,7 @@ git	git
 寬帶網	kdw
 可讀性	kdx
 扛得下	kdx
+快遞員	kdy
 看電影	kdy
 開發版	kfb
 咖啡館	kfg
@@ -121953,6 +121971,7 @@ SD卡	sdk
 捅婁子	tlz
 挑毛病	tmb
 他媽的	tmd
+同盟國	tmg
 套馬杆	tmg
 他們家	tmj
 太忙了	tml
@@ -123130,7 +123149,7 @@ SD卡	sdk
 外蒙古	wmg
 污名化	wmh
 我們家	wmj
-我沒進	wmj
+外賣架	wmj
 誤碼率	wml
 未命名	wmm
 霧濛濛	wmm
@@ -123170,6 +123189,7 @@ WPS	wps
 爲前提	wqt
 文曲星	wqx
 Word	wrd
+無人車	wri
 無人機	wrj
 萬人坑	wrk
 萬人迷	wrm
@@ -123721,6 +123741,7 @@ Word	wrd
 洗衣粉	xyf
 洗衣服	xyf
 下一個	xyg
+協約國	xyg
 西洋畫	xyh
 小陽春	xyi
 洗衣機	xyj
@@ -124063,6 +124084,7 @@ Word	wrd
 一屁股	ypg
 有魄力	ypl
 一平米	ypm
+油潑麪	ypm
 一片片	ypp
 壓迫者	ypv
 硬碰硬	ypy
@@ -124391,6 +124413,7 @@ Word	wrd
 紫荊花	zjh
 紫禁城	zji
 總經理	zjl
+字節碼	zjm
 早幾年	zjn
 自決權	zjq
 自己人	zjr

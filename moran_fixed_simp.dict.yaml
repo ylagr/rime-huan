@@ -5,7 +5,7 @@
 
 ---
 name: moran_fixed_simp
-version: "20260211"
+version: "20260324"
 sort: original
 columns:
   - text
@@ -4835,6 +4835,7 @@ AVL树	avlu
 八年抗战	bnkv
 濒临	bnl
 百年老店	bnld
+槟榔	bnlh
 宾利	bnli
 不难理解	bnlj
 殡殓	bnlm
@@ -7004,7 +7005,6 @@ B盘	bpj
 不要脸的	byld
 病了	byle
 冰冷	bylg
-槟榔	bylh
 不亦乐乎	bylh
 病例	byli
 病历	byli
@@ -8303,7 +8303,6 @@ C++	cjj
 餐具	cjju
 残局	cjju
 参加	cjjw
-掺假	cjjw
 惨景	cjjy
 惨况	cjkd
 参看	cjkj
@@ -8368,7 +8367,6 @@ C++	cjj
 曾经说过	cjug
 蚕食	cjui
 参数	cjuu
-掺水	cjuv
 残渣	cjva
 惨状	cjvd
 参政	cjvg
@@ -8409,7 +8407,6 @@ C++	cjj
 辞旧迎新	cjyx
 残影	cjyy
 曾经拥有	cjyy
-掺杂	cjza
 参杂	cjza
 参赞	cjzj
 惨遭	cjzk
@@ -14413,6 +14410,7 @@ D盘	dpj
 得脱樊篱	dtfl
 对天发誓	dtfu
 动态范围	dtfw
+动态分析	dtfx
 党同伐异	dtfy
 动态规划	dtgh
 打通关节	dtgj
@@ -27009,6 +27007,7 @@ G盘	gpj
 喝醉	hezv
 华尔兹舞	hezw
 很	hf
+恢复	hf
 很爱	hfai
 很暗	hfan
 痕	hfb
@@ -33517,6 +33516,7 @@ H盘	hpj
 婵娟	ijjr
 超级计算	ijjs
 镵	ijjt
+掺假	ijjw
 产假	ijjw
 缠结	ijjx
 啴	ijk
@@ -33618,6 +33618,7 @@ H盘	hpj
 巉	ijut
 阐述	ijuu
 羼	ijuu
+掺水	ijuv
 羼	ijuy
 长江上游	ijuy
 成就事业	ijuy
@@ -33684,6 +33685,7 @@ H盘	hpj
 谄	ijyx
 襜	ijyy
 躔	ijz
+掺杂	ijzao
 串家走户	ijzh
 产自	ijzi
 筹集资金	ijzj
@@ -34480,6 +34482,7 @@ I盘	ipj
 春秋战国	iqvg
 长驱直入	iqvr
 出奇制胜	iqvu
+长期主义	iqvy
 春秋五霸	iqwb
 超强五笔	iqwb
 重庆卫视	iqwu
@@ -40497,6 +40500,7 @@ JK制服	jkvf
 家庭妇女	jtfn
 撅	jtfq
 具体分析	jtfx
+静态分析	jtfx
 攫	jtfy
 绝非	jtfz
 姜太公钓鱼愿者上钩	jtgg
@@ -41208,8 +41212,8 @@ JK制服	jkvf
 进身之阶	juvj
 剧照	juvk
 举债	juvl
-接受治疗	juvl
 举手之劳	juvl
+接受治疗	juvl
 筥	juvl
 举世瞩目	juvm
 具身智能	juvn
@@ -43290,8 +43294,8 @@ JK制服	jkvf
 空不异色	kbys
 口语	kbyu
 可别怨我	kbyw
-脍不厌细	kbyx
 刻板印象	kbyx
+脍不厌细	kbyx
 口不应心	kbyx
 恐怖游戏	kbyx
 可变资本	kbzb
@@ -43592,6 +43596,7 @@ JK制服	jkvf
 嗑	kekm
 可控	keks
 刻苦	keku
+柯尔克孜	kekz
 柯尔克孜族	kekz
 克拉	kela
 可乐	kele
@@ -52019,6 +52024,7 @@ JK制服	jkvf
 盟邦	mgbh
 蒙蔽	mgbi
 懵逼	mgbi
+蒙版	mgbj
 忙个不停	mgbt
 蒙	mgc
 萌	mgcm
@@ -53695,7 +53701,7 @@ JK制服	jkvf
 陌	moe
 鄚	moem
 摩尔	moer
-摸	mof
+抹	mof
 魔法	mofa
 磨粉	moff
 模仿	mofh
@@ -57090,6 +57096,7 @@ JK制服	jkvf
 能力越大责任越大	nlyd
 奶羊	nlyh
 捏了一把汗	nlyh
+能量饮料	nlyl
 哪里有卖	nlym
 纳兰嫣然	nlyr
 耐用	nlys
@@ -70184,8 +70191,8 @@ P站	pvj
 扫码登陆	smdl
 苏门答腊	smdl
 什么东西	smdx
-什么都没有	smdy
 什么都有	smdy
+什么都没有	smdy
 死马当活马医	smdy
 死马当作活马医	smdy
 什么都不做	smdz
@@ -71935,6 +71942,7 @@ P站	pvj
 投身	tbuf
 挑拨是非	tbuf
 偷生	tbug
+淘宝闪购	tbug
 头上	tbuh
 谈不上好	tbuh
 透视	tbui
@@ -91961,6 +91969,7 @@ U盘	upj
 问题解决	wtjj
 味同嚼蜡	wtjl
 无条件反射	wtju
+无糖可乐	wtkl
 文体两开花	wtlh
 问题来了	wtll
 委托律师	wtlu
@@ -96400,6 +96409,7 @@ U盘	upj
 信服	xnfu
 心腹	xnfu
 心扉	xnfz
+心肺	xnfz
 新歌	xnge
 心梗	xngg
 新年广场	xngi
@@ -108595,6 +108605,8 @@ U盘	upj
 最低价格	zdjg
 自动检索	zdjs
 自动加速	zdjs
+自动驾驶系统	zdjt
+自动驾驶	zdju
 自动驾驶仪	zdjy
 自动开关	zdkg
 自动控制原理	zdkl
@@ -113825,6 +113837,7 @@ CD机	cdj
 地对空	ddk
 得到了	ddl
 大道理	ddl
+大动脉	ddm
 担担面	ddm
 电灯泡	ddp
 对得起	ddq
@@ -116031,6 +116044,7 @@ git	git
 俱乐部	jlb
 加勒比	jlb
 接力棒	jlb
+近邻宝	jlb
 家里蹲	jld
 交流电	jld
 金銮殿	jld
@@ -116245,6 +116259,7 @@ git	git
 看得懂	kdd
 空荡荡	kdd
 看得惯	kdg
+快递柜	kdg
 肯定会	kdh
 看得出	kdi
 刻度尺	kdi
@@ -116263,6 +116278,7 @@ git	git
 宽带网	kdw
 可读性	kdx
 扛得下	kdx
+快递员	kdy
 看电影	kdy
 开发版	kfb
 咖啡馆	kfg
@@ -118575,6 +118591,7 @@ SD卡	sdk
 捅娄子	tlz
 挑毛病	tmb
 他妈的	tmd
+同盟国	tmg
 套马杆	tmg
 他们家	tmj
 太慢了	tml
@@ -119754,7 +119771,7 @@ SD卡	sdk
 外蒙古	wmg
 污名化	wmh
 我们家	wmj
-我没进	wmj
+外卖架	wmj
 误码率	wml
 雾蒙蒙	wmm
 未命名	wmm
@@ -119794,6 +119811,7 @@ WPS	wps
 为前提	wqt
 文曲星	wqx
 Word	wrd
+无人车	wri
 无人机	wrj
 万人坑	wrk
 万人迷	wrm
@@ -120345,6 +120363,7 @@ Word	wrd
 洗衣粉	xyf
 洗衣服	xyf
 下一个	xyg
+协约国	xyg
 西洋画	xyh
 小阳春	xyi
 洗衣机	xyj
@@ -120688,6 +120707,7 @@ Word	wrd
 一屁股	ypg
 有魄力	ypl
 一平米	ypm
+油泼面	ypm
 一片片	ypp
 压迫者	ypv
 硬碰硬	ypy
@@ -121017,6 +121037,7 @@ Word	wrd
 紫荆花	zjh
 紫禁城	zji
 总经理	zjl
+字节码	zjm
 早几年	zjn
 自决权	zjq
 自己人	zjr
