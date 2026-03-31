@@ -22,7 +22,8 @@ patch:
   reverse_tiger/tips: 〔环〕
   reverse_tick/dictionary: "huan"
   reverse_tick/tips: 〔环〕
-  
+  recognizer/patterns/add_pattern: "^[A-Za-z]+[A-Za-z=_\\-]+$"  # 使-=_在字母后面之后可以当成输入字符处理
+  # speller/alphabet: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ/; # 使用默认的
   smart/contextual_suggestions: false  # 如果使用contextual suggestion 会导致删除字后打的字受上下文影响
   smart/preedit_format/+:
     - xform|([a-z][a-z][a-z][a-z]?)/|$1°|
@@ -82,6 +83,9 @@ patch:
     - {when: always, accept: Control+Shift+asterisk, toggle: ascii_punct}
     - {when: has_menu, accept: Shift+Tab, send: Control+Left}
     - {when: has_menu, accept: Control+j, toggle: mine_t_to_s }
+    - { when: has_menu, accept: minus, send: minus }
+    - { when: has_menu, accept: equal, send: equal }
+    - { when: has_menu, accept: Shift+minus, send: underscore }
   moran/fix_end/+:
     a: 啊
     b: 吧
