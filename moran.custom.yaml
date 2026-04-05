@@ -11,10 +11,10 @@ patch:
   ascii_composer/switch_key/Shift_L: noop
   ascii_composer/switch_key/Shift_R: noop
   ascii_composer/switch_key/Control_L: commit_code
-  ascii_composer/switch_key/Control_R: commit_text
+  # ascii_composer/switch_key/Control_R: commit_text
+  ascii_composer/switch_key/Control_R: inline_ascii
   ascii_composer/switch_key/Caps_Lock: clear
   ascii_composer/switch_key/Eisu_toggle: clear
-  
   emoji/tips: all
   style/horizontal: false
   fixed/dictionary: moran_fixed_pre
