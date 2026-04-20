@@ -27706,8 +27706,8 @@
 辧	xx	辛辛	
 辨	dx	刂辛	
 辨	xx	辛辛	
-辩	xx	辛辛	
 辩	yx	讠辛	
+辩	xx	辛辛	
 辪	xv	辛𠂤	
 辪	vx	止辛	
 辫	sx	纟辛	
@@ -67675,7 +67675,7 @@
 𨚛	be	匕阝	auto
 𨚜	eg	阝{干}	
 𨚜	be	丷阝	
-𨚟	de	冬阝	auto
+𨚟	de	阝冬	
 𨚠	gy	甘邑	auto
 𨚠	yg	邑甘	auto
 𨚡	le	了阝	auto
@@ -100119,6 +100119,8 @@
 𰽆	jx	金心	
 𬨤	zg	辶亘	
 𮍐	ga	戈一	
+𨛗	ey	阝邑	
+𨛗	ye	邑阝	
 
 # 待考
 

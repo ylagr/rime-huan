@@ -5,7 +5,7 @@
 
 ---
 name: moran_fixed_simp
-version: "20260324"
+version: "20260410"
 sort: original
 columns:
   - text
@@ -16246,6 +16246,7 @@ D盘	dpj
 而非	ef
 阿房宫赋	efgf
 二分查找	efiv
+二分搜索	efss
 二分之一	efvy
 二分音符	efyf
 嗯	eg
@@ -27636,6 +27637,7 @@ H股	hgu
 好吃好喝	hihh
 胡吃海喝	hihh
 呼哧呼哧	hihi
+胡吃海塞	hihs
 或迟或早	hihz
 红橙黄绿青蓝紫	hihz
 红橙黄绿蓝靛紫	hihz
@@ -45548,6 +45550,7 @@ JK制服	jkvf
 看着都疼	kvdt
 揆度	kvdu
 愧对	kvdv
+亏得	kvdz
 聩	kve
 聩	kveg
 揆	kvf
@@ -45563,6 +45566,7 @@ JK制服	jkvf
 戣	kvgt
 空中管制	kvgv
 开展工作	kvgz
+客制化	kvh
 开展活动	kvhd
 愧恨	kvhf
 亏耗	kvhk
@@ -47124,6 +47128,7 @@ JK制服	jkvf
 冷眼	lgyj
 冷饮	lgyn
 两个月内	lgyn
+理固宜然	lgyr
 冷遇	lgyu
 灵光一闪	lgyu
 灵光一现	lgyx
@@ -62824,7 +62829,6 @@ P站	pvj
 七日	qiri
 凄然	qirj
 枪出如龙	qirl
-其臭如兰	qirl
 气喘如牛	qirn
 欺辱	qiru
 俟	qiru
@@ -96860,11 +96864,11 @@ U盘	upj
 性情豪爽	xqhu
 休会	xqhv
 绣花	xqhw
-髹	xqi
+䗛	xqi
 修车	xqie
 修长	xqih
 羞耻	xqii
-䗛	xqix
+髹	xqix
 锈	xqj
 修脚	xqjc
 锈迹	xqji
@@ -115722,6 +115726,7 @@ git	git
 差转台	ivt
 称之为	ivw
 出主意	ivy
+纯文本	iwb
 超文本	iwb
 吃完饭	iwf
 成文法	iwf
