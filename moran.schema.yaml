@@ -95,16 +95,20 @@ engine:
     - lua_filter@*moran_ijrq_filter
     - lua_filter@*moran_hint_filter
     - simplifier@emoji
+    - simplifier@simplifier
     - simplifier@chaifen
     - simplifier@pinyinhint
     - simplifier@std_hk
     - simplifier@std_tw
     - simplifier@std_dzing
-    - simplifier@simplifier
     - lua_filter@*moran_charset_comment_filter  # Unicode 區位提示
     - lua_filter@*moran_unicode_display_filter  # Unicode 編碼提示
     - lua_filter@*moran_english_filter
     - uniquifier
+
+navigator:
+  # 在音節跳轉時，跳過音節末尾的分隔符 ' ，設爲 after_delimiter 恢復 Rime 默認行爲
+  syllable_jump_position: before_delimiter
 
 speller:
   alphabet: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ/;

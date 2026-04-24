@@ -75,10 +75,10 @@ engine:
   filters:
     #- lua_filter@*moran_hint_filter           # 輔助碼提示需要去掉本行開頭的 # 符號
     - lua_filter@*moran_charset_filter     # 字集過濾需要去掉本行開頭的 # 符號
-    - simplifier@chaifen
-    - simplifier@pinyinhint
     - simplifier@emoji
     - simplifier
+    - simplifier@chaifen
+    - simplifier@pinyinhint
     - simplifier@std_tw
     - simplifier@std_hk
     - simplifier@std_dzing
@@ -86,6 +86,10 @@ engine:
     - lua_filter@*moran_unicode_display_filter  # Unicode 編碼提示
     - lua_filter@*moran_english_filter
     - uniquifier
+
+navigator:
+  # 在音節跳轉時，跳過音節末尾的分隔符 ' ，設爲 after_delimiter 恢復 Rime 默認行爲
+  syllable_jump_position: before_delimiter
 
 speller:
   alphabet: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ/
