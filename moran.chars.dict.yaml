@@ -6,7 +6,7 @@
 
 ---
 name: moran.chars
-version: "20260420"
+version: "20260424"
 sort: by_weight
 use_preset_vocabulary: false
 ...
@@ -2810,7 +2810,9 @@ use_preset_vocabulary: false
 㫁	dr;jw	0
 㫂	vu;ju	0
 㫃	yj;fr	0
+㫄	ph;fg	0
 㫄	ph;ff	0
+㫄	ph;wf	0
 㫅	ia;fq	0
 㫅	qi;fq	0
 㫅	ui;fq	0
@@ -20289,6 +20291,10 @@ use_preset_vocabulary: false
 揇	nj;fn	316
 揈	hs;fh	274
 揈	hs;fy	274
+揈	xr;fh	0
+揈	xr;fy	0
+揈	ju;fh	0
+揈	ju;fy	0
 揉	rb;fr	1644
 揊	ie;ff	0
 揊	ie;ft	0
@@ -27199,6 +27205,9 @@ use_preset_vocabulary: false
 爿	qd;aa	565
 爿	qd;pj	565
 爿	qd;vu	565
+爿	id;aa	565
+爿	id;pj	565
+爿	id;vu	565
 牀	id;pm	4858
 牁	ge;pk	498
 牁	ke;pk	0
@@ -28469,8 +28478,7 @@ use_preset_vocabulary: false
 甬	ys;sy	742
 甭	bg;by	908
 甮	bg;wy	340
-甮	fg;wy	0
-甮	fs;wy	340
+甮	fg;wy	340
 甯	ny;by	1239
 田	tm;aa	5643
 由	yb;aa	47431
@@ -55150,8 +55158,8 @@ use_preset_vocabulary: false
 𡤿	ks;zr	0
 𡥀	bk;zb	0
 𡥁	yi;zd	0
-𡥂	cp;za	0
-𡥂	cp;pz	0
+𡥂	cp;uz	0
+𡥂	cp;zu	0
 𡥃	hk;zn	0
 𡥄	ci;zk	0
 𡥅	cp;fz	0
@@ -116541,6 +116549,7 @@ use_preset_vocabulary: false
 𰛃	yp;fo	0
 𰛃	yp;fr	0
 𰛅	le;ap	0
+𰛅	ll;ap	0
 𰛆	ys;pu	0
 𰛉	lk;dm	0
 𰛉	mf;dm	0
@@ -122596,8 +122605,10 @@ use_preset_vocabulary: false
 𲃏	ze;zz	0
 𲃏	zo;zz	0
 𲃒	sb;zq	0
-𲃕	zy;xz	0
-𲃕	zy;zx	0
+𲃕	ui;xz	0
+𲃕	ui;zx	0
+𲃕	vy;xz	0
+𲃕	vy;zx	0
 𲃖	ll;zm	0
 𲃘	if;zy	0
 𲃜	ju;zn	0
@@ -124078,7 +124089,6 @@ use_preset_vocabulary: false
 𲡟	nl;uk	0
 𲡟	nl;ku	0
 𲡠	fh;fh	0
-𲡠	fy;fh	0
 𲡠	hv;fh	0
 𲡠	nx;fh	0
 𲡡	ll;fl	0
@@ -125576,7 +125586,7 @@ use_preset_vocabulary: false
 𲾘	he;iv	0
 𲾘	he;vi	0
 𲾙	my;im	0
-𲾚	sx;ix	0
+𲾚	xm;ix	0
 𲾛	tv;ii	0
 𲾜	mi;im	0
 𲾝	jd;pi	0
@@ -126621,3 +126631,5 @@ use_preset_vocabulary: false
 𬨤	hr;zg	0
 𬨤	yr;zg	0
 𮍐	zh;ga	0
+𰛄	pl;aa	0
+𰛄	aa;aa	0
