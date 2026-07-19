@@ -1,0 +1,19 @@
+# Rime user dictionary
+#@/db_name	luna_pinyin
+#@/db_type	userdb
+#@/rime_version	1.17.0
+#@/tick	11
+#@/user_id	rime-huan
+a 	啊	c=4 d=3.92595 t=11
+an shi 	暗示	c=0 d=0.0995012 t=11
+an shi dui fang 	暗示對方	c=1 d=1 t=11
+de 	的	c=1 d=0.99005 t=11
+dui fang 	對方	c=0 d=0.0995012 t=11
+fa 	發	c=1 d=0.995012 t=11
+hui yi 	會議	c=0 d=0.0995012 t=11
+mei you 	沒有	c=1 d=0.99005 t=11
+shi 	是	c=1 d=0.985112 t=11
+shi yong 	使用	c=1 d=0.995012 t=11
+ta 	他	c=1 d=0.951229 t=11
+teng xun 	騰訊	c=0 d=0.0995012 t=11
+teng xun hui yi 	騰訊會議	c=1 d=1 t=11
