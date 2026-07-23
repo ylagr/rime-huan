@@ -16,6 +16,7 @@
 
 ## Documentation
 
+- **index of all pages**: https://moran.rimeinn.org/book/contents.md
 - **summary of files**: https://moran.rimeinn.org/book/maintenance/files.md
 - **schema framework**: https://moran.rimeinn.org/book/maintenance/config.md
 - **moran** options: https://moran.rimeinn.org/book/usage/features.md
