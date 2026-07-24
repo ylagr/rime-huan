@@ -10,17 +10,17 @@
 - Depends on Python uv.
 - If this is a git repo, first check if it's on the main branch. If so, refer to README.md's last section for how to initialize the repo.
 - For details, refer to:
-  + Setup dev environment: https://zrmfans.cn/book/develop/setup.md
-  + Common dev tasks: https://zrmfans.cn/book/develop/cheatsheet.md
-  + Schemagen.py usage: https://zrmfans.cn/book/develop/schemagen/index.md
+  + Setup dev environment: https://moran.rimeinn.org/book/develop/setup.md
+  + Common dev tasks: https://moran.rimeinn.org/book/develop/cheatsheet.md
+  + Schemagen.py usage: https://moran.rimeinn.org/book/develop/schemagen/index.md
 
 ## Documentation
 
-- **summary of files**: https://zrmfans.cn/book/maintenance/files.md
-- **schema framework**: https://zrmfans.cn/book/maintenance/config.md
-- **moran** options: https://zrmfans.cn/book/usage/features.md
-- **moran_fixed** options: https://zrmfans.cn/book/schemas/zici/features.md
-- **moran_aux** options: https://zrmfans.cn/book/schemas/fushai/features.md
+- **summary of files**: https://moran.rimeinn.org/book/maintenance/files.md
+- **schema framework**: https://moran.rimeinn.org/book/maintenance/config.md
+- **moran** options: https://moran.rimeinn.org/book/usage/features.md
+- **moran_fixed** options: https://moran.rimeinn.org/book/schemas/zici/features.md
+- **moran_aux** options: https://moran.rimeinn.org/book/schemas/fushai/features.md
 - **moran_sentence** is a cut-down version of moran, see the yaml file and compare to moran.schema.yaml
 
 ## Commit message conventions
