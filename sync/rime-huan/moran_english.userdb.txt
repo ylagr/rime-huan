@@ -2,6 +2,7 @@
 #@/db_name	moran_english
 #@/db_type	userdb
 #@/rime_version	1.13.1
-#@/tick	1
+#@/tick	2
 #@/user_id	rime-huan
-description 	description	c=1 d=1 t=1
+description 	description	c=1 d=1 t=2
+scope 	scope	c=1 d=1 t=2

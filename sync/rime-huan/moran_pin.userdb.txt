@@ -4,4 +4,4 @@
 #@/rime_version	1.13.1
 #@/tick	1
 #@/user_id	rime-huan
-https: 	https://ics.chinasoftinc.com	c=14547016 d=0 t=1
+https: 	https://ics.chinasoftinc.com	c=-14601319 d=0 t=1
