@@ -1,5 +1,7 @@
 # Rime user dictionary
 #@/db_name	moran_pin
 #@/db_type	userdb
-#@/rime_version	1.17.0
+#@/rime_version	1.13.1
+#@/tick	1
 #@/user_id	rime-huan
+https: 	https://ics.chinasoftinc.com	c=14547016 d=0 t=1

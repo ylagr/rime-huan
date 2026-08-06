@@ -1,6 +1,7 @@
 # Rime user dictionary
 #@/db_name	moran_english
 #@/db_type	userdb
-#@/rime_version	1.17.0
-#@/tick	0
+#@/rime_version	1.13.1
+#@/tick	1
 #@/user_id	rime-huan
+description 	description	c=1 d=1 t=1

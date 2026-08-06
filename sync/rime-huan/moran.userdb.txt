@@ -1,6 +1,794 @@
 # Rime user dictionary
 #@/db_name	moran
 #@/db_type	userdb
-#@/rime_version	1.17.0
-#@/tick	0
+#@/rime_version	1.13.1
+#@/tick	2765
 #@/user_id	rime-huan
+aa;ka 	啊	c=41 d=2.27782 t=2681
+an;bn vd;yv 	安裝	c=8 d=1.7226 t=2582
+an;fa vk;hv 	按照	c=2 d=1.00445 t=2511
+ba;fb 	把	c=3 d=1.16292 t=2003
+ba;kb 	吧	c=11 d=2.02468 t=2543
+bc;fy 	表	c=12 d=4.32324 t=2406
+bc;fy dj;kd 	表單	c=1 d=1 t=2368
+bc;fy my;oo 	表明	c=1 d=1 t=1262
+bc;mp ui;yg 	標識	c=1 d=1 t=1071
+bf;aa di;ty 	本地	c=6 d=1.8665 t=2050
+bi;bb jc;ij 	比較	c=1 d=1 t=2246
+bi;dd tm;tv 	必填	c=1 d=1 t=2362
+bi;dd xu;py 	必須	c=1 d=1 t=181
+bi;dd xu;py yk;xn 	必須要	c=1 d=1 t=2583
+bi;vy ji;yj 	筆記	c=2 d=1.99501 t=48
+bj;dw 	班	c=1 d=1 t=1059
+bj;pf bf;aa 	版本	c=3 d=1.0001 t=2326
+bk;ex 	報	c=1 d=1 t=1104
+bk;fb qm;qj 	抱歉	c=1 d=1 t=214
+bk;gs 	包	c=8 d=1.98027 t=2591
+bk;gs hj;rk 	包含	c=2 d=1.06142 t=769
+bk;gs ko;fu 	包括	c=1 d=1 t=1671
+bk;rd lq;td 	保留	c=0 d=0.1 t=2521
+bm;sb hk;hh 	編號	c=1 d=1 t=1680
+bm;sb yi;yx 	編譯	c=1 d=1 t=540
+bm;ws 	變	c=1 d=1 t=1169
+bm;ws ld;ol 	變量	c=3 d=1.36856 t=2629
+bm;ws yi;tg 	變異	c=1 d=1 t=539
+bu;ad 	不	c=13 d=1.55638 t=2531
+bu;ad bk;gs hj;rk 	不包含	c=2 d=1.00011 t=2405
+bu;ad dk;dv 	不到	c=1 d=1 t=434
+bu;ad dv;ct 	不對	c=1 d=1 t=1779
+bu;ad gb;dj ys;kf 	不夠用	c=1 d=1 t=1764
+bu;ad gz;sh 	不給	c=1 d=1 t=392
+bu;ad hk;nz ns;cw 	不好弄	c=1 d=1 t=2680
+bu;ad iu;aa ll;ad 	不出來	c=0 d=0.1 t=709
+bu;ad jx;jn mi;ub 	不解密	c=1 d=1 t=2026
+bu;ad lc;aa 	不了	c=3 d=2.98506 t=2201
+bu;ad lc;md 	不料	c=1 d=1 t=2196
+bu;ad ng;sb 	不能	c=7 d=1.26697 t=2712
+bu;ad qy;dq iu;mp 	不清楚	c=1 d=1 t=1036
+bu;ad rj;hq 	不然	c=1 d=1 t=1787
+bu;ad tl;dd ng;sb 	不太能	c=1 d=1 t=1724
+bu;ad ts;kk 	不同	c=5 d=4.20873 t=2331
+bu;ad ts;zy 	不通	c=1 d=1 t=170
+bu;ad vi;ku dk;zu 	不知道	c=2 d=1.09027 t=1880
+bu;ad xy;xi 	不行	c=2 d=1.00213 t=1839
+bu;ad yi;aa dy;bp 	不一定	c=1 d=1 t=1064
+bu;ad yi;aa yh;my 	不一樣	c=1 d=1 t=1423
+bu;ad ys;kf 	不用	c=3 d=1.19502 t=2395
+bu;ad yy;pj xd;yx 	不影響	c=2 d=1.0185 t=1728
+bx;dd rf;pd 	別人	c=1 d=1 t=2568
+by;qy 	並	c=2 d=1.9802 t=1575
+bz;ag jy;wx 	北京	c=1 d=1 t=1315
+bz;ag jy;wx ui;wj 	北京市	c=1 d=1 t=1361
+ce;dz ui;yu 	測試	c=9 d=1.48632 t=2402
+ce;dz ui;yu uh;aa mm;aa 	測試上面	c=1 d=1 t=2375
+cg;bo 	曾	c=1 d=1 t=1553
+cg;uc 	層	c=1 d=1 t=1554
+cg;uc ji;sj 	層級	c=1 d=1 t=453
+ch;rk ku;gi 	倉庫	c=7 d=2.60664 t=2646
+ck;fz zo;rv 	操作	c=1 d=1 t=1644
+co;jx 	錯	c=1 d=1 t=1105
+co;jx wu;yw ma;um 	錯誤碼	c=1 d=1 t=1380
+cp;uz zl;ut 	存在	c=1 d=1 t=1597
+cs;ac 	丛	c=1 d=1 t=498
+cs;xv 	從	c=2 d=1.00415 t=1975
+da;fd kl;mk 	打開	c=1 d=1 t=1249
+da;fd rk;fy 	打擾	c=0 d=0.1 t=236
+da;fd rk;fy xw;ab 	打擾下	c=2 d=1.26448 t=503
+da;fd yn;ey 	打印	c=1 d=1 t=1442
+db;ev 	都	c=7 d=2.07412 t=2699
+db;ev bu;ad vi;ku dk;zu 	都不知道	c=1 d=1 t=2418
+db;ev ke;dk yi;rd 	都可以	c=1 d=1 t=2066
+db;ev mz;du ns;cw wj;by 	都沒弄完	c=1 d=1 t=1874
+db;ev ui;op 	都是	c=3 d=1.35021 t=2571
+db;ev yb;ou 	都有	c=1 d=1 t=2720
+db;ev yk;xn 	都要	c=1 d=1 t=102
+dc;yv 	調	c=2 d=1.83946 t=1856
+dc;yv yj;uk 	調研	c=1 d=1 t=764
+dc;yv ys;kf 	調用	c=3 d=1.15621 t=2458
+dc;yv ys;kf wo;pd de;bu 	調用我的	c=1 d=1 t=2208
+de;bu 	的	c=0 d=0.1 t=2145
+dg;dd lu;jl 	登錄	c=4 d=2.62954 t=615
+dg;dd lu;jl go;zg 	登錄過	c=1 d=1 t=99
+dh;dt qm;qd 	當前	c=4 d=1.01478 t=2653
+dh;md an;ma 	檔案	c=2 d=1.29523 t=1235
+dh;md an;ma ka;ub 	檔案卡	c=3 d=1.58317 t=1231
+di;ty fh;wd 	地方	c=1 d=1 t=2698
+di;ty vi;tv 	地址	c=11 d=0.504146 t=2185
+di;vp yi;aa bu;vx 	第一步	c=1 d=1 t=1333
+dj;kd du;qu 	單獨	c=8 d=1.28984 t=2573
+dj;kd ge;rg 	單個	c=1 d=1 t=812
+dj;kd yr;aw 	單元	c=1 d=1 t=1365
+dj;rd ui;op 	但是	c=2 d=1.0488 t=1770
+dk;dv 	到	c=4 d=0.122823 t=2651
+dk;dv ui;os hb;ru 	到時候	c=2 d=1.0147 t=1729
+dk;zu 	道	c=3 d=2.98506 t=1478
+dl;jb 	帶	c=1 d=1 t=2468
+dl;jb uh;aa qu;ts 	帶上去	c=1 d=1 t=2689
+dl;ry ma;um 	代碼	c=10 d=1.05323 t=2404
+dn 	的	c=277 d=22.5746 t=2764
+do;xx 	多	c=4 d=2.61509 t=2160
+do;xx ge;rg 	多個	c=1 d=1 t=1150
+do;xx tc;rt jm;rn 	多條件	c=2 d=1.97045 t=1138
+do;xx uk;xp 	多少	c=1 d=1 t=1937
+do;xx vs;hv 	多種	c=1 d=1 t=2105
+do;xx xm;sq ig;hi 	多線程	c=1 d=1 t=1953
+dr;le 	端	c=2 d=1.12873 t=827
+dr;le du;gy 	端度	c=1 d=1 t=947
+dr;le kb;aa 	端口	c=1 d=1 t=1095
+dr;le kb;aa hk;hh 	端口號	c=1 d=1.08311 t=494
+dr;le kb;aa hk;hh vj;rv ys;kf 	端口號佔用	c=1 d=1 t=458
+dr;ud ui;os jm;mo 	短時間	c=1 d=1 t=2252
+ds;ad xi;aa 	東西	c=2 d=1.00038 t=2540
+ds;lv tl;xn 	動態	c=3 d=2.68247 t=2285
+du;ym bu;ad dk;dv 	讀不到	c=1 d=1 t=611
+du;ym qu;ey 	讀取	c=2 d=1.96079 t=441
+dv;ct 	對	c=1 d=1 t=2693
+dv;ct yy;xv 	對應	c=5 d=1.33622 t=2501
+dz;xc 	得	c=1 d=1 t=1908
+ee;yk 	額	c=2 d=1.14515 t=1421
+ee;yk du;gy 	額度	c=2 d=1.35345 t=2143
+ee;yk wl;xb 	額外	c=1 d=1 t=2243
+en;ke en;ke 	嗯嗯	c=22 d=1.44269 t=2057
+en;xy 	恩	c=3 d=1.05064 t=2407
+fa;du 	發	c=3 d=1.02733 t=1840
+fa;du bu;rb 	發佈	c=1 d=1 t=1938
+fa;du ni;re 	發你	c=1 d=1 t=2055
+ff;bd le;aa 	分了	c=0 d=0.1 t=2316
+ff;bd le;aa ge;wk lz;yl 	分了各類	c=1 d=1 t=2317
+ff;bd lz;yl 	分類	c=3 d=2.80209 t=2309
+ff;bd vi;uy 	分支	c=5 d=3.63031 t=1017
+ff;bd ye;ab 	分頁	c=2 d=1.65377 t=2154
+fg;ji ge;mg 	風格	c=2 d=1.00427 t=2521
+fh;ef dk;mc 	防盜	c=2 d=1.97531 t=1465
+fh;fw 	放	c=1 d=1 t=2687
+fh;hf jm;mo 	房間	c=17 d=5.75006 t=2488
+fh;hf jm;mo my;xk 	房間名	c=1 d=1 t=2424
+fh;hf jm;mo uu;wl 	房間數	c=1 d=1 t=1499
+fh;wd an;ma 	方案	c=1 d=1 t=396
+fh;wd fa;dq 	方法	c=7 d=1.18356 t=2442
+fh;wd ui;gy 	方式	c=2 d=1.00823 t=2452
+fh;wf dk;dv 	放到	c=3 d=1.03627 t=2266
+fh;wf zl;ut 	放在	c=1 d=1 t=379
+fh;yf wf;mk 	訪問	c=6 d=2.1917 t=2195
+fj;ve wf;wi 	範文	c=0 d=0.1 t=2185
+fj;ve wf;wi di;ty vi;tv 	範文地址	c=1 d=1 t=2186
+fj;yf yi;yx 	翻譯	c=2 d=1.99005 t=1927
+fj;zf hv;kk 	返回	c=4 d=1.61165 t=2453
+fj;zf le;aa 	返了	c=1 d=1 t=1852
+fu;ef jm;rn 	附件	c=2 d=1.29671 t=1828
+fu;oy wu;mw 	服務	c=2 d=1.00171 t=1859
+fu;oy wu;mw qi;kk 	服務器	c=1 d=1 t=107
+fu;uf jm;zy 	福建	c=1 d=1 t=1584
+fu;xf gl;ch 	覆蓋	c=1 d=1 t=521
+fu;yf vi;yv 	複製	c=1 d=1 t=451
+fz;ff qq;hh 	飛秋	c=3 d=1.02725 t=1842
+ge;mg ui;gy 	格式	c=4 d=1.13792 t=2369
+ge;rg 	個	c=92 d=5.31429 t=2745
+ge;wk lz;yl 	各類	c=0 d=0.1 t=2316
+gf;mg ju;fj 	根據	c=2 d=1.90032 t=895
+gf;zg ni;re uo;yd 	跟你說	c=1 d=1 t=1471
+gg;ad da;ad 	更大	c=1 d=1 t=1946
+gg;ad do;xx 	更多	c=1 d=1 t=2141
+gj;ug wj;by 	幹完	c=1 d=1 t=1065
+gj;xx jt;jb 	感覺	c=1 d=1 t=1062
+gk;fg ds;xd 	搞懂	c=1 d=1 t=715
+gl;mj nm;xj 	概念	c=1 d=1 t=776
+gl;wj 	改	c=5 d=1.85307 t=2761
+gl;wj ds;lv 	改動	c=1 d=1 t=2539
+gl;wj ig;gg 	改成	c=1 d=1 t=1860
+gl;wj le;aa 	改了	c=1 d=0.101288 t=1814
+gl;wj le;aa xw;ab 	改了下	c=1 d=1 t=1815
+gl;wj yi;aa xw;ab 	改一下	c=2 d=1.3624 t=1089
+gl;yh 	該	c=2 d=1.67706 t=2710
+go;zg 	過	c=3 d=2.40636 t=491
+go;zg ll;ad 	過來	c=0 d=0.1 t=2145
+go;zg uf;bf 	過審	c=1 d=1 t=454
+gr;bg wh;sw 	官網	c=1 d=1 t=1373
+gr;ma lm;ea 	關聯	c=3 d=1.99017 t=2134
+gr;ma lm;ea gr;ma xi;rx 	關聯關係	c=1 d=1 t=1587
+gr;ma xi;rx 	關係	c=2 d=1.00377 t=2109
+gr;vg 	管	c=0 d=0.1 t=2580
+gr;vg li;wl 	管理	c=2 d=1.24171 t=799
+gr;vg li;wl yr;kb 	管理員	c=1 d=1 t=7
+gs;aa 	工	c=2 d=1.16365 t=1055
+gs;aa ju;ba 	工具	c=5 d=2.79284 t=2145
+gs;aa ju;ba lz;yl 	工具類	c=1 d=1 t=1615
+gs;aa ui;os 	工時	c=3 d=2.91678 t=1771
+gs;aa zi;bc 	工資	c=2 d=1.00034 t=1781
+gs;aa zo;rv 	工作	c=3 d=1.18281 t=2551
+gs;lg ng;sb 	功能	c=8 d=1.0495 t=2152
+gs;sb gs;cb 	公共	c=1 d=1 t=2173
+gu;kg dy;bp 	固定	c=2 d=1.03782 t=2350
+gv;pd 	鬼	c=1 d=1 t=1871
+gz;sh 	給	c=7 d=4.21734 t=2650
+gz;sh ni;re 	給你	c=1 d=1 t=2169
+gz;sh wo;pd 	給我	c=5 d=1.07899 t=2516
+gz;sh wo;pd uo;yd 	給我說	c=1 d=1 t=1019
+hb;xw 	後	c=2 d=1.00003 t=2515
+hb;xw dr;le 	後端	c=14 d=2.19906 t=2213
+hb;xw dr;le pk;zb qi;zj ll;ad 	後端跑起來	c=1 d=1 t=555
+hb;xw mm;aa 	後面	c=2 d=1.39063 t=1788
+hb;xw qi;oq 	後期	c=1 d=1 t=2240
+hb;xw tl;uv 	後臺	c=1 d=1 t=1310
+hb;xw vv;su 	後綴	c=1 d=1 t=1080
+he;hk 	和	c=17 d=1.95699 t=2333
+he;kh qi;zj ll;ad 	喝起來	c=1 d=1 t=1655
+he;rk by;rb 	合併	c=1 d=1 t=1102
+he;rk dk;dv 	合到	c=1 d=1 t=2401
+he;rk qi;zj ll;ad 	合起來	c=1 d=1 t=1656
+hf;xg ky;xd 	很快	c=1 d=1 t=2112
+hh;xd 	行	c=1 d=1 t=1756
+hk;hh 	號	c=1 d=1 t=1769
+hk;hh lb;ml 	號樓	c=1 d=1 t=1364
+hk;nz 	好	c=31 d=1.01149 t=2756
+hk;nz ba;kb 	好吧	c=1 d=1 t=545
+hk;nz jq;pd 	好久	c=1 d=1 t=1961
+hk;nz xd;rx 	好像	c=3 d=1.33562 t=1099
+hk;nz ys;kf 	好用	c=2 d=1.99501 t=1126
+hl;dm xn;ry 	海信	c=4 d=1.03169 t=2073
+hl;zh 	還	c=4 d=0.140418 t=2521
+hl;zh bk;rd lq;td 	還保留	c=1 d=1 t=2522
+hl;zh bu;ad ru;nk 	還不如	c=1 d=1 t=398
+hl;zh dz;xc 	還得	c=1 d=1 t=1903
+hl;zh mz;du 	還沒	c=3 d=1.25061 t=1047
+hl;zh mz;du ce;dz ui;yu 	還沒測試	c=1 d=1 t=2373
+hl;zh ng;sb 	還能	c=2 d=1.27804 t=2576
+hl;zh ui;op 	還是	c=11 d=1.3088 t=1683
+hl;zh ui;op mz;du yb;ou 	還是沒有	c=1 d=1 t=1537
+hl;zh yb;ou 	還有	c=5 d=1.20197 t=2675
+hl;zh yk;xn 	還要	c=5 d=1.84936 t=2329
+hl;zh zl;ut 	還在	c=3 d=1.08129 t=1154
+ho;gk ve;ol 	或者	c=2 d=1.15032 t=2065
+ho;qh qu;ey 	獲取	c=2 d=1.75578 t=1621
+hr;wh jy;tj 	環境	c=6 d=0.976444 t=2682
+hu;pk 	戶	c=2 d=1.00035 t=2423
+hv;kk tv;zg 	回退	c=1 d=1 t=1107
+hv;ro 	會	c=3 d=1.00247 t=2139
+hv;ro zm 	會怎麼	c=1 d=1 t=808
+hw;dh ff;bd 	劃分	c=2 d=1.27665 t=1042
+hw;yu 	話	c=5 d=1.11805 t=2715
+ia;fi jm;rn 	插件	c=5 d=0.944551 t=2580
+ia;fi jm;rn gr;vg li;gp qi;qm 	插件管力氣	c=1 d=1 t=2581
+ia;md 	查	c=1 d=1 t=1820
+ia;md bu;ad iu;aa ll;ad 	查不出來	c=1 d=1 t=2473
+ia;md kj;ou 	查看	c=1 d=1 t=2731
+ia;md xp;yx 	查詢	c=18 d=2.91165 t=1964
+ia;yg bu;ad do;xx 	差不多	c=2 d=1.02317 t=1750
+ia;yg ju;zj 	差距	c=1 d=1 t=1929
+id;dc jm;zy 	創建	c=2 d=1.00497 t=2449
+id;dc jm;zy bc;fy 	創建表	c=0 d=0.1 t=2380
+if;dj jn;dy ui;gy 	沉浸式	c=2 d=1.99005 t=1926
+ig;gg 	成	c=1 d=1 t=1162
+ig;gg gs;lg go;zg 	成功過	c=1 d=1 t=493
+ig;hi xu;gy 	程序	c=1 d=1 t=534
+ig;hi xu;gy my;xk 	程序名	c=1 d=1 t=469
+ih;jk ld;ol 	常量	c=2 d=1.46533 t=1612
+ih;jk vu;mv 	常駐	c=1 d=1 t=2755
+ih;xv ui;yu 	嘗試	c=1 d=1 t=2137
+ir;rv 	傳	c=2 d=1.00016 t=2015
+is;pa qi;kw 	重啓	c=1 d=1 t=1817
+is;pa qi;kw xw;ab 	重啓下	c=1 d=1 t=2747
+iu;aa 	出	c=1 d=1 t=394
+iu;ey le;aa 	除了	c=1 d=1 t=468
+iu;hi li;wl 	處理	c=15 d=1.64196 t=2647
+ja 	加	c=9 d=2.65852 t=2700
+ja bj;pf 	加版	c=1 d=1 t=1058
+ja ge;rg 	加個	c=1 d=1 t=2718
+ja le;aa 	加了	c=2 d=1.26316 t=1187
+ja mi;dd 	加米	c=1 d=1 t=908
+ja zl;ta bu;ad iu;aa ll;ad 	加在不出來	c=1 d=1 t=710
+ji;yj de;xc 	記得	c=1 d=1 t=1088
+jm;mq ia;md 	檢查	c=1 d=1 t=2428
+jm;mq so;sb 	檢索	c=1 d=1 t=913
+jm;vj yi;ow 	簡易	c=1 d=1 t=1148
+jm;zy bc;fy 	建表	c=1 d=1 t=1904
+jm;zy yi;yy 	建議	c=0 d=0.1 t=1146
+jm;zy yi;yy ia;md xp;yx 	建議查詢	c=1 d=1 t=1147
+jn;ra tm;ad 	今天	c=2 d=1.99005 t=2388
+jn;zv qu;ts 	進去	c=1 d=1 t=13
+jn;zv xy;xi vs;aa 	進行中	c=1 d=1 t=745
+jo;yd 	幾	c=1 d=1 t=1766
+jq;yj 	就	c=26 d=2.2677 t=2738
+jq;yj xy;xi 	就行	c=1 d=1 t=2064
+jw;aa gu;go wf;wi 	甲骨文	c=1 d=1 t=1359
+jw;bu 	家	c=0 d=0.1 t=2476
+jw;lk le;aa 	加了	c=1 d=1 t=1611
+jw;lk mi;ub 	加密	c=2 d=1.43605 t=2190
+jw;rj ge;mg 	價格	c=1 d=1 t=1313
+jx;cj kb;aa 	藉口	c=4 d=1.96795 t=1822
+jx;fq kb;aa 	接口	c=3 d=1.46334 t=2220
+jx;gv vi;aa 	截止	c=1 d=1 t=1767
+jx;jn 	解	c=1 d=1 t=2203
+jx;jn mi;ub 	解密	c=4 d=2.4633 t=2218
+jx;jn ya;ty 	解壓	c=2 d=1.8825 t=333
+jx;sj gb;mg 	結構	c=1 d=1 t=1025
+jx;sj go;tm 	結果	c=1 d=1 t=1982
+jx;tj mm;aa 	界面	c=2 d=1.00004 t=2575
+jx;vj dm;hv 	節點	c=3 d=1.85125 t=2269
+jy;jj 	鏡	c=2 d=1.99501 t=2611
+jy;jj xd;rx 	鏡像	c=5 d=3.72943 t=2620
+jy;le 	竟	c=5 d=4.95037 t=2616
+jy;oj xd;du 	景象	c=1 d=1 t=2599
+jy;oj yr;ky 	景園	c=0 d=0.1 t=1362
+jy;sg go;zg 	經過	c=1 d=1 t=940
+jy;wx xi;aa 	京西	c=0 d=0.1 t=1362
+jy;wx xi;aa jy;oj yr;ky 	京西景園	c=1 d=1 t=1363
+ka;bx 	卡	c=2 d=1.9802 t=184
+ka;ub dp;yt 	卡頓	c=1 d=1 t=1930
+ke;bg ty;gt 	客廳	c=1 d=1 t=1682
+ke;dh yu;ba ui;ys 	刻與詩	c=1 d=1 t=1327
+ke;dk yi;rd 	可以	c=15 d=2.63634 t=2678
+kf;ov dy;bp 	肯定	c=2 d=1.29969 t=2489
+kj;ou 	看	c=5 d=1.00229 t=2567
+kj;ou bu;ad dk;dv 	看不到	c=1 d=1 t=708
+kj;ou bu;ad jm;oe 	看不見	c=2 d=1.00001 t=2754
+kj;ou bu;ad lc;aa 	看不了	c=2 d=1.00008 t=2027
+kj;ou dk;dv 	看到	c=2 d=1.00447 t=1119
+kj;ou kj;ou 	看看	c=3 d=1.00126 t=1990
+kj;ou le;aa 	看了	c=1 d=1 t=411
+kj;ou qi;zj ll;ad 	看起來	c=2 d=1.00681 t=1994
+kj;ou ua;ku 	看啥	c=1 d=1 t=1876
+kj;ou xw;ab 	看下	c=1 d=1 t=1808
+kl;mk fa;du 	開發	c=9 d=1.83898 t=2115
+kl;mk hu;pk hh;xi 	開戶行	c=1 d=1 t=1778
+ks;bg 	空	c=3 d=1.04925 t=1255
+ku;gi 	庫	c=4 d=1.25253 t=1240
+kw;zk yu;th 	跨域	c=1 d=1 t=650
+la;cl xw;ab ll;ad 	落下來	c=1 d=1 t=110
+la;fl 	拉	c=1 d=1 t=112
+la;fl go;zg 	拉過	c=1 d=1 t=1474
+lc;ol jx;jn 	瞭解	c=1 d=1 t=748
+ld;ar ge;rg 	兩個	c=4 d=2.08177 t=2672
+ld;ar tm;ad 	兩天	c=1 d=1 t=1761
+ld;ar vh;gi 	兩張	c=1 d=1 t=2298
+le;aa 	了	c=68 d=4.9786 t=2757
+li;gp qi;qm 	力氣	c=0 d=0.1 t=2580
+li;vl xm;sq 	離線	c=2 d=1.38289 t=364
+li;wy 	裏	c=8 d=1.25507 t=2723
+li;wy mm;aa 	裏面	c=14 d=1.54878 t=2706
+lk;lb ui;vb 	老師	c=1 d=1 t=78
+ll;ad 	來	c=1 d=1 t=1649
+lm;ea tc;yv 	聯調	c=3 d=1.27345 t=1085
+lm;jl jx;fq 	鏈接	c=1 d=1 t=1077
+lm;jl ui;gy 	鏈式	c=1 d=1 t=2457
+lm;zi 	連	c=1 d=1 t=716
+lm;zi bu;ad uh;aa 	連不上	c=1 d=1 t=428
+lm;zi jx;fq gs;aa ju;ba 	連接工具	c=1 d=1 t=1117
+lq;di ig;hi 	流程	c=2 d=1.9802 t=1607
+lq;dj ss;mg jx;hm 	劉松杰	c=1 d=1 t=1018
+lq;dl lj;jl qi;kk 	瀏覽器	c=1 d=1 t=1141
+lx;dd bc;fy 	列表	c=6 d=2.07577 t=1639
+lx;mu bc;fy 	毟表	c=1 d=1 t=1638
+ly;wl ho;du 	靈活	c=1 d=1 t=2247
+lz;yl 	類	c=7 d=2.1677 t=2450
+lz;yl bx;dd 	類別	c=1 d=1 t=1286
+lz;yl si;ry 	類似	c=1 d=1 t=2730
+lz;yl xy;tx 	類型	c=4 d=3.02747 t=1677
+ma;gl fj;hy 	麻煩	c=2 d=1.00002 t=2460
+ma;gl fj;hy le;aa 	麻煩了	c=1 d=1 t=1417
+ma;km 	嘛	c=2 d=1.41686 t=677
+mc;fm uu;zu 	描述	c=1 d=1 t=1794
+mi;ub 	密	c=1 d=1 t=910
+mi;ub ma;um 	密碼	c=5 d=1.60826 t=403
+mi;ub yk;jc 	密鑰	c=1 d=1 t=2216
+mm;aa 	面	c=1 d=1 t=23
+mo;hq rf;yr 	默認	c=3 d=1.00418 t=1596
+mo;mm hu;mh 	模糊	c=1 d=1 t=2577
+mo;mm hu;mh ia;md xp;yx 	模糊查詢	c=1 d=1 t=840
+mo;mm ky;tg 	模塊	c=4 d=1.55414 t=1040
+mo;mm ui;gy 	模式	c=1 d=1 t=2131
+mu;aa lu;jl 	目錄	c=5 d=2.84922 t=2662
+my;oo tm;ad 	明天	c=2 d=1.0124 t=1745
+my;xk 	名	c=1 d=1 t=1264
+my;xk ig;hr 	名稱	c=2 d=1.00127 t=2504
+mz;du 	沒	c=4 d=0.619904 t=2493
+mz;du fa;dq 	沒法	c=1 d=1 t=1791
+mz;du fa;dq ns;cw 	沒法弄	c=1 d=1 t=2685
+mz;du fj;py yy;xv 	沒反應	c=1 d=1 t=410
+mz;du gz;sh 	沒給	c=1 d=1 t=2229
+mz;du hr;fh 	沒換	c=1 d=1 t=824
+mz;du hv;kk 	沒回	c=0 d=0.1 t=1055
+mz;du hv;kk wo;pd 	沒回我	c=1 d=1 t=1056
+mz;du id;dc jm;zy bc;fy 	沒創建表	c=1 d=1 t=2381
+mz;du ir;rv 	沒傳	c=1 d=1 t=2344
+mz;du ne;kn 	沒呢	c=1 d=1 t=1910
+mz;du qi;zj 	沒起	c=2 d=1.99005 t=1800
+mz;du sb;fs dk;dv 	沒搜到	c=1 d=1 t=1259
+mz;du tc;yv 	沒調	c=1 d=1 t=143
+mz;du tm;dt jw;lk 	沒添加	c=1 d=1 t=2494
+mz;du ui;aa 	沒事	c=1 d=1 t=883
+mz;du wf;mk ti;uy 	沒問題	c=5 d=2.93347 t=2383
+mz;du yb;ou 	沒有	c=9 d=1.69143 t=2617
+mz;du ys;kf 	沒用	c=1 d=1 t=1850
+mz;rm ge;rg 	每個	c=4 d=2.41129 t=2290
+mz;rm tm;ad 	每天	c=0 d=0.1 t=2476
+mz;rm tm;ad jw;bu 	每天家	c=-2 d=1.87912 t=2493
+na;ef 	那	c=4 d=1.72874 t=2744
+na;el ge;rg 	那個	c=1 d=1 t=595
+na;el ni;re 	那你	c=1 d=1 t=2002
+na;el ui;op 	那是	c=1 d=1 t=1199
+na;el wo;pd 	那我	c=1 d=1 t=970
+na;kn 	哪	c=13 d=1.32283 t=1891
+na;kn li;wy 	哪裏	c=1 d=1 t=1422
+na;uh dk;dv 	拿到	c=1 d=1 t=2222
+ne;kn 	呢	c=2 d=1.00227 t=2374
+nf;ni ig;ti 	嫩城	c=0 d=0.1 t=2669
+ng;sb 	能	c=17 d=3.94117 t=2709
+ng;sb fa;du 	能發	c=1 d=1 t=1780
+ng;sb li;gp 	能力	c=3 d=1.77499 t=2524
+ng;sb pk;zb 	能跑	c=1 d=1 t=400
+ng;sb vk;fg yi;aa xw;ab 	能找一下	c=1 d=1 t=1524
+ng;sb ys;kf 	能用	c=8 d=1.58562 t=2727
+ni;re 	你	c=21 d=4.43562 t=2758
+ni;re ba;fb 	你把	c=1 d=1 t=2384
+ni;re dc;yv 	你調	c=1 d=1 t=2219
+ni;re kj;ou kj;ou 	你看看	c=1 d=1 t=1844
+ni;re mf;rm 	你們	c=1 d=1 t=1405
+ni;re tc;fv 	你挑	c=0 d=0.1 t=2061
+ni;re tc;fv yi;aa ge;rg 	你挑一個	c=1 d=1 t=2062
+ni;re uh;aa ir;rv 	你上傳	c=1 d=1 t=2413
+ni;re ui;yu ui;yu 	你試試	c=4 d=1.22046 t=2721
+ni;re vi;dd qm;qd 	你之前	c=1 d=1 t=1801
+nn;xn hk;nz 	您好	c=2 d=1.10228 t=694
+ns;cw wj;by 	弄完	c=0 d=0.1 t=1873
+nz;kr cp;uz 	內存	c=1 d=1 t=2217
+nz;kr rs;bg 	內容	c=3 d=1.87557 t=1920
+nz;kr wh;sw 	內網	c=6 d=2.43082 t=1409
+oc 	.	c=15 d=2.10316 t=2669
+oc nf;ni ig;ti 	.嫩城	c=1 d=1 t=2670
+oo;kw 	哦	c=2 d=1.02586 t=2740
+pi;fb ld;ol 	批量	c=1 d=1 t=1941
+pj;db dr;ja 	判斷	c=4 d=1.00448 t=2445
+pk;hb ts;vt 	炮筒	c=3 d=2.49911 t=1741
+pk;zb 	跑	c=4 d=1.00075 t=2250
+pk;zb bu;ad lc;aa 	跑不了	c=1 d=1 t=1336
+pk;zb bu;ad qi;zj ll;ad 	跑不起來	c=2 d=1.01897 t=1100
+pk;zb qi;zj ll;ad 	跑起來	c=3 d=1.45073 t=569
+pk;zb ts;zy 	跑通	c=2 d=1.51171 t=1742
+pl;dp qm;zg 	派遣	c=1 d=1 t=397
+pl;fb vk;hv 	拍照	c=6 d=1.49682 t=1220
+pm;rb yi;hd ld;ol 	偏移量	c=1 d=1 t=447
+pn;fb jx;fq 	拼接	c=1 d=1 t=2004
+pz;yj he;rk 	配合	c=1 d=1 t=2121
+pz;yj hk;nz 	配好	c=1 d=1 t=653
+pz;yj tk;di 	配套	c=1 d=1 t=1517
+pz;yj vi;sv 	配置	c=31 d=4.74102 t=2651
+pz;yj vi;sv bc;fy 	配置表	c=1 d=1 t=1731
+pz;yj vi;sv xw;ab 	配置下	c=1 d=1 t=1730
+qi;ba ta;ry 	其他	c=7 d=1.13801 t=2676
+qi;kw ds;lv 	啓動	c=6 d=4.72161 t=543
+qi;zj 	起	c=1 d=1 t=818
+qi;zj bu;ad ll;ad 	起不來	c=1 d=1 t=532
+qm;vq iu;aa 	簽出	c=1 d=1 t=879
+qr;mv xm;eg 	權限	c=4 d=1.74437 t=674
+qr;rw kk;fg 	全靠	c=1 d=1 t=1752
+qr;rw yy;cy wf;wi 	全英文	c=1 d=1 t=1369
+qt;uv dy;bp 	確定	c=3 d=1.22764 t=2526
+qt;uv rf;yr 	確認	c=1 d=1 t=737
+qu;ey 	取	c=1 d=1 t=1983
+qu;kp bx;dd 	區別	c=3 d=1.0655 t=2674
+qu;ts 	去	c=0 d=0.1 t=1998
+qu;ts is;pa 	去重	c=1 d=1 t=1643
+qx;dq hr;fh 	切換	c=2 d=1.2982 t=2564
+qy;yq qq;ad 	請求	c=1 d=1 t=1950
+rf;pd 	人	c=1 d=1 t=167
+rf;pd yr;kb 	人員	c=1 d=1 t=858
+rf;rr wu;mw lj;mj 	任務欄	c=1 d=1 t=2751
+rh;yx 	讓	c=1 d=1 t=1427
+rh;yx wo;pd 	讓我	c=2 d=1.44933 t=1026
+ri;aa vi;yv 	日誌	c=1 d=1 t=2075
+rj;hq hb;xw 	然後	c=5 d=3.34867 t=1715
+rr;iq jm;rn 	軟件	c=2 d=1 t=2667
+ru;nk go;tm 	如果	c=4 d=1.14837 t=2660
+ru;nk he;rk 	如何	c=3 d=1.66437 t=2518
+ru;pd hu;pk 	入戶	c=2 d=1.97531 t=986
+ru;pd kb;aa 	入口	c=2 d=1.00007 t=2622
+ru;pd ku;gi 	入庫	c=1 d=1 t=1230
+sb;fs bu;ad dk;dv 	搜不到	c=1 d=1 t=1536
+sb;fs so;sb 	搜索	c=4 d=1.0007 t=2578
+sj;aa vh;gi 	三張	c=1 d=1 t=2226
+so;hj yb;ou 	所有	c=4 d=1.0047 t=2665
+so;hj yi;rd 	所以	c=1 d=1 t=2233
+so;ss xx;bh 	縮寫	c=1 d=1 t=516
+su;zu du;gy 	速度	c=1 d=1 t=2111
+sv;eo wf;dd pg;np 	隋文鵬	c=1 d=1 t=76
+tc;rt jm;rn 	條件	c=5 d=1.03184 t=2037
+tc;yv le;aa 	調了	c=1 d=1 t=138
+tc;yv vg;vi 	調整	c=2 d=1.77492 t=1022
+tc;zv go;zg 	跳過	c=1 d=1 t=2431
+td 	他	c=10 d=3.39723 t=2334
+te;ns dm;hv 	特點	c=1 d=1 t=1136
+ti;fu 	提	c=3 d=2.58962 t=1034
+ti;fu de;bu 	提的	c=1 d=1 t=2400
+ti;fu gs;rg 	提供	c=4 d=1.65302 t=2618
+ti;fu jc;li 	提交	c=2 d=1.51427 t=938
+ti;fu uh;aa qu;ts 	提上去	c=1 d=1 t=1031
+tj;gd iu;aa 	彈出	c=2 d=1.45612 t=2729
+tl;dd do;xx 	太多	c=1 d=1 t=2541
+tm;ad 	天	c=1 d=1 t=1773
+tm;dt jw;lk 	添加	c=17 d=7.28459 t=2633
+tm;dt jw;lk ys;kf hu;pk 	添加用戶	c=1 d=1 t=1451
+tm;tv 	填	c=3 d=2.82795 t=640
+tm;tv xx;bh 	填寫	c=1 d=1 t=1290
+to;fq pj;mb 	托盤	c=1 d=1 t=2752
+ts;si ji;yu uu;wl 	統計數	c=1 d=1 t=2469
+ts;zy ys;kf 	通用	c=2 d=1.86071 t=1296
+tu;kb 	圖	c=1 d=1 t=2726
+tu;kh pm;pa 	圖片	c=5 d=1.42407 t=2690
+tv;fv iu;aa 	推出	c=0 d=0.1 t=2651
+tv;fv iu;aa dk;dv 	推出到	c=1 d=1 t=2652
+tv;fv jm;ch 	推薦	c=1 d=1 t=1497
+tv;fv uh;aa qu;ts 	推上去	c=1 d=1 t=1922
+ua;ku 	啥	c=4 d=1.15099 t=1905
+ub;pa ds;lv 	手動	c=1 d=0.136334 t=2761
+ub;pa ds;lv gl;wj 	手動改	c=1 d=1 t=2762
+ub;pa xx;bh 	手寫	c=1 d=1 t=2253
+ub;wj dk;dv 	收到	c=1 d=1 t=548
+ub;wj qm;jj 	收錢	c=1 d=1 t=178
+ue;yu ji;yu 	設計	c=2 d=1.00024 t=2440
+ue;yu vi;sv 	設置	c=4 d=1.99507 t=2627
+uf;aa qy;yq 	申請	c=3 d=1.01778 t=1060
+uf;bf pi;fb 	審批	c=1 d=1 t=501
+uf;dm 	深	c=1 d=1 t=456
+uf;dm vf;ti 	深圳	c=1 d=1 t=1311
+ug;na ig;gg 	生成	c=2 d=1.8311 t=1431
+uh;aa 	上	c=9 d=2.16025 t=2682
+uh;aa bu;ad lc;aa 	上不了	c=1 d=1 t=2372
+uh;aa hw;dg 	上滑	c=1 d=1 t=2164
+uh;aa ir;rv 	上傳	c=19 d=1.55875 t=2743
+uh;aa mm;aa 	上面	c=6 d=1.06077 t=2585
+uh;aa wu;ru 	上午	c=1 d=1 t=1472
+uh;mb 	𣜪	c=1 d=1 t=2584
+ui;bg ji;ej 	實際	c=1 d=1 t=1916
+ui;bg ji;ej uh;aa 	實際上	c=1 d=1 t=1163
+ui;bg li;gp 	實力	c=1 d=1 t=1133
+ui;bv nz;kr 	室內	c=1 d=1 t=1208
+ui;kp jy;oj uj;aa qu;kp 	石景山區	c=1 d=1 t=1362
+ui;os hb;ru 	時候	c=5 d=1.66996 t=2433
+ui;os jm;mo 	時間	c=1 d=1 t=1790
+ui;pf bl;wb 	失敗	c=3 d=1.00069 t=2052
+ui;rl ys;kf 	使用	c=16 d=2.08218 t=2644
+ui;yu ui;yu 	試試	c=4 d=1.90365 t=2008
+ui;yu xw;ab 	試下	c=1 d=1 t=2760
+uj;dc dc;fv 	刪掉	c=1 d=1 t=1081
+uj;dc iu;ey 	刪除	c=4 d=2.7616 t=1917
+uk;hx dg;vs xw;ab 	稍等下	c=1 d=1 t=816
+ul;vu 	篩	c=0 d=0.1 t=820
+ul;vu xr;zx 	篩選	c=1 d=1 t=917
+ul;vu yi;aa xw;ab 	篩一下	c=1 d=1 t=821
+uo;yd 	說	c=5 d=1.26547 t=2742
+uo;yd my;oo 	說明	c=1 d=1 t=1593
+us 	是	c=89 d=5.11712 t=2739
+uu;iy ru;pd fa;dq 	輸入法	c=1 d=1 t=9
+uu;mc vd;qp 	樹狀	c=1 d=1 t=2089
+uu;oy qm;vg 	書籤	c=1 d=1 t=2631
+uu;uu xy;xu 	屬性	c=1 d=1 t=2264
+uu;wl ju;fj 	數據	c=14 d=3.13898 t=2691
+uu;wl ju;fj ji;vm he;rk 	數據集合	c=1 d=1 t=1120
+uu;wl ju;fj ku;gi 	數據庫	c=7 d=1.01466 t=2763
+uu;wl ju;fj ku;gi bc;fy 	數據庫表	c=1 d=1 t=1392
+uu;wl ju;fj qr;mv xm;eg 	數據權限	c=1 d=1 t=168
+uw;dj xn;jq 	刷新	c=1 d=1 t=2167
+uz;yv 	誰	c=2 d=1.0455 t=1044
+vb;kj 	周	c=1 d=1 t=1934
+vb;zv mo;ad 	週末	c=1 d=1 t=1066
+vb;zv si;aa 	週四	c=1 d=1 t=1866
+vd;qp tl;xn 	狀態	c=1 d=1 t=2563
+vd;yv 	裝	c=1 d=1 t=424
+vd;yv bu;ad uh;aa 	裝不上	c=1 d=1 t=312
+vd;yv wj;by 	裝完	c=1 d=1 t=656
+ve;zy 	這	c=92 d=5.47711 t=2737
+ve;zy ge;rg 	這個	c=1 d=1 t=1261
+ve;zy ld;ar ge;rg 	這兩個	c=1 d=1 t=1479
+ve;zy li;wy 	這裏	c=9 d=1.06083 t=2530
+ve;zy li;wy mm;aa 	這裏面	c=3 d=1.0007 t=2555
+ve;zy lw;rl 	這倆	c=1 d=1 t=2360
+vg;av bm;sb 	正編	c=1 d=1 t=391
+vg;av ui;op 	正是	c=0 d=0.1 t=2682
+vg;av ui;op hr;wh jy;tj 	正是環境	c=1 d=1 t=2683
+vg;av vg;vi uu;wl 	正整數	c=1 d=1 t=1111
+vh;bi hk;hh 	賬號	c=2 d=1.95123 t=74
+vh;gi 	張	c=2 d=1.02448 t=1239
+vh;gi mn;wm 	張敏	c=1 d=1 t=77
+vh;lz 	章	c=4 d=1.01399 t=2150
+vi;dd hb;xw 	之後	c=2 d=1.0488 t=1707
+vi;dd lz;yl 	之類	c=3 d=1.00031 t=2165
+vi;dt li;wl 	治理	c=1 d=1 t=509
+vi;fv dy;bp 	指定	c=2 d=1.03371 t=2118
+vi;kb 	只	c=2 d=1.89583 t=811
+vi;kb ir;rv 	只傳	c=1 d=1 t=1846
+vi;kb yb;ou 	只有	c=6 d=1.02351 t=1772
+vi;ov ng;sb 	智能	c=1 d=1 t=842
+vi;rv 	值	c=1 d=1 t=2455
+vi;rv qm;jj 	值錢	c=3 d=1.0177 t=2339
+vi;uq jx;fq 	直接	c=7 d=2.08086 t=2192
+vi;uq jx;fq ti;fu 	直接提	c=1 d=1 t=1008
+vi;uy ii;fs 	支持	c=1 d=1 t=839
+vi;wx xy;xi 	執行	c=3 d=1.38118 t=1642
+vj;rv ys;kf 	佔用	c=1 d=1.0041 t=1096
+vj;uy ui;ex 	展示	c=3 d=1.00437 t=2342
+vk;fg 	找	c=2 d=1.02063 t=2211
+vk;fg rf;pd wf;mk 	找人問	c=0 d=0.1 t=1998
+vk;fg rf;pd wf;mk wf;mk qu;ts 	找人問問去	c=1 d=1 t=1999
+vk;fg uv;yv 	找誰	c=1 d=1 t=736
+vk;fg uz;yv 	找誰	c=1 d=1 t=176
+vk;fg yi;aa xw;ab 	找一下	c=1 d=1 t=1521
+vk;hv pm;pa 	照片	c=19 d=1.93353 t=2696
+vk;hv pm;pa ku;gi 	照片庫	c=6 d=2.18287 t=2490
+vk;hv pm;pa uh;aa ir;rv 	照片上傳	c=1 d=1 t=1049
+vk;mv pk;zb 	棹跑	c=1 d=1 t=2327
+vr;iv 	轉	c=1 d=1 t=1167
+vr;iv hr;fh 	轉換	c=4 d=1.83321 t=2692
+vr;iv hr;fh ig;gg 	轉換成	c=1 d=1 t=1367
+vs;aa rr;iq 	中軟	c=2 d=1.00004 t=2072
+vs;aa xn;dd 	中心	c=1 d=1 t=510
+vu;dw yk;xn 	主要	c=1 d=1 t=2127
+vu;rv vl;bq 	住宅	c=1 d=1 t=1207
+vu;yv ce;aa 	註冊	c=1 d=1 t=73
+vu;yv ui;px 	註釋	c=1 d=1 t=1375
+wf;mk 	問	c=1 d=0.108438 t=1998
+wf;mk le;aa 	問了	c=1 d=1 t=1053
+wf;mk le;aa xw;ab 	問了下	c=1 d=1 t=165
+wf;mk ti;uy 	問題	c=7 d=1.09085 t=2677
+wf;mk wf;mk 	問問	c=1 d=1 t=1909
+wf;mk xw;ab 	問下	c=2 d=1.10177 t=697
+wf;wi dh;md 	文檔	c=1 d=1 t=155
+wf;wi jm;rn 	文件	c=21 d=1.50475 t=2705
+wf;wi jm;rn my;xk 	文件名	c=1 d=1 t=2509
+wh;sw ye;ab 	網頁	c=1 d=1 t=302
+wh;xv 	往	c=1 d=1 t=959
+wh;xv ku;gi 	往庫	c=1 d=1 t=1354
+wj;by ig;gg 	完成	c=2 d=1.44709 t=1867
+wl;xb bk;gs 	外包	c=2 d=1.97045 t=399
+wo;pd 	我	c=59 d=4.13075 t=2746
+wo;pd de;bu 	我的	c=0 d=0.1 t=2207
+wz;vh 	爲	c=1 d=1 t=522
+xc;ad 	小	c=1 d=1 t=2603
+xc;dx hk;lm 	消耗	c=1 d=1 t=2140
+xd;gy mu;aa 	項目	c=29 d=2.90803 t=1516
+xd;mo gr;ma 	相關	c=8 d=1.00508 t=2624
+xd;rx 	像	c=2 d=1.99501 t=2602
+xd;xx 	想	c=4 d=1.90255 t=696
+xi;ps ts;si 	系統	c=2 d=1.93707 t=701
+xm;eg du;gy 	限度	c=1 d=1 t=751
+xm;eg vi;dg 	限制	c=1 d=1 t=1437
+xm;en 	先	c=2 d=1.92774 t=551
+xm;ne ba;fb 	先把	c=2 d=1.05642 t=1602
+xm;ne kj;ou 	先看	c=1 d=1 t=1830
+xm;sq ig;hi 	線程	c=1 d=1 t=1302
+xm;wj ig;gg 	現成	c=1 d=1 t=1303
+xm;wj zl;ut 	現在	c=1 d=1 t=1028
+xm;ys ui;ex 	顯示	c=3 d=1.37793 t=2695
+xn;jq 	新	c=2 d=1.16696 t=362
+xn;jq ja 	新加	c=1 d=1 t=964
+xn;jq zg;tc 	新增	c=1 d=1 t=928
+xn;ry 	信	c=1 d=1 t=50
+xn;ry xi;xz 	信息	c=4 d=3.65383 t=1635
+xp;xd hr;wh yi;ry ll;uf 	循環依賴	c=1 d=1 t=2356
+xq;rp gl;wj 	修改	c=5 d=1.57157 t=2514
+xt;jz 	學	c=0 d=0.1 t=2145
+xt;jz de;bu go;zg ll;ad 	學的過來	c=1 d=1 t=2146
+xu;ye qq;ad 	需求	c=10 d=1.27222 t=1704
+xu;ye yk;xn 	需要	c=10 d=1.18712 t=2694
+xw;ab 	下	c=6 d=1.24518 t=1933
+xw;ab ll;ad 	下來	c=1 d=1 t=676
+xw;ab mm;aa 	下面	c=2 d=1.04505 t=2086
+xw;ab vb;zv si;aa 	下週四	c=1 d=1 t=1063
+xw;ab wu;ru 	下午	c=1 d=1 t=1885
+xw;ab zl;ig 	下載	c=6 d=1.13323 t=2619
+xx;bh 	寫	c=7 d=2.38048 t=2104
+xx;bh bu;ad wj;by 	寫不完	c=2 d=1.14661 t=2254
+xx;bh dk;dv 	寫到	c=1 d=1 t=1048
+xx;bh qi;zj ll;ad 	寫起來	c=1 d=1 t=2459
+xx;bh wj;by 	寫完	c=1 d=1 t=869
+xx;fj dl;jb 	攜帶	c=1 d=1 t=1667
+xx;yu xx;yu 	謝謝	c=5 d=1.578 t=1534
+xxv 	些	c=1 d=1 t=1892
+xy;nu my;xk 	姓名	c=3 d=2.63295 t=897
+xy;xd 	行	c=4 d=1.96131 t=2416
+ya;ky 	呀	c=6 d=1.10834 t=1344
+yb;ou 	有	c=38 d=4.0027 t=2735
+yb;ou ui;os hb;ru 	有時候	c=2 d=1.9802 t=2753
+yb;ou wf;mk ti;uy 	有問題	c=1 d=1 t=553
+ye;gg 	也	c=8 d=1.03019 t=2684
+ye;gg bu;ad xy;xi 	也不行	c=1 d=1 t=486
+ye;gg dz;xc 	也得	c=1 d=1 t=1884
+ye;gg ng;sb 	也能	c=1 d=1 t=1819
+ye;gg ui;op 	也是	c=1 d=1 t=295
+ye;gg yb;ou 	也有	c=1 d=1 t=1967
+ye;gg yk;xn 	也要	c=1 d=1 t=2297
+ye;yl wu;mw 	業務	c=3 d=1.00702 t=2275
+yh;ey tl;uv 	陽臺	c=1 d=1 t=2472
+yh;my 	樣	c=1 d=1 t=207
+yh;my ui;gy 	樣式	c=1 d=1 t=1456
+yi;aa cg;uc 	一層	c=1 d=1 t=2562
+yi;aa ge;rg 	一個	c=5 d=1.55432 t=2441
+yi;aa hv;ro 	一會	c=1 d=1 t=2425
+yi;aa lz;yl ka;ub 	一類卡	c=1 d=1 t=185
+yi;aa qi;zj 	一起	c=1 d=1 t=1321
+yi;aa vh;gi 	一張	c=1 d=1 t=2305
+yi;aa xw;ab 	一下	c=2 d=0.230512 t=1523
+yi;aa yh;my 	一樣	c=1 d=1 t=2558
+yi;hd ds;lv 	移動	c=1 d=1 t=826
+yi;hd ds;lv dr;le 	移動端	c=10 d=1.13894 t=1660
+yi;hd ds;lv dr;le pl;fb vk;hv 	移動端拍照	c=2 d=1.00001 t=2313
+yi;rd hb;xw 	以後	c=1 d=1 t=780
+yi;rd qm;qd 	以前	c=1 d=1 t=923
+yi;ry ll;uf 	依賴	c=2 d=1.11136 t=1326
+yi;vg jy;sg 	已經	c=1 d=1 t=791
+yi;xy si;xt 	意思	c=1 d=1 t=1940
+yi;yw 	義	c=1 d=1 t=1692
+yj;uk jq;xj yj;uk jq;xj 	研究研究	c=1 d=1 t=1539
+yk;xn 	要	c=15 d=2.40875 t=2348
+yk;xn dj;kd du;qu 	要單獨	c=1 d=1 t=1855
+yk;xn le;aa 	要了	c=1 d=1 t=2214
+yk;xn ui;op 	要是	c=1 d=1 t=639
+yn;ga ys;kf 	引用	c=1 d=1 t=1616
+yo 	又	c=1 d=1 t=1106
+yp;oj vo;yo 	暈着	c=1 d=1 t=22
+yp;yy 	雲	c=1 d=1 t=1360
+yp;yy vo;mo mm;aa 	雲桌面	c=4 d=3.39821 t=57
+yr;dy 	源	c=2 d=1.67706 t=1408
+yr;ix 	原	c=1 d=1 t=2454
+yr;ix li;wl 	原理	c=1 d=1 t=2552
+ys;kf 	用	c=25 d=1.90642 t=2659
+ys;kf bu;ad lc;aa 	用不了	c=1 d=1 t=1854
+ys;kf dk;dv 	用到	c=1 d=1 t=103
+ys;kf hu;pk 	用戶	c=14 d=1.75741 t=2534
+ys;kf hu;pk my;xk 	用戶名	c=1 d=1 t=835
+ys;kf iu;hi 	用處	c=1 d=1 t=2733
+ys;kf ll;ad 	用來	c=4 d=2.17654 t=2499
+ys;kf tu;zy 	用途	c=1 d=1 t=2084
+ys;kf uh;aa 	用上	c=1 d=1 t=2133
+yt;oy wz;sv 	月維	c=2 d=1.00046 t=1609
+yt;su dg;vs yu;fd 	約等於	c=1 d=1 t=1936
+yu;xx 	御	c=1 d=1 t=1374
+yu;yw fa;dq th;mt 	語法糖	c=2 d=1.96079 t=2446
+yu;yw ju;gk 	語句	c=1 d=1 t=1395
+yu;yy lj;jl 	預覽	c=1 d=1 t=2175
+yu;yy ue;yu 	預設	c=1 d=1 t=1292
+yu;zy dk;dv 	遇到	c=1 d=1 t=466
+yy;cy wf;wi 	英文	c=4 d=1.30712 t=1368
+yy;pj xd;yx 	影響	c=1 d=1 t=790
+yy;xv gl;yh 	應該	c=8 d=2.24536 t=2394
+yy;xv gl;yh jq;yj ke;dk yi;rd 	應該就可以	c=1 d=1 t=2377
+yy;xv ys;kf 	應用	c=2 d=1.90937 t=2149
+zb;ec yu;by if;bi 	鄒宇宸	c=1 d=1 t=1402
+zi 	字	c=1 d=1 t=2765
+zi;bc lc;md 	資料	c=2 d=1.93239 t=1353
+zi;bc yr;dy 	資源	c=1 d=1 t=512
+zi;bz dr;ud 	字段	c=7 d=1.58604 t=2723
+zi;bz dr;ud li;wy 	字段裏	c=1 d=1 t=2724
+zi;bz fu;vf ir;aa 	字符串	c=1 d=1 t=1165
+zi;pa dl;jb 	自帶	c=3 d=1.00078 t=2579
+zi;pa ds;lv 	自動	c=1 d=1 t=2430
+zi;pa dy;bp 	自定	c=1 d=1 t=1691
+zi;pa dy;bp yi;yw 	自定義	c=4 d=1.86199 t=2330
+zi;pa ji;ag 	自己	c=7 d=2.0064 t=2641
+zi;pa vi;yv 	自製	c=1 d=1 t=2437
+zj;kz 	咱	c=5 d=1.05444 t=1057
+zj;ov cp;uz 	暫存	c=1 d=1 t=1650
+zj;ov ui;os 	暫時	c=1 d=1 t=1799
+zl;aa 	再	c=3 d=1.82659 t=2759
+zl;aa ba;fb 	再把	c=1 d=1 t=1746
+zl;aa gl;wj 	再改	c=1 d=1 t=1601
+zl;aa kj;ou xw;ab 	再看下	c=1 d=1 t=2761
+zl;ig 	載	c=1 d=1 t=711
+zl;ta 	在	c=0 d=0.1 t=709
+zl;ut 	在	c=23 d=3.10536 t=2636
+zo;gz wz;rl 	座位	c=1 d=1 t=2267
+zo;rg 	做	c=5 d=1.19511 t=1307
+zo;rg bu;ad dk;dv 	做不到	c=1 d=1 t=2021
+zo;rg ig;gg 	做成	c=1 d=1 t=2235
+zo;rg yi;aa xw;ab 	做一下	c=1 d=1 t=1748
+zo;rv wz;vh 	作爲	c=1 d=1 t=2268
+zp;zz ub;bc 	遵守	c=1 d=1 t=2669
+zs;sc 	總	c=1 d=1 t=139
+zs;sz he;rk 	綜合	c=1 d=1 t=514
+zu;hq fh;hf 	租房	c=1 d=1 t=1312
+zu;sq ig;gg 	組成	c=1 d=1 t=1657
+zu;sq vd;yv 	組裝	c=3 d=2.53837 t=1631
+zv;oq dy;yd cg;uc 	最頂層	c=1 d=1 t=2303
+zv;oq hb;xw 	最後	c=1 d=1 t=1446
+zv;oq ky;xd 	最快	c=1 d=1 t=1883
+zv;oq xn;jq 	最新	c=3 d=1.04054 t=1097
