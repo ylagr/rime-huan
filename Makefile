@@ -72,7 +72,7 @@ clean:
 # Installs the traditional version into DESTDIR
 dist: quick
 	mkdir -p $(DESTDIR)
-	cp -a README*.md LICENSE etc $(DESTDIR)
+	cp -a README*.md LICENSE AGENTS.md etc $(DESTDIR)
 	cp -a moran* $(DESTDIR)
 	cp -a default.yaml key_bindings.yaml punctuation.yaml symbols.yaml $(DESTDIR)
 	cp -a recipe.yaml recipes $(DESTDIR)
