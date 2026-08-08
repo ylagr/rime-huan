@@ -1,19 +1,25 @@
 DESTDIR ?= $(abspath ./dist)
 
-quick: chars zrmdb chaifen opencc
+quick: chars zrmdb chaifen opencc zrlf
 dict: update-compact-dicts
 all: quick dict
+
+lint-python:
+	uv run --with ruff ruff check tools
 
 ############
 # 單字信息 #
 ############
 chars_output := moran.chars.dict.yaml opencc/moran_chaifen.txt lua/zrmdb.txt
 chars: moran.chars.dict.yaml
+zrlf: zrlf.dict.yaml
 zrmdb: lua/zrmdb.txt
 chaifen: opencc/moran_chaifen.txt
 
 moran.chars.dict.yaml: tools/data/chars.txt tools/data/moran_chai.txt tools/gen_chars.py
 	uv run tools/gen_chars.py > $@
+zrlf.dict.yaml: tools/data/zrlf.txt tools/gen_zrlf.py
+	uv run tools/gen_zrlf.py > $@
 lua/zrmdb.txt: tools/data/moran_chai.txt tools/gen_zrmdb.py
 	uv run tools/gen_zrmdb.py > $@
 opencc/moran_chaifen.txt: tools/data/moran_chai.txt tools/gen_chaifen_filter.py
@@ -59,12 +65,14 @@ clean:
 	rm -f moran.mdd moran.mdx
 	rm -rf dist
 	rm -f $(chars_output)
+	rm -f zrlf.dict.yaml
 	rm -f dazhu*.txt
 	make -C opencc clean
 
+# Installs the traditional version into DESTDIR
 dist: quick
 	mkdir -p $(DESTDIR)
-	cp -a README*.md LICENSE etc $(DESTDIR)
+	cp -a README*.md LICENSE AGENTS.md etc $(DESTDIR)
 	cp -a moran* $(DESTDIR)
 	cp -a default.yaml key_bindings.yaml punctuation.yaml symbols.yaml $(DESTDIR)
 	cp -a recipe.yaml recipes $(DESTDIR)
@@ -79,11 +87,17 @@ dist: quick
 	cp -a opencc/*.ocd2 opencc/*.json $(DESTDIR)/opencc
 	cp -a opencc/moran_TSPhrases.txt $(DESTDIR)/opencc
 
+	rm -rf dist/*.userdb  # Just in case
+
 test: dist
+	cp -a /usr/share/opencc/* dist/opencc       2>/dev/null || true
+	cp -a /usr/local/share/opencc/* dist/opencc 2>/dev/null || true
+	test -f dist/opencc/t2tw.json || (echo "Error: cannot find shared opencc data!" && exit 1)
+
 	mira -C /tmp/mira-cache tests/moran.test.yaml
 	mira -C /tmp/mira-cache tests/moran.hint.test.yaml
 	mira -C /tmp/mira-cache tests/moran.charset.test.yaml
 	mira -C /tmp/mira-cache tests/moran_aux.test.yaml
 	rm -rf /tmp/mira-cache
 
-.PHONY: quick all dict chars zrmdb chaifen update-compact-dicts sync-essay dazhu opencc mdict
+.PHONY: quick all dict chars zrlf zrmdb chaifen update-compact-dicts sync-essay dazhu opencc mdict dist test lint-python

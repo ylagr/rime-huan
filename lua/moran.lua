@@ -35,7 +35,7 @@ function Module.open_rime_file(rel_path, pathsep)
 end
 
 ---Load zrmdb.txt bundled with the standard Moran distribution.
----@return table<integer,table<string>>
+---@return table<integer,table<string>>?
 function Module.load_zrmdb()
     if Module.aux_table then
         return Module.aux_table
@@ -281,7 +281,7 @@ end
 
 ---原始輸出函數
 ---@param value Candidate
----@return table 新得到的應該輸出的 deferred value
+---@return table? 新得到的應該輸出的 deferred value
 function Yielder:__yield(value)
     local last_minute_defer = self.before_cb and self.before_cb(self.index, value)
     if last_minute_defer == nil or last_minute_defer <= 0 then
@@ -456,6 +456,24 @@ function Module.Thunk(functor)
         end
         return result
     end
+end
+
+function Module.all(list, pred)
+    for _, v in pairs(list) do
+        if not pred(v) then
+            return false
+        end
+    end
+    return true
+end
+
+function Module.any(list, pred)
+    for _, v in pairs(list) do
+        if pred(v) then
+            return true
+        end
+    end
+    return false
 end
 
 return Module
