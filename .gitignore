@@ -39,3 +39,4 @@ __pycache__/
 build/
 trash/
 lua/input_stats.lua
+lua/input_stats_moran.lua
