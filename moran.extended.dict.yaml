@@ -13,53 +13,8 @@ import_tables:
   - moran.tencent    # 騰訊詞庫
   - moran.computer   # 計算機術語
   - moran.moe
+  - moran.sentence_custom
 ...
 
 # 用戶自定義詞庫
 # 此處可無碼加詞
-
-打	df
-什么	sm
-为什么	wsm
-加	ja
-味	wk
-#未	we			已经内置整句可打
-# 是不是	ubu	99999999
-名	mw
-吗	m
-怎麼	zm
-_	on
-.	oc
-…	op
-嗯	ag
-不是	bs
-儿	ew	99999999
-子	zn	99999999
-是	us	99999999
-它	tw	99999999
-他	td	99999999
-她	ta	99999999
-又	yo	99999999
-唷	yoo	99999999
-哟	yok	99999999
-得	de	99999999
-的	dn	99999999
-地	di	99999999
-有點	yd	99999999
-字	zi	99999999
-資	zib	99999999
-他們	tdmf	99999999
-她們	tamf	99999999
-它們	twmf	99999999
-牠	tan	99999999
-打	daf	99999999
-大	da	99999999
-些	xxv	99999999
-活	ho;du	9999999
-活了	ho;du le;aa	9999999
-瘪	bm;bl	9999999
- Windows 	win
-角色	jc;dy se;db
-不知道	bvd
-越	yz
-
