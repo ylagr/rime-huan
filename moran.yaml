@@ -34,7 +34,7 @@ algebra:
         - moran_defs:/fly/ce_cn  # ZRM-SPECIFIC
         - moran_defs:/fly/tv_tn  # ZRM-SPECIFIC
         - moran_defs:/fly/rf_rl  # ZRM-SPECIFIC
-        - moran_defs:/fly/ly_lf  # ZRM-SPECIFIC
+        - moran_defs:/fly/lw_lf  # ZRM-SPECIFIC
         - moran_defs:/fly/xy_xj  # ZRM-SPECIFIC
         - moran_defs:/fly/tb_tq  # ZRM-SPECIFIC
         - moran_defs:/fly/ly_lw  # ZRM-SPECIFIC

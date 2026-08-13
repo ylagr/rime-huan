@@ -28,12 +28,14 @@ import_tables:
 ...
 
 #----------词库----------#
+
 啊啊	aa
 半	bj
 不就	bj
 打	da
 搭	da
 打	daf
+打	df
 呃呃	ee
 餓	eeu
 峨	eeuw
@@ -45,9 +47,7 @@ import_tables:
 落	la
 拉	laf
 擸	lafl
-零	lf
-玲	lfw
-靈	lfw
+俩	lf
 # todo 处理飞键固定码
 零	lw
 陵	lwe

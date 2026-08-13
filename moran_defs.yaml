@@ -89,6 +89,9 @@ fly:
   rf_rl:
     __append:
       - derive/rf;/rl;/
+  lw_lf:
+    __append:
+      - derive/lw;/lf;/
   ly_lf:
     __append:
       - derive/ly;/lf;/
