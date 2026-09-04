@@ -70401,7 +70401,8 @@
 𩃞	yh	雨户	auto
 𩃟	yx	雨昕	auto
 𩃠	yn	雲内	auto
-𩃡	yj	雨臼	auto
+𩃡	ya	雨丨	
+𩃡	yj	雨臼	
 𩃢	yg	雨戈	auto
 𩃣	yz	雨卒	auto
 𩃦	yv	雨治	auto
