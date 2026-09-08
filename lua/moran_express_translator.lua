@@ -314,10 +314,10 @@ function top.func(input, seg, env)
 	       env.smart_last_input_len = input_len
 	       env.smart_last_input = input
 	       last_index = last_index + 1
-	       if fixed_triggered and last_cand ~= nil and input_len > 1 and last_input_len < input_len and (input_len ~= 5 or env.smart_last_cand.type == "sentence") then
+	       if fixed_triggered and last_cand ~= nil and input_len > 1 and last_input_len == input_len - 1 and (input_len ~= 5 or env.smart_last_cand.type == "sentence") then
 		  smart_second_output(env, input, input_len, seg, last_cand)
 	       end
-	    elseif last_index == 2 and last_cand ~= nil and input_len > 1 and last_input_len < input_len and (input_len ~= 5 or env.smart_last_cand.type == "sentence") then
+	    elseif last_index == 2 and last_cand ~= nil and input_len > 1 and last_input_len == input_len - 1 and (input_len ~= 5 or env.smart_last_cand.type == "sentence") then
 	       if not fixed_triggered then
 		  smart_second_output(env, input, input_len, seg, last_cand)
 	       end
@@ -363,14 +363,14 @@ function top.func(input, seg, env)
 	       env.smart_last_cand = immediate_set[1]
 	       env.smart_last_input_len = input_len
 	       env.smart_last_input = input
-	       if fixed_triggered and last_cand ~= nil and input_len > 1 and last_input_len < input_len then
+	       if fixed_triggered and last_cand ~= nil and input_len > 1 and last_input_len == input_len - 1 then
 		  smart_second_output(env, input, input_len, seg, last_cand)
 	       end
 	       -- log.error("ijrq: len:" .. #immediate_set)
 	    end
                 top.output(env, immediate_set[i])
             end
-	 if not fixed_triggered and last_cand ~= nil and input_len > 1 and last_input_len < input_len then
+	 if not fixed_triggered and last_cand ~= nil and input_len > 1 and last_input_len == input_len - 1 then
 	    smart_second_output(env, input, input_len, seg, last_cand)
 	 end
 
@@ -393,7 +393,7 @@ function top.func(input, seg, env)
         end
     end
    if smart == nil and input_len > 1 then
-      if last_cand ~= nil and last_input_len < input_len then
+      if last_cand ~= nil and last_input_len == input_len - 1 then
 	 smart_second_output(env, input, input_len, seg, last_cand)
       end
    end

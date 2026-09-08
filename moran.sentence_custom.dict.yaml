@@ -25,6 +25,11 @@ use_preset_vocabulary: false
 _	on
 .	oc
 …	op
+.com	ocom
+http	http
+https	https
+https://	https/
+http://	http/
 嗯	ag
 不是	bs
 儿	ew	99999999

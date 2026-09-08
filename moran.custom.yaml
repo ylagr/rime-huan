@@ -4,8 +4,7 @@ patch:
   engine/translators/+:
     # - table_translator@japanese  #混入正常输入
     - table_translator@japanese_o
-  schema/dependencies/+:
-    - huan
+  schema/dependencies/+: [huan]
   "menu/page_size": 6
   ascii_composer/good_old_caps_lock: true
   ascii_composer/switch_key/Shift_L: noop
@@ -22,7 +21,7 @@ patch:
   reverse_tiger/tips: 〔环〕
   reverse_tick/dictionary: "huan"
   reverse_tick/tips: 〔环〕
-  recognizer/patterns/add_pattern: "^[A-Za-z]+[A-Za-z=_\\-]+$"  # 使-=_在字母后面之后可以当成输入字符处理
+  recognizer/patterns/z_add_pattern: "^[A-Za-z]+[A-Za-z=_\\-]+$"  # 使-=_在字母后面之后可以当成输入字符处理
   # speller/alphabet: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ/; # 使用默认的
   smart/contextual_suggestions: false  # 如果使用contextual suggestion 会导致删除字后打的字受上下文影响
   smart/preedit_format/+:
@@ -108,7 +107,7 @@ patch:
     s: 三
     t: 他
     u: 是
-    v: 这
+    v: 着
     w: 为
     x: 像
     y: 又
