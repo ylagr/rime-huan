@@ -314,4 +314,11 @@ deploy:
       - send: 'pk{Shift+V}'
         assert: eq(commit, '跑著跑著')
 
+  disable_sentence_candidates_upto_1:
+    patch:
+      moran/disable_sentence_candidates_upto: 1
+    tests:
+      - send: 'a'
+        assert: eq(#cand, 1)
+
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rimeinn/mira/refs/heads/master/spec/mira.schema.json
