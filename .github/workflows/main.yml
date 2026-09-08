@@ -1,3 +1,4 @@
+name: Commit CI
 on: [push]
 
 jobs:
