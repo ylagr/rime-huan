@@ -1,10 +1,9 @@
 patch:
   
-  schema/dependencies/+: [moran_japanese]
+  schema/dependencies/+: [huan,moran_japanese]
   engine/translators/+:
     # - table_translator@japanese  #混入正常输入
     - table_translator@japanese_o
-  schema/dependencies/+: [huan]
   "menu/page_size": 6
   ascii_composer/good_old_caps_lock: true
   ascii_composer/switch_key/Shift_L: noop
@@ -59,15 +58,15 @@ patch:
       states: [ "源", "私" ]
   switches/@0/reset: 0 #中文
   switches/@1/reset: 0 #半角
-  switches/@2/reset: 1 #简体
-  # switches/@2:
+  switches/@2/reset: 0 #标点
+  switches/@3/reset: 0 #emoji
+  switches/@4/reset: 1 #简体
+  # switches/@4:
       # states: [ "漢字", "汉字", "私"]
       # reset: 1
       # options: [ src, simplification, mine_t_to_s ]
-  switches/@3/reset: 0 #标点
-  switches/@4/reset: 1 #通用/增广
-  switches/@5/reset: 1 #固词
-  switches/@6/reset: 0 #emoji
+  switches/@5/reset: 1 #通用/增广
+  switches/@6/reset: 1 #固词
   switches/@7/reset: 0 #拆分
   switches/@8/reset: 0 #拼音
   switches/@9/reset: 0 #Uni提示
