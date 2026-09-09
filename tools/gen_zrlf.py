@@ -14,8 +14,8 @@ else:
     freq_table = freq_trad_table
 
 char_freq_table: dict[str, int] = {}
-for (char, _py), freq in freq_table.items():
-    char_freq_table[char] = max(char_freq_table.get(char, 0), int(freq))
+for (char, _py), f in freq_table.items():
+    char_freq_table[char] = max(char_freq_table.get(char, 0), int(f))
 
 print('# 自動生成，請勿編輯。')
 print('# AUTO-GENERATED. DO NOT EDIT.')

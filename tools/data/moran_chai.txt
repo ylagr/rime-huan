@@ -6027,7 +6027,8 @@
 䩁	fc	非毳	auto
 䩂	mj	面今	auto
 䩃	mb	面比	auto
-䩄	mj	面见	auto
+䩄	mj	面见	
+䩄	jm	见面	
 䩅	mp	面皮	auto
 䩆	mv	面乍	auto
 䩇	mv	面占	auto
@@ -8423,10 +8424,10 @@
 劐	dh	刂蒦	
 劐	dy	刂又	
 劑	dq	刂齊	
-劒	pd	丿丶	
 劒	rq	刃僉	
 劓	db	刂鼻	
 劔	rq	刄僉	
+劔	rc	刄从	
 劕	dv	刂質	
 劖	di	氵毚	
 劖	dt	刂兔	
@@ -16596,7 +16597,7 @@
 氿	dj	氵九	
 汀	dd	氵丁	
 汁	du	氵十	
-求	ad	亅丶	
+求	ad	一丶	
 汃	db	氵八	
 汄	dr	氵人	
 汅	dk	氵丂	
@@ -29501,6 +29502,7 @@
 閧	mg	門共	
 閨	mg	門圭	
 閩	mi	門虫	
+閩	im	虫門	
 閪	mx	門西	
 閫	mk	門困	
 閬	ml	門良	
@@ -31945,6 +31947,7 @@
 鶐	nu	鳥述	
 鶑	hn	火鳥	
 鶑	nh	鳥火	
+鶒	ni	鳥勅	
 鶒	nl	鳥力	
 鶒	un	束鳥	
 鶓	nm	鳥苗	
@@ -34136,9 +34139,10 @@
 𠕄	aa	丨乛	
 𠕅	ae	一二	auto
 𠕅	ke	冂二	auto
-𠕆	ka	冂一	auto
-𠕆	pa	丿一	auto
-𠕇	kd	冂丶	auto
+𠕆	ua	𠂇一	
+𠕆	ka	冂一	
+𠕇	ud	𠂇丶	
+𠕇	kd	冂丶	
 𠕈	kr	冂人	auto
 𠕉	de	丶儿	auto
 𠕉	ke	冂儿	auto
@@ -70398,7 +70402,8 @@
 𩃞	yh	雨户	auto
 𩃟	yx	雨昕	auto
 𩃠	yn	雲内	auto
-𩃡	yj	雨臼	auto
+𩃡	ya	雨丨	
+𩃡	yj	雨臼	
 𩃢	yg	雨戈	auto
 𩃣	yz	雨卒	auto
 𩃦	yv	雨治	auto
@@ -75788,7 +75793,7 @@
 𪎇	ym	业麥	auto
 𪎇	mu	麥殳	auto
 𪎈	my	麦弋	auto
-𪎉	mj	麦见	auto
+𪎉	mj	麦见	
 𪎊	mu	麦少	auto
 𪎋	mv	麦占	auto
 𪎌	ml	麦来	auto
@@ -79221,11 +79226,12 @@
 𫌦	xj	先見	auto
 𫌦	jx	見先	auto
 𫌨	je	见尔	
-𫌩	jj	见句	auto
-𫌪	pj	𠂆见	auto
-𫌫	jj	柬见	auto
-𫌬	pj	票见	auto
-𫌭	jw	见微	auto
+𫌩	jj	见句	
+𫌪	jp	见𠂢	
+𫌪	jd	见丶	
+𫌫	jj	见柬	
+𫌬	jp	见票	
+𫌭	jw	见微	
 𫌯	jq	角乔	auto
 𫌰	jw	角勿	auto
 𫌱	jw	角韋	auto
@@ -80105,7 +80111,7 @@
 𫝆	ra	人丆	auto
 𫝇	rd	人丶	auto
 𫝈	rj	亻军	auto
-𫝉	rk	人口	auto
+𫝉	rj	人君	
 𫝊	rc	亻寸	auto
 𫝋	rd	亻豆	auto
 𫝌	ab	丨八	auto
@@ -82399,7 +82405,8 @@
 𬊣	hj	火京	auto
 𬊤	hd	火单	auto
 𬊥	hh	火回	auto
-𬊦	yj	炎见	auto
+𬊦	yj	炎见	
+𬊦	jy	见炎	
 𬊧	jh	京灬	auto
 𬊩	hi	火查	auto
 𬊪	hy	火頁	auto
@@ -83535,19 +83542,24 @@
 𬢆	hj	虎見	auto
 𬢆	jh	見虎	auto
 𬢇	yj	又见	auto
-𬢈	dj	东见	auto
-𬢉	uj	十见	auto
+𬢈	jd	见东	
+𬢉	jp	见丿	
 𬢊	js	见司	
 𬢋	jv	见兆	
-𬢌	vj	志见	auto
-𬢍	uj	十见	auto
-𬢎	vj	者见	auto
-𬢏	uj	甚见	auto
-𬢐	qj	契见	auto
-𬢑	yj	英见	auto
-𬢒	mj	冥见	auto
-𬢓	bj	敝见	auto
-𬢔	dj	登见	auto
+𬢌	jv	见志	
+𬢍	jc	见朿	
+𬢎	jv	见者	
+𬢏	ju	见甚	
+𬢐	jq	见契	
+𬢐	qj	契见	
+𬢑	jy	见英	
+𬢑	yj	英见	
+𬢒	jm	见冥	
+𬢒	mj	冥见	
+𬢓	jb	见敝	
+𬢓	jw	见攵	
+𬢓	bj	敝见	
+𬢔	jd	见登	
 𬢕	jj	角戋	auto
 𬢙	jk	角口	
 𬢙	wf	亡凡	
@@ -84767,7 +84779,8 @@
 𬺜	lm	龙木	auto
 𬺝	ul	声龙	auto
 𬺞	dm	⺈黾	
-𬺟	yj	龠见	auto
+𬺟	jy	见龠	
+𬺟	jc	见冊	
 𬺠	ly	录龠	auto
 𬺠	yl	龠录	auto
 𬺳	ad	一刀	auto
@@ -89309,8 +89322,9 @@
 𮢸	jw	金攵	auto
 𮢹	ji	金處	auto
 𮢻	jj	金祭	auto
-𮢾	jg	金工	auto
-𮢿	jo	金日	auto
+𮢾	jg	金工	
+𮢿	jg	金戈	
+𮢿	jo	金日	
 𮣀	jy	金雨	auto
 𮣁	jm	金米	auto
 𮣆	jb	金備	auto
@@ -90543,8 +90557,9 @@
 𰅈	md	免刂	auto
 𰅉	jl	井力	auto
 𰅉	lj	力井	auto
-𰅊	dl	旦力	auto
-𰅊	ld	力旦	auto
+𰅊	ol	日力	
+𰅊	dl	旦力	
+𰅊	ld	力旦	
 𰅋	bl	北力	auto
 𰅋	lb	力北	auto
 𰅍	jl	夹力	auto
@@ -92937,19 +92952,22 @@
 𰴏	jj	見句	auto
 𰴐	ju	見失	auto
 𰴐	uj	失見	auto
-𰴒	jy	見雨	auto
-𰴒	yj	雨見	auto
-𰴔	cj	艹見	auto
-𰴔	jv	見隹	auto
-𰴕	bj	必见	auto
-𰴖	vj	召见	auto
-𰴗	lj	丽见	auto
-𰴘	jj	间见	auto
-𰴙	jj	君见	auto
-𰴚	lj	娄见	auto
-𰴜	hj	虍见	auto
-𰴝	vj	爫见	auto
-𰴞	hj	虍见	auto
+𰴒	jy	見雨	
+𰴒	yj	雨見	
+𰴔	jv	見隹	
+𰴕	jb	见必	
+𰴖	jv	见召	
+𰴗	jl	见丽	
+𰴘	jj	见间	
+𰴙	jj	见君	
+𰴚	jl	见娄	
+𰴜	jq	见且	
+𰴜	hj	虍见	
+𰴝	jl	见𤔔	
+𰴝	jy	见又	
+𰴝	vj	爫见	
+𰴞	jd	见豆	
+𰴞	hj	虍见	
 𰴟	do	刀月	auto
 𰴠	jy	角又	auto
 𰴡	jc	角廾	auto
@@ -96602,12 +96620,16 @@
 𲁎	uj	守見	auto
 𲁏	jj	見眷	auto
 𲁑	bj	不见	auto
-𲁓	jj	见见	auto
-𲁔	lj	厉见	auto
-𲁕	jj	吉见	auto
-𲁖	cj	艹见	auto
-𲁗	qj	亲见	auto
-𲁙	pj	旁见	auto
+𲁓	jj	见见	
+𲁔	jl	见厉	
+𲁔	lj	厉见	
+𲁕	jj	见吉	
+𲁖	jb	见冖	
+𲁖	cj	艹见	
+𲁗	jq	见亲	
+𲁗	qj	亲见	
+𲁙	jp	见旁	
+𲁙	pj	旁见	
 𲁛	jt	角台	auto
 𲁞	jm	角木	auto
 𲁟	hj	或角	auto
@@ -100178,6 +100200,123 @@
 𨛗	ye	邑阝	
 𰛄	aa	亅乛	
 𣦶	aa	一乛	
+𣄯	pw	丿旡	
+𱘭	dx	大心	# auto
+𤢪	qu	犭{鼠}	
+𱤦	ml	木卵	# auto
+𱤦	am	𰀉木	# auto
+𨘇	zm	辶牟	
+𨘇	zf	辶㐄	
+𲆰	yy	酉易	
+𡿰	ji	彐巛	
+𱗎	ty	土幽	
+𱮿	wb	王邦	
+𱗖	tz	土总	
+𢏈	ga	弓一	
+𢏈	gg	弓㠯	
+𧿓	zd	足乀	
+𨰆	jd	金乀	
+𠲑	bg	半𠄎	
+𨺫	ya	臾一	
+𱽿	cj	艹降	
+𡼻	iv	垂𠂤	
+𲌞	ix	镸闲	
+𣲖	dd	氵乀	
+𥄉	oi	目巛	
+𲆦	yx	酉夕	
+𧦮	yd	言乀	
+𠃊	aa	{𠃊}	
+𱶡	ut	十秃	
+𰀢	ad	丨丶	
+𨺀	vg	𠂤𠃌	
+𦥚	jk	臼丂	
+𢩦	yu	㇈手	
+𱗋	tg	土革	
+𱍕	ad	一丶	
+𱍕	ar	一人	
+𡋬	th	土灬	
+𱰤	yt	㇈田	
+𢖎	xa	彳一	
+𢖎	xg	彳㠯	
+𨦜	jk	金丂	
+𠀁	ag	一㇉	
+𱓰	kr	口热	
+𱗉	ty	土{衣}	
+𱗢	th	土晃	
+𥭢	vk	𥫗丂	
+𨺅	pa	丿一	
+𠮾	kw	口兀	
+𠛱	dx	刂夕	
+𦊗	ke	冂⺋	
+𦦩	je	𠂆⺋	
+𦦩	fe	缶⺋	
+𥱺	vg	𥫗乚	
+𲌡	is	镸啬	
+𱛔	uq	山去	
+𱩂	dy	氵颖	
+𱸜	vt	𥫗土	
+𣫬	ac	𠃌艹	
+𣫬	vc	𠃌艹	
+𠞤	du	刂氺	
+𠞤	da	刂𡿨	
+𦜸	op	月丿	
+𢎘	gg	𠃌㇉	
+𱣄	mw	木为	
+𠑹	ek	儿コ	
+𠑹	kk	匚コ	
+𡬞	yc	㇈寸	
+𡬞	cy	寸㇈	
+𢦍	gp	戈丿	
+𢦍	ad	㇂丶	
+𱑖	ba	卜一	
+𱑖	bg	卜㠯	
+𡒏	ta	土㇂	
+𡒏	tu	土{鼠}	
+𱜀	uy	山勇	
+𥾬	sy	糸幺	
+𠄌	aa	{𠄌}	
+𨷒	ma	門㇁	
+𨷒	mu	門山	
+𡴎	cv	屮𠂤	
+𱖝	tz	土再	
+𱗤	tg	土皋	
+𠳋	ka	口一	
+𠳋	va	中一	
+𠳋	kg	口㠯	
+𠳋	vg	中㠯	
+𠀀	aa	一𠃊	
+𠘧	pa	丿㇍	
+𱘆	tj	土解	
+灰	uh	𠂇火	
+灰	hu	火𠂇	
+𲀄	ix	虫虚	
+𱐿	wa	勿爱	
+𰯲	is	臣罒	
+𧺽	za	走一	
+𧺽	zg	走㠯	
+𲄀	zm	足迷	
+𢈂	ga	广一	
+𢈂	gg	广㠯	
+𱖟	tk	土匡	
+𡇑	ka	囗一	
+𡇑	kg	囗㠯	
+𱿅	cc	艹次	
+𤿄	bi	白巛	
+𠃫	ug	十𠃌	
+𢁤	jd	巾乀	
+𦘳	oa	月𠃊	
+𦘳	og	月乚	
+𡿨	aa	{𡿨}	
+𱗂	tu	土舍	
+𱹁	mq	米齐	
+𡿼	au	𡿨十	
+𠃌	gg	{𠃌}	
+𦸊	ce	艹⺋	
+𡪑	bk	宀丂	
+𤳭	te	田⺋	
+𠀫	ap	一丿	
+𠀫	cp	艹丿	
+𫹱	xi	心巛	
 
 # 待考
 
@@ -100571,7 +100710,6 @@
 #𠀗	ca	艹丆	
 #𠀧	bs	巴三	
 #𠀨	xj	下及	
-#𠀫	aa	一丆	
 #𠀫	ca	艹丆	
 #𠀲	dd	丁多	
 #𠀳	yx	以下	

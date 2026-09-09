@@ -14,6 +14,7 @@ import traceback
 from collections import *
 from itertools import *
 from operator import *
+from typing import Any
 
 import flypyify
 import regex
@@ -25,10 +26,10 @@ import opencc
 double_pinyin_choices = ['zrm', 'flypy']
 auxiliary_code_choices = ['zrm', 'user']
 
-args = None
-auxiliary_table = defaultdict(list)
-pinyin_table = defaultdict(lambda: defaultdict(int))
-charset = []
+args: Any = None
+auxiliary_table: dict[str, list[str]] = defaultdict(list)
+pinyin_table: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
+charset: list[str] = []
 
 ##################
 ### 單字處理例程 ###

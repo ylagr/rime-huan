@@ -26,6 +26,7 @@ sync/
 *.custom.yaml
 installation.yaml
 user.yaml
+*.gram
 
 ###############
 # Development #

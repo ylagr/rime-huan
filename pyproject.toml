@@ -18,6 +18,15 @@ requires-python = ">=3.12,<3.15"
 readme = "README.md"
 license = {text = "GPLv3"}
 
+[dependency-groups]
+dev = [
+    "mypy>=1.15.0",
+    "pandas-stubs",
+    "types-requests",
+    "types-regex",
+    "ruff",
+]
+
 [tool.pdm]
 distribution = false
 
@@ -30,3 +39,16 @@ extend-exclude = [
 
 [tool.ruff.lint]
 select = ["E9", "F401", "F541", "I"]
+
+[tool.mypy]
+python_version = "3.12"
+files = ["tools"]
+
+[[tool.mypy.overrides]]
+module = [
+    "opencc.*",
+    "pypinyin.*",
+    "mdict_utils.*",
+    "tiktoken.*",
+]
+ignore_missing_imports = true

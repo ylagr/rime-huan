@@ -4,7 +4,7 @@
 
 ---
 name: moran_fixed
-version: "20260805"
+version: "20260831"
 sort: by_weight
 columns:
   - text
@@ -5415,6 +5415,7 @@ B盤	bpj
 不請自坐	bqzz
 不如	br
 別人	br
+不然	br
 被人暗算	bras
 幫人幫到底	brbd
 般若波羅蜜多	brbd
@@ -6963,6 +6964,7 @@ Bilibili	bvj
 不幸遭遇	bxzy
 並	by
 不要	by
+必要	by
 丙	bya
 併案	byan
 病案	byan
@@ -10795,7 +10797,6 @@ C盤	cpj
 篼	dbvd
 倒不知道	dbvd
 鬥爭	dbvg
-導播趙幹	dbvg
 鬥志	dbvi
 對不住了	dbvl
 頂不住了	dbvl
@@ -26829,6 +26830,7 @@ G盤	gpj
 哈希	haxi
 哈腰	hayk
 後	hb
+何必	hb
 厚愛	hbai
 齁	hbb
 厚彼薄此	hbbc
@@ -29197,7 +29199,6 @@ H股	hgu
 海盜	hldk
 海島	hldk
 海帶	hldl
-很藍的啦	hldl
 海淀	hldm
 合理搭配	hldp
 歡樂鬥地主	hldv
@@ -31854,6 +31855,7 @@ H盤	hpj
 話音	hwyn
 和我一起	hwyq
 花園	hwyr
+化用	hwys
 混爲一談	hwyt
 合爲一體	hwyt
 話語	hwyu
@@ -33649,7 +33651,7 @@ H盤	hpj
 稱呼	ighu
 出國護照	ighv
 騁懷	ighy
-蛏	igi
+蟶	igi
 乘車	igie
 稱臣	igif
 城池	igii
@@ -45688,6 +45690,7 @@ JK制服	jkvf
 開機自啓	kjzq
 苛捐雜稅	kjzu
 靠	kk
+看看	kk
 靠岸	kkan
 苦苦哀求	kkaq
 磕磕絆絆	kkbb
@@ -51783,7 +51786,6 @@ JK制服	jkvf
 孿生兄弟	luxd
 歷史新低	luxd
 歷史新高	luxg
-藍瘦香菇	luxg
 蘆蓆	luxi
 歷史學家	luxj
 流水線計算機	luxj
@@ -53345,6 +53347,7 @@ JK制服	jkvf
 摩擦阻力	mczl
 苗族	mczu
 母慈子孝	mczx
+面對	md
 目的	md
 磨刀不誤砍柴工	mdbg
 目的不純	mdbi
@@ -55215,7 +55218,7 @@ JK制服	jkvf
 米諾環素	mnhs
 沒那回事	mnhu
 敏慧	mnhv
-闽	mni
+閩	mni
 民船	mnir
 閩江	mnjd
 模擬計算機	mnjj
@@ -57544,8 +57547,9 @@ JK制服	jkvf
 雫	nayx
 拿走	nazb
 那座	nazo
-內部	nb
 牛逼	nb
+那邊	nb
+內部	nb
 你被捕了	nbbl
 你並不是	nbbs
 你並不是	nbbu
@@ -57760,7 +57764,6 @@ JK制服	jkvf
 難度很高	ndhg
 年代後期	ndhq
 難得糊塗	ndht
-你滴寒王	ndhw
 難度很小	ndhx
 難道還要	ndhy
 難道還有	ndhy
@@ -86459,6 +86462,7 @@ U盤	upj
 這廝	vesi
 折傘	vesj
 這所	veso
+折損	vesp
 折算	vesr
 知恩圖報	vetb
 這條	vetc
@@ -91696,8 +91700,9 @@ U盤	upj
 襪子	wazi
 娃子	wazi
 佤族	wazu
-外部	wb
+無比	wb
 未必	wb
+外部	wb
 微博	wb
 無比	wbb
 歪比巴卜	wbbb
@@ -95416,10 +95421,10 @@ WiFi	wifi
 五味雜陳	wwzi
 勿忘在莒	wwzj
 嗡嗡作響	wwzx
-微信	wx
+危險	wx
 微笑	wx
 微小	wx
-危險	wx
+微信	wx
 外興安嶺	wxal
 吳下阿蒙	wxam
 我想不到	wxbd
@@ -95801,9 +95806,9 @@ WiFi	wifi
 無以言表	wyyb
 唯一一次	wyyc
 惟一一次	wyyc
-無氧運動	wyyd
 無言以對	wyyd
 無顏以對	wyyd
+無氧運動	wyyd
 我有一個大膽的想法	wyyf
 唯一一個	wyyg
 我有一個	wyyg
@@ -95816,7 +95821,6 @@ WiFi	wifi
 爲有源頭活水來	wyyl
 無業遊民	wyym
 惟有飲者留其名	wyym
-網易雲課堂	wyyt
 無以言說	wyyu
 無以言狀	wyyv
 我有一種	wyyv
@@ -96256,6 +96260,7 @@ WiFi	wifi
 雄安新區	xaxq
 相愛相殺	xaxu
 喜愛夜蒲	xayp
+相比	xb
 想必	xb
 小寶貝兒	xbbe
 下半部分	xbbf
@@ -96922,7 +96927,7 @@ WiFi	wifi
 相接	xdjx
 下定決心	xdjx
 香精	xdjy
-響	xdk
+响	xdk
 巷口	xdkb
 相框	xdkd
 相剋	xdke
@@ -106113,8 +106118,8 @@ WiFi	wifi
 延展	yjvj
 眼罩	yjvk
 飲鳩止渴	yjvk
-演技炸裂	yjvl
 一己之力	yjvl
+演技炸裂	yjvl
 研究證明	yjvm
 一擊致命	yjvm
 眼拙	yjvo
@@ -113380,7 +113385,6 @@ WiFi	wifi
 字面意思	zmys
 怎麼又是	zmyu
 怎麼也是	zmyu
-讚美愚者	zmyv
 怎麼也在	zmyz
 怎麼做到	zmzd
 做沒做過	zmzg
@@ -113560,6 +113564,7 @@ WiFi	wifi
 作痛	zots
 作圖	zotu
 左腿	zotv
+左	zou
 左手	zoub
 作甚	zouf
 做聲	zoug
@@ -116336,12 +116341,8 @@ WiFi	wifi
 
 ##隨心碼
 #（本質上是無理碼）
-莊	vdg		#來自簡化字寫法 庄；以空碼加
-豬	vuq		#來自簡化字寫法 猪；以空碼加
 議	yiyw		#取末尾的「我」
 誼	yiyq		#取末尾的「且」
-左	zou		#取上部
-右	ybu		#取上部
 凄	qidn		#取「女」
 沏	qidt		#qid + tea
 詩	uiyc		#取末尾小部件
@@ -117339,7 +117340,6 @@ CD機	cdj
 大而全	deq
 第二天	det
 德爾塔	det
-開發者	dev
 第二種	dev
 第二位	dew
 第二性	dex
@@ -117897,7 +117897,6 @@ Excel	eks
 犯錯誤	fcw
 輔導班	fdb
 發大財	fdc
-反對黨	fdd
 肥嘟嘟	fdd
 梵蒂岡	fdg
 負電荷	fdh
@@ -118084,7 +118083,9 @@ Excel	eks
 發熱量	frl
 瘋人院	fry
 非人哉	frz
+发送到	fsd
 分散度	fsd
+發送給	fsg
 複色光	fsg
 風俗畫	fsh
 粉碎機	fsj
@@ -118147,7 +118148,6 @@ Excel	eks
 服務端	fwd
 氛圍感	fwg
 俯臥撐	fwi
-蜂王漿	fwj
 蜂窩煤	fwm
 犯爲難	fwn
 服務器	fwq
@@ -118193,12 +118193,10 @@ Excel	eks
 撫養費	fyf
 發言稿	fyg
 發一個	fyg
-放映場	fyi
 複印件	fyj
 複印機	fyj
 反映了	fyl
 發芽率	fyl
-仿羊皮	fyp
 發言權	fyq
 發言人	fyr
 反應熱	fyr
@@ -118218,6 +118216,7 @@ Excel	eks
 分子式	fzu
 複雜性	fzx
 副作用	fzy
+反作用	fzy
 公安部	gab
 公安局	gaj
 穀氨酸	gas
@@ -119431,9 +119430,7 @@ git	git
 交匯點	jhd
 救護隊	jhd
 絕活兒	jhe
-季候風	jhf
 腳後跟	jhg
-金合歡	jhh
 救護車	jhi
 交匯處	jhi
 菊花茶	jhi
@@ -119469,7 +119466,6 @@ git	git
 精簡版	jjb
 交接班	jjb
 經濟艙	jjc
-芨芨草	jjc
 就覺得	jjd
 漸漸的	jjd
 聚集地	jjd
@@ -119480,7 +119476,6 @@ git	git
 幾句話	jjh
 基金會	jjh
 交際花	jjh
-卷積核	jjh
 競技場	jji
 交界處	jji
 殲擊機	jjj
@@ -120727,6 +120722,7 @@ Keynote	knt
 拿不定	nbd
 諾貝爾	nbe
 尼泊爾	nbe
+那部分	nbf
 拗不過	nbg
 那不會	nbh
 弄不好	nbh
@@ -122165,6 +122161,7 @@ SD卡	sdk
 抬頭紋	ttw
 踢踏舞	ttw
 唐太宗	ttz
+提示詞	tuc
 提示符	tuf
 圖書館	tug
 聽說過	tug
@@ -122526,8 +122523,8 @@ SD卡	sdk
 生死簿	usb
 十三點	usd
 生死觀	usg
-啥時候	ush
 是時候	ush
+啥時候	ush
 十三經	usj
 十三陵	usl
 是什麼	usm
@@ -122718,6 +122715,7 @@ SD卡	sdk
 真不錯	vbc
 找不到	vbd
 長不大	vbd
+這部分	vbf
 枕邊風	vbf
 只不過	vbg
 準備好	vbh
@@ -122921,6 +122919,7 @@ SD卡	sdk
 中年人	vnr
 這年頭	vnt
 智囊團	vnt
+智能體	vnt
 只能說	vnu
 終南山	vnu
 之能事	vnu

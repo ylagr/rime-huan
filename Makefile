@@ -1,11 +1,12 @@
 DESTDIR ?= $(abspath ./dist)
 
-quick: chars zrmdb chaifen opencc zrlf
+quick: chars zrmdb chaifen opencc zrlf octagram
 dict: update-compact-dicts
 all: quick dict
 
 lint-python:
-	uv run --with ruff ruff check tools
+	uv run --group dev ruff check tools
+	uv run --group dev mypy tools
 
 ############
 # 單字信息 #
@@ -40,6 +41,17 @@ update-compact-dicts:
 sync-essay:
 	uv run tools/sync_essay.py
 
+############
+# 語言模型 #
+############
+octagram: zh-hant-t-essay-bgc.gram zh-hant-t-essay-bgw.gram
+
+zh-hant-t-essay-bgc.gram:
+	wget -nc 'https://github.com/lotem/rime-octagram-data/raw/hant/zh-hant-t-essay-bgc.gram'
+
+zh-hant-t-essay-bgw.gram:
+	wget -nc 'https://github.com/lotem/rime-octagram-data/raw/hant/zh-hant-t-essay-bgw.gram'
+
 #########
 # mdict #
 #########
@@ -73,7 +85,7 @@ clean:
 dist: quick
 	mkdir -p $(DESTDIR)
 	cp -a README*.md LICENSE AGENTS.md etc $(DESTDIR)
-	cp -a moran* $(DESTDIR)
+	cp -a moran*.yaml moran*.txt $(DESTDIR)
 	cp -a default.yaml key_bindings.yaml punctuation.yaml symbols.yaml $(DESTDIR)
 	cp -a recipe.yaml recipes $(DESTDIR)
 	cp -a squirrel.yaml $(DESTDIR)
@@ -100,4 +112,4 @@ test: dist
 	mira -C /tmp/mira-cache tests/moran_aux.test.yaml
 	rm -rf /tmp/mira-cache
 
-.PHONY: quick all dict chars zrlf zrmdb chaifen update-compact-dicts sync-essay dazhu opencc mdict dist test lint-python
+.PHONY: quick all dict chars zrlf zrmdb chaifen update-compact-dicts sync-essay dazhu opencc mdict dist test lint-python octagram

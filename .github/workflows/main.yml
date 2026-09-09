@@ -1,3 +1,4 @@
+name: Commit CI
 on: [push]
 
 jobs:
@@ -146,6 +147,8 @@ jobs:
         run: make lint-python
       - name: 檢查簡體碼表是否有繁體字
         run: uv run tools/check_simp_table.py
+      - name: 檢查 Emoji 詞庫格式
+        run: uv run tools/check_emoji.py
       - name: 檢查詞庫裏是否混入了多空格
         run: |
           perl -ne '
