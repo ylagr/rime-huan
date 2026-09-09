@@ -29,6 +29,7 @@ patch:
   smart/max_word_length: 10 # 只能记录单次上屏记录，如果使用选词上屏的词不会记录，所以只能使用造词上屏,包括用tab选段落上屏的也不算，必须直接上屏才能记录为max_word
   smart/core_word_length: 4
   # grammar: {}  # 禁用整句模型
+  moran/disable_sentence_candidates_upto: 1
   moran/inject_fixed_words: true
   moran/inject_fixed_chars: true
   moran/enable_quick_code_hint: true
